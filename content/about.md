@@ -4,7 +4,7 @@ title: "About"
 
 I'm a technical leader working at the intersection of AI, professional services, and industrial operations.
 
-Currently, I lead AI strategy and adoption at [SRK Consulting](https://srk.com), a global engineering consultancy. Before that, I spent two decades in mining and resource development—operations, technology, and everything in between.
+Currently, I lead AI strategy and adoption at [SRK Consulting](https://srk.com), a global engineering consultancy.
 
 I think about what happens when AI meets professional accountability. The questions that interest me:
 
@@ -15,3 +15,4 @@ I think about what happens when AI meets professional accountability. The questi
 This site collects my writing on these topics. The papers are more formal; the essays are thinking out loud.
 
 I'm based in Canada.
+
