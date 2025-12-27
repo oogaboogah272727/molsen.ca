@@ -1,10 +1,10 @@
 ---
 title: "Stochastic in Form, Deterministic in Function"
-date: 2025-06-15
-description: "An experiment showing that LLM 'unreliability' is a usage problem, not a tool limitation."
+date: 2025-07-29
+description: "An experiment showing that LLM 'unreliability' is a usage problem, not a tool limitation. 100+ iterations across four models."
 ---
 
-The criticism that LLMs are "too stochastic for production use" misunderstands their nature. I ran a simple experiment to test this.
+The criticism that LLMs are "too stochastic for production use" misunderstands their nature. I ran a systematic experiment to test this.
 
 ---
 
@@ -24,7 +24,9 @@ Same task. Different framing.
 
 ## Results
 
-### Direct Question (40 iterations)
+### Direct Question
+
+**Initial test (10 iterations per model):**
 
 | Model | Accuracy |
 |-------|----------|
@@ -33,24 +35,32 @@ Same task. Different framing.
 | Claude-3.5-sonnet | 0% |
 | Gemini-1.5-flash | 0% |
 
-**Overall: 25% accuracy.** Three of four models consistently answered "2" instead of "3."
+Three of four models consistently answered "2" instead of "3." Systematic undercounting by 1.
 
-### Code Generation (40 iterations)
+**Extended test (100 iterations, Claude-3-haiku):**
 
-| Model | Accuracy |
-|-------|----------|
-| GPT-3.5-turbo | 100% |
-| Claude-3-haiku | 100% |
-| Claude-3.5-sonnet | 100% |
-| Gemini-1.5-flash | 100% |
+| Model | Iterations | Correct | Accuracy |
+|-------|------------|---------|----------|
+| Claude-3-haiku | 100 | 99 | 99% |
 
-**Overall: 100% accuracy.** Every model, every time.
+Even the best-performing model had one error over 100 runs.
+
+### Code Generation
+
+| Model | Iterations | Correct | Accuracy |
+|-------|------------|---------|----------|
+| GPT-3.5-turbo | 10 | 10 | 100% |
+| Claude-3-haiku | 37 | 35 | 94.6% |
+| Claude-3.5-sonnet | 10 | 10 | 100% |
+| Gemini-1.5-flash | 7 | 7 | 100% |
+
+When errors occurred, they were execution failures—not logic errors. Every successfully executed piece of code returned 3.
 
 ---
 
 ## The Gap
 
-75 percentage points.
+For most models: **0% → 100% accuracy**. A 100 percentage point improvement.
 
 Same task. Same models. Same underlying question. The only difference was *how I asked*.
 
@@ -58,31 +68,56 @@ Same task. Same models. Same underlying question. The only difference was *how I
 
 ## Code Variability
 
-Here's what's interesting: the generated code wasn't identical. From the same model with the same prompt:
+Here's what's interesting: **20-25% of implementations were structurally unique**—from the same model with the same prompt.
+
+From 37 iterations of Claude-3-haiku, I observed 8 distinct code structures:
 
 ```python
-# Variation 1: Simple counter
+# Variation 1: Simple function with counter
 def count_r(word):
     count = 0
     for char in word:
         if char == 'r':
             count += 1
     return count
+result = count_r('strawberry')
 
-# Variation 2: Using built-in
-def count_char(string, char):
-    return string.count(char)
+# Variation 2: Using built-in method
+word = 'strawberry'
+count = word.count('r')
+print(count)
 
-# Variation 3: With enumerate
-def count_letter(text, letter):
+# Variation 3: With descriptive output
+def count_letter_r(word):
     count = 0
-    for i, c in enumerate(text):
-        if c == letter:
+    for char in word:
+        if char == 'r':
+            count += 1
+    return count
+result = count_letter_r(word)
+print(f"The letter 'r' appears {result} times in '{word}'.")
+
+# Variation 4: One-liner function
+def count_r(s):
+    return s.count('r')
+print(count_r('strawberry'))
+
+# Variation 5: With enumerate
+def count_r_occurrences(text):
+    count = 0
+    for i, char in enumerate(text):
+        if char == 'r':
             count += 1
     return count
 ```
 
-Different variable names. Different function names. Different approaches. Yet all produced the correct result.
+The variations extended beyond algorithm choice:
+- **Variable names:** count, counter, result, num, total
+- **Function names:** count_r, count_letter, count_char, count_r_occurrences
+- **Output formats:** bare number, formatted string, descriptive sentence
+- **Algorithm approaches:** for loops (85%), built-ins (10%), comprehensions (5%)
+
+Yet all successful executions returned 3.
 
 ---
 
