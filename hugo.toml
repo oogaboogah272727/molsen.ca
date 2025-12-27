@@ -1,0 +1,30 @@
+baseURL = 'https://molsen.ca/'
+languageCode = 'en-ca'
+title = 'Mike Olsen'
+
+[params]
+  description = "Thinking about AI, professional accountability, and the future of technical work."
+  author = "Mike Olsen"
+
+[menu]
+  [[menu.main]]
+    name = "Papers"
+    url = "/papers/"
+    weight = 1
+  [[menu.main]]
+    name = "Writing"
+    url = "/writing/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
