@@ -413,13 +413,10 @@ footer .container {
 }
 
 .tab-button.active {
-  background: var(--text-primary);
-  color: var(--background);
+  background: var(--background-alt);
+  color: var(--text-primary);
   border-color: var(--text-primary);
-}
-
-.tab-button.active .type-dot {
-  border: 1px solid var(--background);
+  font-weight: 600;
 }
 
 .tab-count {
