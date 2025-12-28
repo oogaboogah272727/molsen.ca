@@ -39,7 +39,9 @@ Same underlying question. Different framing.
 
 Three out of four answers were wrong. The dominant error was answering "2" instead of "3."
 
-This isn't undercounting. The models aren't counting at all. They're pattern-matching: recognizing a 10-character string, applying statistical knowledge of 'r' frequency in English text, and generating the most probable token. Two r's in a 10-character word is statistically reasonable. The occasional correct answer of "3"—along with "1" and "4"—results from stochastic sampling selecting lower-probability tokens, not from the model successfully counting.
+This isn't undercounting. The models aren't counting at all—they have no counting mechanism. They can only predict probable tokens based on patterns in training data. The likely explanation: the model recognizes the word length, applies statistical knowledge of letter frequencies in English, and generates a plausible-sounding answer. Two r's in a 10-character word is statistically reasonable. The occasional correct answer of "3"—along with "1" and "4"—probably results from stochastic sampling selecting lower-probability tokens, not from the model successfully counting.
+
+We can't inspect closed models to confirm the exact mechanism. But the key point is clear: the model is estimating, not computing.
 
 ### Code Generation
 
@@ -106,7 +108,7 @@ Most people have this backward. They see the variation and conclude the tool is 
 
 ## Why This Happens
 
-When you ask an LLM to count letters directly, you're asking it to do something it fundamentally cannot do. It has no counting mechanism. It can only predict the next probable token based on patterns in training data—which includes statistical knowledge of letter frequencies in English. The model generates a plausible-sounding answer, not a computed one.
+When you ask an LLM to count letters directly, you're asking it to do something it fundamentally cannot do. It has no counting mechanism. It can only predict the next probable token based on patterns in training data. The model generates a plausible-sounding answer, not a computed one.
 
 When you ask it to write code, you're using what it actually does well: translation between natural language and formal specification. The code then executes deterministically. The LLM's stochasticity is confined to the representation; the computation itself is exact.
 
