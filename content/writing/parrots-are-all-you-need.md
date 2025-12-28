@@ -71,6 +71,6 @@ The calculus is straightforward. The more your work depends on synthesizing expl
 
 I'm not saying knowledge workers should panic. I'm saying they should adapt. Learn to use these tools effectively. Understand their capabilities and limitations. Focus on developing skills that complement rather than compete with AI capabilities.
 
-The stochastic parrot is here. It's not going away. And for the vast majority of knowledge work that deliberately relies on established, documented, proven approaches, the parrot is all you need.
+The stochastic parrot is here. It's not going away. And for the vast majority of knowledge work that deliberately relies on established, documented, proven approaches, the parrot might be much of what you need.
 
 So the question becomes: what are you going to do about it?
