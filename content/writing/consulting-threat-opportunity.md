@@ -2,7 +2,10 @@
 title: "Existential Threat to Consulting = Huge Opportunity"
 date: 2025-01-15
 description: "How AI-encoded expertise disrupts the consulting industry's traditional value proposition, and what firms need to do about it."
+originalPublication: "Originally published January 2025"
 ---
+
+> *This essay has been revised to integrate later developments in my thinking, including the frameworks it now references. The version here is authoritative.*
 
 Consulting is expert advice for hire. The entire business model rests on asymmetry: the consultant knows things the client does not. This asymmetry justifies premium fees, long engagements, and the elaborate pyramids of associates, managers, and partners that populate every major firm.
 

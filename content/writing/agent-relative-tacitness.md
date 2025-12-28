@@ -2,7 +2,10 @@
 title: "Agent-Relative Tacitness: A New Framework"
 date: 2025-01-20
 description: "Rethinking what makes knowledge tacit or explicit—and why the answer depends on who is doing the knowing."
+originalPublication: "Originally published January 2025"
 ---
+
+> *This essay has been revised to integrate later developments in my thinking, including the foundational work on knowledge-as-capability that it now references. The version here is authoritative.*
 
 Your dog knows things it cannot tell you. The boundaries of its territory, the reliable routes through the neighborhood, the spots where interesting smells accumulate. This knowledge lives in the dog's behavior. There is no statement the dog could make about it. Michael Polanyi, the philosopher who gave us tacit knowledge as a concept, used examples like this to illustrate a basic epistemological puzzle: we know more than we can say.
 

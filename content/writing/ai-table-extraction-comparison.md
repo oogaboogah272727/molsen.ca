@@ -2,7 +2,10 @@
 title: "Evaluating AI Table Extraction: Claude vs Docling vs ScaleDP"
 date: 2025-01-15
 description: "A practical comparison of three table extraction approaches reveals surprising accuracy gaps that practitioners need to understand before selecting tools for document processing at scale."
+originalPublication: "Originally published January 2025"
 ---
+
+> *This essay may be revised as my thinking develops. The version here is authoritative.*
 
 I ran identical documents through three extraction approaches: Docling, ScaleDP, and Claude-based sub-agents. The results surprised me. The difference between 11% and 100% accuracy isn't a statistical curiosity. It's the difference between a usable system and one that generates more work than it saves.
 

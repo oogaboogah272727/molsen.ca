@@ -2,7 +2,10 @@
 title: "Tacit Space Shrinkage: When AI Articulates the Inexpressible"
 date: 2025-01-22
 description: "As AI capabilities expand, the domain of knowledge that organizations cannot express or operationalize is shrinking—with profound implications for expertise and governance."
+originalPublication: "Originally published January 2025"
 ---
+
+> *This essay has been revised to integrate later developments in my thinking, including the foundational claims it now references. The version here is authoritative.*
 
 Every organization has knowledge that nobody can quite put into words. The machinist who "just knows" when a tolerance is off. The sales director who senses when a deal is going sideways. The nurse who recognizes deterioration before the monitors do. We call this tacit knowledge, and for decades we've treated it as a fixed feature of organizational life. Valuable, irreplaceable, and resistant to capture.
 

@@ -2,7 +2,10 @@
 title: "Stochastic in Form, Deterministic in Function"
 date: 2025-07-29
 description: "An experiment showing that LLM 'unreliability' is a usage problem, not a tool limitation. 100+ iterations across four models."
+originalPublication: "Originally published July 2025"
 ---
+
+> *This essay may be revised as my thinking develops. The version here is authoritative.*
 
 The criticism that LLMs are "too stochastic for production use" misunderstands their nature. I ran a systematic experiment to test this.
 

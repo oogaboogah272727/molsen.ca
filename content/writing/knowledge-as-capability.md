@@ -2,7 +2,10 @@
 title: "Knowledge as Capability: An Operational Foundation for Knowledge Management"
 date: 2025-01-27
 description: "Extending knowledge management to accommodate AI by defining knowledge as capability to produce outcomes—the foundational claim that makes human-AI collaboration coherent."
+originalPublication: "Originally published January 2025"
 ---
+
+> *This essay provides the foundational definition on which several other pieces in this collection depend. Cross-references reflect the current state of an evolving framework. The version here is authoritative.*
 
 Knowledge management has served organizations well for decades. The frameworks from Nonaka and Takeuchi, the practices around communities of practice, the distinction between tacit and explicit knowledge—these have helped countless organizations preserve and transfer expertise.
 

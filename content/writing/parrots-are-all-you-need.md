@@ -2,7 +2,10 @@
 title: "Parrots Are All You Need"
 date: 2023-01-15
 description: "Why generative AI will introduce greater change, faster, than the Internet itself—and what that means for knowledge workers."
+originalPublication: "Originally published January 2023"
 ---
+
+> *This essay has been revised to reflect how my thinking has developed since its original publication. Cross-references to later work represent the current state of an evolving framework. The version here is authoritative; the original captured where I was in January 2023.*
 
 There are three types of CIOs: those who are convinced that AI is an urgent priority, those who will soon realize they need to make AI an urgent priority, and those who will be out of work in two years.
 

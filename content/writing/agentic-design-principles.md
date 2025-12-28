@@ -2,7 +2,10 @@
 title: "Agentic Design Principles: Building Systems That Think"
 date: 2025-01-15
 description: "A framework for designing AI systems as collaborative teams of autonomous agents rather than collections of functions."
+originalPublication: "Originally published January 2025"
 ---
+
+> *This essay may be revised as my thinking develops. The version here is authoritative.*
 
 The way we design software systems is shifting. For decades, we've built systems as collections of functions—discrete units of code that execute tasks when called. But as AI capabilities mature and system complexity grows, a different approach is emerging: agentic design.
 

@@ -2,7 +2,10 @@
 title: "Practical AI Document Extraction: The Real Cost of Processing 40,000 Documents"
 date: 2025-01-15
 description: "A data-driven analysis of AI-powered document extraction costs, revealing that processing complex technical documents costs just $0.0169 per page with the right approach."
+originalPublication: "Originally published January 2025"
 ---
+
+> *This essay may be revised as my thinking develops. The version here is authoritative.*
 
 Organizations considering AI document extraction always hit the same wall: "What does this actually cost?" I ran thousands of pages through extraction and measured everything. Now I have concrete numbers.
 

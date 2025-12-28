@@ -2,7 +2,10 @@
 title: "Executable Knowledge Architecture: A Pattern for AI-Augmented Consulting"
 date: 2025-01-25
 description: "A framework for integrating AI into professional consulting that preserves expertise, ensures reproducibility, and closes the governance gap between AI capabilities and client needs."
+originalPublication: "Originally published January 2025"
 ---
+
+> *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*
 
 The consulting industry faces an uncomfortable truth: clients can now ask ChatGPT the same questions they once paid experts to answer. This creates immediate margin pressure. But it also reveals something about how we've been thinking about AI in professional services. We've been thinking about it wrong.
 
