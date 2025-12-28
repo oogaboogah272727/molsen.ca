@@ -41,21 +41,23 @@ Same underlying question. Different framing.
 
 Three out of four answers were wrong. The dominant error was answering "2" instead of "3."
 
+Beyond accuracy, there was a precision problem. Answers came in varied formats: "2", "two", "There are two r's in 'strawberry'", and other variations. The output was neither accurate nor precise—you couldn't reliably parse it without additional processing.
+
 This isn't undercounting. The models aren't counting at all—they have no counting mechanism. They can only predict probable tokens based on patterns in training data. The likely explanation: the model recognizes the word length, applies statistical knowledge of letter frequencies in English, and generates a plausible-sounding answer. Two r's in a 10-character word is statistically reasonable. The occasional correct answer of "3"—along with "1" and "4"—probably results from stochastic sampling selecting lower-probability tokens, not from the model successfully counting.
 
 We can't inspect closed models to confirm the exact mechanism. But the key point is clear: the model is estimating, not computing.
 
 ### Code Generation
 
-**Aggregate accuracy: 100%**
+**Aggregate accuracy: 100%. Aggregate precision: 100%.**
 
-Every model, every iteration. When the code ran, it returned 3.
+Every model, every iteration. When the code ran, it returned the integer 3. Not "three", not "There are 3 r's"—the integer 3, every time. Accurate and precise. Deterministic.
 
 ---
 
 ## The Gap
 
-The important comparison isn't 25% to 100%. It's *not 100%* to *100%*.
+The important comparison isn't 25% to 100%. It's that one approach is *unreliable* and the other is *reliable*. Direct queries failed 75% of the time. Code generation failed 0% of the time.
 
 Oracle mode produced stochastic, unreliable results. Assistant mode produced deterministic, reliable results. Same models. Same question. Same answer required. The only variable was what I asked for: a guess versus a program.
 
