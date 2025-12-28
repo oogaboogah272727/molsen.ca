@@ -59,7 +59,7 @@ Every model, every iteration. When the code ran, it returned the integer 3. Not 
 
 The important comparison isn't 25% to 100%. It's that one approach is *unreliable* and the other is *reliable*. Direct queries failed 75% of the time. Code generation failed 0% of the time.
 
-Oracle mode produced stochastic, unreliable results. Assistant mode produced deterministic, reliable results. Same models. Same question. Same answer required. The only variable was what I asked for: a guess versus a program.
+Asking directly produced stochastic, unreliable results. Asking for code produced deterministic, reliable results. Same models. Same question. Same answer required. The only variable was what I asked for: a guess versus a program.
 
 ---
 
@@ -116,7 +116,7 @@ When you ask an LLM to count letters directly, you're asking it to do something 
 
 When you ask it to write code, you're using what it actually does well: translation between natural language and formal specification. The code then executes deterministically. The LLM's stochasticity is confined to the representation; the computation itself is exact.
 
-This is the key insight: the LLM doesn't perform the calculation in either case. In oracle mode, it guesses. In assistant mode, it produces a program that calculates. The difference isn't in how hard the model tries—it's in what you're asking it to produce.
+This is the key insight: the LLM doesn't perform the calculation in either case. When asked directly, it guesses. When asked to write code, it produces a program that calculates. The difference isn't in how hard the model tries—it's in what you're asking it to produce.
 
 ---
 
@@ -141,7 +141,7 @@ Don't ask: "What's the NPV of this project?"
 
 Ask: "Write code to calculate NPV given these cash flows and this discount rate."
 
-The first is an [oracle query](/writing/ai-oracle-vs-assistant/)—you're trusting the model's pattern matching. The second produces auditable, testable, reproducible output. This is the operational difference between [oracle and assistant modes](/writing/ai-oracle-vs-assistant/), demonstrated empirically.
+The first trusts the model's pattern matching. The second produces auditable, testable, reproducible output. I develop this distinction further in [Oracle vs. Assistant](/writing/ai-oracle-vs-assistant/).
 
 The 75-point accuracy gap isn't a fluke. It's the difference between proper and improper use of the tool.
 
