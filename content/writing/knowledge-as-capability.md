@@ -27,6 +27,10 @@ Philosophers have debated the nature of knowledge for millennia, and I'm not goi
 
 But here's what matters for our purposes: all these frameworks share an assumption. They assume agents with mental states. Whether you require justification, reliable belief-forming processes, intellectual virtues, or sensitivity to truth, you're still asking about the epistemic status of a *believer*. The debates are about what conditions beliefs must meet to constitute knowledge.
 
+Let me be direct about what "agents with mental states" means in practice: it means humans. And here we should acknowledge an uncomfortable truth. We don't actually know what mental states are. Philosophy hasn't solved the solipsism problem—I cannot verify that you have experiences, only that you behave as if you do. Neuroscience hasn't solved the hard problem of consciousness. Psychology doesn't have a settled account of what cognition is or how it produces understanding. The confident claim that humans *have* knowledge while AI systems *cannot* assumes we know what knowledge-constituting mental states are and how to detect them. We don't. That knowledge is not established in any discipline.
+
+This matters because some people dismiss AI capabilities definitionally—"it's just pattern matching, it doesn't really understand"—while assuming a clarity about human understanding that doesn't exist. I'm not claiming AI systems have consciousness or experiences. I'm observing that we lack the theoretical foundations to make confident pronouncements either way. The honest position is epistemic humility about mechanisms combined with pragmatic attention to outcomes.
+
 Knowledge management inherited this assumption, even if it never engaged deeply with the post-Gettier complexities. KM practice treats knowledge as something that can be:
 - Extracted (because it's a belief state in someone's head)
 - Documented (because it's propositional)
