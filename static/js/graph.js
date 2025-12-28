@@ -56,6 +56,37 @@ document.addEventListener('DOMContentLoaded', function() {
     .attr('d', 'M0,-4L8,0L0,4');
 
   d3.json('/js/knowledge-graph.json').then(data => {
+    // Extract all unique concepts
+    var allConcepts = [];
+    data.nodes.forEach(function(n) {
+      if (n.defines) {
+        n.defines.forEach(function(c) {
+          if (allConcepts.indexOf(c) === -1) allConcepts.push(c);
+        });
+      }
+    });
+    allConcepts.sort();
+
+    // Create concept filter UI
+    var filterContainer = document.getElementById('concept-filter');
+    if (filterContainer) {
+      var allBtn = document.createElement('button');
+      allBtn.className = 'concept-btn active';
+      allBtn.textContent = 'All';
+      allBtn.setAttribute('data-concept', '');
+      filterContainer.appendChild(allBtn);
+
+      allConcepts.forEach(function(concept) {
+        var btn = document.createElement('button');
+        btn.className = 'concept-btn';
+        btn.textContent = concept;
+        btn.setAttribute('data-concept', concept);
+        filterContainer.appendChild(btn);
+      });
+    }
+
+    var selectedConcept = null;
+
     // Create simulation
     const simulation = d3.forceSimulation(data.nodes)
       .force('link', d3.forceLink(data.links).id(d => d.id).distance(100))
@@ -117,6 +148,35 @@ document.addEventListener('DOMContentLoaded', function() {
     node.filter(d => d.url).on('click', (event, d) => {
       window.open(d.url, '_blank');
     });
+
+    // Concept filter click handlers
+    if (filterContainer) {
+      filterContainer.addEventListener('click', function(e) {
+        if (e.target.classList.contains('concept-btn')) {
+          // Update active state
+          filterContainer.querySelectorAll('.concept-btn').forEach(function(b) {
+            b.classList.remove('active');
+          });
+          e.target.classList.add('active');
+
+          var concept = e.target.getAttribute('data-concept');
+          selectedConcept = concept || null;
+
+          // Filter nodes
+          if (selectedConcept) {
+            node.attr('opacity', function(d) {
+              return d.defines && d.defines.indexOf(selectedConcept) !== -1 ? 1 : 0.15;
+            });
+            link.select('line').attr('stroke-opacity', 0.1);
+            link.select('text').attr('fill-opacity', 0.1);
+          } else {
+            node.attr('opacity', 1);
+            link.select('line').attr('stroke-opacity', 0.7);
+            link.select('text').attr('fill-opacity', 1);
+          }
+        }
+      });
+    }
 
     // Hover effects
     node.on('mouseover', function(event, d) {
