@@ -18,6 +18,8 @@ Knowledge can be broadly categorized as: explicit (documented), implicit (stored
 
 This is worth sitting with for a moment. We have, for the first time, a tool that can retrieve, synthesize, and articulate the sum of publicly documented human knowledge in response to natural language questions. The implications of this are profound and far-reaching.
 
+What I've come to understand since writing this piece is that the traditional categories need rethinking. [Tacitness is agent-relative](/writing/agent-relative-tacitness/)—knowledge that was tacit for humans alone may become explicit when AI enters the picture. And the very definition of knowledge shifts when we recognize it as [capability to produce outcomes](/writing/knowledge-as-capability/) rather than justified true belief. The parrot's "regurgitation" is, operationally, knowledge—if it reliably produces the outcome you need.
+
 ---
 
 ## The Stochastic Parrot

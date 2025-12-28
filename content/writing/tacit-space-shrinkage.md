@@ -12,6 +12,8 @@ As AI capabilities expand, the domain of practically ineffable knowledge is shri
 
 This distinction matters enormously for how organizations think about expertise, training, and governance.
 
+This argument builds on two foundational claims. First, [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/)—an operational definition that sidesteps epistemological questions about belief and justification. Second, [tacitness is agent-relative](/writing/agent-relative-tacitness/)—a property of transfer relationships between agents, not an intrinsic feature of knowledge itself. Together, these foundations make "tacit space shrinkage" coherent: as AI capabilities expand, transfer paths open that didn't exist before.
+
 ---
 
 ## Two Kinds of Tacitness

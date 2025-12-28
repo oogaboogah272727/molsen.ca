@@ -10,6 +10,8 @@ The instinct is to treat AI as an oracle—a system that takes questions and ret
 
 I've developed a different approach that I call Executable Knowledge Architecture (EKA). It's an organizational pattern for AI-mediated expert interaction that preserves the irreplaceable elements of professional consulting while leveraging AI's genuine strengths.
 
+EKA rests on an operational foundation: [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). This definition—rather than the traditional "justified true belief"—is what makes human-AI collaboration coherent. The expert has one kind of capability (specifying intent, verifying alignment). The AI has another (producing executable implementations). Neither constitutes complete knowledge alone; together, through a verification loop, they produce validated solutions.
+
 ---
 
 ## The Problem with AI as Oracle

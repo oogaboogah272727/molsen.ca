@@ -12,6 +12,8 @@ Your dog cannot articulate its territorial knowledge. But a biologist studying a
 
 This observation leads to a reconceptualization of tacit knowledge that I believe has significant implications—particularly as we enter an era of increasingly capable artificial agents.
 
+This framework depends on a foundational claim I develop elsewhere: that [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/), not justified true belief. Once we define knowledge operationally rather than epistemologically, tacitness becomes a question about transfer relationships between agents, not an intrinsic property of knowledge itself.
+
 ---
 
 ## The Standard View and Its Limits

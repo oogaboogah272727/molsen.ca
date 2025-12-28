@@ -76,4 +76,4 @@ For consulting firms willing to honestly assess their position, ruthlessly evalu
 
 The existential threat is real. But existential threats, properly understood and addressed, often become the catalyst for transformation that would never have occurred otherwise. The consulting industry built on information asymmetry must become an industry built on something more durable. The firms that figure out what that something is—and build it before the window closes—will define the next era of professional services.
 
-The clock is running.
+I've developed one answer to this challenge: [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/), a pattern for AI-augmented consulting that preserves the verification and accountability that clients actually need. It's built on a [capability-based definition of knowledge](/writing/knowledge-as-capability/) that makes human-AI collaboration coherent. The clock is running—but the pattern exists for those ready to implement it.
