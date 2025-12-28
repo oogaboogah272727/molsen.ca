@@ -2,30 +2,23 @@
 <h1>Mike Olsen</h1>
 <p class="intro">{{ .Site.Params.description }}</p>
 
+<div class="graph-legend">
+  <div class="legend-item"><span class="legend-dot framework"></span> Framework</div>
+  <div class="legend-item"><span class="legend-dot pattern"></span> Pattern</div>
+  <div class="legend-item"><span class="legend-dot problem"></span> Problem</div>
+  <div class="legend-item"><span class="legend-dot concept"></span> Concept</div>
+  <div class="legend-item"><span class="legend-dot claim"></span> Claim</div>
+  <div class="legend-item"><span class="legend-dot article"></span> Article</div>
+</div>
+
+<p class="graph-instructions">Click articles to read. Click concepts to see relationships. Drag to rearrange. Scroll to zoom.</p>
+
+<div id="graph-container"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="/js/graph.js"></script>
+
 {{ with .Content }}
   {{ . }}
 {{ end }}
-
-<h2 class="section-title">Papers</h2>
-<ul class="paper-list">
-  {{ range first 3 (where .Site.RegularPages "Section" "papers") }}
-    <li>
-      <p class="paper-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-      {{ with .Params.description }}<p class="paper-description">{{ . }}</p>{{ end }}
-      <p class="paper-meta">{{ .Params.date | time.Format "January 2006" }}</p>
-    </li>
-  {{ end }}
-</ul>
-<p><a href="/papers/">All papers →</a></p>
-
-<h2 class="section-title">Recent Writing</h2>
-<ul class="post-list">
-  {{ range first 3 (where .Site.RegularPages "Section" "writing") }}
-    <li>
-      <p class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-      <p class="post-meta">{{ .Date | time.Format "January 2, 2006" }}</p>
-    </li>
-  {{ end }}
-</ul>
-<p><a href="/writing/">All writing →</a></p>
 {{ end }}
