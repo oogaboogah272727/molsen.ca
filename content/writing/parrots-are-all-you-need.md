@@ -7,7 +7,7 @@ type: foundational
 tags: ["AI Governance", "Organizational Change"]
 ---
 
-> *This essay has been revised to reflect how my thinking has developed since its original publication. Cross-references to later work represent the current state of an evolving framework. The version here is authoritative; [the original](https://digital-experience-latam.cioreview.com/cxoinsight/parrots-are-all-you-need-nid-38213-cid-351.html) captured where I was in January 2023. Note also that this was written before "[blank] is all you need" became a very tired cliche. Yes, I would do it differently now.*
+> *This essay has been revised to reflect how my thinking has developed since its original publication. Cross-references to later work represent the current state of an evolving framework. The version here is authoritative; <a href="https://digital-experience-latam.cioreview.com/cxoinsight/parrots-are-all-you-need-nid-38213-cid-351.html" target="_blank">the original</a> captured where I was in January 2023. Note also that this was written before "[blank] is all you need" became a very tired cliche. Yes, I would do it differently now.*
 
 There are three types of CIOs: those who are convinced that AI is an urgent priority, those who will soon realize they need to make AI an urgent priority, and those who will be out of work in two years.
 
