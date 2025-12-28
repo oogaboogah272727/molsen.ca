@@ -6,17 +6,26 @@
 {{ end }}
 
 {{ $types := slice "foundational" "core" "theoretical" "empirical" "applied" "practice" }}
-{{ $typeLabels := dict "foundational" "Foundational" "core" "Core Framework" "theoretical" "Theoretical" "empirical" "Empirical" "applied" "Applied" "practice" "Practice" }}
+{{ $typeLabels := dict "foundational" "Foundational" "core" "Core" "theoretical" "Theoretical" "empirical" "Empirical" "applied" "Applied" "practice" "Practice" }}
 {{ $typeDescriptions := dict "foundational" "Defining concepts and core distinctions" "core" "The central frameworks" "theoretical" "Extending the foundations" "empirical" "Evidence and experiments" "applied" "Applying the framework" "practice" "Lessons from experience" }}
 
-{{ range $type := $types }}
-  {{ $pages := where $.Pages "Params.type" $type }}
-  {{ if $pages }}
-  <section class="article-group">
-    <h2 class="group-heading">
+<div class="article-tabs">
+  {{ range $i, $type := $types }}
+    {{ $pages := where $.Pages "Params.type" $type }}
+    {{ if $pages }}
+    <button class="tab-button{{ if eq $i 0 }} active{{ end }}" data-tab="{{ $type }}">
       <span class="type-dot {{ $type }}"></span>
       {{ index $typeLabels $type }}
-    </h2>
+      <span class="tab-count">{{ len $pages }}</span>
+    </button>
+    {{ end }}
+  {{ end }}
+</div>
+
+{{ range $i, $type := $types }}
+  {{ $pages := where $.Pages "Params.type" $type }}
+  {{ if $pages }}
+  <section class="article-group{{ if eq $i 0 }} active{{ end }}" data-tab-content="{{ $type }}">
     <p class="group-description">{{ index $typeDescriptions $type }}</p>
     <ul class="article-list">
       {{ range $pages.ByDate.Reverse }}
@@ -36,5 +45,16 @@
   </section>
   {{ end }}
 {{ end }}
+
+<script>
+document.querySelectorAll('.tab-button').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.article-group').forEach(g => g.classList.remove('active'));
+    button.classList.add('active');
+    document.querySelector(`[data-tab-content="${button.dataset.tab}"]`).classList.add('active');
+  });
+});
+</script>
 
 {{ end }}
