@@ -1,5 +1,5 @@
 // Knowledge Graph Visualization
-// Articles + Themes, with multiple relationship types
+// Articles with core and thematic connections
 
 document.addEventListener('DOMContentLoaded', function() {
   const container = document.getElementById('graph-container');
@@ -15,23 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
     theoretical: '#6b8e23',
     empirical: '#f59e0b',
     applied: '#4a90a4',
-    practice: '#64748b',
-    theme: '#e2e8f0'
+    practice: '#64748b'
   };
 
   // Link colors by type
   const linkColors = {
-    extends: '#666',
-    implements: '#666',
-    requires: '#666',
-    cites: '#888',
-    supports: '#888',
-    motivates: '#888',
-    prerequisite: '#9ca3af',
-    contextualizes: '#9ca3af',
-    'same-domain': '#9ca3af',
-    parallel: '#9ca3af',
-    theme: '#d1d5db'
+    core: '#666',
+    soft: '#9ca3af'
   };
 
   const svg = d3.select('#graph-container')
@@ -50,45 +40,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }));
 
   // Arrow markers
-  const markerTypes = ['strong', 'weak', 'theme'];
+  const markerTypes = ['core', 'soft'];
   svg.append('defs').selectAll('marker')
     .data(markerTypes)
     .join('marker')
     .attr('id', d => `arrow-${d}`)
     .attr('viewBox', '0 -5 10 10')
-    .attr('refX', d => d === 'theme' ? 18 : 22)
+    .attr('refX', 22)
     .attr('refY', 0)
     .attr('markerWidth', 5)
     .attr('markerHeight', 5)
     .attr('orient', 'auto')
     .append('path')
-    .attr('fill', d => d === 'theme' ? '#d1d5db' : d === 'weak' ? '#9ca3af' : '#888')
+    .attr('fill', d => d === 'soft' ? '#9ca3af' : '#666')
     .attr('d', 'M0,-4L8,0L0,4');
 
   d3.json('/js/knowledge-graph.json').then(data => {
-    // Separate theme and article nodes for different forces
-    const themeNodes = data.nodes.filter(n => n.type === 'theme');
-    const articleNodes = data.nodes.filter(n => n.type !== 'theme');
-
-    // Create simulation with custom forces
+    // Create simulation
     const simulation = d3.forceSimulation(data.nodes)
-      .force('link', d3.forceLink(data.links).id(d => d.id).distance(d =>
-        d.type === 'theme' ? 80 : 120
-      ))
-      .force('charge', d3.forceManyBody().strength(d =>
-        d.type === 'theme' ? -200 : -400
-      ))
+      .force('link', d3.forceLink(data.links).id(d => d.id).distance(100))
+      .force('charge', d3.forceManyBody().strength(-350))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(d =>
-        d.type === 'theme' ? 30 : 50
-      ))
-      // Pull themes toward edges
-      .force('themeX', d3.forceX(d =>
-        d.type === 'theme' ? (d.id.includes('epistemology') || d.id.includes('ai-governance') ? width * 0.15 : width * 0.85) : width / 2
-      ).strength(d => d.type === 'theme' ? 0.1 : 0))
-      .force('themeY', d3.forceY(d =>
-        d.type === 'theme' ? (d.id.includes('epistemology') || d.id.includes('organizational') ? height * 0.2 : height * 0.8) : height / 2
-      ).strength(d => d.type === 'theme' ? 0.1 : 0));
+      .force('collision', d3.forceCollide().radius(45));
 
     // Draw links
     const link = g.append('g')
@@ -100,21 +73,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     link.append('line')
       .attr('stroke', d => linkColors[d.type] || '#999')
-      .attr('stroke-opacity', d => d.type === 'theme' ? 0.4 : 0.7)
-      .attr('stroke-width', d => d.type === 'theme' ? 1 : 1.5)
-      .attr('stroke-dasharray', d =>
-        d.type === 'theme' ? '3,3' :
-        ['prerequisite', 'contextualizes', 'same-domain', 'parallel'].includes(d.type) ? '5,3' :
-        'none'
-      )
-      .attr('marker-end', d =>
-        d.type === 'theme' ? 'url(#arrow-theme)' :
-        ['prerequisite', 'contextualizes', 'same-domain', 'parallel'].includes(d.type) ? 'url(#arrow-weak)' :
-        'url(#arrow-strong)'
-      );
+      .attr('stroke-opacity', 0.7)
+      .attr('stroke-width', d => d.type === 'core' ? 1.5 : 1)
+      .attr('stroke-dasharray', d => d.type === 'soft' ? '5,3' : 'none')
+      .attr('marker-end', d => `url(#arrow-${d.type})`);
 
-    // Link labels (only for non-theme links)
-    link.filter(d => d.type !== 'theme' && d.label)
+    // Link labels
+    link.filter(d => d.label)
       .append('text')
       .text(d => d.label)
       .attr('font-size', '8px')
@@ -132,34 +97,20 @@ document.addEventListener('DOMContentLoaded', function() {
       .style('cursor', d => d.url ? 'pointer' : 'default')
       .call(drag(simulation));
 
-    // Different shapes for different node types
-    node.each(function(d) {
-      const el = d3.select(this);
-      if (d.type === 'theme') {
-        // Diamond shape for themes
-        el.append('polygon')
-          .attr('points', '0,-12 12,0 0,12 -12,0')
-          .attr('fill', colors.theme)
-          .attr('stroke', '#cbd5e1')
-          .attr('stroke-width', 2);
-      } else {
-        // Circle for articles
-        el.append('circle')
-          .attr('r', d.type === 'core' || d.type === 'foundational' ? 12 : 9)
-          .attr('fill', colors[d.type] || '#666')
-          .attr('stroke', '#fff')
-          .attr('stroke-width', 2);
-      }
-    });
+    // Circle nodes for articles
+    node.append('circle')
+      .attr('r', d => d.type === 'core' || d.type === 'foundational' ? 12 : 9)
+      .attr('fill', d => colors[d.type] || '#666')
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 2);
 
     // Node labels
     node.append('text')
       .text(d => d.label)
-      .attr('x', d => d.type === 'theme' ? 16 : 15)
+      .attr('x', 15)
       .attr('y', 4)
-      .attr('font-size', d => d.type === 'theme' ? '10px' : '11px')
-      .attr('fill', d => d.type === 'theme' ? '#64748b' : '#333')
-      .attr('font-weight', d => d.type === 'theme' ? '500' : 'normal')
+      .attr('font-size', '11px')
+      .attr('fill', '#333')
       .attr('font-family', 'system-ui, -apple-system, sans-serif');
 
     // Click to navigate (articles only)
@@ -169,12 +120,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Hover effects
     node.on('mouseover', function(event, d) {
-      if (d.type !== 'theme') {
-        d3.select(this).select('circle')
-          .transition()
-          .duration(200)
-          .attr('r', d.type === 'core' || d.type === 'foundational' ? 16 : 13);
-      }
+      d3.select(this).select('circle')
+        .transition()
+        .duration(200)
+        .attr('r', d.type === 'core' || d.type === 'foundational' ? 16 : 13);
 
       // Show tooltip
       if ((d.defines && d.defines.length > 0) || d.description) {
@@ -199,16 +148,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     node.on('mouseout', function(event, d) {
-      if (d.type !== 'theme') {
-        d3.select(this).select('circle')
-          .transition()
-          .duration(200)
-          .attr('r', d.type === 'core' || d.type === 'foundational' ? 12 : 9);
-      }
+      d3.select(this).select('circle')
+        .transition()
+        .duration(200)
+        .attr('r', d.type === 'core' || d.type === 'foundational' ? 12 : 9);
 
       hideTooltip();
 
-      link.select('line').attr('stroke-opacity', l => l.type === 'theme' ? 0.4 : 0.7);
+      link.select('line').attr('stroke-opacity', 0.7);
       link.select('text').attr('fill-opacity', 1);
       node.attr('opacity', 1);
     });

@@ -368,14 +368,6 @@ footer .container {
 .legend-dot.applied { background: #4a90a4; }
 .legend-dot.practice { background: #64748b; }
 
-.legend-diamond {
-  width: 10px;
-  height: 10px;
-  background: #e2e8f0;
-  border: 1px solid #cbd5e1;
-  transform: rotate(45deg);
-}
-
 .graph-instructions {
   font-size: 0.85rem;
   color: var(--text-tertiary);
