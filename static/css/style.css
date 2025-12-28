@@ -400,4 +400,22 @@ footer .container {
   h1 {
     font-size: 1.85rem;
   }
+
+  #graph-container {
+    width: calc(100vw - 1rem);
+    min-height: 400px;
+    margin: 0.5rem 0 1rem 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .graph-legend {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .graph-instructions {
+    font-size: 0.75rem;
+  }
 }
