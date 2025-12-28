@@ -56,36 +56,35 @@ document.addEventListener('DOMContentLoaded', function() {
     .attr('d', 'M0,-4L8,0L0,4');
 
   d3.json('/js/knowledge-graph.json').then(data => {
-    // Extract all unique concepts
-    var allConcepts = [];
-    data.nodes.forEach(function(n) {
-      if (n.defines) {
-        n.defines.forEach(function(c) {
-          if (allConcepts.indexOf(c) === -1) allConcepts.push(c);
-        });
-      }
-    });
-    allConcepts.sort();
+    // Article types matching the legend
+    var articleTypes = [
+      { id: 'foundational', label: 'Foundational', color: '#8b5cf6' },
+      { id: 'core', label: 'Core', color: '#1e293b' },
+      { id: 'theoretical', label: 'Theoretical', color: '#6b8e23' },
+      { id: 'empirical', label: 'Empirical', color: '#f59e0b' },
+      { id: 'applied', label: 'Applied', color: '#4a90a4' },
+      { id: 'practice', label: 'Practice', color: '#64748b' }
+    ];
 
-    // Create concept filter UI
+    // Create type filter UI
     var filterContainer = document.getElementById('concept-filter');
     if (filterContainer) {
       var allBtn = document.createElement('button');
       allBtn.className = 'concept-btn active';
       allBtn.textContent = 'All';
-      allBtn.setAttribute('data-concept', '');
+      allBtn.setAttribute('data-type', '');
       filterContainer.appendChild(allBtn);
 
-      allConcepts.forEach(function(concept) {
+      articleTypes.forEach(function(type) {
         var btn = document.createElement('button');
         btn.className = 'concept-btn';
-        btn.textContent = concept;
-        btn.setAttribute('data-concept', concept);
+        btn.innerHTML = '<span class="filter-dot" style="background:' + type.color + '"></span>' + type.label;
+        btn.setAttribute('data-type', type.id);
         filterContainer.appendChild(btn);
       });
     }
 
-    var selectedConcept = null;
+    var selectedType = null;
 
     // Create simulation
     const simulation = d3.forceSimulation(data.nodes)
@@ -149,23 +148,24 @@ document.addEventListener('DOMContentLoaded', function() {
       window.open(d.url, '_blank');
     });
 
-    // Concept filter click handlers
+    // Type filter click handlers
     if (filterContainer) {
       filterContainer.addEventListener('click', function(e) {
-        if (e.target.classList.contains('concept-btn')) {
+        var btn = e.target.closest('.concept-btn');
+        if (btn) {
           // Update active state
           filterContainer.querySelectorAll('.concept-btn').forEach(function(b) {
             b.classList.remove('active');
           });
-          e.target.classList.add('active');
+          btn.classList.add('active');
 
-          var concept = e.target.getAttribute('data-concept');
-          selectedConcept = concept || null;
+          var type = btn.getAttribute('data-type');
+          selectedType = type || null;
 
-          // Filter nodes
-          if (selectedConcept) {
+          // Filter nodes by type
+          if (selectedType) {
             node.attr('opacity', function(d) {
-              return d.defines && d.defines.indexOf(selectedConcept) !== -1 ? 1 : 0.15;
+              return d.type === selectedType ? 1 : 0.15;
             });
             link.select('line').attr('stroke-opacity', 0.1);
             link.select('text').attr('fill-opacity', 0.1);

@@ -401,9 +401,19 @@ footer .container {
 }
 
 .concept-btn.active {
-  background: var(--accent);
-  color: white;
-  border-color: var(--accent);
+  background: var(--background-alt);
+  color: var(--text);
+  border-color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.filter-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+  vertical-align: middle;
 }
 
 /* Writing Section */
