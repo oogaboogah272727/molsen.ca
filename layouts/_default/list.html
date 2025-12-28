@@ -5,20 +5,6 @@
   {{ . }}
 {{ end }}
 
-{{ if eq .Section "papers" }}
-<ul class="paper-list">
-  {{ range .Pages }}
-    <li>
-      <p class="paper-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-      {{ with .Params.description }}<p class="paper-description">{{ . }}</p>{{ end }}
-      <div class="links">
-        {{ with .Params.pdf }}<a href="{{ . }}">PDF</a>{{ end }}
-        {{ with .Params.doi }}<a href="https://doi.org/{{ . }}">DOI</a>{{ end }}
-      </div>
-    </li>
-  {{ end }}
-</ul>
-{{ else }}
 <ul class="post-list">
   {{ range .Pages }}
     <li>
@@ -27,5 +13,4 @@
     </li>
   {{ end }}
 </ul>
-{{ end }}
 {{ end }}

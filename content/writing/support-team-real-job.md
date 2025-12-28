@@ -3,6 +3,8 @@ title: "The Real Job of Support Teams in Professional Services"
 date: 2020-12-15
 description: "Support teams exist to protect the scarcest resource in professional services: the time professionals spend not working."
 originalPublication: "Originally published December 2020"
+type: practice
+tags: ["Organizational Change", "Professional Practice"]
 ---
 
 In 2020, a number of professionals at our firm billed more than 100 hours in a single week. Another large group hit 90 hours at least once. Factor in eating, hygiene, sleep, and overhead time, and 100 billable hours requires about 95% of a week's 168 hours devoted to work and survival.

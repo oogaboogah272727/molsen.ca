@@ -3,6 +3,8 @@ title: "Parrots Are All You Need"
 date: 2023-01-15
 description: "Why generative AI will introduce greater change, faster, than the Internet itself—and what that means for knowledge workers."
 originalPublication: "Originally published January 2023"
+type: foundational
+tags: ["AI Governance", "Organizational Change"]
 ---
 
 > *This essay has been revised to reflect how my thinking has developed since its original publication. Cross-references to later work represent the current state of an evolving framework. The version here is authoritative; the original captured where I was in January 2023.*

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ with .Content }}
+  <div class="section-intro">{{ . }}</div>
+{{ end }}
+
+{{ $types := slice "foundational" "core" "theoretical" "empirical" "applied" "practice" }}
+{{ $typeLabels := dict "foundational" "Foundational" "core" "Core Framework" "theoretical" "Theoretical" "empirical" "Empirical" "applied" "Applied" "practice" "Practice" }}
+{{ $typeDescriptions := dict "foundational" "Defining concepts and core distinctions" "core" "The central frameworks" "theoretical" "Extending the foundations" "empirical" "Evidence and experiments" "applied" "Applying the framework" "practice" "Lessons from experience" }}
+
+{{ range $type := $types }}
+  {{ $pages := where $.Pages "Params.type" $type }}
+  {{ if $pages }}
+  <section class="article-group">
+    <h2 class="group-heading">
+      <span class="type-dot {{ $type }}"></span>
+      {{ index $typeLabels $type }}
+    </h2>
+    <p class="group-description">{{ index $typeDescriptions $type }}</p>
+    <ul class="article-list">
+      {{ range $pages.ByDate.Reverse }}
+      <li class="article-item">
+        <a href="{{ .RelPermalink }}" class="article-link">
+          <span class="article-title">{{ .Title }}</span>
+          {{ with .Params.description }}<span class="article-description">{{ . }}</span>{{ end }}
+        </a>
+        {{ with .Params.tags }}
+        <div class="article-tags">
+          {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ end }}

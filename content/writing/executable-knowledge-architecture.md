@@ -3,6 +3,8 @@ title: "Executable Knowledge Architecture: A Pattern for AI-Augmented Consulting
 date: 2025-01-25
 description: "A framework for integrating AI into professional consulting that preserves expertise, ensures reproducibility, and closes the governance gap between AI capabilities and client needs."
 originalPublication: "Originally published January 2025"
+type: core
+tags: ["AI Governance", "Organizational Change"]
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

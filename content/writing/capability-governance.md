@@ -2,7 +2,8 @@
 title: "Framework for Capability Governance in Technical Consulting"
 date: 2024-12-27
 description: "A framework for governing AI-assisted work in technical professions. When someone asks 'how did you arrive at this?', can you answer?"
-pdf: "/papers/capability-governance.pdf"
+type: core
+tags: ["AI Governance", "Professional Practice"]
 ---
 
 A client asks: "How did you arrive at this recommendation?"

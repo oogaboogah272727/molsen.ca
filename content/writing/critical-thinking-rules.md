@@ -2,6 +2,8 @@
 title: "Mike's Rules for Critical Thinking"
 date: 2025-12-28
 description: "A working set of rules for critical thinking organized into three domains: foundation, analysis, and engagement. Written for non-academics who want a down-to-earth framework."
+type: practice
+tags: ["Epistemic Rigor", "Professional Practice"]
 ---
 
 I'm seeing a lot of references to "critical thinking" in my social media feeds, but often those most excited about critical thought also hold ideas that are strong evidence of its absence. "Think critically! Examine everything! The world is flat!" Those people define "critical thinking" differently than I do.

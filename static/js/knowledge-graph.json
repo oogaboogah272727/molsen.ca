@@ -33,6 +33,14 @@
       "themes": ["AI Governance", "Organizational Change"]
     },
     {
+      "id": "capability-governance",
+      "label": "Capability Governance Framework",
+      "url": "/writing/capability-governance/",
+      "defines": ["Method-Bearing vs Conclusion", "Reliability Verification", "Method Exposure"],
+      "type": "core",
+      "themes": ["AI Governance", "Professional Practice"]
+    },
+    {
       "id": "knowledge-capability",
       "label": "Knowledge as Capability",
       "url": "/writing/knowledge-as-capability/",
@@ -129,6 +137,9 @@
     {"source": "eka", "target": "strong-oracle-trap", "type": "core", "label": "addresses"},
     {"source": "stochasticity", "target": "oracle-assistant", "type": "core", "label": "evidence for"},
     {"source": "consulting-threat", "target": "eka", "type": "core", "label": "motivates"},
+    {"source": "capability-governance", "target": "oracle-assistant", "type": "core", "label": "extends"},
+    {"source": "capability-governance", "target": "knowledge-capability", "type": "core", "label": "uses"},
+    {"source": "eka", "target": "capability-governance", "type": "core", "label": "implements"},
     {"source": "ai-first", "target": "oracle-assistant", "type": "soft", "label": "relates to"},
 
     {"source": "agent-tacitness", "target": "knowledge-capability", "type": "core", "label": "extends"},

@@ -3,6 +3,8 @@ title: "The Remote Work Formula"
 date: 2021-10-15
 description: "Individual flexibility and autonomy matter. But so does group consideration. The formula isn't complicated."
 originalPublication: "Originally published October 2021"
+type: practice
+tags: ["Organizational Change", "Professional Practice"]
 ---
 
 > *This essay may be revised as my thinking develops. The version here is authoritative.*

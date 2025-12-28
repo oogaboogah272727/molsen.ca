@@ -3,6 +3,8 @@ title: "Tacit Space Shrinkage: When AI Articulates the Inexpressible"
 date: 2025-01-22
 description: "As AI capabilities expand, the domain of knowledge that organizations cannot express or operationalize is shrinking—with profound implications for expertise and governance."
 originalPublication: "Originally published January 2025"
+type: theoretical
+tags: ["Epistemic Rigor", "Organizational Change"]
 ---
 
 > *This essay has been revised to integrate later developments in my thinking, including the foundational claims it now references. The version here is authoritative.*

@@ -3,6 +3,8 @@ title: "Stochastic in Form, Deterministic in Function"
 date: 2025-01-20
 description: "700 iterations across seven models. 25% accuracy asking directly. 100% accuracy asking for code. The gap tells you everything about how to use these tools."
 originalPublication: "Originally published January 2025"
+type: empirical
+tags: ["Epistemic Rigor", "AI Governance"]
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

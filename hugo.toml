@@ -8,13 +8,9 @@ title = 'Mike Olsen'
 
 [menu]
   [[menu.main]]
-    name = "Papers"
-    url = "/papers/"
-    weight = 1
-  [[menu.main]]
     name = "Writing"
     url = "/writing/"
-    weight = 2
+    weight = 1
   [[menu.main]]
     name = "About"
     url = "/about/"

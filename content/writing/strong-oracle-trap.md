@@ -3,6 +3,8 @@ title: "The Strong Oracle Trap"
 date: 2025-01-25
 description: "Sophisticated AI dialogue feels like it solves the verification problem. It doesn't. Understanding why requires seeing oracle mode as a spectrum—and recognizing what tools can and cannot fix."
 originalPublication: "Originally published January 2025"
+type: core
+tags: ["Epistemic Rigor", "AI Governance"]
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

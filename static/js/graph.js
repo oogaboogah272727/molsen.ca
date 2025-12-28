@@ -113,9 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
       .attr('fill', '#333')
       .attr('font-family', 'system-ui, -apple-system, sans-serif');
 
-    // Click to navigate (articles only)
+    // Click to navigate (articles only) - opens in new tab
     node.filter(d => d.url).on('click', (event, d) => {
-      window.location.href = d.url;
+      window.open(d.url, '_blank');
     });
 
     // Hover effects

@@ -3,6 +3,8 @@ title: "AI-First Software: Engineering the Post-Interface Era"
 date: 2024-04-04
 description: "Generative AI has solved language. That's enough to fundamentally change software design—not in the future, but right now."
 originalPublication: "Originally published April 2024"
+type: applied
+tags: ["AI Governance"]
 ---
 
 > *This essay has been revised to reflect how my thinking has developed since its original publication. The version here is authoritative.*
