@@ -55,7 +55,7 @@ This is the category error that makes Oracle mode dangerous. We treat AI as if i
 
 ---
 
-## Assistant Mode: A Different Ask
+## Assistant Mode: A Different Request
 
 Assistant mode changes what we ask AI to do. Instead of asking for answers, we ask for artifacts that help us produce answers.
 

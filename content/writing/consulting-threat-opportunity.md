@@ -9,7 +9,7 @@ originalPublication: "Originally published January 2025"
 
 Consulting is expert advice for hire. The entire business model rests on asymmetry: the consultant knows things the client does not. This asymmetry justifies premium fees, long engagements, and the elaborate pyramids of associates, managers, and partners that populate every major firm.
 
-AI is encoded expertise. As that encoded expertise expands in depth and accessibility, the asymmetry that sustains consulting starts to collapse. Clients can increasingly access expertise as a commodity. On demand. At marginal cost. Without the overhead of relationship management or the friction of procurement.
+AI is encoded expertise. As that encoded expertise expands in depth and accessibility, the asymmetry that sustains consulting starts to collapse. Clients can increasingly access expertise as a commodity. On demand. At marginal cost. Without the overhead of relationship management or the hassle of procurement.
 
 This isn't a future scenario. It's happening now.
 
@@ -63,11 +63,11 @@ This question identifies revenue that will simply disappear. Not revenue lost to
 
 **Second: Which expertise will need to evolve most rapidly to remain ahead of AI's advancing capabilities?**
 
-Static expertise is no longer a moat. The consultant who mastered a framework five years ago and has been deploying it since faces obsolescence. AI systems are trained on those same frameworks, can apply them more consistently, and improve continuously. The only sustainable position is expertise that evolves faster than AI can encode it. That demands continuous learning, novel synthesis, and the kind of creative judgment that remains difficult to automate.
+Static expertise is no longer a defensible advantage. The consultant who mastered a framework five years ago and has been deploying it since faces obsolescence. AI systems are trained on those same frameworks, can apply them more consistently, and improve continuously. The only sustainable position is expertise that evolves faster than AI can encode it. That demands continuous learning, novel synthesis, and the kind of creative judgment that remains difficult to automate.
 
 **Third: Which assets can we build that remain competitive as AI advances?**
 
-This question points toward the few genuine moats available: brand reputation that clients trust implicitly, relationships that transcend transactional value, scarce physical assets or access rights, network effects that become more valuable as they grow. These assets cannot be easily replicated by a senior expert with an AI subscription. They represent the foundation for whatever consulting business model survives this transition.
+This question points toward the few genuine defensible advantages available: brand reputation that clients trust implicitly, relationships that transcend transactional value, scarce physical assets or access rights, network effects that become more valuable as they grow. These assets cannot be easily replicated by a senior expert with an AI subscription. They represent the foundation for whatever consulting business model survives this transition.
 
 ---
 

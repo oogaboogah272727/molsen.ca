@@ -33,7 +33,7 @@ User interfaces based on predetermined fields and buttons operate on an assumpti
 
 Generative AI's ability to understand natural language dissolves this constraint. It permits unconstrained interaction. "What do you want to do?" becomes a legitimate entry point—not a search box that matches keywords, but genuine comprehension of intent.
 
-But even that undersells the opportunity. A better entry point isn't a question at all. It's a statement: "It's Tuesday, and based on your goals, you need to see this and take this action." The system that knows you, that has context about your work and your patterns and your objectives, doesn't wait for you to ask. It anticipates. It surfaces what matters before you know to look for it.
+But even that undersells the opportunity. A better entry point isn't a question at all. It's a statement: "It's Tuesday, and based on your goals, you need to see this and take this action." The system that knows you, that has context about your work and your patterns and your objectives, doesn't wait for you to ask. It anticipates. It presents what matters before you know to look for it.
 
 This isn't science fiction. This is engineering.
 
