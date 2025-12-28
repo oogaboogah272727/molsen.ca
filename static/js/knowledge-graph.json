@@ -9,6 +9,14 @@
       "themes": ["Epistemic Rigor", "AI Governance"]
     },
     {
+      "id": "parrots",
+      "label": "Parrots Are All You Need",
+      "url": "/writing/parrots-are-all-you-need/",
+      "defines": ["Stochastic Parrot", "Knowledge Work Vulnerability"],
+      "type": "foundational",
+      "themes": ["AI Governance", "Organizational Change"]
+    },
+    {
       "id": "strong-oracle-trap",
       "label": "The Strong Oracle Trap",
       "url": "/writing/strong-oracle-trap/",
@@ -28,8 +36,16 @@
       "id": "knowledge-capability",
       "label": "Knowledge as Capability",
       "url": "/writing/knowledge-as-capability/",
-      "defines": ["Knowledge as Capability", "Agent-Relative Tacitness", "Human-AI Composite Knowledge"],
+      "defines": ["Knowledge as Capability", "Human-AI Composite Knowledge"],
       "type": "foundational",
+      "themes": ["Epistemic Rigor"]
+    },
+    {
+      "id": "agent-tacitness",
+      "label": "Agent-Relative Tacitness",
+      "url": "/writing/agent-relative-tacitness/",
+      "defines": ["Agent-Relative Tacitness", "Encoding-Decoding Asymmetry", "Representational Path"],
+      "type": "theoretical",
       "themes": ["Epistemic Rigor"]
     },
     {
@@ -47,6 +63,14 @@
       "defines": ["Stochastic Form/Deterministic Function"],
       "type": "empirical",
       "themes": ["Epistemic Rigor", "AI Governance"]
+    },
+    {
+      "id": "table-extraction",
+      "label": "AI Table Extraction Comparison",
+      "url": "/writing/ai-table-extraction-comparison/",
+      "defines": ["Semantic vs Pattern Matching", "False Positive Costs"],
+      "type": "empirical",
+      "themes": ["AI Governance"]
     },
     {
       "id": "consulting-threat",
@@ -103,10 +127,17 @@
     {"source": "eka", "target": "knowledge-capability", "type": "core", "label": "requires"},
     {"source": "eka", "target": "stochasticity", "type": "core", "label": "exploits"},
     {"source": "eka", "target": "strong-oracle-trap", "type": "core", "label": "addresses"},
-    {"source": "tacit-shrinkage", "target": "knowledge-capability", "type": "core", "label": "extends"},
     {"source": "stochasticity", "target": "oracle-assistant", "type": "core", "label": "evidence for"},
     {"source": "consulting-threat", "target": "eka", "type": "core", "label": "motivates"},
     {"source": "ai-first", "target": "oracle-assistant", "type": "soft", "label": "relates to"},
+
+    {"source": "agent-tacitness", "target": "knowledge-capability", "type": "core", "label": "extends"},
+    {"source": "tacit-shrinkage", "target": "agent-tacitness", "type": "core", "label": "extends"},
+    {"source": "parrots", "target": "knowledge-capability", "type": "soft", "label": "references"},
+    {"source": "parrots", "target": "agent-tacitness", "type": "soft", "label": "references"},
+    {"source": "parrots", "target": "consulting-threat", "type": "soft", "label": "same domain"},
+    {"source": "table-extraction", "target": "ai-first", "type": "soft", "label": "same domain"},
+    {"source": "table-extraction", "target": "oracle-assistant", "type": "soft", "label": "evidence for"},
 
     {"source": "critical-thinking", "target": "oracle-assistant", "type": "soft", "label": "skill for"},
     {"source": "critical-thinking", "target": "stochasticity", "type": "soft", "label": "skill for"},
