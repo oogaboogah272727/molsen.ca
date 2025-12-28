@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const container = document.getElementById('graph-container');
   if (!container) return;
 
-  const width = container.clientWidth;
-  const height = Math.max(550, window.innerHeight - 250);
+  // Use fixed dimensions for viewBox, CSS handles responsive sizing
+  const width = 1000;
+  const height = 600;
 
   // Color scheme
   const colors = {
@@ -26,9 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const svg = d3.select('#graph-container')
     .append('svg')
-    .attr('width', width)
-    .attr('height', height)
-    .attr('viewBox', [0, 0, width, height]);
+    .attr('viewBox', [0, 0, width, height])
+    .attr('preserveAspectRatio', 'xMidYMid meet');
 
   const g = svg.append('g');
 
