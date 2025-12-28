@@ -1,8 +1,8 @@
 ---
 title: "Existential Threat to Consulting = Huge Opportunity"
-date: 2025-01-15
+date: 2024-03-12
 description: "How AI-encoded expertise disrupts the consulting industry's traditional value proposition, and what firms need to do about it."
-originalPublication: "Originally published January 2025"
+originalPublication: "Originally published March 2024"
 type: applied
 tags: ["Organizational Change", "Professional Practice"]
 ---

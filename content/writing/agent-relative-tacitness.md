@@ -1,8 +1,8 @@
 ---
 title: "Agent-Relative Tacitness: A New Framework"
-date: 2025-01-20
+date: 2024-12-03
 description: "Rethinking what makes knowledge tacit or explicit—and why the answer depends on who is doing the knowing."
-originalPublication: "Originally published January 2025"
+originalPublication: "Originally published December 2024"
 type: theoretical
 tags: ["Epistemic Rigor"]
 ---

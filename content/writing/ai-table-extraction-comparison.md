@@ -1,8 +1,8 @@
 ---
 title: "Evaluating AI Table Extraction: Claude vs Docling vs ScaleDP"
-date: 2025-01-15
+date: 2024-02-20
 description: "A practical comparison of three table extraction approaches reveals surprising accuracy gaps that practitioners need to understand before selecting tools for document processing at scale."
-originalPublication: "Originally published January 2025"
+originalPublication: "Originally published February 2024"
 type: empirical
 tags: ["AI Governance"]
 ---

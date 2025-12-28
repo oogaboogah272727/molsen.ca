@@ -1,8 +1,8 @@
 ---
 title: "AI as Oracle vs. Assistant: Two Modes of Deployment"
-date: 2025-01-24
+date: 2024-11-05
 description: "The fundamental choice in how you use AI determines whether you can govern it. Oracle mode creates verification problems. Assistant mode solves them."
-originalPublication: "Originally published January 2025"
+originalPublication: "Originally published November 2024"
 type: foundational
 tags: ["Epistemic Rigor", "AI Governance"]
 ---
