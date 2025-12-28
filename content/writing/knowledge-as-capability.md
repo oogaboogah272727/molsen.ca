@@ -23,31 +23,27 @@ Everything else I've written about Executable Knowledge Architecture and agent-r
 
 ## The Traditional Framework
 
-The philosophical definition of knowledge—justified true belief (JTB)—requires three conditions:
+Philosophers have debated the nature of knowledge for millennia, and I'm not going to pretend that "justified true belief" is the settled answer. It isn't. Gettier demolished the sufficiency of JTB in 1963, and the field has spent sixty years proposing alternatives: reliabilism, virtue epistemology, tracking theories, knowledge-first approaches. The debates are sophisticated and unresolved.
 
-1. **Belief**: An agent holds a mental state affirming a proposition
-2. **Truth**: The proposition corresponds to reality
-3. **Justification**: The agent has adequate reasons for the belief
+But here's what matters for our purposes: all these frameworks share an assumption. They assume agents with mental states. Whether you require justification, reliable belief-forming processes, intellectual virtues, or sensitivity to truth, you're still asking about the epistemic status of a *believer*. The debates are about what conditions beliefs must meet to constitute knowledge.
 
-This framework asks what must be true for someone to *know* something rather than merely *believe* it.
-
-Knowledge management adopted this framework, and it served well for human-centric contexts. KM practice treats knowledge as something that can be:
+Knowledge management inherited this assumption, even if it never engaged deeply with the post-Gettier complexities. KM practice treats knowledge as something that can be:
 - Extracted (because it's a belief state in someone's head)
 - Documented (because it's propositional)
 - Verified (because it has truth conditions)
 - Transferred (because the same proposition can be believed by another)
 
-These assumptions work reasonably well when all your knowers are humans. But they become limiting when AI enters the picture. Not because they were wrong. Because they were scoped to agents with mental states.
+These assumptions work reasonably well when all your knowers are humans. But they become limiting when AI enters the picture. Not because epistemologists got the debates wrong. Because the entire framework—JTB and its successors alike—was scoped to agents with mental states.
 
 ---
 
-## Where JTB Reaches Its Limits
+## Where Belief-Based Frameworks Reach Their Limits
 
-Even in human-only contexts, the JTB framework has recognized limitations. KM practitioners have worked around these for years, but they're worth naming because they point toward the extension we need.
+Even in human-only contexts, belief-based frameworks have recognized limitations. KM practitioners have worked around these for years, but they're worth naming because they point toward the extension we need.
 
 ### Organizational Knowledge Is Distributed
 
-JTB requires a believing agent. When we say "the organization knows how to manufacture semiconductors," who is the believer?
+Belief-based epistemology requires a believing agent. When we say "the organization knows how to manufacture semiconductors," who is the believer?
 
 Not the CEO, who may not understand the process. Not any individual engineer, who knows only their part. Not the documentation, which is inert. The organization *does* the manufacturing through coordinated execution across people, systems, processes, and artifacts.
 
@@ -55,7 +51,7 @@ KM has always recognized this. That's why we talk about organizational capabilit
 
 ### Practical Knowledge Is Validated by Outcomes
 
-JTB requires truth conditions that can be evaluated. But organizational knowledge concerns what will work, not what is timelessly true.
+Belief-based frameworks require truth conditions that can be evaluated. But organizational knowledge concerns what will work, not what is timelessly true.
 
 - "This sales approach works with enterprise clients"—true until the market shifts
 - "This architecture handles our scale requirements"—true until traffic doubles
@@ -67,11 +63,11 @@ The truth of practical knowledge is revealed by outcomes, not by correspondence 
 
 The people who can actually *do* the work often cannot fully articulate why their approach works. The expert diagnostician will give you a story about their reasoning, but the story is a reconstruction, not a transcript of their actual cognitive process.
 
-This is Polanyi's insight about tacit knowledge: we know more than we can tell. KM has embraced this distinction. But under JTB, tacit knowledge is a puzzle. How can you believe something you can't state? An operational definition dissolves the puzzle: capability can exceed articulation without contradiction.
+This is Polanyi's insight about tacit knowledge: we know more than we can tell. KM has embraced this distinction. But under belief-based frameworks, tacit knowledge is a puzzle. How can you believe something you can't state? An operational definition dissolves the puzzle: capability can exceed articulation without contradiction.
 
 ### Procedural Knowledge Resists Propositions
 
-JTB applies to propositions—statements that can be true or false. But much organizational knowledge is not propositional:
+Belief-based epistemology applies to propositions—statements that can be true or false. But much organizational knowledge is not propositional:
 
 - Knowing *how* to negotiate a difficult contract
 - Knowing *when* a project is going off track
@@ -89,17 +85,17 @@ The limitations above are manageable. KM has worked around them for years. But A
 
 ### The Belief Question Doesn't Apply
 
-If we insist on JTB, we must ask: does an LLM *believe* its outputs? This question has no answer because it's built on a category error. LLMs are not the kind of system that has beliefs. The concept simply doesn't apply.
+If we insist on belief-based definitions, we must ask: does an LLM *believe* its outputs? This question has no answer because it's built on a category error. LLMs are not the kind of system that has beliefs. The concept simply doesn't apply.
 
 But the LLM can often *do the task*. If I ask it to write a function that sorts a list, it produces working code. If I ask it to summarize a document, it produces an accurate summary.
 
-Under JTB, we have no way to describe this. Knowledge requires belief. The AI has no beliefs. Therefore the AI has no knowledge. But it demonstrably does knowledge work. The framework lacks vocabulary for what we're observing.
+Under belief-based definitions, we have no way to describe this. Knowledge requires belief. The AI has no beliefs. Therefore the AI has no knowledge. But it demonstrably does knowledge work. The framework lacks vocabulary for what we're observing.
 
 ### Capability Without Mental States
 
 AI systems have no beliefs to be justified, no truth-tracking mental states, no justification chains they construct or evaluate. What they have is the ability to produce outputs that accomplish tasks.
 
-If knowledge management stays with JTB, then AI systems remain permanently outside its scope. This happens even as they increasingly contribute to organizational capability. That's not a failure of KM. It's a scope limitation that needs addressing.
+If knowledge management stays with belief-based definitions, then AI systems remain permanently outside its scope. This happens even as they increasingly contribute to organizational capability. That's not a failure of KM. It's a scope limitation that needs addressing.
 
 ### Agent-Relative Tacitness Becomes Possible
 
@@ -111,7 +107,7 @@ For an AI trained on millions of cases: The same diagnostic conclusion may be en
 
 Tacitness is not a property of knowledge itself but of the relationship between knowledge and knower. This only makes sense if knowledge is understood as capability. A capability is tacit when the agent can exercise it but cannot articulate how. That's agent-relative by definition.
 
-Under JTB, this insight is hard to express. Under capability definitions, it becomes natural. And it opens new possibilities for human-AI collaboration in knowledge transfer.
+Under belief-based frameworks, this insight is hard to express. Under capability definitions, it becomes natural. And it opens new possibilities for human-AI collaboration in knowledge transfer.
 
 ---
 
@@ -179,11 +175,11 @@ The expert has knowledge: the capability to recognize correct outcomes, specify 
 
 Neither alone constitutes the knowledge needed to solve problems reliably. Together, through a verification loop, they produce validated solutions. The composite system has knowledge that neither component has alone.
 
-Under JTB, this is incoherent. Who "believes" the solution? Under capability definitions, it's precise. The human-AI system can reliably produce verified solutions.
+Under belief-based definitions, this is incoherent. Who "believes" the solution? Under capability definitions, it's precise. The human-AI system can reliably produce verified solutions.
 
 ### Agent-Relative Tacitness
 
-Tacit knowledge has always been a puzzle for KM. If knowledge is justified true belief, what does it mean for a belief to be "tacit"? How can you believe something you can't state?
+Tacit knowledge has always been a puzzle for KM. If knowledge requires belief, what does it mean for a belief to be "tacit"? How can you believe something you can't state?
 
 Under capability definitions, tacitness is straightforward: knowledge is tacit for agent B when no representational path exists from the knower to B. The capability exists but cannot be transferred through any available encoding and decoding process.
 
