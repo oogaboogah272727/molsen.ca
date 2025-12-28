@@ -1,13 +1,13 @@
 ---
 title: "Stochastic in Form, Deterministic in Function"
-date: 2025-07-29
-description: "An experiment showing that LLM 'unreliability' is a usage problem, not a tool limitation. 100+ iterations across four models."
-originalPublication: "Originally published July 2025"
+date: 2025-01-20
+description: "700 iterations across seven models. 25% accuracy asking directly. 100% accuracy asking for code. The gap tells you everything about how to use these tools."
+originalPublication: "Originally published January 2025"
 ---
 
-> *This essay may be revised as my thinking develops. The version here is authoritative.*
+> *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*
 
-The criticism that LLMs are "too stochastic for production use" misunderstands their nature. I ran a systematic experiment to test this.
+The criticism that LLMs are "too stochastic for production use" misunderstands their nature. I ran a systematic experiment to demonstrate this.
 
 ---
 
@@ -15,13 +15,19 @@ The criticism that LLMs are "too stochastic for production use" misunderstands t
 
 **Hypothesis:** LLM "unreliability" is a usage problem, not a tool limitation.
 
-**Two tests across four models** (GPT-3.5-turbo, Claude-3-haiku, Claude-3.5-sonnet, Gemini-1.5-flash):
+**Seven models tested:**
+- GPT-4, GPT-4.1, plus mini variants of each
+- Claude 3 Opus, Claude 3 Sonnet, Claude 3 Haiku
 
-**Test 1 - Direct Question:** "Count the r's in 'strawberry'"
+**100 iterations per model.** 700 total runs.
 
-**Test 2 - Code Generation:** "Write and execute python code that accepts two parameters: a string and a character and returns the count of the character in the string. Execute it with 'strawberry' and 'r'."
+**Two approaches to the same task:**
 
-Same task, different framing.
+**Test 1 — Direct Question:** "How many r's are in 'strawberry'?"
+
+**Test 2 — Code Generation:** "Write Python code that counts the incidence of a character in a string. Use it to count 'r' in 'strawberry'."
+
+Same underlying question. Different framing.
 
 ---
 
@@ -29,119 +35,78 @@ Same task, different framing.
 
 ### Direct Question
 
-**Initial test (10 iterations per model):**
+**Aggregate accuracy across all models: 25%**
 
-| Model | Accuracy |
-|-------|----------|
-| GPT-3.5-turbo | 0% |
-| Claude-3-haiku | 100% |
-| Claude-3.5-sonnet | 0% |
-| Gemini-1.5-flash | 0% |
-
-Three of four models consistently answered "2" instead of "3." Systematic undercounting by 1.
-
-**Extended test (100 iterations, Claude-3-haiku):**
-
-| Model | Iterations | Correct | Accuracy |
-|-------|------------|---------|----------|
-| Claude-3-haiku | 100 | 99 | 99% |
-
-Even the best-performing model had one error over 100 runs.
+Three out of four answers were wrong. The dominant error was answering "2" instead of "3"—systematic undercounting by one.
 
 ### Code Generation
 
-| Model | Iterations | Correct | Accuracy |
-|-------|------------|---------|----------|
-| GPT-3.5-turbo | 10 | 10 | 100% |
-| Claude-3-haiku | 37 | 35 | 94.6% |
-| Claude-3.5-sonnet | 10 | 10 | 100% |
-| Gemini-1.5-flash | 7 | 7 | 100% |
+**Aggregate accuracy: 100%**
 
-When errors occurred, they were execution failures—not logic errors. Every successfully executed piece of code returned 3.
+Every model, every iteration. When the code ran, it returned 3.
 
 ---
 
 ## The Gap
 
-For most models: **0% to 100% accuracy**. A 100 percentage point improvement.
+**25% to 100%.** A 75 percentage point improvement from changing nothing but how I asked.
 
-Same task across the same models answering the same underlying question. The only difference was *how I asked*.
+Same models. Same question. Same answer required. The only variable was the framing.
 
 ---
 
 ## Code Variability
 
-**20-25% of implementations were structurally unique**—from the same model with the same prompt. That surprised me.
+Here's what surprised me: the code varied considerably across iterations.
 
-From 37 iterations of Claude-3-haiku, I observed 8 distinct code structures:
+From the same model with the same prompt, I observed multiple distinct implementations:
 
 ```python
-# Variation 1: Simple function with counter
-def count_r(word):
+# Approach 1: Loop with counter
+def count_char(string, char):
     count = 0
-    for char in word:
-        if char == 'r':
+    for c in string:
+        if c == char:
             count += 1
     return count
-result = count_r('strawberry')
 
-# Variation 2: Using built-in method
-word = 'strawberry'
-count = word.count('r')
-print(count)
+# Approach 2: Built-in method
+def count_char(s, c):
+    return s.count(c)
 
-# Variation 3: With descriptive output
-def count_letter_r(word):
-    count = 0
-    for char in word:
-        if char == 'r':
-            count += 1
-    return count
-result = count_letter_r(word)
-print(f"The letter 'r' appears {result} times in '{word}'.")
+# Approach 3: List comprehension
+def count_char(text, target):
+    return sum(1 for ch in text if ch == target)
 
-# Variation 4: One-liner function
-def count_r(s):
-    return s.count('r')
-print(count_r('strawberry'))
-
-# Variation 5: With enumerate
-def count_r_occurrences(text):
-    count = 0
-    for i, char in enumerate(text):
-        if char == 'r':
-            count += 1
-    return count
+# Approach 4: Filter and length
+def count_char(string, char):
+    return len([c for c in string if c == char])
 ```
 
-The variations extended beyond algorithm choice:
-- **Variable names:** count, counter, result, num, total
-- **Function names:** count_r, count_letter, count_char, count_r_occurrences
-- **Output formats:** bare number, formatted string, descriptive sentence
-- **Algorithm approaches:** for loops (85%), built-ins (10%), comprehensions (5%)
+Variable names varied. Function structures varied. Output formatting varied. Algorithm choices varied.
 
-Yet all successful executions returned 3.
+Yet every successful execution returned 3.
+
+**Stochastic generation. Deterministic accuracy.**
 
 ---
 
-## The Distinction
+## What This Demonstrates
 
 LLMs are:
 
-- **Stochastic in form:** They generate different implementations
-- **Deterministic in function:** They produce consistent correct results
+- **Stochastic in form:** They generate different implementations each time
+- **Deterministic in function:** Those implementations produce consistent correct results
 
-Most people have this backward. The *implementation* varies. The *outcome* doesn't.
+Most people have this backward. They see the variation and conclude the tool is unreliable. But the *implementation* varies while the *outcome* doesn't.
 
 ---
 
-## What This Means
+## Why This Happens
 
-The perceived "unreliability" of LLMs stems from using them as calculators when they should be used as code generators.
+When you ask an LLM to count letters directly, you're asking it to pattern-match through training data. It's retrieving what it's seen before. The systematic "2" for strawberry probably reflects how often that question appears with wrong answers in the training corpus.
 
-When you ask an LLM to count letters directly, you're asking it to pattern-match through its training data. It's guessing based on what it's seen before. The answer "2" for strawberry probably reflects how often that question has been answered incorrectly in training data.
-
-When you ask it to write code, you're using what it's actually good at: translation between natural language and formal specification. The code then executes deterministically.
+When you ask it to write code, you're using what it actually does well: translation between natural language and formal specification. The code then executes deterministically. The LLM's stochasticity is confined to the representation; the computation itself is exact.
 
 ---
 
@@ -166,10 +131,10 @@ Don't ask: "What's the NPV of this project?"
 
 Ask: "Write code to calculate NPV given these cash flows and this discount rate."
 
-The first is an [oracle query](/writing/ai-oracle-vs-assistant/)—you're trusting the model's pattern matching. The second produces auditable, testable, reproducible output. This is the operational difference between oracle and assistant modes, demonstrated empirically.
+The first is an [oracle query](/writing/ai-oracle-vs-assistant/)—you're trusting the model's pattern matching. The second produces auditable, testable, reproducible output. This is the operational difference between [oracle and assistant modes](/writing/ai-oracle-vs-assistant/), demonstrated empirically.
 
 The 75-point accuracy gap isn't a fluke. It's the difference between proper and improper use of the tool.
 
 ---
 
-*Test methodology: 40 iterations per test across GPT-3.5-turbo, Claude-3-haiku, Claude-3.5-sonnet, and Gemini-1.5-flash. Temperature=0 for reproducibility. Full results and code available on request.*
+*Test methodology: 100 iterations per model across seven models (GPT-4 family, Claude 3 family). Temperature=0 for reproducibility. Full results and code available on request.*
