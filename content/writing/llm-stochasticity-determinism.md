@@ -53,15 +53,15 @@ Every model, every iteration. When the code ran, it returned 3.
 
 ## The Gap
 
-**25% to 100%.** A 75 percentage point improvement from changing nothing but how I asked.
+The important comparison isn't 25% to 100%. It's *not 100%* to *100%*.
 
-Same models. Same question. Same answer required. The only variable was the framing.
+Oracle mode produced stochastic, unreliable results. Assistant mode produced deterministic, reliable results. Same models. Same question. Same answer required. The only variable was what I asked for: a guess versus a program.
 
 ---
 
 ## Code Variability
 
-Here's what surprised me: the code varied considerably across iterations.
+The code varied considerably across iterations. This was expected—the instructions were intentionally vague, and transformer architecture produces stochastic outputs.
 
 From the same model with the same prompt, I observed multiple distinct implementations:
 
@@ -97,12 +97,12 @@ Yet every successful execution returned 3.
 
 ## What This Demonstrates
 
-LLMs are:
+The hypothesis was confirmed. LLMs are:
 
 - **Stochastic in form:** They generate different implementations each time
 - **Deterministic in function:** Those implementations produce consistent correct results
 
-Most people have this backward. They see the variation and conclude the tool is unreliable. But the *implementation* varies while the *outcome* doesn't.
+Most people have this backward. They see the variation and conclude the tool is unreliable. But the *implementation* varies while the *outcome* doesn't. Understanding the architecture made this result predictable.
 
 ---
 
