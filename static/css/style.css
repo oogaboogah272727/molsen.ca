@@ -366,7 +366,15 @@ footer .container {
 .legend-dot.theoretical { background: #6b8e23; }
 .legend-dot.empirical { background: #f59e0b; }
 .legend-dot.applied { background: #4a90a4; }
-.legend-dot.practice { background: #94a3b8; }
+.legend-dot.practice { background: #64748b; }
+
+.legend-diamond {
+  width: 10px;
+  height: 10px;
+  background: #e2e8f0;
+  border: 1px solid #cbd5e1;
+  transform: rotate(45deg);
+}
 
 .graph-instructions {
   font-size: 0.85rem;

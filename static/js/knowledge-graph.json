@@ -5,134 +5,162 @@
       "label": "Oracle vs. Assistant",
       "url": "/writing/ai-oracle-vs-assistant/",
       "defines": ["Oracle Mode", "Assistant Mode", "Verification Paradox", "Method vs. Verdict"],
-      "type": "foundational"
+      "type": "foundational",
+      "tags": ["ai-governance", "epistemology"]
     },
     {
       "id": "strong-oracle-trap",
       "label": "The Strong Oracle Trap",
       "url": "/writing/strong-oracle-trap/",
       "defines": ["Oracle Spectrum", "Strong Oracle", "Tool Mitigation"],
-      "type": "core"
+      "type": "core",
+      "tags": ["ai-governance", "epistemology"]
     },
     {
       "id": "eka",
       "label": "Executable Knowledge Architecture",
       "url": "/writing/executable-knowledge-architecture/",
       "defines": ["EKA", "Verification Boundary", "Front-Door Invariants"],
-      "type": "core"
+      "type": "core",
+      "tags": ["ai-governance", "organizational"]
     },
     {
       "id": "knowledge-capability",
       "label": "Knowledge as Capability",
       "url": "/writing/knowledge-as-capability/",
       "defines": ["Knowledge as Capability", "Agent-Relative Tacitness", "Human-AI Composite Knowledge"],
-      "type": "foundational"
+      "type": "foundational",
+      "tags": ["epistemology"]
     },
     {
       "id": "tacit-shrinkage",
       "label": "Tacit Space Shrinkage",
       "url": "/writing/tacit-space-shrinkage/",
       "defines": ["Tacit Space Shrinkage", "Structurally Tacit Core"],
-      "type": "theoretical"
+      "type": "theoretical",
+      "tags": ["epistemology", "organizational"]
     },
     {
       "id": "stochasticity",
       "label": "Stochastic Form, Deterministic Function",
       "url": "/writing/llm-stochasticity-determinism/",
       "defines": ["Stochastic Form/Deterministic Function"],
-      "type": "empirical"
+      "type": "empirical",
+      "tags": ["ai-governance", "epistemology"]
     },
     {
       "id": "consulting-threat",
       "label": "Consulting Threat = Opportunity",
       "url": "/writing/consulting-threat-opportunity/",
       "defines": ["Consulting Disruption", "Senior + AI Threat"],
-      "type": "applied"
+      "type": "applied",
+      "tags": ["organizational", "professional"]
     },
     {
       "id": "ai-first",
       "label": "AI-First Software",
       "url": "/writing/ai-first-software/",
       "defines": ["AI-First Software", "Formal Competence"],
-      "type": "applied"
+      "type": "applied",
+      "tags": ["ai-governance"]
     },
     {
       "id": "critical-thinking",
       "label": "Critical Thinking Rules",
       "url": "/writing/critical-thinking-rules/",
-      "defines": [],
-      "type": "practice"
+      "defines": ["Epistemic Discipline"],
+      "type": "practice",
+      "tags": ["epistemology", "professional"]
     },
     {
       "id": "leadership-scifi",
       "label": "Leadership Lessons from Science Fiction",
       "url": "/writing/leadership-lessons-science-fiction/",
-      "defines": [],
-      "type": "practice"
+      "defines": ["Leadership Principles"],
+      "type": "practice",
+      "tags": ["organizational", "professional"]
     },
     {
       "id": "support-team",
       "label": "The Support Team's Real Job",
       "url": "/writing/support-team-real-job/",
-      "defines": [],
-      "type": "practice"
+      "defines": ["Organizational Effectiveness"],
+      "type": "practice",
+      "tags": ["organizational", "professional"]
     },
     {
       "id": "remote-work",
       "label": "Remote Work Formula",
       "url": "/writing/remote-work-formula/",
-      "defines": [],
-      "type": "practice"
+      "defines": ["Async Collaboration", "Trust at Distance"],
+      "type": "practice",
+      "tags": ["organizational", "professional"]
+    },
+    {
+      "id": "theme-epistemology",
+      "label": "Epistemic Rigor",
+      "type": "theme",
+      "description": "How we know what we know. Verification, evidence, justified belief."
+    },
+    {
+      "id": "theme-ai-governance",
+      "label": "AI Governance",
+      "type": "theme",
+      "description": "Deploying AI responsibly in professional work."
+    },
+    {
+      "id": "theme-organizational",
+      "label": "Organizational Change",
+      "type": "theme",
+      "description": "How organizations adapt, learn, and transform."
+    },
+    {
+      "id": "theme-professional",
+      "label": "Professional Practice",
+      "type": "theme",
+      "description": "How to work effectively and maintain standards."
     }
   ],
   "links": [
-    {
-      "source": "strong-oracle-trap",
-      "target": "oracle-assistant",
-      "type": "extends",
-      "label": "extends"
-    },
-    {
-      "source": "eka",
-      "target": "oracle-assistant",
-      "type": "implements",
-      "label": "implements Assistant Mode"
-    },
-    {
-      "source": "eka",
-      "target": "knowledge-capability",
-      "type": "requires",
-      "label": "requires"
-    },
-    {
-      "source": "eka",
-      "target": "stochasticity",
-      "type": "cites",
-      "label": "exploits finding"
-    },
-    {
-      "source": "tacit-shrinkage",
-      "target": "knowledge-capability",
-      "type": "extends",
-      "label": "extends"
-    },
-    {
-      "source": "stochasticity",
-      "target": "oracle-assistant",
-      "type": "supports",
-      "label": "empirical evidence for"
-    },
-    {
-      "source": "consulting-threat",
-      "target": "eka",
-      "type": "motivates",
-      "label": "motivates"
-    },
-    {
-      "source": "eka",
-      "target": "strong-oracle-trap",
-      "type": "cites",
-      "label": "addresses"
-    }
+    {"source": "strong-oracle-trap", "target": "oracle-assistant", "type": "extends", "label": "extends"},
+    {"source": "eka", "target": "oracle-assistant", "type": "implements", "label": "implements"},
+    {"source": "eka", "target": "knowledge-capability", "type": "requires", "label": "requires"},
+    {"source": "eka", "target": "stochasticity", "type": "cites", "label": "exploits"},
+    {"source": "eka", "target": "strong-oracle-trap", "type": "cites", "label": "addresses"},
+    {"source": "tacit-shrinkage", "target": "knowledge-capability", "type": "extends", "label": "extends"},
+    {"source": "stochasticity", "target": "oracle-assistant", "type": "supports", "label": "evidence for"},
+    {"source": "consulting-threat", "target": "eka", "type": "motivates", "label": "motivates"},
+
+    {"source": "critical-thinking", "target": "oracle-assistant", "type": "prerequisite", "label": "skill for"},
+    {"source": "critical-thinking", "target": "stochasticity", "type": "prerequisite", "label": "skill for"},
+    {"source": "leadership-scifi", "target": "eka", "type": "contextualizes", "label": "adoption requires"},
+    {"source": "leadership-scifi", "target": "consulting-threat", "type": "contextualizes", "label": "navigating"},
+    {"source": "support-team", "target": "consulting-threat", "type": "same-domain", "label": "same domain"},
+    {"source": "support-team", "target": "eka", "type": "contextualizes", "label": "org context for"},
+    {"source": "remote-work", "target": "eka", "type": "parallel", "label": "async patterns"},
+    {"source": "remote-work", "target": "support-team", "type": "same-domain", "label": "same domain"},
+
+    {"source": "oracle-assistant", "target": "theme-epistemology", "type": "theme", "label": ""},
+    {"source": "oracle-assistant", "target": "theme-ai-governance", "type": "theme", "label": ""},
+    {"source": "strong-oracle-trap", "target": "theme-epistemology", "type": "theme", "label": ""},
+    {"source": "strong-oracle-trap", "target": "theme-ai-governance", "type": "theme", "label": ""},
+    {"source": "eka", "target": "theme-ai-governance", "type": "theme", "label": ""},
+    {"source": "eka", "target": "theme-organizational", "type": "theme", "label": ""},
+    {"source": "knowledge-capability", "target": "theme-epistemology", "type": "theme", "label": ""},
+    {"source": "tacit-shrinkage", "target": "theme-epistemology", "type": "theme", "label": ""},
+    {"source": "tacit-shrinkage", "target": "theme-organizational", "type": "theme", "label": ""},
+    {"source": "stochasticity", "target": "theme-epistemology", "type": "theme", "label": ""},
+    {"source": "stochasticity", "target": "theme-ai-governance", "type": "theme", "label": ""},
+    {"source": "consulting-threat", "target": "theme-organizational", "type": "theme", "label": ""},
+    {"source": "consulting-threat", "target": "theme-professional", "type": "theme", "label": ""},
+    {"source": "ai-first", "target": "theme-ai-governance", "type": "theme", "label": ""},
+    {"source": "critical-thinking", "target": "theme-epistemology", "type": "theme", "label": ""},
+    {"source": "critical-thinking", "target": "theme-professional", "type": "theme", "label": ""},
+    {"source": "leadership-scifi", "target": "theme-organizational", "type": "theme", "label": ""},
+    {"source": "leadership-scifi", "target": "theme-professional", "type": "theme", "label": ""},
+    {"source": "support-team", "target": "theme-organizational", "type": "theme", "label": ""},
+    {"source": "support-team", "target": "theme-professional", "type": "theme", "label": ""},
+    {"source": "remote-work", "target": "theme-organizational", "type": "theme", "label": ""},
+    {"source": "remote-work", "target": "theme-professional", "type": "theme", "label": ""}
   ]
 }
