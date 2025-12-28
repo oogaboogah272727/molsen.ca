@@ -4,15 +4,15 @@ date: 2025-01-27
 description: "Extending knowledge management to accommodate AI by defining knowledge as capability to produce outcomes—the foundational claim that makes human-AI collaboration coherent."
 ---
 
-Knowledge management has served organizations well for decades. The frameworks developed by Nonaka and Takeuchi, the practices around communities of practice, the distinction between tacit and explicit knowledge—these have helped countless organizations preserve and transfer expertise.
+Knowledge management has served organizations well for decades. The frameworks from Nonaka and Takeuchi, the practices around communities of practice, the distinction between tacit and explicit knowledge—these have helped countless organizations preserve and transfer expertise.
 
-But KM's conceptual foundations were built for a world of human knowers. The field inherited its definition of knowledge from philosophy—justified true belief—which works fine when all your agents are humans with mental states. The framework handles human expertise, human communication, human learning.
+But KM's conceptual foundations were built for a world of human knowers. The field inherited its definition of knowledge from philosophy: justified true belief. That works fine when all your agents are humans with mental states. The framework handles human expertise, human communication, human learning.
 
 What it doesn't handle is language models.
 
-When an AI system produces working code, accurate summaries, or valid analyses, the traditional framework has no place to put that capability. The AI doesn't "believe" anything. It has no mental states to justify. Under the inherited definition, it cannot have knowledge—yet it demonstrably does knowledge work.
+When an AI system produces working code, accurate summaries, or valid analyses, the traditional framework has no place to put that capability. The AI doesn't "believe" anything. It has no mental states to justify. Under the inherited definition, it cannot have knowledge. Yet it demonstrably does knowledge work.
 
-This paper argues for an extended foundation: **knowledge is the capability to reliably produce outcomes**. This definition preserves everything that worked about traditional KM while creating conceptual room for AI capabilities. It's not a replacement but an expansion—one that makes human-AI collaboration coherent within knowledge management frameworks.
+I'm arguing for an extended foundation: **knowledge is the capability to reliably produce outcomes**. This definition preserves everything that worked about traditional KM while creating conceptual room for AI capabilities. It's not a replacement but an expansion. One that makes human-AI collaboration coherent within knowledge management frameworks.
 
 Everything else I've written about Executable Knowledge Architecture and agent-relative tacitness rests on this foundation. Without it, AI capabilities sit awkwardly outside KM's scope. With it, human and AI contributions become commensurable.
 
@@ -26,15 +26,15 @@ The philosophical definition of knowledge—justified true belief (JTB)—requir
 2. **Truth**: The proposition corresponds to reality
 3. **Justification**: The agent has adequate reasons for the belief
 
-This framework asks: what must be true for someone to *know* something rather than merely *believe* it?
+This framework asks what must be true for someone to *know* something rather than merely *believe* it.
 
-Knowledge management adopted this framework, and it served well for human-centric contexts. The result is that KM practice treats knowledge as something that can be:
+Knowledge management adopted this framework, and it served well for human-centric contexts. KM practice treats knowledge as something that can be:
 - Extracted (because it's a belief state in someone's head)
 - Documented (because it's propositional)
 - Verified (because it has truth conditions)
 - Transferred (because the same proposition can be believed by another)
 
-These assumptions work reasonably well when all your knowers are humans. But they become limiting when AI enters the picture—not because they were wrong, but because they were scoped to agents with mental states.
+These assumptions work reasonably well when all your knowers are humans. But they become limiting when AI enters the picture. Not because they were wrong. Because they were scoped to agents with mental states.
 
 ---
 
@@ -48,7 +48,7 @@ JTB requires a believing agent. When we say "the organization knows how to manuf
 
 Not the CEO, who may not understand the process. Not any individual engineer, who knows only their part. Not the documentation, which is inert. The organization *does* the manufacturing through coordinated execution across people, systems, processes, and artifacts.
 
-KM has always recognized this—it's why we talk about organizational capabilities, not just individual knowledge. But the underlying definition doesn't quite fit. An operational definition handles distributed capability naturally.
+KM has always recognized this. That's why we talk about organizational capabilities, not just individual knowledge. But the underlying definition doesn't quite fit. An operational definition handles distributed capability naturally.
 
 ### Practical Knowledge Is Validated by Outcomes
 
@@ -58,13 +58,13 @@ JTB requires truth conditions that can be evaluated. But organizational knowledg
 - "This architecture handles our scale requirements"—true until traffic doubles
 - "This hiring process finds good engineers"—true until the talent market changes
 
-The truth of practical knowledge is revealed by outcomes, not by correspondence to independent reality. KM practitioners have always known this implicitly—we assess expertise by track record, not by philosophical verification. An operational definition makes this explicit.
+The truth of practical knowledge is revealed by outcomes, not by correspondence to independent reality. KM practitioners have always known this implicitly. We assess expertise by track record, not by philosophical verification. An operational definition makes this explicit.
 
 ### Expertise Often Exceeds Articulation
 
 The people who can actually *do* the work often cannot fully articulate why their approach works. The expert diagnostician will give you a story about their reasoning, but the story is a reconstruction, not a transcript of their actual cognitive process.
 
-This is Polanyi's insight about tacit knowledge: we know more than we can tell. KM has embraced this distinction. But under JTB, tacit knowledge is a puzzle—how can you believe something you can't state? An operational definition dissolves the puzzle: capability can exceed articulation without contradiction.
+This is Polanyi's insight about tacit knowledge: we know more than we can tell. KM has embraced this distinction. But under JTB, tacit knowledge is a puzzle. How can you believe something you can't state? An operational definition dissolves the puzzle: capability can exceed articulation without contradiction.
 
 ### Procedural Knowledge Resists Propositions
 
@@ -74,7 +74,7 @@ JTB applies to propositions—statements that can be true or false. But much org
 - Knowing *when* a project is going off track
 - Knowing *who* can actually get things done
 
-These are capabilities, sensitivities, and relationships. The expert machinist "knows" when the cut sounds wrong—not as a proposition about frequencies, but as a perceptual capability.
+These are capabilities, sensitivities, and relationships. The expert machinist "knows" when the cut sounds wrong. Not as a proposition about frequencies, but as a perceptual capability.
 
 KM has always worked with procedural and relational knowledge despite the definitional awkwardness. An operational definition eliminates the awkwardness.
 
@@ -82,7 +82,7 @@ KM has always worked with procedural and relational knowledge despite the defini
 
 ## The AI Extension Problem
 
-The limitations above are manageable—KM has worked around them for years. But AI creates a harder problem: agents that produce knowledge work without having mental states at all.
+The limitations above are manageable. KM has worked around them for years. But AI creates a harder problem: agents that produce knowledge work without having mental states at all.
 
 ### The Belief Question Doesn't Apply
 
@@ -96,19 +96,19 @@ Under JTB, we have no way to describe this. Knowledge requires belief. The AI ha
 
 AI systems have no beliefs to be justified, no truth-tracking mental states, no justification chains they construct or evaluate. What they have is the ability to produce outputs that accomplish tasks.
 
-If knowledge management stays with JTB, then AI systems remain permanently outside its scope—even as they increasingly contribute to organizational capability. This isn't a failure of KM; it's a scope limitation that needs addressing.
+If knowledge management stays with JTB, then AI systems remain permanently outside its scope. This happens even as they increasingly contribute to organizational capability. That's not a failure of KM. It's a scope limitation that needs addressing.
 
-### The Possibility of Agent-Relative Tacitness
+### Agent-Relative Tacitness Becomes Possible
 
 Here's an insight that becomes possible with an extended definition: knowledge that is tacit for one agent may be explicit for another.
 
-For a human doctor: "This patient presentation suggests condition X" may be tacit—she can't fully articulate why.
+For a human doctor: "This patient presentation suggests condition X" may be tacit. She can't fully articulate why.
 
 For an AI trained on millions of cases: The same diagnostic conclusion may be entirely computable from patterns in the training data.
 
-Tacitness is not a property of knowledge itself but of the relationship between knowledge and knower. This only makes sense if knowledge is understood as capability. A capability is tacit when the agent can exercise it but cannot articulate how. This is agent-relative by definition.
+Tacitness is not a property of knowledge itself but of the relationship between knowledge and knower. This only makes sense if knowledge is understood as capability. A capability is tacit when the agent can exercise it but cannot articulate how. That's agent-relative by definition.
 
-Under JTB, this insight is hard to express. Under capability definitions, it becomes natural—and it opens new possibilities for human-AI collaboration in knowledge transfer.
+Under JTB, this insight is hard to express. Under capability definitions, it becomes natural. And it opens new possibilities for human-AI collaboration in knowledge transfer.
 
 ---
 
@@ -118,11 +118,11 @@ Here is the alternative:
 
 **An agent has knowledge K with respect to outcome O in context C if and only if the agent can reliably produce O in C.**
 
-Unpack this:
+Let me break this down:
 
-**Agent**: Any system capable of action—human, AI, organization, human-AI hybrid. The substrate is irrelevant. The question is whether it can act.
+**Agent**: Any system capable of action—human, AI, organization, human-AI hybrid. The underlying implementation is irrelevant. What matters is whether it can act.
 
-**Outcome**: Observable, verifiable state of the world. Working code. Healed patient. Profitable trade. Valid proof. Not a belief state—a state of affairs.
+**Outcome**: Observable, verifiable state of the world. Working code. Healed patient. Profitable trade. Valid proof. Not a belief state. A state of affairs.
 
 **Context**: The conditions under which capability is claimed. Knowledge claims are always bounded. "Can diagnose appendicitis in routine presentations" is a different claim than "can diagnose any abdominal condition."
 
@@ -142,7 +142,7 @@ This definition has several features that matter:
 
 ## What Changes With an Operational Definition
 
-Adopting the capability definition doesn't invalidate existing KM practice—it clarifies what that practice was already doing implicitly and extends it to new contexts.
+Adopting the capability definition doesn't invalidate existing KM practice. It clarifies what that practice was already doing implicitly and extends it to new contexts.
 
 ### Documentation Becomes One Tool Among Many
 
@@ -156,13 +156,13 @@ When we ask "how do we capture what this expert knows before they retire?" the c
 
 Sometimes the answer is documentation. Sometimes it's pairing and apprenticeship. Sometimes it's building systems that embody the capability. And now, sometimes it's working with AI to articulate what the expert couldn't articulate alone.
 
-The definition doesn't change the goal—it clarifies that the goal was always capability transfer, and opens new methods for achieving it.
+The definition doesn't change the goal. It clarifies that the goal was always capability transfer, and opens new methods for achieving it.
 
 ### Assessment Focuses on Outcomes
 
 The capability definition aligns with how we actually evaluate expertise: by track record, by demonstrated performance, by whether interventions work.
 
-Credentials and certifications remain useful as *signals* of likely capability—but the definition makes clear they're proxies, not the thing itself. This matches how experienced KM practitioners already think about expertise.
+Credentials and certifications remain useful as *signals* of likely capability. But the definition makes clear they're proxies, not the thing itself. This matches how experienced KM practitioners already think about expertise.
 
 ---
 
@@ -176,7 +176,7 @@ The expert has knowledge: the capability to recognize correct outcomes, specify 
 
 Neither alone constitutes the knowledge needed to solve problems reliably. Together, through a verification loop, they produce validated solutions. The composite system has knowledge that neither component has alone.
 
-Under JTB, this is incoherent—who "believes" the solution? Under capability definitions, it's precise—the human-AI system can reliably produce verified solutions.
+Under JTB, this is incoherent. Who "believes" the solution? Under capability definitions, it's precise. The human-AI system can reliably produce verified solutions.
 
 ### Agent-Relative Tacitness
 
@@ -190,13 +190,13 @@ This makes tacitness agent-relative rather than intrinsic. The same knowledge ca
 
 As AI capabilities expand, more knowledge becomes transferable that was previously locked in human expertise. An AI that can learn from video demonstrations can decode knowledge that was previously tacit because the only transfer path was embodied apprenticeship.
 
-This "shrinkage of tacit space" is only coherent if tacitness is about transfer relationships, not intrinsic properties—which is only coherent if knowledge is capability, not belief.
+This "shrinkage of tacit space" is only coherent if tacitness is about transfer relationships, not intrinsic properties. And that's only coherent if knowledge is capability, not belief.
 
 ---
 
 ## The Lineage
 
-This isn't a novel position invented to make AI convenient. It draws on established traditions:
+This isn't a novel position I invented to make AI convenient. It draws on established traditions:
 
 **Pragmatic philosophy** (Peirce, James, Dewey): Knowledge defined by practical consequences and action. Dewey's instrumentalism treats ideas as tools for problem-solving, not representations of fixed truths. "Knowledge as an instrument of action."
 
@@ -204,7 +204,7 @@ This isn't a novel position invented to make AI convenient. It draws on establis
 
 **Organizational capability** (Senge, Sveiby, Teece): "Knowledge is the capacity for effective action. There is no capacity for effective action in a database." Dynamic capabilities as the firm's ability to produce outcomes in changing conditions.
 
-**Cybernetics** (Ashby, Beer): Knowledge as variety management for effective regulation. A control system must be capable of producing the responses required to manage disturbances—capability, not content.
+**Cybernetics** (Ashby, Beer): Knowledge as variety management for effective regulation. A control system must be capable of producing the responses required to manage disturbances. That's capability, not content.
 
 The capability view isn't a convenient fiction. It's the natural framework for anyone focused on what organizations can actually do.
 
@@ -238,6 +238,6 @@ Executable Knowledge Architecture only makes sense if human-AI systems can have 
 
 The governance challenges I've written about—knowledge that is explicit-for-systems but opaque-for-humans—only make sense if explicitness is about transfer relationships, not about propositional content.
 
-This isn't a rejection of knowledge management. It's an extension that preserves what works and creates room for what's new.
+I could be wrong about this framing. But I don't think it's a rejection of knowledge management. It's an extension that preserves what works and creates room for what's new.
 
 We're in the business of doing things. The definition of knowledge should reflect that.

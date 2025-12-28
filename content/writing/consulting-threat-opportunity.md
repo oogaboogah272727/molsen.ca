@@ -1,66 +1,66 @@
 ---
 title: "Existential Threat to Consulting = Huge Opportunity"
 date: 2025-01-15
-description: "How AI-encoded expertise disrupts the consulting industry's traditional value proposition, and the frameworks needed to navigate this transformation."
+description: "How AI-encoded expertise disrupts the consulting industry's traditional value proposition, and what firms need to do about it."
 ---
 
-Consulting, at its core, is expert advice for hire. The entire business model rests on a single foundation: asymmetry. The consultant possesses expertise the client does not. This asymmetry justifies premium fees, extended engagements, and the elaborate hierarchies of associates, managers, and partners that populate every major firm.
+Consulting is expert advice for hire. The entire business model rests on asymmetry: the consultant knows things the client does not. This asymmetry justifies premium fees, long engagements, and the elaborate pyramids of associates, managers, and partners that populate every major firm.
 
-Artificial intelligence represents encoded expertise. And as that encoded expertise expands in depth and accessibility, the fundamental asymmetry that sustains consulting begins to collapse. Clients can increasingly access encoded expertise as a commodity—available on demand, at marginal cost, without the overhead of relationship management or the friction of procurement processes.
+AI is encoded expertise. As that encoded expertise expands in depth and accessibility, the asymmetry that sustains consulting starts to collapse. Clients can increasingly access expertise as a commodity. On demand. At marginal cost. Without the overhead of relationship management or the friction of procurement.
 
-This is not a distant future scenario. It is happening now.
+This isn't a future scenario. It's happening now.
 
 ---
 
 ## The Competitive Scenarios
 
-For consulting firms attempting to navigate this transition, there are several competitive scenarios that demand rigorous evaluation:
+I'd break down the competitive landscape into five scenarios that consulting firms need to evaluate ruthlessly:
 
-**Status quo** represents the traditional model: junior consultants gathering data and building analyses, senior consultants providing judgment and client relationships. This model assumes expertise asymmetry remains intact and that clients continue valuing the bundled package of labor and insight.
+**Status quo** is the traditional model. Junior consultants gather data and build analyses. Senior consultants provide judgment and manage client relationships. This model assumes expertise asymmetry holds and that clients keep paying for the bundled package of labor and insight.
 
-**AI expertise alone** represents tasks where artificial intelligence can accomplish the work without human intervention. When AI capability reaches 100% for a given task, that task becomes commodity-accessible—as undifferentiated as a Google search. No consulting firm can charge premium rates for commodity work.
+**AI expertise alone** covers tasks where AI can do the work without human intervention. When AI capability reaches 100% for a given task, that task becomes commodity-accessible. As undifferentiated as a Google search. No consulting firm can charge premium rates for commodity work.
 
-**AI combined with all experts** represents firms that successfully integrate AI across their entire workforce. This is the race every major consultancy claims to be running, though few have achieved meaningful transformation beyond pilot programs and marketing materials.
+**AI combined with all experts** is the race every major consultancy claims to be running. Few have achieved meaningful transformation beyond pilot programs and marketing materials.
 
-**Junior expertise plus AI** represents an interesting middle ground: less experienced professionals augmented by AI tools. This combination may deliver acceptable quality at lower cost, potentially disrupting the traditional pyramid economics that consulting firms depend upon.
+**Junior expertise plus AI** is an interesting middle ground. Less experienced professionals augmented by AI tools might deliver acceptable quality at lower cost. This potentially disrupts the pyramid economics that consulting firms depend on.
 
-**Senior expertise plus AI** represents the most potent combination—and the most dangerous competitor to traditional consulting firms.
+**Senior expertise plus AI** is the most potent combination. And the most dangerous competitor to traditional consulting firms.
 
 ---
 
 ## The Variables That Matter
 
-Understanding this landscape requires tracking several critical variables as AI capability advances.
+Understanding this landscape requires tracking three variables as AI capability advances.
 
-**X represents the automation threshold**: the percentage of a given task that AI can accomplish independently. When X approaches 100%, that task becomes commodity. Consulting firms cannot build sustainable businesses on commodity work. The strategic question becomes: which tasks are approaching commodity status, and how quickly?
+**X is the automation threshold**: the percentage of a given task that AI can accomplish independently. When X approaches 100%, that task becomes commodity. Consulting firms cannot build sustainable businesses on commodity work. The real question: which tasks are approaching commodity status, and how fast?
 
-**A represents the acceleration factor**: how much existing experts can multiply their output using AI tools. This acceleration represents near-term profit opportunity. A senior consultant who previously managed three engagements might now manage eight. A research team that took two weeks to complete an analysis might finish in two days.
+**A is the acceleration factor**: how much existing experts can multiply their output using AI tools. This acceleration represents near-term profit opportunity. A senior consultant who previously managed three engagements might now manage eight. A research team that took two weeks to complete an analysis might finish in two days.
 
-But this acceleration carries a dangerous assumption: that clients will not demand the benefits. In reality, sophisticated clients will expect firms to pass along AI-driven gains in both time and cost. The acceleration factor is a temporary advantage at best—a window during which firms must build more durable competitive positions.
+But this acceleration carries a dangerous assumption: that clients won't demand the benefits. Sophisticated clients will expect firms to pass along AI-driven gains in both time and cost. The acceleration factor is a temporary advantage at best. A window during which firms must build more durable competitive positions.
 
-**Z represents the senior-plus-AI combination threshold**: the percentage of consulting work that a senior expert armed with AI tools can accomplish. As Z approaches 100%, the existential threat to consulting firms becomes acute.
+**Z is the senior-plus-AI combination threshold**: the percentage of consulting work that a senior expert armed with AI tools can accomplish. As Z approaches 100%, the existential threat to consulting firms becomes acute.
 
 ---
 
 ## The Existential Math
 
-Here is the uncomfortable arithmetic: A senior expert plus AI represents the most dangerous competitor to any consulting firm. This competitor has deep domain knowledge, established relationships, professional credibility, and now access to the same encoded expertise that large firms are racing to deploy. The overhead is minimal. The margins are attractive. The client relationships are personal rather than institutional.
+The honest answer is uncomfortable. A senior expert plus AI represents the most dangerous competitor to any consulting firm. This competitor has deep domain knowledge, established relationships, professional credibility, and now access to the same encoded expertise that large firms are racing to deploy. The overhead is minimal. The margins are attractive. The client relationships are personal rather than institutional.
 
-Scale this scenario slightly: a small group of senior experts, each augmented by AI, operating as a lean firm or informal network. This combination might eliminate the need for traditional consulting in entire industry verticals. The pyramid model—which depends on junior consultants generating leverage for senior partners—becomes untenable when senior expertise plus AI can accomplish the same work without the pyramid.
+Scale this slightly: a small group of senior experts, each augmented by AI, operating as a lean firm or informal network. This combination might eliminate the need for traditional consulting in entire industry verticals. The pyramid model depends on junior consultants generating leverage for senior partners. It becomes untenable when senior expertise plus AI can accomplish the same work without the pyramid.
 
 ---
 
 ## Three Hard Questions
 
-The Harvard Business Review recently noted that "AI is changing the cost and availability of expertise, and that will fundamentally alter how businesses organize and compete." This is precisely correct, and consulting firms must confront three hard questions to identify whatever durable value might remain.
+The Harvard Business Review recently noted that "AI is changing the cost and availability of expertise, and that will fundamentally alter how businesses organize and compete." They're right. Consulting firms need to confront three hard questions to identify whatever durable value might remain.
 
 **First: Which aspects of the problems we solve will customers use AI to solve themselves?**
 
-This question identifies revenue that will simply disappear. Not revenue lost to competitors—revenue lost to self-service. When clients can access encoded expertise directly, they will. The analysis that once required a consulting engagement becomes an afternoon with the right AI tools. Firms must honestly assess which portions of their current revenue fall into this category and plan accordingly.
+This question identifies revenue that will simply disappear. Not revenue lost to competitors. Revenue lost to self-service. When clients can access encoded expertise directly, they will. The analysis that once required a consulting engagement becomes an afternoon with the right AI tools. Firms need to honestly assess which portions of their current revenue fall into this category and plan accordingly.
 
 **Second: Which expertise will need to evolve most rapidly to remain ahead of AI's advancing capabilities?**
 
-Static expertise is no longer a moat. The consultant who mastered a framework five years ago and has been deploying it since faces obsolescence. AI systems are trained on those same frameworks, can apply them more consistently, and improve continuously. The only sustainable position is expertise that evolves faster than AI can encode it—which demands continuous learning, novel synthesis, and the kind of creative judgment that remains difficult to automate.
+Static expertise is no longer a moat. The consultant who mastered a framework five years ago and has been deploying it since faces obsolescence. AI systems are trained on those same frameworks, can apply them more consistently, and improve continuously. The only sustainable position is expertise that evolves faster than AI can encode it. That demands continuous learning, novel synthesis, and the kind of creative judgment that remains difficult to automate.
 
 **Third: Which assets can we build that remain competitive as AI advances?**
 
@@ -74,6 +74,6 @@ Organizations that fully exploit AI to rapidly adapt will thrive. This is true f
 
 For consulting firms willing to honestly assess their position, ruthlessly evaluate which scenarios apply to their practice areas, and build toward genuinely durable assets, this disruption creates enormous opportunity. The firms that cling to the status quo, hoping asymmetry will somehow persist, will discover that encoded expertise waits for no one.
 
-The existential threat is real. But existential threats, properly understood and addressed, often become the catalyst for transformation that would never have occurred otherwise. The consulting industry built on information asymmetry must become an industry built on something more durable. The firms that figure out what that something is—and build it before the window closes—will define the next era of professional services.
+The existential threat is real. But existential threats, properly understood and addressed, often become the catalyst for transformation that would never have occurred otherwise. The consulting industry built on information asymmetry must become an industry built on something more durable. The firms that figure out what that something is and build it before the window closes will define the next era of professional services.
 
-I've developed one answer to this challenge: [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/), a pattern for AI-augmented consulting that preserves the verification and accountability that clients actually need. It's built on a [capability-based definition of knowledge](/writing/knowledge-as-capability/) that makes human-AI collaboration coherent. The clock is running—but the pattern exists for those ready to implement it.
+I've developed one answer to this challenge: [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/), a pattern for AI-augmented consulting that preserves the verification and accountability that clients actually need. It's built on a [capability-based definition of knowledge](/writing/knowledge-as-capability/) that makes human-AI collaboration coherent. The clock is running. But the pattern exists for those ready to implement it.

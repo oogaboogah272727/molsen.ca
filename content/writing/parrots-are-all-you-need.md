@@ -16,7 +16,7 @@ There are thousands of articles describing ChatGPT, so I'll focus on impact rath
 
 Knowledge can be broadly categorized as: explicit (documented), implicit (stored in someone's head), or tacit ("we know more than we can tell"). ChatGPT is trained on the public Internet, making it a repository of all explicit knowledge available publicly.
 
-This is worth sitting with for a moment. We have, for the first time, a tool that can retrieve, synthesize, and articulate the sum of publicly documented human knowledge in response to natural language questions. The implications of this are profound and far-reaching.
+Think about what that actually means. We have, for the first time, a tool that can retrieve, synthesize, and articulate the sum of publicly documented human knowledge in response to natural language questions. That's not a marginal improvement. That's a category shift.
 
 What I've come to understand since writing this piece is that the traditional categories need rethinking. [Tacitness is agent-relative](/writing/agent-relative-tacitness/)—knowledge that was tacit for humans alone may become explicit when AI enters the picture. And the very definition of knowledge shifts when we recognize it as [capability to produce outcomes](/writing/knowledge-as-capability/) rather than justified true belief. The parrot's "regurgitation" is, operationally, knowledge—if it reliably produces the outcome you need.
 
@@ -34,13 +34,13 @@ And yet, the impact remains disruptively potent due to one simple fact: most bus
 
 ## The Uncomfortable Truth About Knowledge Work
 
-Whether we want to admit it or not, most of what every knowledge worker does involves regurgitation of someone else's prior art. Very little of knowledge work is truly creative. We deliberately avoid creative effort because "creative" solutions carry higher risk than proven, established solutions.
+Here's the thing most of us don't want to admit: most of what every knowledge worker does involves regurgitation of someone else's prior art. Very little of knowledge work is truly creative. We deliberately avoid creative effort because "creative" solutions carry higher risk than proven, established solutions.
 
-Consider your own work for a moment. How much of your day involves genuinely novel thinking? How much involves applying established frameworks, following documented procedures, synthesizing existing research, or reformulating ideas that others have already developed?
+Think about your own work for a moment. How much of your day involves genuinely novel thinking? How much involves applying established frameworks, following documented procedures, synthesizing existing research, or reformulating ideas that others have already developed?
 
-Most knowledge work is intended to produce the least risky result, which means using the most explicit solution. We write reports that follow standard formats. We create presentations using proven structures. We draft communications using established templates. We solve problems by adapting solutions that worked elsewhere.
+The honest answer, for most of us, is that the majority of knowledge work is intended to produce the least risky result—which means using the most explicit solution. We write reports that follow standard formats. We create presentations using proven structures. We draft communications using established templates. We solve problems by adapting solutions that worked elsewhere.
 
-This isn't a criticism—it's good practice. Organizations value consistency and predictability. Clients expect proven approaches. Stakeholders want to minimize risk. The preference for established solutions over novel ones is rational and appropriate for most business contexts.
+I'm not criticizing this. It's good practice. Organizations value consistency and predictability. Clients expect proven approaches. The preference for established solutions over novel ones is rational and appropriate for most business contexts.
 
 But it also means that explicit solutions are accessible to the pre-trained generative "stochastic parrot."
 
@@ -52,7 +52,7 @@ There's a phrase circulating in discussions about AI and employment:
 
 *"AI will not replace you. A person using AI will."*
 
-This captures something essential about where we're headed. The question isn't whether AI can do your job—it's whether someone using AI can do your job faster, cheaper, or better than you can do it without AI.
+This captures something essential about where we're headed. The real question isn't whether AI can do your job. It's whether someone using AI can do your job faster, cheaper, or better than you can do it without AI.
 
 The parrot doesn't need to be creative. It doesn't need genuine understanding. It just needs to be fast, cheap, and good enough. For tasks that rely primarily on explicit knowledge—documented procedures, established practices, publicly available information—good enough is increasingly sufficient.
 
@@ -60,12 +60,12 @@ The parrot doesn't need to be creative. It doesn't need genuine understanding. I
 
 ## What This Means
 
-Consider how much of your work is creative effort. Consider how much is sui generis, unique, developed by you alone. Then consider that work best supported by documentation and established practice is most susceptible to being accelerated and ultimately automated by AI.
+Think about how much of your work is creative effort. Think about how much is sui generis, unique, developed by you alone. Then think about this: work best supported by documentation and established practice is most susceptible to being accelerated and ultimately automated by AI.
 
-The calculus is straightforward: the more your work depends on synthesizing explicit knowledge, the more vulnerable it is to AI augmentation or replacement. The more it requires tacit knowledge, contextual judgment, genuine creativity, or deep relationship management, the more insulated it remains.
+The calculus is straightforward. The more your work depends on synthesizing explicit knowledge, the more vulnerable it is to AI augmentation or replacement. The more it requires tacit knowledge, contextual judgment, genuine creativity, or deep relationship management, the more insulated it remains.
 
-This doesn't mean knowledge workers should panic. It means they should adapt. Learn to use these tools effectively. Understand their capabilities and limitations. Focus on developing skills that complement rather than compete with AI capabilities.
+I'm not saying knowledge workers should panic. I'm saying they should adapt. Learn to use these tools effectively. Understand their capabilities and limitations. Focus on developing skills that complement rather than compete with AI capabilities.
 
 The stochastic parrot is here. It's not going away. And for the vast majority of knowledge work that deliberately relies on established, documented, proven approaches, the parrot is all you need.
 
-The question for every knowledge worker, and every CIO, is simple: what are you going to do about it?
+So the question becomes: what are you going to do about it?

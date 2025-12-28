@@ -18,7 +18,7 @@ The criticism that LLMs are "too stochastic for production use" misunderstands t
 
 **Test 2 - Code Generation:** "Write and execute python code that accepts two parameters: a string and a character and returns the count of the character in the string. Execute it with 'strawberry' and 'r'."
 
-Same task. Different framing.
+Same task, different framing.
 
 ---
 
@@ -60,15 +60,15 @@ When errors occurred, they were execution failures—not logic errors. Every suc
 
 ## The Gap
 
-For most models: **0% → 100% accuracy**. A 100 percentage point improvement.
+For most models: **0% to 100% accuracy**. A 100 percentage point improvement.
 
-Same task. Same models. Same underlying question. The only difference was *how I asked*.
+Same task across the same models answering the same underlying question. The only difference was *how I asked*.
 
 ---
 
 ## Code Variability
 
-Here's what's interesting: **20-25% of implementations were structurally unique**—from the same model with the same prompt.
+**20-25% of implementations were structurally unique**—from the same model with the same prompt. That surprised me.
 
 From 37 iterations of Claude-3-haiku, I observed 8 distinct code structures:
 
@@ -128,7 +128,7 @@ LLMs are:
 - **Stochastic in form:** They generate different implementations
 - **Deterministic in function:** They produce consistent correct results
 
-This is exactly backward from how most people think about them. The *implementation* varies. The *outcome* doesn't.
+Most people have this backward. The *implementation* varies. The *outcome* doesn't.
 
 ---
 
@@ -138,7 +138,7 @@ The perceived "unreliability" of LLMs stems from using them as calculators when 
 
 When you ask an LLM to count letters directly, you're asking it to pattern-match through its training data. It's guessing based on what it's seen before. The answer "2" for strawberry probably reflects how often that question has been answered incorrectly in training data.
 
-When you ask it to write code, you're leveraging what it's actually good at: translation between natural language and formal specification. The code is then executed deterministically.
+When you ask it to write code, you're using what it's actually good at: translation between natural language and formal specification. The code then executes deterministically.
 
 ---
 

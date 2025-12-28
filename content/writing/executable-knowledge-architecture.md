@@ -4,25 +4,25 @@ date: 2025-01-25
 description: "A framework for integrating AI into professional consulting that preserves expertise, ensures reproducibility, and closes the governance gap between AI capabilities and client needs."
 ---
 
-The consulting industry faces an uncomfortable truth: clients can now ask ChatGPT the same questions they once paid experts to answer. This creates immediate margin pressure, but it also reveals a deeper problem with how we've been thinking about AI in professional services.
+The consulting industry faces an uncomfortable truth: clients can now ask ChatGPT the same questions they once paid experts to answer. This creates immediate margin pressure. But it also reveals something about how we've been thinking about AI in professional services. We've been thinking about it wrong.
 
-The instinct is to treat AI as an oracle—a system that takes questions and returns answers. This "Strong Oracle" pattern feels natural. It mirrors how clients interact with consultants. But it fundamentally misunderstands both the value consultants provide and the nature of AI systems.
+The instinct is to treat AI as an oracle. A system that takes questions and returns answers. This "Strong Oracle" pattern feels natural because it mirrors how clients interact with consultants. But it fundamentally misunderstands both the value consultants provide and the nature of AI systems.
 
-I've developed a different approach that I call Executable Knowledge Architecture (EKA). It's an organizational pattern for AI-mediated expert interaction that preserves the irreplaceable elements of professional consulting while leveraging AI's genuine strengths.
+I've developed a different approach that I call Executable Knowledge Architecture (EKA). It's an organizational pattern for AI-mediated expert interaction that preserves the irreplaceable elements of professional consulting while using AI's genuine strengths.
 
-EKA rests on an operational foundation: [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). This definition—rather than the traditional "justified true belief"—is what makes human-AI collaboration coherent. The expert has one kind of capability (specifying intent, verifying alignment). The AI has another (producing executable implementations). Neither constitutes complete knowledge alone; together, through a verification loop, they produce validated solutions.
+EKA rests on an operational foundation: [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). This definition matters more than the traditional "justified true belief" because it's what makes human-AI collaboration coherent. The expert has one kind of capability: specifying intent, verifying alignment. The AI has another: producing executable implementations. Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions.
 
 ---
 
 ## The Problem with AI as Oracle
 
-When you use AI in "Strong Oracle" mode—feeding it questions and accepting its answers—you inherit several critical problems.
+When you use AI in "Strong Oracle" mode, you inherit several critical problems.
 
-First, there's no audit trail. The AI's reasoning is opaque, its sources unverifiable, and its methodology uninspectable. If a client asks how you arrived at a conclusion, "the AI said so" is not a defensible answer.
+First, there's no audit trail. The AI's reasoning is opaque. Its sources are unverifiable. Its methodology is uninspectable. If a client asks how you arrived at a conclusion, "the AI said so" is not a defensible answer.
 
 Second, there's no reproducibility. Ask the same question twice and you may get different answers. Run the same analysis next quarter and you cannot guarantee consistency. This makes ongoing engagements problematic and periodic reporting unreliable.
 
-Third, and most critically, you face the verification paradox: you cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself. If you have that expertise, why do you need the AI? If you don't, how do you know the AI is correct?
+Third, you face the verification paradox. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself. If you have that expertise, why do you need the AI? If you don't, how do you know the AI is correct?
 
 This paradox sits at the heart of AI governance in professional services. And it explains why clients still need experts even as information becomes commoditized.
 
@@ -32,15 +32,15 @@ This paradox sits at the heart of AI governance in professional services. And it
 
 EKA solves these problems by changing what we ask AI to do. Instead of asking AI to provide answers, we ask it to translate expert intent into executable code.
 
-The workflow looks like this:
+The workflow has five steps:
 
 1. **Expert describes the analysis in professional language.** You articulate what you want to examine, what methodology you want to apply, what comparisons you want to make. You use your domain expertise to frame the problem.
 
-2. **AI translates to executable code.** The AI's job is not to know the answer, but to produce code that can compute it. This is a translation task, not an oracle task.
+2. **AI translates to executable code.** The AI's job is translation, not revelation. It produces code that can compute the answer.
 
 3. **Expert reviews and approves the code.** Here's the crucial insight: reviewing code that produces testable outputs is a fundamentally different task than verifying a direct answer. You can inspect the methodology. You can test edge cases. You can verify the logic without having to reproduce the entire analysis.
 
-4. **Code executes deterministically.** Once approved, the code runs. It produces the same output every time given the same input. The stochastic element (the AI) has been removed from the execution path.
+4. **Code executes deterministically.** Once approved, the code runs. It produces the same output every time given the same input. The stochastic element has been removed from the execution path.
 
 5. **Results are reproducible and auditable.** Every deliverable traces back to inspectable code. Every conclusion can be re-derived. Every methodology can be examined.
 
@@ -48,13 +48,13 @@ The workflow looks like this:
 
 ## Stochastic Form, Deterministic Function
 
-A key insight underlies this approach: large language models are stochastic in form but deterministic in function.
+Here's an insight that underlies this approach: large language models are stochastic in form but deterministic in function.
 
-Ask an LLM to write code that calculates a weighted average, and it might structure the code differently each time. Variable names may vary. Implementation details may shift. The form is stochastic.
+Ask an LLM to write code that calculates a weighted average, and it might structure the code differently each time. Variable names may vary. Implementation details may shift. The *form* is stochastic.
 
-But the function—what the code actually computes—is deterministic. A weighted average is a weighted average, regardless of whether the variable is called `result` or `weighted_sum`.
+But the *function* is deterministic. A weighted average is a weighted average, regardless of whether the variable is called `result` or `weighted_sum`.
 
-EKA exploits this property. We accept variation in the code's form while capturing consistency in its function. The expert's review ensures the function matches intent, and the code's execution ensures reproducible results.
+EKA exploits this property. We accept variation in the code's form while capturing consistency in its function. The expert's review ensures the function matches intent. The code's execution ensures reproducible results.
 
 ---
 
@@ -62,9 +62,9 @@ EKA exploits this property. We accept variation in the code's form while capturi
 
 AI's accessibility creates a governance gap in professional services. Clients can access information directly, which pressures margins on pure information delivery. But this same accessibility increases the value of two things clients cannot get from AI directly: credentialing and verification.
 
-Clients don't just need answers. They need answers they can trust, answers they can defend, answers with someone standing behind them. They need professional liability protection. They need methodology they can explain to regulators, auditors, and boards.
+Clients don't just need answers. They need answers they can trust. Answers they can defend. Answers with someone standing behind them. They need professional liability protection. They need methodology they can explain to regulators, auditors, and boards.
 
-EKA addresses this gap by making AI's contribution explicit and inspectable. The AI didn't produce the answer—it produced the code that produced the answer. The expert validated that code. The methodology is on record. The verification boundary is clear.
+EKA addresses this gap by making AI's contribution explicit and inspectable. The AI didn't produce the answer. It produced the code that produced the answer. The expert validated that code. The methodology is on record. The verification boundary is clear.
 
 This isn't a workaround or a legal fiction. It's a genuine reallocation of responsibility that matches actual value creation. The expert's judgment is preserved in the methodology. The AI's contribution is translation, not analysis.
 
@@ -72,7 +72,7 @@ This isn't a workaround or a legal fiction. It's a genuine reallocation of respo
 
 ## Front-Door Invariants
 
-Implementing EKA requires establishing what I call front-door invariants—conditions that must hold for any deliverable that leaves your practice:
+Implementing EKA requires establishing what I call front-door invariants. These are conditions that must hold for any deliverable that leaves your practice:
 
 1. **Every AI-generated deliverable has code provenance.** You can trace any output back to the code that produced it.
 
@@ -88,11 +88,11 @@ These invariants distinguish AI-augmented professional work from AI-generated co
 
 ## Practical Implementation
 
-Adopting EKA doesn't require rebuilding your practice. Start with analyses that already have a computational component—financial modeling, data analysis, quantitative risk assessment. These are natural fits for the pattern.
+Adopting EKA doesn't require rebuilding your practice. Start with analyses that already have a computational component. Financial modeling. Data analysis. Quantitative risk assessment. These are natural fits for the pattern.
 
-Train your team to think of AI as a translator, not an oracle. The prompt isn't "what is the answer?" but "write code that computes the answer given this methodology." This reframing is more important than any tooling change.
+Train your team to think of AI as a translator, not an oracle. The prompt isn't "what is the answer?" The prompt is "write code that computes the answer given this methodology." This reframing matters more than any tooling change.
 
-Establish code review as a core competency. Your experts need to read and validate the code AI produces. They don't need to be software engineers, but they need to understand what the code is doing at a conceptual level.
+Establish code review as a core competency. Your experts need to read and validate the code AI produces. They don't need to be software engineers. But they need to understand what the code is doing at a conceptual level.
 
 Build your artifact repository. Every piece of code that produces a deliverable should be version-controlled, documented, and retrievable. This is your audit trail and your methodology library.
 
@@ -100,10 +100,10 @@ Build your artifact repository. Every piece of code that produces a deliverable 
 
 ## The Verification Boundary
 
-The core principle of EKA is simple: use unreliable AI to produce reliable artifacts. The key is the verification boundary.
+EKA uses unreliable AI to produce reliable artifacts. The key is the verification boundary.
 
-AI sits on one side of that boundary, contributing translation capability. Human expertise sits on the other side, contributing judgment, methodology, and accountability. The code is the boundary itself—inspectable, testable, and deterministic.
+AI sits on one side of that boundary, contributing translation capability. Human expertise sits on the other side, contributing judgment, methodology, and accountability. The code is the boundary itself. Inspectable. Testable. Deterministic.
 
-This isn't about limiting AI or protecting professional turf. It's about deploying AI where it adds value while maintaining the governance structures that professional work requires. It's about building AI-augmented consulting practices that are more capable, more transparent, and more defensible than either human-only or AI-only alternatives.
+I'd push back on framing this as limiting AI or protecting professional turf. It's about deploying AI where it adds value while maintaining the governance structures that professional work requires. It's about building AI-augmented consulting practices that are more capable, more transparent, and more defensible than either human-only or AI-only alternatives.
 
-The firms that figure this out will define the next era of professional services. The pattern is here. The question is who will implement it first.
+The firms that figure this out will define the next era of professional services. The pattern is here. The question is who implements it first.
