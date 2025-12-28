@@ -6,11 +6,11 @@ description: "A framework for integrating AI into professional consulting that p
 
 The consulting industry faces an uncomfortable truth: clients can now ask ChatGPT the same questions they once paid experts to answer. This creates immediate margin pressure. But it also reveals something about how we've been thinking about AI in professional services. We've been thinking about it wrong.
 
-The instinct is to treat AI as an oracle. A system that takes questions and returns answers. This "Strong Oracle" pattern feels natural because it mirrors how clients interact with consultants. But it fundamentally misunderstands both the value consultants provide and the nature of AI systems.
+The instinct is to treat AI as an oracle. I've written about why [Oracle mode is ungovernable for professional work](/writing/ai-oracle-vs-assistant/). The short version: you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That creates a paradox that makes professional accountability impossible.
 
-I've developed a different approach that I call Executable Knowledge Architecture (EKA). It's an organizational pattern for AI-mediated expert interaction that preserves the irreplaceable elements of professional consulting while using AI's genuine strengths.
+I've developed a different approach that I call Executable Knowledge Architecture (EKA). It's an organizational pattern that implements [Assistant mode](/writing/ai-oracle-vs-assistant/) for professional consulting. Instead of asking AI for answers, we ask it to translate expert intent into executable code. The code is the artifact we verify. The results are what we deliver.
 
-EKA rests on an operational foundation: [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). This definition matters more than the traditional "justified true belief" because it's what makes human-AI collaboration coherent. The expert has one kind of capability: specifying intent, verifying alignment. The AI has another: producing executable implementations. Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions.
+EKA rests on two foundations. First, [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). This definition makes human-AI collaboration coherent: the expert has one kind of capability (specifying intent, verifying alignment), the AI has another (producing executable implementations). Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions. Second, [Assistant mode](/writing/ai-oracle-vs-assistant/) solves the verification paradox that makes Oracle mode ungovernable.
 
 ---
 
