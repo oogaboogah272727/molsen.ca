@@ -1,8 +1,8 @@
 ---
 title: "The Real Job of Support Teams in Professional Services"
-date: 2020-12-15
+date: 2021-11-09
 description: "Support teams exist to protect the scarcest resource in professional services: the time professionals spend not working."
-originalPublication: "Originally published December 2020"
+originalPublication: "Originally published November 2021"
 type: practice
 tags: ["Organizational Change", "Professional Practice"]
 ---

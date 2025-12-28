@@ -1,6 +1,6 @@
 ---
 title: "Leadership Lessons from Science Fiction"
-date: 2025-12-28
+date: 2021-11-30
 description: "The books that most shaped how I lead weren't management classics—they were science fiction novels I read in my youth."
 type: practice
 tags: ["Organizational Change", "Professional Practice"]

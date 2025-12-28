@@ -1,6 +1,6 @@
 ---
 title: "Mike's Rules for Critical Thinking"
-date: 2025-12-28
+date: 2024-10-29
 description: "A working set of rules for critical thinking organized into three domains: foundation, analysis, and engagement. Written for non-academics who want a down-to-earth framework."
 type: practice
 tags: ["Epistemic Rigor", "Professional Practice"]
