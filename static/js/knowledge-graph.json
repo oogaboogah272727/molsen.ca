@@ -1,181 +1,138 @@
 {
   "nodes": [
     {
-      "id": "OracleMode",
-      "label": "Oracle Mode",
-      "type": "pattern",
-      "description": "Using AI to provide answers directly"
-    },
-    {
-      "id": "AssistantMode",
-      "label": "Assistant Mode",
-      "type": "pattern",
-      "description": "Using AI to produce artifacts that encode methods"
-    },
-    {
-      "id": "WeakOracle",
-      "label": "Weak Oracle",
-      "type": "pattern",
-      "description": "Ask question, get answer, no dialogue"
-    },
-    {
-      "id": "StrongOracle",
-      "label": "Strong Oracle",
-      "type": "pattern",
-      "description": "Sophisticated dialogue, still unverifiable"
-    },
-    {
-      "id": "StrongOracleTrap",
-      "label": "Strong Oracle Trap",
-      "type": "problem",
-      "description": "Strong oracle feels rigorous but doesn't solve verification"
-    },
-    {
-      "id": "VerificationParadox",
-      "label": "Verification Paradox",
-      "type": "problem",
-      "description": "To verify AI's answer, you need expertise to produce it yourself"
-    },
-    {
-      "id": "VerificationBoundary",
-      "label": "Verification Boundary",
-      "type": "concept",
-      "description": "The line between AI generation and human verification"
-    },
-    {
-      "id": "GovernanceGap",
-      "label": "Governance Gap",
-      "type": "problem",
-      "description": "Gap between what's explicit-for-systems and inspectable-for-humans"
-    },
-    {
-      "id": "MethodVsVerdict",
-      "label": "Method vs. Verdict",
-      "type": "concept",
-      "description": "Asking for procedure vs. asking for conclusion"
-    },
-    {
-      "id": "EKA",
-      "label": "Executable Knowledge Architecture",
-      "type": "framework",
-      "description": "Pattern for AI-augmented consulting"
-    },
-    {
-      "id": "KnowledgeAsCapability",
-      "label": "Knowledge as Capability",
-      "type": "framework",
-      "description": "Knowledge is reliable capability to produce outcomes"
-    },
-    {
-      "id": "AgentRelativeTacitness",
-      "label": "Agent-Relative Tacitness",
-      "type": "concept",
-      "description": "Tacitness is property of transfer relationship, not intrinsic"
-    },
-    {
-      "id": "TacitSpaceShrinkage",
-      "label": "Tacit Space Shrinkage",
-      "type": "claim",
-      "description": "Domain of unencodable knowledge shrinks as AI improves"
-    },
-    {
-      "id": "StochasticFormDeterministicFunction",
-      "label": "Stochastic Form, Deterministic Function",
-      "type": "claim",
-      "description": "LLMs vary in form but preserve function"
-    },
-    {
-      "id": "ConsultingThreat",
-      "label": "Consulting Disruption",
-      "type": "claim",
-      "description": "AI erodes expertise asymmetry that consulting relies on"
-    },
-    {
-      "id": "HumanAIComposite",
-      "label": "Human-AI Composite Knowledge",
-      "type": "concept",
-      "description": "Neither alone has complete knowledge; together they do"
-    },
-    {
-      "id": "article-oracle-assistant",
+      "id": "oracle-assistant",
       "label": "Oracle vs. Assistant",
-      "type": "article",
-      "url": "/writing/ai-oracle-vs-assistant/"
+      "url": "/writing/ai-oracle-vs-assistant/",
+      "defines": ["Oracle Mode", "Assistant Mode", "Verification Paradox", "Method vs. Verdict"],
+      "type": "foundational"
     },
     {
-      "id": "article-strong-oracle-trap",
+      "id": "strong-oracle-trap",
       "label": "The Strong Oracle Trap",
-      "type": "article",
-      "url": "/writing/strong-oracle-trap/"
+      "url": "/writing/strong-oracle-trap/",
+      "defines": ["Oracle Spectrum", "Strong Oracle", "Tool Mitigation"],
+      "type": "core"
     },
     {
-      "id": "article-eka",
+      "id": "eka",
       "label": "Executable Knowledge Architecture",
-      "type": "article",
-      "url": "/writing/executable-knowledge-architecture/"
+      "url": "/writing/executable-knowledge-architecture/",
+      "defines": ["EKA", "Verification Boundary", "Front-Door Invariants"],
+      "type": "core"
     },
     {
-      "id": "article-knowledge-capability",
+      "id": "knowledge-capability",
       "label": "Knowledge as Capability",
-      "type": "article",
-      "url": "/writing/knowledge-as-capability/"
+      "url": "/writing/knowledge-as-capability/",
+      "defines": ["Knowledge as Capability", "Agent-Relative Tacitness", "Human-AI Composite Knowledge"],
+      "type": "foundational"
     },
     {
-      "id": "article-tacit-shrinkage",
+      "id": "tacit-shrinkage",
       "label": "Tacit Space Shrinkage",
-      "type": "article",
-      "url": "/writing/tacit-space-shrinkage/"
+      "url": "/writing/tacit-space-shrinkage/",
+      "defines": ["Tacit Space Shrinkage", "Structurally Tacit Core"],
+      "type": "theoretical"
     },
     {
-      "id": "article-stochasticity",
+      "id": "stochasticity",
       "label": "Stochastic Form, Deterministic Function",
-      "type": "article",
-      "url": "/writing/llm-stochasticity-determinism/"
+      "url": "/writing/llm-stochasticity-determinism/",
+      "defines": ["Stochastic Form/Deterministic Function"],
+      "type": "empirical"
     },
     {
-      "id": "article-consulting-threat",
+      "id": "consulting-threat",
       "label": "Consulting Threat = Opportunity",
-      "type": "article",
-      "url": "/writing/consulting-threat-opportunity/"
+      "url": "/writing/consulting-threat-opportunity/",
+      "defines": ["Consulting Disruption", "Senior + AI Threat"],
+      "type": "applied"
     },
     {
-      "id": "article-ai-first",
+      "id": "ai-first",
       "label": "AI-First Software",
-      "type": "article",
-      "url": "/writing/ai-first-software/"
+      "url": "/writing/ai-first-software/",
+      "defines": ["AI-First Software", "Formal Competence"],
+      "type": "applied"
+    },
+    {
+      "id": "critical-thinking",
+      "label": "Critical Thinking Rules",
+      "url": "/writing/critical-thinking-rules/",
+      "defines": [],
+      "type": "practice"
+    },
+    {
+      "id": "leadership-scifi",
+      "label": "Leadership Lessons from Science Fiction",
+      "url": "/writing/leadership-lessons-science-fiction/",
+      "defines": [],
+      "type": "practice"
+    },
+    {
+      "id": "support-team",
+      "label": "The Support Team's Real Job",
+      "url": "/writing/support-team-real-job/",
+      "defines": [],
+      "type": "practice"
+    },
+    {
+      "id": "remote-work",
+      "label": "Remote Work Formula",
+      "url": "/writing/remote-work-formula/",
+      "defines": [],
+      "type": "practice"
     }
   ],
   "links": [
-    {"source": "OracleMode", "target": "VerificationParadox", "type": "creates"},
-    {"source": "WeakOracle", "target": "OracleMode", "type": "isVariantOf"},
-    {"source": "StrongOracle", "target": "OracleMode", "type": "isVariantOf"},
-    {"source": "StrongOracle", "target": "VerificationParadox", "type": "doesNotSolve"},
-    {"source": "StrongOracle", "target": "StrongOracleTrap", "type": "creates"},
-    {"source": "AssistantMode", "target": "VerificationParadox", "type": "solves"},
-    {"source": "MethodVsVerdict", "target": "AssistantMode", "type": "foundationalTo"},
-    {"source": "EKA", "target": "AssistantMode", "type": "implements"},
-    {"source": "EKA", "target": "VerificationParadox", "type": "solves"},
-    {"source": "EKA", "target": "GovernanceGap", "type": "solves"},
-    {"source": "KnowledgeAsCapability", "target": "EKA", "type": "foundationalTo"},
-    {"source": "KnowledgeAsCapability", "target": "HumanAIComposite", "type": "enables"},
-    {"source": "StochasticFormDeterministicFunction", "target": "EKA", "type": "foundationalTo"},
-    {"source": "AgentRelativeTacitness", "target": "TacitSpaceShrinkage", "type": "foundationalTo"},
-    {"source": "ConsultingThreat", "target": "EKA", "type": "motivates"},
-    {"source": "VerificationBoundary", "target": "EKA", "type": "componentOf"},
-
-    {"source": "OracleMode", "target": "article-oracle-assistant", "type": "definedIn"},
-    {"source": "AssistantMode", "target": "article-oracle-assistant", "type": "definedIn"},
-    {"source": "VerificationParadox", "target": "article-oracle-assistant", "type": "definedIn"},
-    {"source": "StrongOracle", "target": "article-strong-oracle-trap", "type": "definedIn"},
-    {"source": "StrongOracleTrap", "target": "article-strong-oracle-trap", "type": "definedIn"},
-    {"source": "EKA", "target": "article-eka", "type": "definedIn"},
-    {"source": "VerificationBoundary", "target": "article-eka", "type": "discussedIn"},
-    {"source": "GovernanceGap", "target": "article-eka", "type": "discussedIn"},
-    {"source": "KnowledgeAsCapability", "target": "article-knowledge-capability", "type": "definedIn"},
-    {"source": "HumanAIComposite", "target": "article-knowledge-capability", "type": "discussedIn"},
-    {"source": "AgentRelativeTacitness", "target": "article-knowledge-capability", "type": "definedIn"},
-    {"source": "TacitSpaceShrinkage", "target": "article-tacit-shrinkage", "type": "definedIn"},
-    {"source": "StochasticFormDeterministicFunction", "target": "article-stochasticity", "type": "definedIn"},
-    {"source": "ConsultingThreat", "target": "article-consulting-threat", "type": "definedIn"}
+    {
+      "source": "strong-oracle-trap",
+      "target": "oracle-assistant",
+      "type": "extends",
+      "label": "extends"
+    },
+    {
+      "source": "eka",
+      "target": "oracle-assistant",
+      "type": "implements",
+      "label": "implements Assistant Mode"
+    },
+    {
+      "source": "eka",
+      "target": "knowledge-capability",
+      "type": "requires",
+      "label": "requires"
+    },
+    {
+      "source": "eka",
+      "target": "stochasticity",
+      "type": "cites",
+      "label": "exploits finding"
+    },
+    {
+      "source": "tacit-shrinkage",
+      "target": "knowledge-capability",
+      "type": "extends",
+      "label": "extends"
+    },
+    {
+      "source": "stochasticity",
+      "target": "oracle-assistant",
+      "type": "supports",
+      "label": "empirical evidence for"
+    },
+    {
+      "source": "consulting-threat",
+      "target": "eka",
+      "type": "motivates",
+      "label": "motivates"
+    },
+    {
+      "source": "eka",
+      "target": "strong-oracle-trap",
+      "type": "cites",
+      "label": "addresses"
+    }
   ]
 }

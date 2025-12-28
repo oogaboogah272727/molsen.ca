@@ -3,22 +3,18 @@
 <p class="intro">{{ .Site.Params.description }}</p>
 
 <div class="graph-legend">
-  <div class="legend-item"><span class="legend-dot framework"></span> Framework</div>
-  <div class="legend-item"><span class="legend-dot pattern"></span> Pattern</div>
-  <div class="legend-item"><span class="legend-dot problem"></span> Problem</div>
-  <div class="legend-item"><span class="legend-dot concept"></span> Concept</div>
-  <div class="legend-item"><span class="legend-dot claim"></span> Claim</div>
-  <div class="legend-item"><span class="legend-dot article"></span> Article</div>
+  <div class="legend-item"><span class="legend-dot foundational"></span> Foundational</div>
+  <div class="legend-item"><span class="legend-dot core"></span> Core</div>
+  <div class="legend-item"><span class="legend-dot theoretical"></span> Theoretical</div>
+  <div class="legend-item"><span class="legend-dot empirical"></span> Empirical</div>
+  <div class="legend-item"><span class="legend-dot applied"></span> Applied</div>
+  <div class="legend-item"><span class="legend-dot practice"></span> Practice</div>
 </div>
 
-<p class="graph-instructions">Click articles to read. Click concepts to see relationships. Drag to rearrange. Scroll to zoom.</p>
+<p class="graph-instructions">Click to read. Hover to see concepts defined. Drag to rearrange.</p>
 
 <div id="graph-container"></div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="/js/graph.js"></script>
-
-{{ with .Content }}
-  {{ . }}
-{{ end }}
 {{ end }}
