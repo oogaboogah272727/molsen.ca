@@ -27,6 +27,8 @@ The AI responds. Now you have an answer. But you face a problem: how do you know
 
 This creates what I call the verification paradox. To verify an AI's direct answer, you need the expertise to produce that answer yourself. But if you have that expertise, why did you need the AI? And if you don't have that expertise, how can you verify the answer?
 
+A note on sophistication: oracle mode exists on a spectrum. At one end is the naive case—ask a question, get an answer, no dialogue. At the other end is what I call strong oracle—real conversation, clarifying questions, probed assumptions, structured synthesis. Strong oracle is better. But as I discuss in [The Strong Oracle Trap](/writing/strong-oracle-trap/), it doesn't solve the verification paradox. It just makes the problem less obvious.
+
 The paradox has three horns:
 
 1. **You can verify the answer** because you have the expertise. In that case, the AI saved you time but added no capability you didn't already have.

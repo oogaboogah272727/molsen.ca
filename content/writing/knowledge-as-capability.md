@@ -177,7 +177,7 @@ Credentials and certifications remain useful as *signals* of likely capability. 
 
 ### Executable Knowledge Architecture
 
-EKA asks AI to translate expert intent into executable code rather than to provide answers directly. This only makes sense under a capability definition of knowledge.
+EKA implements [assistant mode](/writing/ai-oracle-vs-assistant/) for professional work: it asks AI to translate expert intent into executable code rather than to provide answers directly. This only makes sense under a capability definition of knowledge.
 
 The expert has knowledge: the capability to recognize correct outcomes, specify intent, and verify alignment. The AI has different knowledge: the capability to produce executable implementations from specifications.
 

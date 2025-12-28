@@ -19,13 +19,21 @@ EKA rests on two foundations. First, [knowledge is capability to produce outcome
 
 ## The Problem with AI as Oracle
 
-When you use AI in "Strong Oracle" mode, you inherit several critical problems.
+Oracle mode exists on a spectrum. At one end is weak oracle: ask a question, get a confident answer, no dialogue. At the other end is strong oracle: real conversation, clarifying questions, probed assumptions, structured synthesis at the end.
 
-First, there's no audit trail. The AI's reasoning is opaque. Its sources are unverifiable. Its methodology is uninspectable. If a client asks how you arrived at a conclusion, "the AI said so" is not a defensible answer.
+Strong oracle is better. The dialogue reveals context. The assumptions become more explicit. The output is more relevant to your specific situation.
+
+But here's the critical insight: [strong oracle doesn't solve the governance problem](/writing/strong-oracle-trap/). It just makes the problem less obvious.
+
+Even at the strong end of the spectrum—with sophisticated dialogue, retrieval-augmented generation, citations, and all the tooling that modern AI systems provide—you still inherit several critical problems.
+
+First, there's no audit trail. The AI's reasoning is opaque. Its sources are unverifiable. Its methodology is uninspectable. If a client asks how you arrived at a conclusion, "the AI said so" is not a defensible answer—regardless of how sophisticated your conversation was.
 
 Second, there's no reproducibility. Ask the same question twice and you may get different answers. Run the same analysis next quarter and you cannot guarantee consistency. This makes ongoing engagements problematic and periodic reporting unreliable.
 
 Third, you face the verification paradox. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself. If you have that expertise, why do you need the AI? If you don't, how do you know the AI is correct?
+
+This paradox applies at every point on the oracle spectrum. Better dialogue improves the quality of answers. It doesn't improve verifiability. The sophistication of the conversation is not the measure of governability. The inspectability of the output is.
 
 This paradox sits at the heart of AI governance in professional services. And it explains why clients still need experts even as information becomes commoditized.
 

@@ -166,7 +166,7 @@ Don't ask: "What's the NPV of this project?"
 
 Ask: "Write code to calculate NPV given these cash flows and this discount rate."
 
-The first is an oracle query—you're trusting the model's pattern matching. The second produces auditable, testable, reproducible output.
+The first is an [oracle query](/writing/ai-oracle-vs-assistant/)—you're trusting the model's pattern matching. The second produces auditable, testable, reproducible output. This is the operational difference between oracle and assistant modes, demonstrated empirically.
 
 The 75-point accuracy gap isn't a fluke. It's the difference between proper and improper use of the tool.
 
