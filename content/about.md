@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-I lead AI strategy and adoption at [SRK Consulting](https://srk.com), a global mining industry technical consultancy. I have spent years in professional services figuring out how to make organizations actually work — the systems, the support functions, the leadership problems nobody writes case studies about.
+I lead AI strategy and adoption at [SRK Consulting](https://srk.com), a global mining industry technical consultancy. [My profile](https://www.srk.com/en/consultants/mike-olsen). I have spent years in professional services figuring out how to make organizations actually work — the systems, the support functions, the leadership problems nobody writes case studies about.
 
 Now I think about what happens when AI meets professional accountability. The questions:
 
