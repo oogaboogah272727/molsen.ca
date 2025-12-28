@@ -36,7 +36,7 @@
         </a>
         {{ with .Params.tags }}
         <div class="article-tags">
-          {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+          {{ range . }}<a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>{{ end }}
         </div>
         {{ end }}
       </li>

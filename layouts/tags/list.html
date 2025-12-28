@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<p class="tag-description">Articles tagged with "{{ .Title }}"</p>
+
+<ul class="article-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li class="article-item">
+    <a href="{{ .RelPermalink }}" class="article-link">
+      <span class="article-title">{{ .Title }}</span>
+      {{ with .Params.description }}<span class="article-description">{{ . }}</span>{{ end }}
+    </a>
+    <span class="article-date">{{ .Date | time.Format "January 2, 2006" }}</span>
+  </li>
+  {{ end }}
+</ul>
+
+<p class="back-link"><a href="/writing/">← Back to all writing</a></p>
+{{ end }}

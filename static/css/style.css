@@ -499,6 +499,38 @@ footer .container {
   border: 1px solid var(--border);
   border-radius: 3px;
   color: var(--text-tertiary);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.tag:hover {
+  border-color: var(--text-tertiary);
+  color: var(--text-secondary);
+}
+
+.tag-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.article-date {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.back-link {
+  margin-top: 2rem;
+}
+
+.back-link a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  color: var(--accent);
 }
 
 /* Responsive */
