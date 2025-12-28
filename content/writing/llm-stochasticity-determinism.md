@@ -37,7 +37,9 @@ Same underlying question. Different framing.
 
 **Aggregate accuracy across all models: 25%**
 
-Three out of four answers were wrong. The dominant error was answering "2" instead of "3"—systematic undercounting by one.
+Three out of four answers were wrong. The dominant error was answering "2" instead of "3."
+
+This isn't undercounting. The models aren't counting at all. They're pattern-matching: recognizing a 10-character string, applying statistical knowledge of 'r' frequency in English text, and generating the most probable token. Two r's in a 10-character word is statistically reasonable. The occasional correct answer of "3"—along with "1" and "4"—results from stochastic sampling selecting lower-probability tokens, not from the model successfully counting.
 
 ### Code Generation
 
@@ -104,9 +106,11 @@ Most people have this backward. They see the variation and conclude the tool is 
 
 ## Why This Happens
 
-When you ask an LLM to count letters directly, you're asking it to pattern-match through training data. It's retrieving what it's seen before. The systematic "2" for strawberry probably reflects how often that question appears with wrong answers in the training corpus.
+When you ask an LLM to count letters directly, you're asking it to do something it fundamentally cannot do. It has no counting mechanism. It can only predict the next probable token based on patterns in training data—which includes statistical knowledge of letter frequencies in English. The model generates a plausible-sounding answer, not a computed one.
 
 When you ask it to write code, you're using what it actually does well: translation between natural language and formal specification. The code then executes deterministically. The LLM's stochasticity is confined to the representation; the computation itself is exact.
+
+This is the key insight: the LLM doesn't perform the calculation in either case. In oracle mode, it guesses. In assistant mode, it produces a program that calculates. The difference isn't in how hard the model tries—it's in what you're asking it to produce.
 
 ---
 
