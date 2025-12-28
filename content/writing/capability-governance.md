@@ -30,7 +30,7 @@ We take no position on whether machines "know" in any deep sense. We observe tha
 
 We sidestep the debate. What matters is **capability**: the ability to reliably produce an outcome. This is agent-agnostic. Human, institution, algorithm, hybrid — the substrate is irrelevant. The only questions are: does it produce outcomes, and how reliably?
 
-This is not a new claim. It describes what we already value. We're making it explicit.
+I develop this argument more fully in [Knowledge as Capability](/writing/knowledge-as-capability/). For governance purposes, the key point is simpler: we're making explicit what we already value.
 
 ---
 
