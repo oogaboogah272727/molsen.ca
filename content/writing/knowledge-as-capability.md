@@ -1,7 +1,7 @@
 ---
-title: "Knowledge as Capability: An Operational Foundation for Knowledge Management"
+title: "Knowledge as Capability: An Operational Foundation for Human-AI Cooperation"
 date: 2024-11-12
-description: "Extending knowledge management to accommodate AI by defining knowledge as capability to produce outcomes—the foundational claim that makes human-AI collaboration coherent."
+description: "Defining knowledge as capability to produce outcomes—the foundational claim that makes human-AI cooperation coherent."
 originalPublication: "Originally published November 2024"
 type: foundational
 tags: ["Epistemic Rigor"]
