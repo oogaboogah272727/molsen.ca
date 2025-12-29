@@ -39,9 +39,9 @@ And yet, the impact remains disruptively potent due to one simple fact: most bus
 
 ## The Uncomfortable Truth About Knowledge Work
 
-Here's the thing most of us don't want to admit: most of what every knowledge worker does involves regurgitation of someone else's prior art. Very little of knowledge work is truly creative. We deliberately avoid creative effort because "creative" solutions carry higher risk than proven, established solutions.
+Most of us don't want to admit this: most of what every knowledge worker does involves regurgitation of someone else's prior art. Very little of knowledge work is truly creative. We deliberately avoid creative effort because "creative" solutions carry higher risk than proven, established solutions.
 
-Think about your own work for a moment. How much of your day involves genuinely novel thinking? How much involves applying established frameworks, following documented procedures, synthesizing existing research, or reformulating ideas that others have already developed?
+Think about your own work for a moment. How much of your day involves truly novel thinking? How much involves applying established frameworks, following documented procedures, synthesizing existing research, or reformulating ideas that others have already developed?
 
 The honest answer, for most of us, is that the majority of knowledge work is intended to produce the least risky result—which means using the most explicit solution. We write reports that follow standard formats. We create presentations using proven structures. We draft communications using established templates. We solve problems by adapting solutions that worked elsewhere.
 
@@ -59,18 +59,16 @@ There's a phrase circulating in discussions about AI and employment:
 
 This captures something essential about where we're headed. The real question isn't whether AI can do your job. It's whether someone using AI can do your job faster, cheaper, or better than you can do it without AI.
 
-The parrot doesn't need to be creative. It doesn't need genuine understanding. It just needs to be fast, cheap, and good enough. For tasks that rely primarily on explicit knowledge—documented procedures, established practices, publicly available information—good enough is increasingly sufficient.
+The parrot doesn't need to be creative. It doesn't need real understanding. It just needs to be fast, cheap, and good enough. For tasks that rely primarily on explicit knowledge—documented procedures, established practices, publicly available information—good enough is increasingly sufficient.
 
 ---
 
 ## What This Means
 
-Think about how much of your work is creative effort. Think about how much is sui generis, unique, developed by you alone. Then think about this: work best supported by documentation and established practice is most susceptible to being accelerated and ultimately automated by AI.
+Think about how much of your work is creative effort. Think about how much is sui generis, unique, developed by you alone. Work best supported by documentation and established practice is most susceptible to being accelerated and ultimately automated by AI.
 
-The calculus is straightforward. The more your work depends on synthesizing explicit knowledge, the more vulnerable it is to AI augmentation or replacement. The more it requires tacit knowledge, contextual judgment, genuine creativity, or deep relationship management, the more insulated it remains.
+The more your work depends on synthesizing explicit knowledge, the more vulnerable it is to AI augmentation or replacement. The more it requires tacit knowledge, contextual judgment, real creativity, or deep relationship management, the more insulated it remains.
 
 I'm not saying knowledge workers should panic. I'm saying they should adapt. Learn to use these tools effectively. Understand their capabilities and limitations. Focus on developing skills that complement rather than compete with AI capabilities.
 
-The stochastic parrot is here. It's not going away. And for the vast majority of knowledge work that deliberately relies on established, documented, proven approaches, the parrot might be much of what you need.
-
-So the question becomes: what are you going to do about it?
+The stochastic parrot has arrived, and for the vast majority of knowledge work that deliberately relies on established, documented, proven approaches, it might be much of what you need. Those who recognize this will learn to work with it. Those who don't will find themselves competing against it—and losing.

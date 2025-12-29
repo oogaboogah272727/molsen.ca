@@ -118,7 +118,7 @@ The goal of critical thinking is not to "win" a debate but to gain better unders
 
 ### Engagement Rule Five: Assume good faith but pick your battles.
 
-Ideas deserve fair consideration regardless of their source. Assume ideas emerge from genuine inquiry or observation rather than dismissing them as propaganda, foolishness, or malice. Even ideas we ultimately reject may contain valuable insights or raise important questions. However, if you discover through examination that an idea or an argument is not grounded in good faith, feel free to abandon it without further consideration. Not all inquiry is honest. Not all questions are sincere. Engage only with those that are, but at least start with the benefit of the doubt and feel free to leave any conversation at any time.
+Ideas deserve fair consideration regardless of their source. Assume ideas emerge from honest inquiry or observation rather than dismissing them as propaganda, foolishness, or malice. Even ideas we ultimately reject may contain valuable insights or raise important questions. However, if you discover through examination that an idea or an argument is not grounded in good faith, feel free to abandon it without further consideration. Not all inquiry is honest. Not all questions are sincere. Engage only with those that are, but at least start with the benefit of the doubt and feel free to leave any conversation at any time.
 
 ### Engagement Rule Six: Regularly assess how well you're doing at critical thinking.
 

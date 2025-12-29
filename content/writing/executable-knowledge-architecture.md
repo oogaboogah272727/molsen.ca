@@ -25,11 +25,11 @@ Oracle mode exists on a spectrum. At one end is weak oracle: ask a question, get
 
 Strong oracle is better. The dialogue reveals context. The assumptions become more explicit. The output is more relevant to your specific situation.
 
-But here's the critical insight: [strong oracle doesn't solve the governance problem](/writing/strong-oracle-trap/). It just makes the problem less obvious.
+But the critical insight: [strong oracle doesn't solve the governance problem](/writing/strong-oracle-trap/). It just makes the problem less obvious.
 
-Even at the strong end of the spectrum—with sophisticated dialogue, retrieval-augmented generation, citations, and all the tooling that modern AI systems provide—you still inherit several critical problems.
+Even at the strong end of the spectrum—with thorough dialogue, retrieval-augmented generation, citations, and all the tooling that modern AI systems provide—you still inherit several critical problems.
 
-First, there's no audit trail. The AI's reasoning is opaque. Its sources are unverifiable. Its methodology is uninspectable. If a client asks how you arrived at a conclusion, "the AI said so" is not a defensible answer—regardless of how sophisticated your conversation was.
+First, there's no audit trail. The AI's reasoning is opaque. Its sources are unverifiable. Its methodology is uninspectable. If a client asks how you arrived at a conclusion, "the AI said so" is not a defensible answer—regardless of how thorough your conversation was.
 
 Second, there's no reproducibility. Ask the same question twice and you may get different answers. Run the same analysis next quarter and you cannot guarantee consistency. This makes ongoing engagements problematic and periodic reporting unreliable.
 
@@ -51,7 +51,7 @@ The workflow has five steps:
 
 2. **AI translates to executable code.** The AI's job is translation, not revelation. It produces code that can compute the answer.
 
-3. **Expert reviews and approves the code.** Here's the crucial insight: reviewing code that produces testable outputs is a fundamentally different task than verifying a direct answer. You can inspect the methodology. You can test edge cases. You can verify the logic without having to reproduce the entire analysis.
+3. **Expert reviews and approves the code.** The crucial insight: reviewing code that produces testable outputs is a fundamentally different task than verifying a direct answer. You can inspect the methodology. You can test edge cases. You can verify the logic without having to reproduce the entire analysis.
 
 4. **Code executes deterministically.** Once approved, the code runs. It produces the same output every time given the same input. The stochastic element has been removed from the execution path.
 
@@ -61,7 +61,7 @@ The workflow has five steps:
 
 ## Stochastic Form, Deterministic Function
 
-Here's an insight that underlies this approach: large language models are stochastic in form but deterministic in function.
+An insight underlies this approach: large language models are stochastic in form but deterministic in function.
 
 Ask an LLM to write code that calculates a weighted average, and it might structure the code differently each time. Variable names may vary. Implementation details may shift. The *form* is stochastic.
 
@@ -79,7 +79,7 @@ Clients don't just need answers. They need answers they can trust. Answers they 
 
 EKA addresses this gap by making AI's contribution explicit and inspectable. The AI didn't produce the answer. It produced the code that produced the answer. The expert validated that code. The methodology is on record. The verification boundary is clear.
 
-This isn't a workaround or a legal fiction. It's a genuine reallocation of responsibility that matches actual value creation. The expert's judgment is preserved in the methodology. The AI's contribution is translation, not analysis.
+This isn't a workaround or a legal fiction. It's an actual reallocation of responsibility that matches actual value creation. The expert's judgment is preserved in the methodology. The AI's contribution is translation, not analysis.
 
 ---
 
@@ -119,4 +119,4 @@ AI sits on one side of that boundary, contributing translation capability. Human
 
 I'd push back on framing this as limiting AI or protecting professional turf. It's about deploying AI where it adds value while maintaining the governance structures that professional work requires. It's about building AI-augmented consulting practices that are more capable, more transparent, and more defensible than either human-only or AI-only alternatives.
 
-The firms that figure this out will define the next era of professional services. The pattern is here. The question is who implements it first.
+The firms that figure this out will define the next era of professional services. This pattern works now, with current tools, for practices willing to reorganize around verification rather than revelation.

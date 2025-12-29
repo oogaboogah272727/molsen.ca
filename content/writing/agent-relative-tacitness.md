@@ -75,7 +75,7 @@ Is there knowledge that is necessarily tacit? Knowledge for which no representat
 
 This is a question at the boundary of epistemology and metaphysics. It asks whether there are hard limits on what representation can capture, or whether representation can in principle reach everywhere that knowledge does, given sufficient ingenuity in its design and sufficient capability in its interpretation.
 
-I am not going to settle this question here. But the framework of agent-relative tacitness gives us a sharper way to ask it. The question is not whether humans can articulate everything. Clearly we cannot. The question is whether there exists any possible agent, or system of agents, capable of completing the representational path for any given piece of knowledge.
+I am not going to settle this question here. But the framework of agent-relative tacitness gives us a sharper way to ask it. Humans clearly cannot articulate everything. What matters is whether there exists any possible agent, or system of agents, capable of completing the representational path for any given piece of knowledge.
 
 ---
 

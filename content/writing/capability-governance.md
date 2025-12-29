@@ -10,7 +10,7 @@ A client asks: "How did you arrive at this recommendation?"
 
 The consultant pauses. The honest answer is: an AI drafted the analysis, a junior reviewed the formatting, and a senior signed off after a ten-minute skim. The methodology is a black box. The deliverable looks authoritative. But if it's wrong, no one in the chain can explain why it was right.
 
-This is not a hypothetical. It's happening now, across every technical profession. The question isn't whether AI-assisted work is acceptable. It's whether anyone can defend what they delivered.
+This is happening now, across every technical profession. AI-assisted work is already here. What matters is whether anyone can defend what they delivered.
 
 This framework addresses that question.
 
@@ -28,7 +28,7 @@ We take no position on whether machines "know" in any deep sense. We observe tha
 
 "Knowledge" is philosophically fraught — it requires beliefs, justification, mental states. This is necessarily anthropocentric.
 
-We sidestep the debate. What matters is **capability**: the ability to reliably produce an outcome. This is agent-agnostic. Human, institution, algorithm, hybrid — the substrate is irrelevant. The only questions are: does it produce outcomes, and how reliably?
+We sidestep the debate. What matters is **capability**: the ability to reliably produce an outcome. This is agent-agnostic. Human, institution, algorithm, hybrid — the underlying form is irrelevant. The only questions are: does it produce outcomes, and how reliably?
 
 I develop this argument more fully in [Knowledge as Capability](/writing/knowledge-as-capability/). For governance purposes, the key point is simpler: we're making explicit what we already value.
 
@@ -182,7 +182,7 @@ The framework is novel only in its explicitness. We already do this. We just don
 
 4. The framework reveals that unexposed expertise, however well-intentioned, creates unquantified residual risk. Catastrophic failures are rare but real — Vale lost $19 billion in market cap in a single day after Brumadinho, and the Samarco disaster resulted in a $30 billion settlement. The industry manages this through reliance on expert judgment (brand) and liability structures that may leave communities holding consequences. Whether current practice is acceptable depends on whether that residual risk is within tolerance — a question this framework forces but doesn't answer.
 
-5. The question isn't whether to adopt novel generation methods. It's whether you'll be permitted to compete without them once the actuarial case is made—or conversely, whether you'll be permitted to use them before it is.
+5. Novel generation methods will become table stakes. Either you'll be unable to compete without them once the actuarial case is made—or unable to use them before it is.
 
 ---
 

@@ -31,7 +31,7 @@ But the cost is real. Wasted overhead time is support's finger on the scale of t
 
 ## What Wasted Time Actually Looks Like
 
-Here's a partial list of avoidable overhead:
+A partial list of avoidable overhead:
 
 **Forms that ask questions we already know the answers to.** Every field on a form should justify its existence. If we can get the answer from our systems, we should. If we can infer it from context, we should. If we asked before and nothing has changed, we shouldn't ask again. Forms that interrogate professionals for information we already have are disrespectful of their time.
 
@@ -75,10 +75,8 @@ Support teams often measure their success by uptime percentages, ticket closure 
 
 The real question is simpler: how much of our professionals' time do we waste?
 
-That's not always easy to measure. Wasted time is diffuse. It hides in small inefficiencies. It accumulates invisibly. But professionals know. They feel it in the friction of their daily work. They notice when systems fight them instead of serving them.
+That's not always easy to measure. Wasted time is diffuse. It hides in small inefficiencies. It accumulates invisibly. But professionals know. They feel it in the resistance of their daily work. They notice when systems fight them instead of serving them.
 
-The support team's job is to minimize that friction. Not to run systems. Not to close tickets. Not to hit SLAs. Those are means. The end is professional time recovered.
+The support team's job is to minimize that resistance. Not to run systems. Not to close tickets. Not to hit SLAs. Those are means. The end is professional time recovered.
 
-If we keep that end clearly in view, the priorities become obvious. We fix the things that waste the most time first. We design systems that assume professionals are busy and time is scarce. We build processes that guide rather than interrogate. We treat every minute of overhead as a cost we're imposing on people who don't have minutes to spare.
-
-That's the discipline. And for professional services firms, it's the difference between a support function that enables the business and one that quietly undermines it.
+If we keep that end clearly in view, the priorities become obvious. We fix the things that waste the most time first. We design systems that assume professionals are busy and time is scarce. We build processes that guide rather than interrogate. We treat every minute of overhead as a cost we're imposing on people who don't have minutes to spare. Professional services firms that grasp this build support functions that enable the business. Those that don't build support functions that quietly undermine it.

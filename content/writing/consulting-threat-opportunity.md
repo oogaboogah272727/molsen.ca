@@ -69,16 +69,14 @@ Static expertise is no longer a defensible advantage. The consultant who mastere
 
 **Third: Which assets can we build that remain competitive as AI advances?**
 
-This question points toward the few genuine defensible advantages available: brand reputation that clients trust implicitly, relationships that transcend transactional value, scarce physical assets or access rights, network effects that become more valuable as they grow. These assets cannot be easily replicated by a senior expert with an AI subscription. They represent the foundation for whatever consulting business model survives this transition.
+This question points toward the few actually defensible advantages: brand reputation that clients trust implicitly, relationships that transcend transactional value, scarce physical assets or access rights, network effects that become more valuable as they grow. These assets cannot be easily replicated by a senior expert with an AI subscription. They represent the foundation for whatever consulting business model survives this transition.
 
 ---
 
 ## The Opportunity in the Threat
 
-Organizations that fully exploit AI to rapidly adapt will thrive. This is true for consulting firms and their clients alike. The threat and the opportunity are the same phenomenon viewed from different angles.
+Organizations that fully exploit AI to rapidly adapt will thrive. This is true for consulting firms and their clients alike.
 
-For consulting firms willing to honestly assess their position, ruthlessly evaluate which scenarios apply to their practice areas, and build toward genuinely durable assets, this disruption creates enormous opportunity. The firms that cling to the status quo, hoping asymmetry will somehow persist, will discover that encoded expertise waits for no one.
+The firms willing to honestly assess their position, ruthlessly evaluate which scenarios apply to their practice areas, and build toward durable assets will capture disproportionate value. Those clinging to the status quo will discover that encoded expertise waits for no one.
 
-The existential threat is real. But existential threats, properly understood and addressed, often become the catalyst for transformation that would never have occurred otherwise. The consulting industry built on information asymmetry must become an industry built on something more durable. The firms that figure out what that something is and build it before the window closes will define the next era of professional services.
-
-I've developed one answer to this challenge: [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/), a pattern for AI-augmented consulting that preserves the verification and accountability that clients actually need. It's built on a [capability-based definition of knowledge](/writing/knowledge-as-capability/) that makes human-AI collaboration coherent. The clock is running. But the pattern exists for those ready to implement it.
+The consulting industry built on information asymmetry must become an industry built on something more durable: verification, accountability, and the kind of synthesized judgment that emerges from deep expertise applied to novel problems. [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) offers one pattern for this transformation, built on a [capability-based definition of knowledge](/writing/knowledge-as-capability/) that makes human-AI collaboration coherent. The window is narrowing. The pattern exists for those ready to implement it.

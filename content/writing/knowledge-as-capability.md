@@ -25,9 +25,9 @@ Everything else I've written about Executable Knowledge Architecture and agent-r
 
 ## The Traditional Framework
 
-Philosophers have debated the nature of knowledge for millennia, and I'm not going to pretend that "justified true belief" is the settled answer. It isn't. Gettier demolished the sufficiency of JTB in 1963, and the field has spent sixty years proposing alternatives: reliabilism, virtue epistemology, tracking theories, knowledge-first approaches. The debates are sophisticated and unresolved.
+Philosophers have debated the nature of knowledge for millennia, and I'm not going to pretend that "justified true belief" is the settled answer. It isn't. Gettier demolished the sufficiency of JTB in 1963, and the field has spent sixty years proposing alternatives: reliabilism, virtue epistemology, tracking theories, knowledge-first approaches. The debates are complex and unresolved.
 
-But here's what matters for our purposes: all these frameworks share an assumption. They assume agents with mental states. Whether you require justification, reliable belief-forming processes, intellectual virtues, or sensitivity to truth, you're still asking about the epistemic status of a *believer*. The debates are about what conditions beliefs must meet to constitute knowledge.
+But what matters for our purposes: all these frameworks share an assumption. They assume agents with mental states. Whether you require justification, reliable belief-forming processes, intellectual virtues, or sensitivity to truth, you're still asking about the epistemic status of a *believer*. The debates are about what conditions beliefs must meet to constitute knowledge.
 
 Let me be direct about what "agents with mental states" means in practice: it means humans. And here we should acknowledge an uncomfortable truth. We don't actually know what mental states are. Philosophy hasn't solved the solipsism problem—I cannot verify that you have experiences, only that you behave as if you do. Neuroscience hasn't solved the hard problem of consciousness. Psychology doesn't have a settled account of what cognition is or how it produces understanding. The confident claim that humans *have* knowledge while AI systems *cannot* assumes we know what knowledge-constituting mental states are and how to detect them. We don't. That knowledge is not established in any discipline.
 
@@ -109,7 +109,7 @@ If knowledge management stays with belief-based definitions, then AI systems rem
 
 ### Agent-Relative Tacitness Becomes Possible
 
-Here's an insight that becomes possible with an extended definition: knowledge that is tacit for one agent may be explicit for another.
+An insight becomes possible with an extended definition: knowledge that is tacit for one agent may be explicit for another.
 
 For a human doctor: "This patient presentation suggests condition X" may be tacit. She can't fully articulate why.
 

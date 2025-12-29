@@ -13,7 +13,7 @@ Every organization has knowledge that nobody can quite put into words. The machi
 
 That assumption is becoming obsolete.
 
-As AI capabilities expand, the domain of practically ineffable knowledge is shrinking. Not because tacit knowledge was never real. Much of what we labeled "tacit" was actually something else: knowledge blocked by representational limits rather than knowledge that genuinely resists representation.
+As AI capabilities expand, the domain of practically ineffable knowledge is shrinking. Not because tacit knowledge was never real. Much of what we labeled "tacit" was actually something else: knowledge blocked by representational limits rather than knowledge that actually resists representation.
 
 This distinction matters for how organizations think about expertise, training, and governance. It matters a lot.
 
@@ -23,15 +23,15 @@ This argument builds on two foundational claims. First, [knowledge is capability
 
 ## Two Kinds of Tacitness
 
-Michael Polanyi, who gave us the concept of tacit knowledge, was pointing at something genuine: we know more than we can tell. The cyclist cannot fully articulate how she balances. The chess master cannot exhaustively explain his positional intuition. Some knowledge resists explicit formulation.
+Michael Polanyi, who gave us the concept of tacit knowledge, was pointing at something real: we know more than we can tell. The cyclist cannot fully articulate how she balances. The chess master cannot exhaustively explain his positional intuition. Some knowledge resists explicit formulation.
 
 But look closer at organizational "tacit knowledge" and you'll find two distinct phenomena mixed together.
 
-**Structurally tacit knowledge** is inseparable from embodied skills, perceptions, and value commitments. It functions as background for explicit statements to make sense. Attempts to spell out every element fail or degrade the performance. This is Polanyi's tacit dimension in its purest form. Knowledge that genuinely resists articulation because articulation would destroy the integrated whole that makes it work.
+**Structurally tacit knowledge** is inseparable from embodied skills, perceptions, and value commitments. It functions as background for explicit statements to make sense. Attempts to spell out every element fail or degrade the performance. This is Polanyi's tacit dimension in its purest form. Knowledge that actually resists articulation because articulation would destroy the integrated whole that makes it work.
 
 **Representationally tacit knowledge** could be expressed in some representational system without destroying its usefulness. It just hasn't been, because the knower lacks the vocabulary or conceptual repertoire to articulate it. The process engineer who "just knows" when a system is drifting may lack the control theory vocabulary to explain what she's detecting. Her knowledge feels ineffable to her, but it's not ineffable in principle. Give her the right concepts, or the right interlocutor, and she can articulate it.
 
-Here's the real insight: much organizational "tacit knowledge" is representationally tacit, not structurally tacit. It's unexpressed because the knower lacks the words. Not because the knowledge resists words.
+The real insight: much organizational "tacit knowledge" is representationally tacit, not structurally tacit. It's unexpressed because the knower lacks the words. Not because the knowledge resists words.
 
 ---
 
@@ -42,13 +42,13 @@ Large language models have a capability that matters here: they can serve as exp
 Think about what happens when an expert works with an LLM to articulate knowledge they've previously experienced as inexpressible:
 
 - The model proposes candidate formulations when the expert "knows what they mean but cannot say it"
-- It surfaces terminology and distinctions from other domains that might capture what the expert is trying to express
+- It offers terminology and distinctions from other domains that might capture what the expert is trying to express
 - It suggests ways to structure process descriptions or narratives
 - It generates examples and counterexamples that help sharpen explanations
 
 This directly addresses the expressive-deficit problem. Knowledge that felt ineffable to an individual knower becomes articulate once the model supplies concepts and language they didn't know were available.
 
-Here's the test: If an expert, working with an interlocutor with broader vocabulary and conceptual repertoire, can iteratively articulate knowledge until a competent third party can act on it, the knowledge was likely representationally tacit. If articulation fails even with extensive assistance, if "you just have to do it yourself to know," the knowledge may be structurally tacit.
+The test: If an expert, working with an interlocutor with broader vocabulary and conceptual repertoire, can iteratively articulate knowledge until a competent third party can act on it, the knowledge was likely representationally tacit. If articulation fails even with extensive assistance, if "you just have to do it yourself to know," the knowledge may be structurally tacit.
 
 LLMs are extraordinarily capable interlocutors for this purpose. They have access to vocabulary and conceptual frameworks from across human knowledge. They're patient. They can propose formulation after formulation until something clicks. They make the test practical in ways it never was before.
 
@@ -86,8 +86,6 @@ The practically ineffable region for organizations is shrinking. Knowledge that 
 
 But a structurally tacit human core remains. Lived experience. Deep value commitments. The felt sense of what matters. The integration of perception, emotion, and action that constitutes skilled human judgment in its fullest form. These are not representational problems waiting for better tools.
 
-The real question for organizations is this: how much of what we've been calling "tacit" was actually representationally blocked rather than structurally inexpressible? And as those blocks dissolve, what becomes possible that wasn't possible before?
+Most of what organizations have called "tacit" was representationally blocked, not structurally inexpressible. Those blocks are dissolving. The boundaries of the articulable are moving faster than most leaders recognize, and the organizations that grasp this will capture knowledge their competitors still believe is uncapturable.
 
-The boundaries of the articulable are moving. For organizations that pay attention, this is among the most significant shifts of the AI era. What was once locked in heads, protected by the limits of human expression, is increasingly available for capture, systematization, and deployment.
-
-Tacit domain is shrinking. The strategic question is what to do about it. That's the discipline.
+The machinist's feel for tolerance. The sales director's deal intuition. The nurse's pattern recognition. Some of this is genuinely human, genuinely irreducible. Most of it is just waiting for the right interlocutor.

@@ -42,7 +42,7 @@ He's the type of leader I strive to be.
 
 Captain Phule isn't the only example I found in what I now realize was a less-misspent youth than I thought.
 
-Duke Leto Atreides demonstrated that earning loyalty through genuine care for your people creates bonds stronger than any contract or threat could produce. His leadership of House Atreides wasn't built on the fear that often characterized the politics of the Landsraad. It was built on respect, freely given and genuinely earned.
+Duke Leto Atreides demonstrated that earning loyalty through real care for your people creates bonds stronger than any contract or threat could produce. His leadership of House Atreides wasn't built on the fear that often characterized the politics of the Landsraad. It was built on respect, freely given and actually earned.
 
 Cletus Grahame, from Gordon Dickson's novels, showed that understanding systems—really understanding them—allows you to achieve outcomes that appear impossible to those who see only the surface structure. Strategic thinking isn't about being smarter than your opponents. It's about seeing the actual constraints and opportunities that others miss because they're focused on the conventional rules.
 
@@ -64,10 +64,10 @@ The explicitly didactic books taught me the vocabulary. The science fiction taug
 
 ## The Point
 
-I'm not suggesting that everyone should derive their leadership philosophy from speculative fiction. But I am suggesting that the sources of genuine influence are often not the sources we'd identify on a professional development plan.
+I'm not suggesting that everyone should derive their leadership philosophy from speculative fiction. But I am suggesting that the sources of real influence are often not the sources we'd identify on a professional development plan.
 
-The books that shaped how I lead weren't the ones I read because I thought I should. They were the ones I read because I wanted to. And that might be worth considering when thinking about how leadership is actually learned—not through frameworks imposed from outside, but through examples that resonate deeply enough to become part of how you see the world.
+The books that shaped how I lead weren't the ones I read because I thought I should. They were the ones I read because I wanted to. And that's worth considering when thinking about how leadership is actually learned—not through frameworks imposed from outside, but through examples that resonate deeply enough to become part of how you see the world.
 
 Captain Phule didn't teach me leadership. But he showed me what it could look like. The management books came later and gave me the language to describe what I'd already come to value.
 
-Sometimes the most useful lessons come from unexpected sources. That's the discipline.
+Maybe those dog-eared paperbacks at the bottom of my shelf have earned a better spot after all.
