@@ -1,7 +1,7 @@
 ---
 title: "Agent-Relative Tacitness: A New Framework"
 date: 2024-12-03
-description: "Rethinking what makes knowledge tacit or explicit—and why the answer depends on who is doing the knowing."
+description: "Rethinking what makes knowledge tacit or explicit, and why the answer depends on who is doing the knowing."
 originalPublication: "Originally published December 2024"
 type: theoretical
 tags: ["Epistemic Rigor"]
@@ -15,7 +15,7 @@ But here is the question that has gone underexplored: tacit relative to *whom*?
 
 Your dog cannot articulate its territorial knowledge. A biologist studying animal cognition could. She could map the territory, identify the scent markers, describe the behavioral patterns, and produce a comprehensive account of what the dog "knows." The knowledge that was locked inside the dog's practice is now written in a research paper.
 
-This observation leads me to a reconceptualization of tacit knowledge that I think matters. Especially as we enter an era of increasingly capable artificial agents.
+This observation leads to a reconceptualization of tacit knowledge that matters. Especially as we enter an era of increasingly capable artificial agents.
 
 This framework depends on a foundational claim I develop elsewhere: that [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/), not justified true belief. Once we define knowledge operationally rather than epistemologically, tacitness becomes a question about transfer relationships between agents. It stops being an intrinsic property of knowledge itself.
 
@@ -23,7 +23,7 @@ This framework depends on a foundational claim I develop elsewhere: that [knowle
 
 ## The Standard View and Its Limits
 
-The traditional understanding of tacit knowledge treats tacitness as if it were a property of the knowledge itself. Some knowledge, on this view, is simply inarticulable. The expert's intuition, the craftsman's feel for materials, the native speaker's grammatical sense. These are held up as paradigm cases of knowledge that resists explicit formulation.
+The traditional understanding of tacit knowledge treats tacitness as if it were a property of the knowledge itself. Some knowledge, on this view, is simply inarticulable. The expert's intuition, the craftsman's feel for materials, the native speaker's grammatical sense. These are held up as typical cases of knowledge that resists explicit formulation.
 
 But this framing is quietly anthropocentric. When we say knowledge is tacit, we typically mean tacit *relative to human expressive capabilities*. We treat the boundaries of human articulation as if they were the boundaries of articulation as such.
 
@@ -35,7 +35,7 @@ That assumption deserves scrutiny.
 
 The core insight is simple but has real consequences: whether knowledge is tacit or explicit depends on the capabilities of the agent or agents in question. Not on intrinsic properties of the knowledge itself.
 
-Here is how I'd put it. An expert radiologist examines a scan and announces, "Something is wrong here," before she can specify what. Her diagnostic knowledge is operating tacitly. She cannot, in that moment, articulate the features that triggered her judgment. But this tacitness is contingent, not absolute. With effort, she might introspect and identify the relevant patterns. A research team might study expert radiologists and codify the diagnostic heuristics. An AI system trained on thousands of scans might learn to highlight the specific anomalies that human experts detect but struggle to name.
+An expert radiologist examines a scan and announces, "Something is wrong here," before she can specify what. Her diagnostic knowledge is operating tacitly. She cannot, in that moment, articulate the features that triggered her judgment. But this tacitness is contingent, not absolute. With effort, she might introspect and identify the relevant patterns. A research team might study expert radiologists and codify the diagnostic heuristics. An AI system trained on thousands of scans might learn to highlight the specific anomalies that human experts detect but struggle to name.
 
 The knowledge was tacit relative to the radiologist in that moment. It need not be tacit relative to a sufficiently capable system of agents working together.
 
@@ -45,7 +45,7 @@ The knowledge was tacit relative to the radiologist in that moment. It need not 
 
 One of the more interesting features of this framework emerges when we examine how knowledge moves between tacit and explicit forms. Agent capabilities have internal structure that we often overlook.
 
-Here is my filter. Think about the capacity to *encode* knowledge: to take something known and render it into a representation. Now think about the capacity to *decode*: to take a representation and recover operative knowledge from it. These are separable abilities. They need not reside in the same agent.
+Consider the capacity to *encode* knowledge: to take something known and render it into a representation. Now think about the capacity to *decode*: to take a representation and recover operative knowledge from it. These are separable abilities. They need not reside in the same agent.
 
 A poet encodes experiences and perceptions into verse. The resulting poem is a representation, but the poet herself may be unable to decode it propositionally. She cannot explain in plain prose exactly what the poem conveys or how it works its effects. Meanwhile, a literary critic may have the opposite profile: tremendous decoding ability, capable of articulating what poems mean and how they achieve their effects, but unable to write poetry of his own.
 
@@ -75,13 +75,13 @@ Is there knowledge that is necessarily tacit? Knowledge for which no representat
 
 This is a question at the boundary of epistemology and metaphysics. It asks whether there are hard limits on what representation can capture, or whether representation can in principle reach everywhere that knowledge does, given sufficient ingenuity in its design and sufficient capability in its interpretation.
 
-I am not going to settle this question here. But the framework of agent-relative tacitness gives us a sharper way to ask it. Humans clearly cannot articulate everything. What matters is whether there exists any possible agent, or system of agents, capable of completing the representational path for any given piece of knowledge.
+The framework of agent-relative tacitness gives us a sharper way to ask the question. Humans clearly cannot articulate everything. What matters is whether there exists any possible agent, or system of agents, capable of completing the representational path for any given piece of knowledge.
 
 ---
 
 ## Implications for a Hybrid Future
 
-We are entering a period in which human and artificial agents will increasingly work together, combining complementary capabilities. The framework of agent-relative tacitness suggests that one of the most important functions of this collaboration will be the progressive explicitation of knowledge that was tacit relative to humans alone.
+We are entering a period in which human and artificial agents will increasingly work together, combining complementary capabilities. The framework of agent-relative tacitness suggests that one of the most important functions of this collaboration will be the progressive explication of knowledge that was tacit relative to humans alone.
 
 This is not just a technical development. It has real implications for how we understand expertise, how we transmit knowledge across generations, and how we make decisions in domains that have traditionally relied on inarticulate judgment.
 

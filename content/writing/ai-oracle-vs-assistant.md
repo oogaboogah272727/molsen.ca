@@ -63,7 +63,7 @@ This is the category error that makes Oracle mode dangerous. We treat AI as if i
 
 Assistant mode changes what we ask AI to do. Instead of asking for answers, we ask for artifacts that help us produce answers.
 
-The key insight: producing an answer is one task. Producing a method that produces an answer is a different task.
+Producing an answer is one task. Producing a method that produces an answer is a different task.
 
 When you ask "what's the weighted average?" you're asking for an answer. When you ask "write code that computes a weighted average from this data" you're asking for a method.
 
@@ -147,7 +147,7 @@ The choice between Oracle and Assistant mode is foundational because it determin
 
 **Reproducibility:** Oracle mode is stochastic. Assistant mode produces deterministic artifacts.
 
-Everything else follows from this choice. [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) is Assistant mode applied to professional consulting. The [governance frameworks](/writing/tacit-space-shrinkage/) I've developed assume Assistant mode. The [capability-based definition of knowledge](/writing/knowledge-as-capability/) that grounds my work makes sense of how human and AI capabilities combine in Assistant mode.
+Everything else follows from this choice. [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) is Assistant mode applied to professional consulting. The [governance frameworks](/writing/tacit-space-shrinkage/) I've developed assume Assistant mode. The [knowledge-as-capability foundation](/writing/knowledge-as-capability/) that grounds my work makes sense of how human and AI capabilities combine in Assistant mode.
 
 If you're going to use AI in professional work, this is the first choice you have to make. And the answer, for any work that matters, is Assistant mode.
 

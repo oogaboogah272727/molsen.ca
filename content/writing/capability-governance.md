@@ -16,21 +16,11 @@ This framework addresses that question.
 
 ---
 
-## Terminology Note
+## Capability Over Knowledge
 
-We use established KM vocabulary (tacit/explicit knowledge, knowledge transfer) as convenient shorthand. Readers committed to anthropocentric epistemology may prefer to read "knowledge" as "outcome-generating capability." The phenomena described are the same; the philosophical commitments differ.
+"Knowledge" is philosophically fraught. It requires beliefs, justification, mental states. Traditional epistemology is anthropocentric by design.
 
-We take no position on whether machines "know" in any deep sense. We observe that they do stuff. That's enough for governance purposes.
-
----
-
-## Foundational Move: Capability Over Knowledge
-
-"Knowledge" is philosophically fraught — it requires beliefs, justification, mental states. This is necessarily anthropocentric.
-
-We sidestep the debate. What matters is **capability**: the ability to reliably produce an outcome. This is agent-agnostic. Human, institution, algorithm, hybrid — the underlying form is irrelevant. The only questions are: does it produce outcomes, and how reliably?
-
-I develop this argument more fully in [Knowledge as Capability](/writing/knowledge-as-capability/). For governance purposes, the key point is simpler: we're making explicit what we already value.
+I treat knowledge and capability to produce outcomes as equivalent. The argument for this is in [Knowledge as Capability](/writing/knowledge-as-capability/). For governance purposes, the key point is simpler: what matters is **capability**, the ability to reliably produce an outcome. Human, institution, algorithm, hybrid: the underlying form is irrelevant. The only questions are: does it produce outcomes, and how reliably?
 
 ---
 
@@ -50,7 +40,7 @@ The framework is less applicable to pure strategy, artistic judgment, or context
 
 ## Tacitness as Interface Property
 
-Traditional framing holds tacit knowledge as intrinsically hard to articulate (Polanyi). Under this framework, tacitness is relational—a function of the expressive capacity of the holder and the interpretive capacity of the receiver.
+Traditional framing holds tacit knowledge as intrinsically hard to articulate (Polanyi). Under this framework, tacitness is relational: a function of the expressive capacity of the holder and the interpretive capacity of the receiver.
 
 What is tacit between two humans may be explicit between human and AI, or vice versa. Tacitness becomes a measurable interface property: how much effort to transfer capability X from agent A to agent B?
 
@@ -74,7 +64,7 @@ The risk-adjusted threshold governs which route is acceptable for a given delive
 
 **Method-bearing artifacts** translate methodology into implementation. Verification is against specification. The methodology carries the epistemic weight; execution is tooling. Liability is manageable within existing QA frameworks.
 
-**Conclusion artifacts** are novel outputs requiring independent verification. This includes any artifact where the generation method proposes rather than executes—including AI-proposed methodologies.
+**Conclusion artifacts** are novel outputs requiring independent verification. This includes any artifact where the generation method proposes rather than executes, including AI-proposed methodologies.
 
 Verification routes for conclusion artifacts:
 
@@ -106,11 +96,11 @@ The distinction isn't about importance — conclusions can be routine and method
 
 ## Post Facto Reconciliation Builds Actuarial Standing
 
-Track record is a legitimate verification route, but it requires actual measurement against outcomes. "This person has been doing it for 30 years" is not measurement—it's reputation as proxy.
+Track record is a legitimate verification route, but it requires actual measurement against outcomes. "This person has been doing it for 30 years" is not measurement. It's reputation as proxy.
 
-Systematic reconciliation—evaluating projections against outcomes across sufficient volume—builds actuarial evidence. A method demonstrating tighter error distributions, lower variance, better calibration earns reliability status over time.
+Systematic reconciliation (evaluating projections against outcomes across sufficient volume) builds actuarial evidence. A method demonstrating tighter error distributions, lower variance, better calibration earns reliability status over time.
 
-This is how expert intuition has always been validated. We're making it measurable.
+This is how expert intuition has always been validated. The framework makes it measurable.
 
 Residual risk: post facto reconciliation validates after exposure has occurred. Induction limits apply. n successful reconciliations do not guarantee n+1. Reliance on reconciliation-only verification is acceptable only when the cost of being wrong is within tolerance.
 
@@ -134,7 +124,7 @@ The foundational forcing function is the introduction of novel generation mechan
 
 **Credentials are regulatory compliance, not reliability signals.** The professional stamp on a regulatory filing is a disclosure gate, not a trust decision. Actual reliability assessment happens elsewhere: firm reputation, individual track record, methodology review. Credentials are a parallel layer, not a verification shortcut.
 
-**Brand is not validation.** "Our brand is our validation" is risk acceptance plus limited transfer—not risk management. The firm's liability cap may be a rounding error compared to actual losses if the structure fails and people die. Brand-based trust makes risk invisible until failure; it doesn't make risk disappear.
+**Brand is not validation.** "Our brand is our validation" is risk acceptance plus limited transfer. Not risk management. The firm's liability cap may be a rounding error compared to actual losses if the structure fails and people die. Brand-based trust makes risk invisible until failure; it doesn't make risk disappear.
 
 The framework forces honesty:
 
@@ -164,9 +154,9 @@ Competitive pressure flips. Interpretation is now cheap, but only for what's exp
 
 ## The Pitch
 
-This is how we evaluate whether something is right or wrong right now. We don't trust everyone—we trust people we deem trustworthy, and that trustworthiness is established by track record or by evaluating how they obtained their results. Novel generation mechanisms are no different.
+This is how we evaluate whether something is right or wrong right now. We don't trust everyone. We trust people we deem trustworthy, and that trustworthiness is established by track record or by evaluating how they obtained their results. Novel generation mechanisms are no different.
 
-The framework doesn't mandate adoption of any particular method. It demands consistent application of reliability standards we already hold. Resistance to novel methods is legitimate if they fail to meet thresholds. What's illegitimate is categorical exemption from evaluation—either by reflexive rejection or uncritical acceptance.
+The framework doesn't mandate adoption of any particular method. It demands consistent application of reliability standards I already hold. You probably do too. Resistance to novel methods is legitimate if they fail to meet thresholds. What's illegitimate is categorical exemption from evaluation, whether by reflexive rejection or uncritical acceptance.
 
 The framework is novel only in its explicitness. We already do this. We just don't talk about it this way.
 
@@ -178,11 +168,11 @@ The framework is novel only in its explicitness. We already do this. We just don
 
 2. Where method cannot be exposed, alternative verification routes exist but carry higher residual risk that must be priced accordingly.
 
-3. Stakeholders at all levels—producers, consumers, underwriters, regulators—have obligations to demand and provide reliability evidence, and to continuously evaluate as generation methods evolve.
+3. Stakeholders at all levels (producers, consumers, underwriters, regulators) have obligations to demand and provide reliability evidence, and to continuously evaluate as generation methods evolve.
 
-4. The framework reveals that unexposed expertise, however well-intentioned, creates unquantified residual risk. Catastrophic failures are rare but real — Vale lost $19 billion in market cap in a single day after Brumadinho, and the Samarco disaster resulted in a $30 billion settlement. The industry manages this through reliance on expert judgment (brand) and liability structures that may leave communities holding consequences. Whether current practice is acceptable depends on whether that residual risk is within tolerance — a question this framework forces but doesn't answer.
+4. The framework reveals that unexposed expertise, however well-intentioned, creates unquantified residual risk. Catastrophic failures are rare but real. Vale lost $19 billion in market cap in a single day after Brumadinho, and the Samarco disaster resulted in a $30 billion settlement. The industry manages this through reliance on expert judgment (brand) and liability structures that may leave communities holding consequences. Whether current practice is acceptable depends on whether that residual risk is within tolerance. A question this framework forces but doesn't answer.
 
-5. Novel generation methods will become table stakes. Either you'll be unable to compete without them once the actuarial case is made—or unable to use them before it is.
+5. Novel generation methods will become table stakes. Either you'll be unable to compete without them once the actuarial case is made, or unable to use them before it is.
 
 ---
 

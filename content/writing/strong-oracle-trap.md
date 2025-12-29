@@ -1,7 +1,7 @@
 ---
 title: "The Strong Oracle Trap"
 date: 2024-11-26
-description: "Thorough AI dialogue feels like it solves the verification problem. It doesn't. Understanding why requires seeing oracle mode as a spectrum—and recognizing what tools can and cannot fix."
+description: "Thorough AI dialogue feels like it solves the verification problem. It doesn't. Understanding why requires seeing oracle mode as a spectrum, and recognizing what tools can and cannot fix."
 originalPublication: "Originally published November 2024"
 type: core
 tags: ["Epistemic Rigor", "AI Governance"]
@@ -37,7 +37,7 @@ No. You can't. The verification paradox applies regardless of how thorough the c
 
 Strong oracle feels like it solves the problem because it engages your expertise throughout the conversation. You're not passive. You're contributing. The dialogue reveals assumptions you might not have articulated. The AI's questions sometimes point to considerations you'd overlooked.
 
-This is real value. I'm not dismissing it.
+This is real value.
 
 But notice what's happening. Your expertise is being used to improve the *question*. It's not being used to verify the *answer*. At the end of the dialogue, you still receive a verdict—a conclusion that you cannot check without reproducing the analysis yourself.
 

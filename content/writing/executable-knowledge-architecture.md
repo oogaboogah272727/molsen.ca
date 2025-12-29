@@ -15,7 +15,7 @@ The instinct is to treat AI as an oracle. I've written about why [Oracle mode is
 
 I've developed a different approach that I call Executable Knowledge Architecture (EKA). It's an organizational pattern that implements [Assistant mode](/writing/ai-oracle-vs-assistant/) for professional consulting. Instead of asking AI for answers, we ask it to translate expert intent into executable code. The code is the artifact we verify. The results are what we deliver.
 
-EKA rests on two foundations. First, [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). This definition makes human-AI collaboration coherent: the expert has one kind of capability (specifying intent, verifying alignment), the AI has another (producing executable implementations). Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions. Second, [Assistant mode](/writing/ai-oracle-vs-assistant/) solves the verification paradox that makes Oracle mode ungovernable.
+EKA rests on two foundations. First, [knowledge is the capability to reliably produce outcomes](/writing/knowledge-as-capability/). This equivalence makes human-AI collaboration coherent: the expert has one kind of capability (specifying intent, verifying alignment), the AI has another (producing executable implementations). Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions. Second, [Assistant mode](/writing/ai-oracle-vs-assistant/) solves the verification paradox that makes Oracle mode ungovernable.
 
 ---
 
@@ -79,7 +79,7 @@ Clients don't just need answers. They need answers they can trust. Answers they 
 
 EKA addresses this gap by making AI's contribution explicit and inspectable. The AI didn't produce the answer. It produced the code that produced the answer. The expert validated that code. The methodology is on record. The verification boundary is clear.
 
-This isn't a workaround or a legal fiction. It's an actual reallocation of responsibility that matches actual value creation. The expert's judgment is preserved in the methodology. The AI's contribution is translation, not analysis.
+This represents an actual reallocation of responsibility that matches actual value creation. The expert's judgment is preserved in the methodology. The AI's contribution is translation, not analysis.
 
 ---
 

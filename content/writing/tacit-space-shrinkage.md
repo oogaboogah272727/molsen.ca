@@ -1,7 +1,7 @@
 ---
 title: "Tacit Space Shrinkage: When AI Articulates the Inexpressible"
 date: 2024-12-17
-description: "As AI capabilities expand, the domain of knowledge that organizations cannot express or operationalize is shrinking—with profound implications for expertise and governance."
+description: "As AI capabilities expand, the domain of knowledge that organizations cannot express or operationalize is shrinking, with real implications for expertise and governance."
 originalPublication: "Originally published December 2024"
 type: theoretical
 tags: ["Epistemic Rigor", "Organizational Change"]
@@ -60,7 +60,7 @@ Expressive prosthetics are only part of the story. Multimodal models are develop
 
 Many classic examples of tacit knowledge involve "you have to see it done" or "you learn it at the elbow of a master." The knowledge was tacit in part because the only transmission mechanism was experiential. Watching, imitating, practicing under guidance.
 
-Multimodal models ingest video, audio, and sensor streams. They're beginning to learn from demonstrations in the same way humans do. Except they can process vastly more demonstrations, identify patterns across them, and encode those patterns into representations that can be deployed, transferred, and refined.
+Multimodal models ingest video, audio, and sensor streams. They can process vastly more demonstrations than any human apprentice, identify patterns across them, and encode those patterns into representations that can be deployed, transferred, and refined.
 
 What was once "you have to see it done" becomes training data. The master's demonstration becomes a signal rather than an ineffable transmission. The knowledge doesn't disappear. It moves from tacit-for-humans to explicit-for-system.
 
