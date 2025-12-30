@@ -178,4 +178,4 @@ If you hold domain expertise, access permissions, and can specify intent clearly
 
 If your work was building those intermediary layers, the value you provided is dissolving. If someone else specifies intent that affects you, your role is being encoded out.
 
-The organizations and individuals who understand this shift can position accordingly. Those who don't will discover that the scaffolding they maintained was never the point. The data was the point. The expertise was the point. The scaffolding was just how we accessed them before the barriers fell.
+The organizations and individuals who understand this shift can position accordingly. Those who don't will discover that the software they maintained was never the point. The data was the point. The expertise was the point. The software was just how we accessed them before the barriers fell.
