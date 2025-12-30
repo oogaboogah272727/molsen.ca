@@ -1,0 +1,553 @@
+@prefix mo: <http://molsen.ca/ontology#> .
+@prefix article: <http://molsen.ca/writing/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================================================
+# ONTOLOGY METADATA
+# =============================================================================
+
+mo:MikeOlsenOntology rdf:type rdfs:Class ;
+    rdfs:label "Mike Olsen Intellectual Framework" ;
+    rdfs:comment "Knowledge graph of concepts, relationships, and supporting articles" .
+
+# =============================================================================
+# CLASSES
+# =============================================================================
+
+mo:Concept rdf:type rdfs:Class ;
+    rdfs:label "Concept" ;
+    rdfs:comment "A distinct idea or framework element" .
+
+mo:Pattern rdf:type rdfs:Class ;
+    rdfs:subClassOf mo:Concept ;
+    rdfs:label "Pattern" ;
+    rdfs:comment "A repeatable approach or mode of operation" .
+
+mo:Problem rdf:type rdfs:Class ;
+    rdfs:subClassOf mo:Concept ;
+    rdfs:label "Problem" ;
+    rdfs:comment "A structural challenge or paradox" .
+
+mo:Framework rdf:type rdfs:Class ;
+    rdfs:subClassOf mo:Concept ;
+    rdfs:label "Framework" ;
+    rdfs:comment "An organizational or analytical structure" .
+
+mo:Claim rdf:type rdfs:Class ;
+    rdfs:subClassOf mo:Concept ;
+    rdfs:label "Claim" ;
+    rdfs:comment "An empirical or theoretical assertion" .
+
+mo:Article rdf:type rdfs:Class ;
+    rdfs:label "Article" ;
+    rdfs:comment "A published piece on molsen.ca" .
+
+mo:ArticleType rdf:type rdfs:Class ;
+    rdfs:label "Article Type" ;
+    rdfs:comment "Classification of article role in framework" .
+
+# Article Types
+mo:Hub rdf:type mo:ArticleType ; rdfs:label "Hub" .
+mo:Foundational rdf:type mo:ArticleType ; rdfs:label "Foundational" .
+mo:Core rdf:type mo:ArticleType ; rdfs:label "Core" .
+mo:Theoretical rdf:type mo:ArticleType ; rdfs:label "Theoretical" .
+mo:Applied rdf:type mo:ArticleType ; rdfs:label "Applied" .
+mo:Empirical rdf:type mo:ArticleType ; rdfs:label "Empirical" .
+mo:Practice rdf:type mo:ArticleType ; rdfs:label "Practice" .
+
+# =============================================================================
+# PREDICATES (Relationship Types)
+# =============================================================================
+
+mo:solves rdf:type rdf:Property ;
+    rdfs:label "solves" ;
+    rdfs:domain mo:Concept ;
+    rdfs:range mo:Problem .
+
+mo:doesNotSolve rdf:type rdf:Property ;
+    rdfs:label "does not solve" ;
+    rdfs:domain mo:Concept ;
+    rdfs:range mo:Problem .
+
+mo:creates rdf:type rdf:Property ;
+    rdfs:label "creates" ;
+    rdfs:domain mo:Concept ;
+    rdfs:range mo:Problem .
+
+mo:implements rdf:type rdf:Property ;
+    rdfs:label "implements" ;
+    rdfs:domain mo:Framework ;
+    rdfs:range mo:Pattern .
+
+mo:requires rdf:type rdf:Property ;
+    rdfs:label "requires" ;
+    rdfs:comment "Concept A requires understanding of Concept B" .
+
+mo:extends rdf:type rdf:Property ;
+    rdfs:label "extends" ;
+    rdfs:comment "Concept A builds on and extends Concept B" .
+
+mo:isVariantOf rdf:type rdf:Property ;
+    rdfs:label "is variant of" ;
+    rdfs:comment "A is a specific form of B" .
+
+mo:contradictsAssumptionOf rdf:type rdf:Property ;
+    rdfs:label "contradicts assumption of" ;
+    rdfs:comment "A challenges a foundational assumption of B" .
+
+mo:foundationalTo rdf:type rdf:Property ;
+    rdfs:label "foundational to" ;
+    rdfs:comment "A provides theoretical foundation for B" .
+
+mo:enables rdf:type rdf:Property ;
+    rdfs:label "enables" ;
+    rdfs:comment "A makes B possible or coherent" .
+
+mo:threatens rdf:type rdf:Property ;
+    rdfs:label "threatens" ;
+    rdfs:comment "A poses existential risk to B" .
+
+mo:mitigates rdf:type rdf:Property ;
+    rdfs:label "mitigates" ;
+    rdfs:comment "A reduces but does not eliminate B" .
+
+mo:discussedIn rdf:type rdf:Property ;
+    rdfs:label "discussed in" ;
+    rdfs:domain mo:Concept ;
+    rdfs:range mo:Article .
+
+mo:definedIn rdf:type rdf:Property ;
+    rdfs:label "defined in" ;
+    rdfs:comment "Authoritative definition appears in this article" ;
+    rdfs:domain mo:Concept ;
+    rdfs:range mo:Article .
+
+mo:evidencedBy rdf:type rdf:Property ;
+    rdfs:label "evidenced by" ;
+    rdfs:comment "Empirical support for this claim" .
+
+mo:appliesTo rdf:type rdf:Property ;
+    rdfs:label "applies to" ;
+    rdfs:comment "Pattern or concept applies to this domain" .
+
+mo:produces rdf:type rdf:Property ;
+    rdfs:label "produces" ;
+    rdfs:comment "Process or pattern produces this output" .
+
+mo:governs rdf:type rdf:Property ;
+    rdfs:label "governs" ;
+    rdfs:comment "Framework governs or constrains this" .
+
+mo:scales rdf:type rdf:Property ;
+    rdfs:label "scales" ;
+    rdfs:comment "Pattern scales to larger context" .
+
+mo:hasType rdf:type rdf:Property ;
+    rdfs:label "has type" ;
+    rdfs:domain mo:Article ;
+    rdfs:range mo:ArticleType .
+
+# =============================================================================
+# ARTICLES
+# =============================================================================
+
+article:making-ai-make-sense rdf:type mo:Article ;
+    rdfs:label "Making AI Make Sense" ;
+    mo:hasType mo:Hub ;
+    rdfs:comment "The complete framework in one page. Hub connecting all component essays." .
+
+article:knowledge-as-capability rdf:type mo:Article ;
+    rdfs:label "Knowledge as Capability" ;
+    mo:hasType mo:Foundational ;
+    rdfs:comment "The foundational claim: knowledge is capability to produce outcomes." .
+
+article:agent-relative-tacitness rdf:type mo:Article ;
+    rdfs:label "Agent-Relative Tacitness" ;
+    mo:hasType mo:Theoretical ;
+    rdfs:comment "Why tacitness depends on who's doing the knowing." .
+
+article:tacit-space-shrinkage rdf:type mo:Article ;
+    rdfs:label "Tacit Space Shrinkage" ;
+    mo:hasType mo:Theoretical ;
+    rdfs:comment "How AI is making the inexpressible expressible." .
+
+article:ai-oracle-vs-assistant rdf:type mo:Article ;
+    rdfs:label "AI as Oracle vs. Assistant" ;
+    mo:hasType mo:Foundational ;
+    rdfs:comment "The fundamental choice: ask for answers or ask for execution." .
+
+article:strong-oracle-trap rdf:type mo:Article ;
+    rdfs:label "The Strong Oracle Trap" ;
+    mo:hasType mo:Core ;
+    rdfs:comment "Why sophisticated dialogue doesn't solve the verification problem." .
+
+article:executable-knowledge-architecture rdf:type mo:Article ;
+    rdfs:label "Executable Knowledge Architecture" ;
+    mo:hasType mo:Core ;
+    rdfs:comment "The pattern for AI-augmented professional work." .
+
+article:capability-governance rdf:type mo:Article ;
+    rdfs:label "Capability Governance" ;
+    mo:hasType mo:Core ;
+    rdfs:comment "Stakeholder obligations for generated artifacts." .
+
+article:agentic-ai-universal-interface rdf:type mo:Article ;
+    rdfs:label "Agentic AI as Universal Interface" ;
+    mo:hasType mo:Core ;
+    rdfs:comment "How AI removes barriers to direct system access." .
+
+article:automating-expertise-gets-easier rdf:type mo:Article ;
+    rdfs:label "Automating Expertise Gets Easier and Easier" ;
+    mo:hasType mo:Core ;
+    rdfs:comment "What faces pressure and what remains as barriers fall." .
+
+article:ontology-generation rdf:type mo:Article ;
+    rdfs:label "Ontology Generation" ;
+    mo:hasType mo:Core ;
+    rdfs:comment "How organizational knowledge accumulates from universal interface logs." .
+
+article:ai-first-software rdf:type mo:Article ;
+    rdfs:label "AI-First Software" ;
+    mo:hasType mo:Applied ;
+    rdfs:comment "AI as foundation, not feature." .
+
+article:consulting-threat-opportunity rdf:type mo:Article ;
+    rdfs:label "The Consulting Threat and Opportunity" ;
+    mo:hasType mo:Applied ;
+    rdfs:comment "What AI means for professional services." .
+
+article:parrots-are-all-you-need rdf:type mo:Article ;
+    rdfs:label "Parrots Are All You Need" ;
+    mo:hasType mo:Foundational ;
+    rdfs:comment "Why stochastic parrot isn't the insult people think." .
+
+article:llm-stochasticity-determinism rdf:type mo:Article ;
+    rdfs:label "Stochastic Form, Deterministic Function" ;
+    mo:hasType mo:Empirical ;
+    rdfs:comment "Understanding the randomness in language models." .
+
+article:ai-table-extraction-comparison rdf:type mo:Article ;
+    rdfs:label "AI Table Extraction Comparison" ;
+    mo:hasType mo:Empirical ;
+    rdfs:comment "Testing AI on a specific extraction task." .
+
+article:critical-thinking-rules rdf:type mo:Article ;
+    rdfs:label "Critical Thinking Rules" ;
+    mo:hasType mo:Practice ;
+    rdfs:comment "Principles for clear reasoning." .
+
+article:leadership-lessons-science-fiction rdf:type mo:Article ;
+    rdfs:label "Leadership Lessons from Science Fiction" ;
+    mo:hasType mo:Practice ;
+    rdfs:comment "What SF teaches about leading." .
+
+article:support-team-real-job rdf:type mo:Article ;
+    rdfs:label "The Support Team's Real Job" ;
+    mo:hasType mo:Practice ;
+    rdfs:comment "What support work is actually about." .
+
+article:remote-work-formula rdf:type mo:Article ;
+    rdfs:label "Remote Work Formula" ;
+    mo:hasType mo:Practice ;
+    rdfs:comment "Making distributed work work." .
+
+# =============================================================================
+# CORE CONCEPTS - FOUNDATION LAYER
+# =============================================================================
+
+mo:KnowledgeAsCapability rdf:type mo:Framework ;
+    rdfs:label "Knowledge as Capability" ;
+    rdfs:comment "Knowledge is reliable capability to produce outcomes across contexts. Not beliefs, not mental states. Capability." ;
+    mo:definedIn article:knowledge-as-capability ;
+    mo:foundationalTo mo:ExecutableKnowledgeArchitecture ;
+    mo:foundationalTo mo:HumanAICompositeKnowledge ;
+    mo:foundationalTo mo:AgentRelativeTacitness ;
+    mo:contradictsAssumptionOf mo:JustifiedTrueBelief .
+
+mo:JustifiedTrueBelief rdf:type mo:Concept ;
+    rdfs:label "Justified True Belief" ;
+    rdfs:comment "Traditional epistemological definition of knowledge. Problematic for AI because AIs don't have beliefs in the human sense." ;
+    mo:discussedIn article:knowledge-as-capability .
+
+mo:HumanAICompositeKnowledge rdf:type mo:Concept ;
+    rdfs:label "Human-AI Composite Knowledge" ;
+    rdfs:comment "Neither human nor AI alone has complete knowledge. Together through verification loop, they produce validated solutions." ;
+    mo:requires mo:KnowledgeAsCapability ;
+    mo:definedIn article:knowledge-as-capability .
+
+# =============================================================================
+# CORE CONCEPTS - TACITNESS LAYER
+# =============================================================================
+
+mo:TacitKnowledge rdf:type mo:Concept ;
+    rdfs:label "Tacit Knowledge" ;
+    rdfs:comment "Knowledge that cannot be fully articulated or transferred through explicit representation." ;
+    mo:discussedIn article:agent-relative-tacitness ;
+    mo:discussedIn article:tacit-space-shrinkage .
+
+mo:AgentRelativeTacitness rdf:type mo:Concept ;
+    rdfs:label "Agent-Relative Tacitness" ;
+    rdfs:comment "Tacitness is property of transfer relationship, not intrinsic to knowledge. What's inexpressible for one agent may be articulable for another." ;
+    mo:definedIn article:agent-relative-tacitness ;
+    mo:extends mo:TacitKnowledge ;
+    mo:requires mo:KnowledgeAsCapability ;
+    mo:foundationalTo mo:TacitSpaceShrinkage .
+
+mo:StructurallyTacit rdf:type mo:Concept ;
+    rdfs:label "Structurally Tacit" ;
+    rdfs:comment "Knowledge where any representation degrades what it represents. May be irreducible." ;
+    mo:definedIn article:tacit-space-shrinkage .
+
+mo:RepresentationallyTacit rdf:type mo:Concept ;
+    rdfs:label "Representationally Tacit" ;
+    rdfs:comment "Agent cannot express the knowledge, but representation is possible. Transfer path could exist." ;
+    mo:definedIn article:tacit-space-shrinkage .
+
+mo:TacitSpaceShrinkage rdf:type mo:Claim ;
+    rdfs:label "Tacit Space Shrinkage" ;
+    rdfs:comment "AI capabilities open transfer paths that didn't exist. The domain of tacit knowledge is shrinking." ;
+    mo:definedIn article:tacit-space-shrinkage ;
+    mo:requires mo:AgentRelativeTacitness ;
+    mo:foundationalTo mo:UniversalInterface .
+
+# =============================================================================
+# CORE CONCEPTS - DEPLOYMENT MODE LAYER
+# =============================================================================
+
+mo:OracleMode rdf:type mo:Pattern ;
+    rdfs:label "Oracle Mode" ;
+    rdfs:comment "Query AI, receive direct answer. Ask question, receive verdict." ;
+    mo:definedIn article:ai-oracle-vs-assistant ;
+    mo:creates mo:VerificationParadox .
+
+mo:AssistantMode rdf:type mo:Pattern ;
+    rdfs:label "Assistant Mode" ;
+    rdfs:comment "Request method or artifact, not answer. Verify method, run yourself." ;
+    mo:definedIn article:ai-oracle-vs-assistant ;
+    mo:solves mo:VerificationParadox .
+
+mo:VerificationParadox rdf:type mo:Problem ;
+    rdfs:label "Verification Paradox" ;
+    rdfs:comment "To verify AI's direct answer requires expertise to produce it yourself. If you have that, why need AI? If you don't, how verify?" ;
+    mo:definedIn article:ai-oracle-vs-assistant .
+
+mo:UnderstandingAsymmetry rdf:type mo:Concept ;
+    rdfs:label "Understanding Asymmetry" ;
+    rdfs:comment "Expertise to verify a method is less than expertise to produce the answer. This asymmetry makes assistant mode work." ;
+    mo:definedIn article:ai-oracle-vs-assistant ;
+    mo:foundationalTo mo:AssistantMode .
+
+mo:OracleSpectrum rdf:type mo:Concept ;
+    rdfs:label "Oracle Spectrum" ;
+    rdfs:comment "Oracle mode ranges from weak (raw Q&A) to strong (sophisticated dialogue)." ;
+    mo:definedIn article:strong-oracle-trap ;
+    mo:extends mo:OracleMode .
+
+mo:StrongOracle rdf:type mo:Pattern ;
+    rdfs:label "Strong Oracle" ;
+    rdfs:comment "Oracle with dialogue, clarifying questions, iteration. Feels like it solves verification. It doesn't." ;
+    mo:definedIn article:strong-oracle-trap ;
+    mo:isVariantOf mo:OracleMode ;
+    mo:doesNotSolve mo:VerificationParadox .
+
+mo:StrongOracleTrap rdf:type mo:Problem ;
+    rdfs:label "Strong Oracle Trap" ;
+    rdfs:comment "Sophisticated dialogue engages expertise but improves the question, not ability to verify the answer." ;
+    mo:definedIn article:strong-oracle-trap .
+
+# =============================================================================
+# CORE CONCEPTS - ARCHITECTURE LAYER
+# =============================================================================
+
+mo:ExecutableKnowledgeArchitecture rdf:type mo:Framework ;
+    rdfs:label "Executable Knowledge Architecture" ;
+    rdfs:comment "Expert intent → AI translation → executable artifact → human verification → reproducible results." ;
+    mo:definedIn article:executable-knowledge-architecture ;
+    mo:implements mo:AssistantMode ;
+    mo:requires mo:KnowledgeAsCapability ;
+    mo:solves mo:VerificationParadox ;
+    mo:produces mo:ExecutableArtifact .
+
+mo:ExecutableArtifact rdf:type mo:Concept ;
+    rdfs:label "Executable Artifact" ;
+    rdfs:comment "Knowledge made runnable: instructions a machine can follow. Inspectable, testable, reproducible." ;
+    mo:definedIn article:executable-knowledge-architecture .
+
+mo:MethodVsVerdict rdf:type mo:Concept ;
+    rdfs:label "Method vs Verdict" ;
+    rdfs:comment "Asking for verdict requires trust. Asking for method produces inspectable artifact." ;
+    mo:definedIn article:ai-oracle-vs-assistant ;
+    mo:foundationalTo mo:AssistantMode .
+
+mo:StochasticFormDeterministicFunction rdf:type mo:Claim ;
+    rdfs:label "Stochastic Form, Deterministic Function" ;
+    rdfs:comment "LLMs vary in code form but preserve function. Same inputs, same outputs. EKA exploits this." ;
+    mo:definedIn article:llm-stochasticity-determinism ;
+    mo:foundationalTo mo:ExecutableKnowledgeArchitecture .
+
+# =============================================================================
+# CORE CONCEPTS - GOVERNANCE LAYER
+# =============================================================================
+
+mo:CapabilityGovernance rdf:type mo:Framework ;
+    rdfs:label "Capability Governance" ;
+    rdfs:comment "Framework for stakeholder obligations when AI generates artifacts. Who verifies what, who's accountable." ;
+    mo:definedIn article:capability-governance ;
+    mo:governs mo:ExecutableKnowledgeArchitecture .
+
+mo:MethodBearing rdf:type mo:Concept ;
+    rdfs:label "Method-Bearing Artifact" ;
+    rdfs:comment "Artifact with exposed, inspectable methodology. Defensible through method, not authority." ;
+    mo:definedIn article:capability-governance .
+
+mo:Conclusion rdf:type mo:Concept ;
+    rdfs:label "Conclusion Artifact" ;
+    rdfs:comment "Artifact requiring trust. Method not exposed. Defensible only through track record or authority." ;
+    mo:definedIn article:capability-governance .
+
+mo:Defensibility rdf:type mo:Concept ;
+    rdfs:label "Defensibility" ;
+    rdfs:comment "Can artifact withstand challenge? Via exposed method or demonstrated track record." ;
+    mo:definedIn article:capability-governance .
+
+# =============================================================================
+# CORE CONCEPTS - UNIVERSAL INTERFACE LAYER
+# =============================================================================
+
+mo:SoftwareAsDistilledExpertise rdf:type mo:Claim ;
+    rdfs:label "Software as Distilled Expertise" ;
+    rdfs:comment "Software is expertise encoded in executable form. What experts know, made runnable." ;
+    mo:definedIn article:agentic-ai-universal-interface .
+
+mo:UniversalInterface rdf:type mo:Concept ;
+    rdfs:label "Universal Interface" ;
+    rdfs:comment "AI mediates all system access. Given intent and permissions, AI figures out the how." ;
+    mo:definedIn article:agentic-ai-universal-interface ;
+    mo:requires mo:TacitSpaceShrinkage ;
+    mo:scales mo:ExecutableKnowledgeArchitecture .
+
+mo:BarrierRemoval rdf:type mo:Concept ;
+    rdfs:label "Barrier Removal" ;
+    rdfs:comment "AI removes two barriers: coding skill and system access knowledge. Domain expert can distill expertise directly." ;
+    mo:definedIn article:agentic-ai-universal-interface ;
+    mo:enables mo:UniversalInterface .
+
+mo:ApplicationLayerPressure rdf:type mo:Claim ;
+    rdfs:label "Application Layer Pressure" ;
+    rdfs:comment "When translation is generated on demand, permanent translation layers (applications) face pressure." ;
+    mo:definedIn article:automating-expertise-gets-easier ;
+    mo:requires mo:UniversalInterface .
+
+# =============================================================================
+# CORE CONCEPTS - ONTOLOGY LAYER
+# =============================================================================
+
+mo:OntologyGeneration rdf:type mo:Framework ;
+    rdfs:label "Ontology Generation" ;
+    rdfs:comment "When AI is universal interface, logs reveal what organization does and what concepts it uses." ;
+    mo:definedIn article:ontology-generation ;
+    mo:requires mo:UniversalInterface ;
+    mo:produces mo:StructuralOntology ;
+    mo:produces mo:ProceduralPatterns .
+
+mo:StructuralOntology rdf:type mo:Concept ;
+    rdfs:label "Structural Ontology" ;
+    rdfs:comment "What things are: entities, properties, relationships. Emerges from accumulated usage." ;
+    mo:definedIn article:ontology-generation .
+
+mo:ProceduralPatterns rdf:type mo:Concept ;
+    rdfs:label "Procedural Patterns" ;
+    rdfs:comment "How things get done: successful approaches extracted from logs, validated, distributed." ;
+    mo:definedIn article:ontology-generation .
+
+mo:BottomUpGeneration rdf:type mo:Pattern ;
+    rdfs:label "Bottom-Up Generation" ;
+    rdfs:comment "Ontology emerges from work rather than preceding it. Desire paths, not mandated sidewalks." ;
+    mo:definedIn article:ontology-generation ;
+    mo:contradictsAssumptionOf mo:TopDownConstruction .
+
+mo:TopDownConstruction rdf:type mo:Pattern ;
+    rdfs:label "Top-Down Construction" ;
+    rdfs:comment "Traditional approach: ontology architects design structure before use. Expensive, drifts from reality." ;
+    mo:discussedIn article:ontology-generation .
+
+# =============================================================================
+# CORE CONCEPTS - AI-FIRST SOFTWARE
+# =============================================================================
+
+mo:AIFirstSoftware rdf:type mo:Framework ;
+    rdfs:label "AI-First Software" ;
+    rdfs:comment "Software designed with AI as foundation, not feature. Dynamic functionality, generative results." ;
+    mo:definedIn article:ai-first-software .
+
+mo:FormalCompetence rdf:type mo:Claim ;
+    rdfs:label "Formal Competence" ;
+    rdfs:comment "AI systems have solved language. They possess formal competence. Sufficient to change software design." ;
+    mo:discussedIn article:ai-first-software .
+
+mo:DynamicFunctionality rdf:type mo:Concept ;
+    rdfs:label "Dynamic Functionality" ;
+    rdfs:comment "System capabilities expand beyond what was explicitly built. User describes outcomes; system determines approach." ;
+    mo:definedIn article:ai-first-software .
+
+# =============================================================================
+# CONCEPTS - CONSULTING INDUSTRY
+# =============================================================================
+
+mo:ConsultingExpertiseAsymmetry rdf:type mo:Concept ;
+    rdfs:label "Consulting Expertise Asymmetry" ;
+    rdfs:comment "Consulting rests on asymmetry: consultant knows things client does not." ;
+    mo:definedIn article:consulting-threat-opportunity .
+
+mo:SeniorPlusAIThreat rdf:type mo:Claim ;
+    rdfs:label "Senior + AI Threat" ;
+    rdfs:comment "Senior expert plus AI is most dangerous competitor. Small team might eliminate consulting in verticals." ;
+    mo:definedIn article:consulting-threat-opportunity ;
+    mo:threatens mo:ConsultingExpertiseAsymmetry .
+
+# =============================================================================
+# CONCEPTS - PRACTICAL KNOWLEDGE
+# =============================================================================
+
+mo:HallucinationRisk rdf:type mo:Problem ;
+    rdfs:label "Hallucination Risk" ;
+    rdfs:comment "AI generating plausible but false information." ;
+    mo:discussedIn article:ai-first-software ;
+    mo:discussedIn article:strong-oracle-trap .
+
+mo:ToolMitigation rdf:type mo:Concept ;
+    rdfs:label "Tool Mitigation" ;
+    rdfs:comment "RAG, citations, web search, code execution mitigate oracle problems but don't solve structural verification." ;
+    mo:definedIn article:strong-oracle-trap ;
+    mo:mitigates mo:HallucinationRisk ;
+    mo:doesNotSolve mo:VerificationParadox .
+
+mo:StochasticParrot rdf:type mo:Concept ;
+    rdfs:label "Stochastic Parrot" ;
+    rdfs:comment "Dismissive framing of LLMs. But 'just statistics' applies equally to human cognition." ;
+    mo:definedIn article:parrots-are-all-you-need .
+
+# =============================================================================
+# KEY RELATIONSHIP CHAINS (documented)
+# =============================================================================
+
+# Foundation chain:
+# KnowledgeAsCapability → foundationalTo → all other frameworks
+
+# Tacitness chain:
+# KnowledgeAsCapability → foundationalTo → AgentRelativeTacitness
+# AgentRelativeTacitness → foundationalTo → TacitSpaceShrinkage
+# TacitSpaceShrinkage → foundationalTo → UniversalInterface
+
+# Verification chain:
+# OracleMode → creates → VerificationParadox
+# StrongOracle → doesNotSolve → VerificationParadox
+# AssistantMode → solves → VerificationParadox
+# EKA → implements → AssistantMode
+
+# Scaling chain:
+# EKA → produces → ExecutableArtifact
+# UniversalInterface → scales → EKA
+# OntologyGeneration → requires → UniversalInterface

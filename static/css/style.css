@@ -313,200 +313,266 @@ footer .container {
   font-size: 0.9rem;
 }
 
-/* Knowledge Graph */
-#graph-wrapper {
-  display: flex;
-  gap: 1rem;
-  width: calc(100vw - 3rem);
-  max-width: 1200px;
-  margin: 1rem 0 2rem 0;
-  margin-left: 50%;
-  transform: translateX(-50%);
+/* Start Here Box */
+.start-here {
+  margin-bottom: 2.5rem;
 }
 
-#graph-container {
-  flex: 1;
-  height: 550px;
-  position: relative;
-  background: var(--background);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-#graph-container canvas {
+.start-link {
   display: block;
-}
-
-#node-panel {
-  width: 280px;
-  flex-shrink: 0;
-  background: var(--background);
+  padding: 1.25rem 1.5rem;
+  background: var(--background-alt);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1rem;
-  height: 550px;
-  overflow-y: auto;
-}
-
-#panel-content {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-.panel-hint {
-  color: var(--text-tertiary);
-  font-size: 0.9rem;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.panel-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  color: var(--text);
-}
-
-.panel-type {
-  display: inline-block;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.2rem 0.5rem;
-  border-radius: 3px;
-  margin-bottom: 1rem;
-  color: #fff;
-}
-
-.panel-section {
-  margin-bottom: 1rem;
-}
-
-.panel-section-title {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-tertiary);
-  margin-bottom: 0.4rem;
-}
-
-.panel-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.panel-list li {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  padding: 0.2rem 0;
-}
-
-.panel-link {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: var(--accent);
-  color: #fff;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
   text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  transition: background 0.15s ease;
-}
-
-.panel-link:hover {
-  background: var(--accent-hover);
-  color: #fff;
-}
-
-#graph-container svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.node text {
-  pointer-events: none;
-  user-select: none;
-}
-
-.node circle {
-  transition: r 0.2s ease;
-}
-
-.graph-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  font-size: 0.85rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.legend-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.legend-dot.hub { background: #dc2626; }
-.legend-dot.foundational { background: #8b5cf6; }
-.legend-dot.core { background: #1e293b; }
-.legend-dot.theoretical { background: #6b8e23; }
-.legend-dot.empirical { background: #f59e0b; }
-.legend-dot.applied { background: #4a90a4; }
-.legend-dot.practice { background: #64748b; }
-
-.graph-instructions {
-  font-size: 0.85rem;
-  color: var(--text-tertiary);
-  margin-bottom: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
-#concept-filter {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
-}
-
-.concept-btn {
-  padding: 0.3rem 0.6rem;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  background: var(--background);
-  cursor: pointer;
-  font-size: 0.75rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: var(--text-secondary);
   transition: all 0.15s ease;
 }
 
-.concept-btn:hover {
-  border-color: var(--text-tertiary);
+.start-link:hover {
+  border-left-color: var(--accent-hover);
+  background: #f0f4f8;
 }
 
-.concept-btn.active {
-  background: var(--background-alt);
-  color: var(--text);
-  border-color: var(--text-tertiary);
+.start-label {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  margin-bottom: 0.25rem;
+}
+
+.start-title {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.start-desc {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.section-desc {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Ontology Explorer */
+#explorer-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.explorer-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.query-panel, .results-panel {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.query-panel h3, .results-panel h3 {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.starter-queries {
+  margin-bottom: 1rem;
+}
+
+.starter-queries label {
+  display: block;
+  font-size: 0.8rem;
   font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--text-secondary);
 }
 
-.filter-dot {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 0.4rem;
-  vertical-align: middle;
+.starter-queries select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--background);
+}
+
+.query-desc {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+}
+
+.query-editor {
+  margin-bottom: 1rem;
+}
+
+.query-editor label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--text-secondary);
+}
+
+.query-editor textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--background-alt);
+  resize: vertical;
+}
+
+.query-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: var(--background);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-tertiary);
+}
+
+.prefixes-info, .predicates-info {
+  margin-bottom: 0.75rem;
+}
+
+.prefixes-info summary, .predicates-info summary {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  cursor: pointer;
+}
+
+.prefixes-info pre {
+  font-size: 0.75rem;
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem;
+  background: var(--background-alt);
+  border-radius: 4px;
+}
+
+.predicates-info ul {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.25rem;
+}
+
+.predicates-info li {
+  margin-bottom: 0.25rem;
+}
+
+.predicates-info code {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.3rem;
+}
+
+/* Results */
+.results-panel {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.loading {
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.error {
+  color: #c00;
+}
+
+.no-results {
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.hint {
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.result-count {
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+  margin: 0 0 0.75rem 0;
+}
+
+.results-table-wrapper {
+  overflow-x: auto;
+}
+
+.results-table {
+  width: 100%;
+  font-size: 0.85rem;
+  border-collapse: collapse;
+}
+
+.results-table th {
+  text-align: left;
+  padding: 0.5rem;
+  background: var(--background-alt);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid var(--border);
+}
+
+.results-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.results-table tr:hover {
+  background: var(--background-alt);
+}
+
+.results-table a {
+  color: var(--accent);
 }
 
 /* Writing Section */
@@ -690,31 +756,26 @@ footer .container {
     font-size: 1.85rem;
   }
 
-  #graph-wrapper {
+  .explorer-layout {
     flex-direction: column;
-    width: calc(100vw - 1rem);
-    margin: 0.5rem 0 1rem 0;
-    margin-left: 50%;
-    transform: translateX(-50%);
   }
 
-  #graph-container {
-    height: 350px;
-  }
-
-  #node-panel {
+  .query-panel, .results-panel {
     width: 100%;
-    height: auto;
-    max-height: 200px;
   }
 
-  .graph-legend {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 0.7rem;
+  .query-panel {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  .graph-instructions {
-    font-size: 0.75rem;
+  #query-input {
+    font-size: 0.8rem;
+  }
+
+  .results-table {
+    font-size: 0.8rem;
   }
 }
