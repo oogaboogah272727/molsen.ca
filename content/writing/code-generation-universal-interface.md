@@ -104,7 +104,7 @@ The artifact — the generated code — is inspectable. You can read it. You can
 
 **Software as product faces pressure.** Most business software is: data storage + business logic + interface. If the interface is generated on demand and business logic is expressed in plain language specifications, what exactly is the product? Data persistence and infrastructure remain valuable. The layers built on top of them become optional.
 
-**Integration as a category disappears.** Integration platforms sell one thing: we've pre-built connections between systems so you don't have to. When connections are generated on demand, pre-built connections are inventory, not assets.
+**Integration as a category disappears.** Integration platforms sell one thing: we've pre-built connections between systems so you don't have to. When connections are generated on demand, pre-built connections lose their value.
 
 **Technical roles shift.** Less building intermediary layers, more: designing data structures, managing infrastructure, specifying intent clearly, verifying generated approaches. The work moves from implementation to specification and verification.
 
