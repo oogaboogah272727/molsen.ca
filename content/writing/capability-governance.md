@@ -1,7 +1,7 @@
 ---
 title: "Capability Governance: A Framework for Generated Artifacts"
 date: 2024-12-27
-description: "A framework for governing AI-generated artifacts. Applies to all stakeholders: producers, consumers, underwriters, and regulators. The question: can you defend what you delivered?"
+description: "A framework for governing generated artifacts through defensibility. Two routes: exposed methodology or empirical track record. Obligations for producers, consumers, underwriters, and regulators."
 type: core
 tags: ["AI Governance", "Professional Practice"]
 ---
@@ -215,7 +215,7 @@ The framework forces honesty:
 
 ---
 
-## Practical Next Steps
+## Appendix: Practical Next Steps
 
 **Producers:**
 
