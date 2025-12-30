@@ -169,11 +169,15 @@ Producers have symmetric obligations:
 
 ### Underwriters and Regulators
 
-Underwriters and regulators share the same obligation—exert pressure when reconciliation data demonstrates that method A produces quantifiably better outcomes—but for different reasons. Regulators act for the public good. Underwriters act for economic utility: correctly pricing risk is how they survive.
+1. **Demand reconciliation data.** Track record claims require documented outcome comparisons, not tenure or reputation.
 
-Both need the same data. Both should share it. There is risk of regulatory capture, but if underwriters legitimately bear full risk—not hiding behind governmental liability shields or externalized residuals—their economic incentive aligns with the public good. Same outcome, different motivation.
+2. **Price and regulate based on method exposure.** Exposed methodology should carry lower premiums and lighter oversight than unexposed.
 
-The foundational forcing function is novel generation mechanisms that deliver equivalent quality at lower cost. Without that economic pressure, the obligation to continuously evaluate would be empty formalism.
+3. **Share data.** Both need the same evidence; sharing accelerates actuarial accumulation industry-wide.
+
+Different motivations, same outcome. Regulators act for public good; underwriters act to correctly price risk. If underwriters bear full risk—not hiding behind governmental liability shields—their economic incentive aligns with the public interest.
+
+The foundational forcing function is novel generation mechanisms that deliver equivalent quality at lower cost.
 
 ---
 
