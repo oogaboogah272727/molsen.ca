@@ -60,7 +60,7 @@ Both layers emerge from the same source: comprehensive logging of natural langua
 
 3. **Recurring patterns get extracted.** Similar tasks solved similarly become candidates for templates.
 
-4. **Validation promotes templates.** Human judgment decides which patterns are worth encoding for reuse.
+4. **Validation promotes templates.** Human judgment decides which patterns are worth encoding for reuse. Validated patterns become [method-bearing artifacts](/writing/capability-governance/)—defensible through exposed methodology rather than reputation alone.
 
 5. **Templates become available.** Validated patterns are distributed — available to agents across the organization.
 
@@ -72,7 +72,7 @@ Both layers emerge from the same source: comprehensive logging of natural langua
 
 **The maintenance problem.** Traditional ontologies drift from reality because maintaining them is a separate activity. Generated ontologies track usage patterns because they're continuously rebuilt from interaction logs — though what people say and what they do can diverge, and that gap requires attention.
 
-**The tribal knowledge problem.** When an expert works through the tool, their knowledge gets captured — both what concepts they use and how they accomplish tasks. Knowledge that would otherwise stay in their head becomes encoded and available.
+**The tribal knowledge problem.** When an expert works through the tool, their knowledge gets captured — both what concepts they use and how they accomplish tasks. Knowledge that would otherwise stay in their head becomes encoded and available. This is [tacit space shrinkage](/writing/tacit-space-shrinkage/) in action: the tool serves as an interlocutor that helps articulate what was previously inexpressible.
 
 **The distribution problem.** Once a pattern or concept is in the system, every agent can use it. No training cascade. The knowledge is available at the point of need.
 

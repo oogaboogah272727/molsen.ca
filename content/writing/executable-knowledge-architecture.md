@@ -33,9 +33,7 @@ First, there's no audit trail. The AI's reasoning is opaque. Its sources are unv
 
 Second, there's no reproducibility. Ask the same question twice and you may get different answers. Run the same analysis next quarter and you cannot guarantee consistency. This makes ongoing engagements problematic and periodic reporting unreliable.
 
-Third, you face the verification paradox. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself. If you have that expertise, why do you need the AI? If you don't, how do you know the AI is correct?
-
-This paradox applies at every point on the oracle spectrum. Better dialogue improves the quality of answers. It doesn't improve verifiability. The sophistication of the conversation is not the measure of governability. The inspectability of the output is.
+Third, you face the [verification paradox](/writing/ai-oracle-vs-assistant/)—the structural problem that makes oracle mode ungovernable for professional work. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself.
 
 This paradox sits at the heart of AI governance in professional services. And it explains why clients still need experts even as information becomes commoditized.
 

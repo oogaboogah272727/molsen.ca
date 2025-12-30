@@ -34,7 +34,7 @@ These barriers meant that expertise distillation was rare and expensive. Most kn
 
 Agentic AI removes both barriers.
 
-**Barrier 1 falls.** The agent generates code from natural language. You describe what you want; the agent writes the instructions. No coding skill required. The domain expert can distill their own expertise directly, without a developer intermediary.
+**Barrier 1 falls.** The agent generates code from natural language. You describe what you want; the agent writes the instructions. No coding skill required. The domain expert can distill their own expertise directly, without a developer intermediary. This is the practical application of [tacit space shrinkage](/writing/tacit-space-shrinkage/): knowledge that was locked because the expert couldn't code becomes expressible through natural language.
 
 **Barrier 2 falls.** The agent figures out how to access systems. Given permission to access a data store, the agent examines its structure and writes the instructions to retrieve what you need. Given credentials for a service, the agent reads documentation, determines the correct operations, and generates the connection. The technical knowledge of *how* to access systems becomes the agent's job.
 

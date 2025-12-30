@@ -78,11 +78,7 @@ You don't need theory to use the pattern. But if you want to understand the mech
 
 ## How This Scales
 
-The pattern applies beyond individual artifacts. Code generation agents can access any system with documented interfaces and valid permissions. Given access, the agent can figure out how to use any system and generate the instructions to do what you want.
-
-This means the application layer dissolves. Software exists to translate human intent into system actions. When that translation is generated on demand, the permanent translation layers — most of what we call "applications" — become unnecessary.
-
-What remains: data, infrastructure, access permissions, intent specification, verification. What disappears: most of what we called "software development."
+The pattern applies beyond individual artifacts. Agentic AI removes the barriers between domain expertise and system access: coding skill and system access knowledge. When those barriers fall, the intermediary layers—most of what we call "applications"—face pressure.
 
 → [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/)
 → [Automating Expertise Gets Easier and Easier](/writing/automating-expertise-gets-easier/)
