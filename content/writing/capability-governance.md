@@ -124,25 +124,9 @@ Producers have symmetric obligations:
 
 4. **Treat AI-generated content as conclusion artifacts** until the method is verified or track record is built. The burden of verification doesn't transfer to the tool.
 
-### Underwriters
+### Underwriters and Regulators
 
-Underwriters have obligations and leverage:
-
-1. **Price based on method exposure.** Work with exposed, verified methodology should carry lower premiums than unexposed expert judgment producing equivalent outputs.
-
-2. **Demand reconciliation data.** Track record claims should be backed by systematic outcome measurement, not tenure.
-
-3. **Exert pressure.** When reconciliation data demonstrates that method A produces quantifiably better outcomes—lower risk, tighter distributions, lower implementation cost—exert pressure to shift to that mode. This is the forcing function.
-
-### Regulators
-
-Regulators have corresponding obligations:
-
-1. **Require artifact classification.** Not system classification. The artifact is what enters decision chains. The artifact is what causes harm or benefit.
-
-2. **Set disclosure standards.** Require producers to state whether methodology is exposed and what verification route applies.
-
-3. **Enable actuarial accumulation.** Create conditions for systematic outcome tracking across the industry, so actuarial evidence can accumulate faster than any single firm could build it.
+Underwriters and regulators are stakeholders with obligations and leverage. When reconciliation data demonstrates that method A produces quantifiably better outcomes—lower risk, tighter distributions, lower implementation cost—they exert pressure to shift to that mode. This is the forcing function.
 
 The foundational forcing function is the introduction of novel generation mechanisms. Without novelty, the obligation to continuously evaluate would be empty formalism.
 
@@ -201,15 +185,3 @@ The framework forces honesty:
 2. **Maintain your own records.** When provider predictions meet reality, document the comparison. This is your evidence, independent of their claims.
 
 3. **Classify by risk before accepting.** High-stakes artifacts require exposed methodology or actuarial evidence. Know what you're accepting.
-
-**Underwriters:**
-
-1. **Request method exposure status.** Before pricing, ask whether methodology is exposed or unexposed.
-
-2. **Request reconciliation data.** Track record claims should come with outcome comparisons, not tenure statements.
-
-**Regulators:**
-
-1. **Consider artifact classification requirements.** Disclosure of whether methodology is exposed and what verification route applies.
-
-2. **Consider enabling industry-wide outcome tracking.** Actuarial evidence accumulates faster with shared infrastructure.
