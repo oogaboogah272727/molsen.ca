@@ -169,7 +169,9 @@ Producers have symmetric obligations:
 
 ### Underwriters and Regulators
 
-Underwriters and regulators are stakeholders with obligations and leverage. When reconciliation data demonstrates that method A produces quantifiably better outcomes—lower risk, tighter distributions, lower implementation cost—they exert pressure to shift to that mode. This is the forcing function.
+Underwriters and regulators share the same obligation—exert pressure when reconciliation data demonstrates that method A produces quantifiably better outcomes—but for different reasons. Regulators act for the public good. Underwriters act for economic utility: correctly pricing risk is how they survive.
+
+Both need the same data. Both should share it. There is risk of regulatory capture, but if underwriters legitimately bear full risk—not hiding behind governmental liability shields or externalized residuals—their economic incentive aligns with the public good. Same outcome, different motivation.
 
 The foundational forcing function is novel generation mechanisms that deliver equivalent quality at lower cost. Without that economic pressure, the obligation to continuously evaluate would be empty formalism.
 
