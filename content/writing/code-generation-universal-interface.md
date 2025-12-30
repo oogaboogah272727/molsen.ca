@@ -12,7 +12,7 @@ When an engineer encodes a structural calculation into a spreadsheet, that sprea
 
 The calculation runs without the engineer present. The formula executes without the analyst's involvement. The ERP system processes transactions without the process designer's intervention.
 
-This is what software is: expertise made runnable. Human knowledge, encoded so precisely that a machine can execute it. The entire software industry exists to distill what people know into instructions machines can follow.
+Software is expertise made runnable. Human knowledge, encoded so precisely that a machine can execute it. The entire software industry exists to distill what people know into instructions machines can follow.
 
 The hard part has never been making computers do things. Computers follow instructions well. The hard part is distilling what you know into instructions a computer can follow.
 
@@ -42,13 +42,13 @@ What remains: Domain expertise. Access permissions. The ability to specify what 
 
 What disappears: The intermediary layers. The developers translating between expert and machine. The integration specialists connecting systems. The technical knowledge barriers that prevented direct encoding.
 
-**The agent is persistent.** This matters. Agentic code generation isn't a single-shot translation. The agent retries when something fails. It adapts when the first approach doesn't work. It explores documentation, examines error messages, adjusts its method. Given time and tokens, it will figure out how to accomplish what you asked. The barrier to accessing any system becomes patience, and agents have infinite patience.
+**The agent is persistent.** Agentic code generation isn't a single-shot translation. The agent retries when something fails. It adapts when the first approach doesn't work. It explores documentation, examines error messages, adjusts its method. Given time and tokens, it will figure out how to accomplish what you asked. The barrier to accessing any system becomes patience, and agents have infinite patience.
 
 ---
 
 ## The Universal Interface
 
-This is why code generation becomes a universal interface: it connects domain expertise directly to any accessible system.
+Code generation connects domain expertise directly to any accessible system. That's what makes it a universal interface.
 
 Any data storage you have permission to access becomes directly usable. You don't need someone to build an application on top of it. Describe what you want; the agent writes the instructions to retrieve it.
 
@@ -88,11 +88,11 @@ The formulation from [AI-First Software](/writing/ai-first-software/) holds: the
 
 ## Connection to the Framework
 
-This is the mechanism that makes [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) scale.
+Code generation as universal interface is what makes [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) scale.
 
 EKA describes the pattern: expert intent → AI translation → executable artifact → human verification → reproducible results.
 
-Code generation as universal interface explains the reach. The executable artifact can interact with any accessible system. The expert's knowledge can be distilled into instructions that touch any data, any service, any platform the agent can learn to use.
+The universal interface explains the reach: the executable artifact can interact with any accessible system. The expert's knowledge can be distilled into instructions that touch any data, any service, any platform the agent can learn to use.
 
 The artifact — the generated code — is inspectable. You can read it. You can verify it does what you intended. You can run it again and get the same results. The methodology is exposed. Defensibility is achievable.
 
@@ -152,7 +152,7 @@ The human contribution contracts to: knowing what should happen, specifying it c
 
 **"Specification is as hard as implementation — you still need to handle edge cases."** Specification is a skill, but a mental skill rather than a technical one. Domain experts already specify precisely when instructing subordinates. The same skill applies to instructing an agent. The agent can be configured to demand specificity — to ask clarifying questions rather than assume. Ambiguous specifications get caught before generation, not after. And the premise that the agent needs the expert to specify every edge case understates what frontier models know. These models have deep domain knowledge across fields — often better than all but the top experts. The agent catches gaps because it knows the domain, not despite lacking domain knowledge.
 
-**"Business logic is tribal knowledge, undocumented and contradictory."** This is real. But the interface is the code generation tool itself. Describe the logic once to the agent; the agent encodes it. That encoding becomes available to every other agent in the organization. No user training, no communication cascade, no documentation that drifts from reality. The distribution problem disappears because distribution is automatic — express once, encoded for all. The hard part becomes getting the expert to articulate their knowledge one time. That's tractable.
+**"Business logic is tribal knowledge, undocumented and contradictory."** True. But the interface is the code generation tool itself. Describe the logic once to the agent; the agent encodes it. That encoding becomes available to every other agent in the organization. No user training, no communication cascade, no documentation that drifts from reality. The distribution problem disappears because distribution is automatic — express once, encoded for all. The hard part becomes getting the expert to articulate their knowledge one time. That's tractable.
 
 **"Network effects protect incumbents — everyone uses Salesforce because everyone uses Salesforce."** Network effects are communication effects. The code generation tool streamlines communication across systems. You can write a Slack integration in minutes. You can connect to any system your organization uses. The network effect of being the common platform weakens when any platform becomes accessible through the same interface.
 
@@ -160,11 +160,11 @@ The human contribution contracts to: knowing what should happen, specifying it c
 
 **"Rate limits and API quotas constrain what agents can do."** These are implementation details. The cost of tokens and bandwidth is negligible against the value of direct system access. Rate limits are speed bumps, not roadblocks. Agents are patient. Organizations with scale concerns can self-host models sized to their peak load.
 
-**"Some systems are deliberately obfuscated — proprietary formats, undocumented protocols, binary interfaces."** This is real, and it's currently a hard barrier. Deliberate obfuscation blocks discoverability. But obfuscation as a durable strategy only works when there's not much value behind it. If there's real value, the effort to circumvent is worth it — and the cost to build alternatives is collapsing. Obfuscation buys time, not permanent protection. Legal barriers (anti-circumvention law, terms of service) can extend the window, but they don't close it. Organizations will remember who tried to extract rent through obstinate refusal to enable access. The pressure is toward openness: systems that remain obfuscated will be routed around, not accommodated.
+**"Some systems are deliberately obfuscated — proprietary formats, undocumented protocols, binary interfaces."** Deliberate obfuscation is currently a hard barrier — it blocks discoverability. But obfuscation as a durable strategy only works when there's not much value behind it. If there's real value, the effort to circumvent is worth it — and the cost to build alternatives is collapsing. Obfuscation buys time, not permanent protection. Legal barriers (anti-circumvention law, terms of service) can extend the window, but they don't close it. Organizations will remember who tried to extract rent through obstinate refusal to enable access. The pressure is toward openness: systems that remain obfuscated will be routed around, not accommodated.
 
-**"Who is liable when generated code causes harm?"** You are. You specified the intent. You verified (or failed to verify) the approach. You deployed it. The code generation tool is infrastructure, like a compiler — you don't sue GCC when your C program crashes. This isn't a gap in accountability; it's clearer accountability than current enterprise software provides. When something breaks in a vendor's black-box system, the specification that caused the failure is buried in product decisions you never made and can't inspect. When something breaks in generated code, the specification is your conversation with the agent, fully inspectable.
+**"Who is liable when generated code causes harm?"** You are. You specified the intent. You verified (or failed to verify) the approach. You deployed it. The code generation tool is infrastructure, like a compiler — you don't sue GCC when your C program crashes. Generated code actually provides clearer accountability than current enterprise software. When something breaks in a vendor's black-box system, the specification that caused the failure is buried in product decisions you never made and can't inspect. When something breaks in generated code, the specification is your conversation with the agent, fully inspectable.
 
-**"Pattern accumulation just recreates software — you're maintaining templates instead of applications."** Yes, and the maintenance is done by agents. The templates get vetted by agents, distributed by agents, updated by agents. Human contribution is specifying what patterns matter and verifying they work correctly. This isn't a contradiction of the dissolution thesis — it's the recursion that makes it complete. The software layer that remains is itself agent-maintained.
+**"Pattern accumulation just recreates software — you're maintaining templates instead of applications."** Yes, and the maintenance is done by agents. The templates get vetted by agents, distributed by agents, updated by agents. Human contribution is specifying what patterns matter and verifying they work correctly. The recursion makes the dissolution thesis complete, not contradictory. The software layer that remains is itself agent-maintained.
 
 **"Interoperability requires shared standards — if everyone generates custom systems, we lose coordination."** The ontology layer addresses this. Patterns that work get extracted and shared. Successful encodings become templates. Organizations that need to interoperate converge on shared encodings through the same mechanism: express once, available to all agents. Standardization emerges from successful practice rather than committee negotiation.
 
