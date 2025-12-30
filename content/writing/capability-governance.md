@@ -137,7 +137,7 @@ Procedural compliance ("we followed standard practice") and precedent ("material
 
 ## Stakeholder Obligations
 
-The framework treats all stakeholders as responsible adults with governance duties—not as passive beneficiaries of regulation. This is counter-cultural. The prevailing view treats consumers as rights-holders to be protected. This framework treats them as participants with obligations.
+The framework treats all stakeholders as responsible parties with governance duties—not as passive beneficiaries of regulation. This is counter-cultural. The prevailing view treats consumers as rights-holders to be protected. This framework treats them as participants with obligations.
 
 ### Note on "Consumer"
 
