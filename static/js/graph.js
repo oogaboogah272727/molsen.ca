@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     practice: 4
   };
 
-  // Tooltip
+  // Tooltip element
   const tooltip = document.createElement('div');
   tooltip.className = 'graph-tooltip';
   tooltip.style.cssText = 'position:absolute;visibility:hidden;background:white;border:1px solid #e2e8f0;border-radius:6px;padding:10px 14px;font-size:12px;font-family:system-ui,-apple-system,sans-serif;box-shadow:0 4px 12px rgba(0,0,0,0.1);max-width:280px;z-index:1000;line-height:1.5;pointer-events:none';
@@ -64,30 +64,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       }
 
-      // Track hovered node
+      // Track state
       let hoveredNode = null;
+      let originalData = JSON.parse(JSON.stringify(data));
 
       // Initialize 3D Force Graph
       const Graph = ForceGraph3D()(container)
         .graphData(data)
         .nodeId('id')
-        .nodeLabel(node => '')  // We'll use custom tooltip instead
+        .nodeLabel(node => node.label)
         .nodeColor(node => colors[node.type] || '#666')
         .nodeVal(node => nodeSizes[node.type] || 5)
-        .nodeOpacity(0.95)
+        .nodeOpacity(0.9)
         .linkSource('source')
         .linkTarget('target')
-        .linkColor(link => link.type === 'core' ? 'rgba(100,100,100,0.6)' : 'rgba(156,163,175,0.4)')
-        .linkWidth(link => link.type === 'core' ? 1.5 : 0.8)
-        .linkOpacity(0.7)
-        .linkDirectionalArrowLength(4)
+        .linkColor(link => link.type === 'core' ? 'rgba(100,100,100,0.5)' : 'rgba(156,163,175,0.3)')
+        .linkWidth(link => link.type === 'core' ? 1.5 : 0.5)
+        .linkOpacity(0.6)
+        .linkDirectionalArrowLength(3)
         .linkDirectionalArrowRelPos(1)
-        .linkCurvature(0.1)
-        .backgroundColor('rgba(0,0,0,0)')
+        .backgroundColor('rgba(255,255,255,0)')
         .showNavInfo(false)
         .enableNodeDrag(true)
         .onNodeClick(node => {
-          if (node.url) {
+          if (node && node.url) {
             window.open(node.url, '_blank');
           }
         })
@@ -101,22 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
           } else {
             tooltip.style.visibility = 'hidden';
           }
-
-          // Highlight connected nodes
-          Graph.nodeColor(n => {
-            if (!node) return colors[n.type] || '#666';
-            if (n.id === node.id) return colors[n.type] || '#666';
-            const isConnected = data.links.some(l =>
-              (l.source.id === node.id && l.target.id === n.id) ||
-              (l.target.id === node.id && l.source.id === n.id) ||
-              (l.source === node.id && l.target === n.id) ||
-              (l.target === node.id && l.source === n.id)
-            );
-            return isConnected ? colors[n.type] || '#666' : 'rgba(100,100,100,0.2)';
-          });
         });
 
-      // Track mouse for tooltip positioning
+      // Mouse move for tooltip
       container.addEventListener('mousemove', (e) => {
         if (hoveredNode) {
           tooltip.style.left = (e.pageX + 15) + 'px';
@@ -124,27 +111,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      // Add node labels using CSS2D
-      Graph.nodeThreeObject(node => {
-        const sprite = new SpriteText(node.label);
-        sprite.color = '#333';
-        sprite.textHeight = node.type === 'hub' ? 4 : 3;
-        sprite.position.y = nodeSizes[node.type] + 3;
-        return sprite;
-      })
-      .nodeThreeObjectExtend(true);
+      // Camera position
+      Graph.cameraPosition({ x: 0, y: 0, z: 350 });
 
-      // Camera positioning
-      Graph.cameraPosition({ x: 0, y: 0, z: 400 });
-
-      // Auto-rotate slowly
+      // Slow auto-rotate
       let angle = 0;
+      let isInteracting = false;
+
+      container.addEventListener('mousedown', () => { isInteracting = true; });
+      container.addEventListener('mouseup', () => { setTimeout(() => { isInteracting = false; }, 2000); });
+      container.addEventListener('wheel', () => { isInteracting = true; setTimeout(() => { isInteracting = false; }, 2000); });
+
       function rotate() {
-        if (!hoveredNode) {
-          angle += 0.001;
+        if (!isInteracting && !hoveredNode) {
+          angle += 0.002;
           Graph.cameraPosition({
-            x: 400 * Math.sin(angle),
-            z: 400 * Math.cos(angle)
+            x: 350 * Math.sin(angle),
+            z: 350 * Math.cos(angle)
           });
         }
         requestAnimationFrame(rotate);
@@ -162,16 +145,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const type = btn.getAttribute('data-type');
 
             if (type) {
-              const filteredNodes = data.nodes.filter(n => n.type === type);
+              const filteredNodes = originalData.nodes.filter(n => n.type === type);
               const nodeIds = new Set(filteredNodes.map(n => n.id));
-              const filteredLinks = data.links.filter(l => {
+              const filteredLinks = originalData.links.filter(l => {
                 const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
                 const targetId = typeof l.target === 'object' ? l.target.id : l.target;
                 return nodeIds.has(sourceId) && nodeIds.has(targetId);
               });
               Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
             } else {
-              Graph.graphData(data);
+              Graph.graphData(JSON.parse(JSON.stringify(originalData)));
             }
           }
         });
@@ -183,6 +166,9 @@ document.addEventListener('DOMContentLoaded', function() {
         Graph.height(container.clientHeight);
       }
       window.addEventListener('resize', handleResize);
-      handleResize();
+    })
+    .catch(err => {
+      console.error('Graph load error:', err);
+      container.innerHTML = '<p style="padding:2rem;color:#666;">Error loading graph. Please refresh.</p>';
     });
 });
