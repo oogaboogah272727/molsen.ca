@@ -18,7 +18,7 @@ Or explore the components:
 | [AI as Oracle vs. Assistant](/writing/ai-oracle-vs-assistant/) | The fundamental choice: ask for answers or ask for execution |
 | [The Strong Oracle Trap](/writing/strong-oracle-trap/) | Why sophisticated dialogue doesn't solve the verification problem |
 | [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) | The pattern for AI-augmented professional work |
-| [Capability Governance](/writing/capability-governance/) | A framework for evaluating AI-assisted work |
+| [Capability Governance](/writing/capability-governance/) | The governance framework: stakeholder obligations for generated artifacts |
 
 ---
 

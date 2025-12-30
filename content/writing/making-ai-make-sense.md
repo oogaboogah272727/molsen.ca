@@ -54,7 +54,7 @@ What is an executable artifact? It's knowledge made runnable: instructions that 
 → [The fundamental choice: answers vs execution](/writing/ai-oracle-vs-assistant/)
 → [Why sophisticated dialogue doesn't fix the answer problem](/writing/strong-oracle-trap/)
 → [Executable Knowledge Architecture: the pattern](/writing/executable-knowledge-architecture/)
-→ [Capability Governance: evaluating AI-assisted work](/writing/capability-governance/)
+→ [Capability Governance: stakeholder obligations for generated artifacts](/writing/capability-governance/)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "Framework for Capability Governance in Technical Consulting"
+title: "Capability Governance: A Framework for Generated Artifacts"
 date: 2024-12-27
-description: "A framework for governing AI-assisted work in technical professions. When someone asks 'how did you arrive at this?', can you answer?"
+description: "A framework for governing AI-generated artifacts. Applies to all stakeholders: producers, consumers, underwriters, and regulators. The question: can you defend what you delivered?"
 type: core
 tags: ["AI Governance", "Professional Practice"]
 ---
@@ -10,9 +10,19 @@ A client asks: "How did you arrive at this recommendation?"
 
 The consultant pauses. The honest answer is: an AI drafted the analysis, a junior reviewed the formatting, and a senior signed off after a ten-minute skim. The methodology is a black box. The deliverable looks authoritative. But if it's wrong, no one in the chain can explain why it was right.
 
-This is happening now, across every technical profession. AI-assisted work is already here. What matters is whether anyone can defend what they delivered.
+This is happening everywhere. Not just in consulting. Every profession that produces artifacts others rely on faces the same question: can anyone defend what was delivered?
 
 This framework addresses that question.
+
+---
+
+## Why Another Framework?
+
+The EU AI Act governs AI *systems*. NIST AI RMF governs *risk management processes*. ISO 42001 governs *management systems*.
+
+None of them answers the question a professional actually faces: "Can I use this generated output in my deliverable, and if so, under what conditions?"
+
+This framework governs *artifacts*—the outputs that enter decision chains. It applies regardless of how the model landscape evolves or what regulators decide systems should look like. The question is always: can you defend this artifact?
 
 ---
 
@@ -26,15 +36,21 @@ I treat knowledge and capability to produce outcomes as equivalent. The argument
 
 ## Scope
 
-This framework applies to technical professional work where:
+**The framework applies to all generated artifacts.** Governance intensity scales with risk class; the principles do not.
 
-- Outputs inform consequential decisions
-- Professional accountability attaches to the producer
-- The question "how did you arrive at this?" may be asked
+An artifact enters the framework's scope when:
 
-Engineering, architecture, legal advisory, medical practice, financial analysis, consulting — the domain varies, but the governance challenge is the same: can you defend what you did?
+- It informs a decision someone else will act on
+- Someone may ask "how did you arrive at this?"
+- Accountability attaches to the producer
 
-The framework is less applicable to pure strategy, artistic judgment, or contexts where methodology cannot be exposed for confidentiality or competitive reasons. It addresses technical work where verification is possible, not all professional work.
+Engineering, legal, medical, financial, consulting—the domain varies, but the governance question is the same: can you defend what you did?
+
+**Low-stakes artifacts** still fall under the framework. The governance is just minimal: check it, fix it if it breaks, learn from the error distribution over time. That's not a different framework. It's the same framework with minimal ceremony.
+
+**High-stakes artifacts** require exposed methodology or actuarial evidence before deployment. The framework doesn't change. The effort justified in applying it does.
+
+The framework is less applicable to pure strategy, artistic judgment, or contexts where methodology cannot be exposed for confidentiality or competitive reasons. But these are edge cases, not the norm.
 
 ---
 
@@ -108,13 +124,51 @@ Residual risk: post facto reconciliation validates after exposure has occurred. 
 
 ## Stakeholder Obligations
 
-Consumers of conclusion artifacts should demand either methodological verifiability or actuarial evidence of reliability.
+The framework treats all stakeholders as responsible adults with governance duties—not as passive beneficiaries of regulation. This is counter-cultural. The prevailing view treats consumers as rights-holders to be protected. This framework treats them as participants with obligations.
 
-Producers should provide the same.
+### Consumers
 
-Both must continuously evaluate as generation methods evolve. The actuarial case for method A today may be superseded by method B tomorrow.
+Consumers of generated artifacts have three obligations:
 
-Underwriters and regulators are stakeholders with obligations and leverage. When reconciliation data demonstrates that method A produces quantifiably better outcomes—lower risk, tighter distributions, lower implementation cost—they will exert pressure on generation to shift to that mode. This is the forcing function.
+1. **Classify artifacts by risk.** What's the consequence of failure? Attribution difficulty? Downstream propagation? Irreversibility? Classification determines governance intensity.
+
+2. **Demand verifiability.** For high-risk artifacts, demand either exposed methodology or actuarial evidence. "Trust our brand" is risk acceptance, not risk management. Know which you're doing.
+
+3. **Maintain local records.** When provider predictions meet reality, document the comparison. This is your evidence, independent of their claims. Actuarial standing must be earned, and you're the one with visibility into whether it was earned.
+
+4. **Refresh comparisons.** The actuarial case for method A today may be superseded by method B tomorrow. Continuous evaluation is the obligation. Novel generation mechanisms are the forcing function that makes this obligation non-trivial.
+
+### Producers
+
+Producers have symmetric obligations:
+
+1. **Expose methods where possible.** Work with exposed method is inherently of greater value due to its exposure to methodological validation. Where method cannot be exposed, acknowledge the residual risk explicitly.
+
+2. **Provide verifiability or actuarial evidence.** For high-risk artifacts, consumers should be able to either inspect the method or see the track record. Offering neither means asking clients to accept unknown risk on reputation alone.
+
+3. **Track outcomes.** When predictions meet reality, document the comparison. Actuarial standing is earned through systematic reconciliation, not accumulated reputation.
+
+4. **Treat AI-generated content as conclusion artifacts** until the method is verified or track record is built. The burden of verification doesn't transfer to the tool.
+
+### Underwriters
+
+Underwriters are stakeholders with obligations and leverage:
+
+1. **Price based on method exposure.** Work with exposed, verified methodology should carry lower premiums than unexposed expert judgment producing equivalent outputs.
+
+2. **Demand reconciliation data.** Track record claims should be backed by systematic outcome measurement, not tenure.
+
+3. **Exert pressure.** When reconciliation data demonstrates that method A produces quantifiably better outcomes—lower risk, tighter distributions, lower implementation cost—underwriters exert pressure to shift to that mode. This is their forcing function.
+
+### Regulators
+
+Regulators have corresponding obligations:
+
+1. **Require artifact classification.** Not system classification. The artifact is what enters decision chains. The artifact is what causes harm or benefit.
+
+2. **Set disclosure standards.** Require producers to state whether methodology is exposed and what verification route applies.
+
+3. **Enable actuarial accumulation.** Create conditions for systematic outcome tracking across the industry, so actuarial evidence can accumulate faster than any single firm could build it.
 
 The foundational forcing function is the introduction of novel generation mechanisms. Without novelty, the obligation to continuously evaluate would be empty formalism.
 
