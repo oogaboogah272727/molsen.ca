@@ -8,7 +8,7 @@ tags: ["AI Governance", "Professional Practice"]
 
 An **artifact** is an output that enters a decision chain. A report, a calculation, a recommendation, a design, an analysis. Something someone else will act on.
 
-**Generation** is how that artifact came into existence. A human wrote it. An AI drafted it. Some combination reviewed, refined, or rubber-stamped it. The generation method determines whether the artifact can be defended.
+**Generation** is how that artifact came into existence. A human wrote it. An AI drafted it. Some combination reviewed, refined, or rubber-stamped it. The generation method determines whether and to what degree the artifact can be defended.
 
 This framework governs that relationship: artifact, generation method, and defensibility.
 
