@@ -241,7 +241,7 @@ ORDER BY ?relation`
 
           if (value.startsWith('http://molsen.ca/writing/')) {
             const slug = value.replace('http://molsen.ca/writing/', '');
-            value = `<a href="/writing/${slug}">${slug.replace(/-/g, ' ')}</a>`;
+            value = `<a href="/writing/${slug}" target="_blank">${slug.replace(/-/g, ' ')}</a>`;
           } else if (value.startsWith('http://molsen.ca/ontology#')) {
             value = value.replace('http://molsen.ca/ontology#', '');
           }
