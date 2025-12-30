@@ -11,11 +11,11 @@ tags: ["AI Governance", "Organizational Change"]
 
 Knowledge workers face an uncomfortable truth: anyone can now ask ChatGPT the same questions they once needed experts to answer. This creates immediate pressure on the value of expertise. But it also reveals something about how we've been thinking about AI in professional practice. We've been thinking about it wrong.
 
-The instinct is to treat AI as an oracle. I've written about why [Oracle mode is ungovernable for professional work](/writing/ai-oracle-vs-assistant/). The short version: you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That creates a paradox that makes professional accountability impossible.
+The instinct is to treat AI as an oracle—ask it questions, get answers. But you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That's the [verification paradox](/writing/ai-oracle-vs-assistant/), and it makes professional accountability impossible when AI operates in this mode.
 
-I've developed a different approach that I call Executable Knowledge Architecture (EKA). It's an organizational pattern that implements [Assistant mode](/writing/ai-oracle-vs-assistant/) for professional practice. Instead of asking AI for answers, we ask it to translate expert intent into executable code. The code is the artifact we verify. The results are what we deliver.
+The alternative is assistant mode: AI that does work *for* experts rather than *instead of* them. Instead of asking AI for answers, we ask it to translate expert intent into executable code. The code is the artifact we verify. The results are what we deliver.
 
-EKA rests on two foundations. First, [knowledge is the capability to reliably produce outcomes](/writing/knowledge-as-capability/). This equivalence makes human-AI collaboration coherent: the expert has one kind of capability (specifying intent, verifying alignment), the AI has another (producing executable implementations). Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions. Second, [Assistant mode](/writing/ai-oracle-vs-assistant/) solves the verification paradox that makes Oracle mode ungovernable.
+I call this pattern Executable Knowledge Architecture (EKA). It rests on a simple foundation: [knowledge is the capability to reliably produce outcomes](/writing/knowledge-as-capability/). This makes human-AI collaboration coherent. The expert has one kind of capability (specifying intent, verifying alignment). The AI has another (producing executable implementations). Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions.
 
 ---
 
