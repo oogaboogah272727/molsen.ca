@@ -14,16 +14,17 @@
   const STARTER_QUERIES = [
     {
       name: "Concepts",
-      query: `SELECT ?label ?comment WHERE {
+      query: `SELECT ?label ?comment ?article WHERE {
   ?concept rdfs:label ?label .
   OPTIONAL { ?concept rdfs:comment ?comment }
+  OPTIONAL { ?concept mo:definedIn ?article }
   FILTER(STRSTARTS(STR(?concept), "http://molsen.ca/ontology#"))
 }
 ORDER BY ?label`
     },
     {
       name: "Articles",
-      query: `SELECT ?label ?type ?comment WHERE {
+      query: `SELECT ?article ?type ?comment WHERE {
   ?article a mo:Article ;
            rdfs:label ?label .
   OPTIONAL { ?article mo:hasType ?typeUri . ?typeUri rdfs:label ?type }
@@ -33,52 +34,55 @@ ORDER BY ?label`
     },
     {
       name: "Solves",
-      query: `SELECT ?solver ?problem WHERE {
+      query: `SELECT ?solver ?problem ?article WHERE {
   ?s mo:solves ?p .
   ?s rdfs:label ?solver .
   ?p rdfs:label ?problem .
+  OPTIONAL { ?s mo:definedIn ?article }
 }
 ORDER BY ?problem`
     },
     {
       name: "Creates",
-      query: `SELECT ?creator ?problem WHERE {
+      query: `SELECT ?creator ?problem ?article WHERE {
   ?c mo:creates ?p .
   ?c rdfs:label ?creator .
   ?p rdfs:label ?problem .
+  OPTIONAL { ?c mo:definedIn ?article }
 }
 ORDER BY ?problem`
     },
     {
       name: "Foundations",
-      query: `SELECT ?foundation ?enables WHERE {
+      query: `SELECT ?foundation ?enables ?article WHERE {
   ?f mo:foundationalTo ?t .
   ?f rdfs:label ?foundation .
   ?t rdfs:label ?enables .
+  OPTIONAL { ?f mo:definedIn ?article }
 }
 ORDER BY ?foundation`
     },
     {
       name: "Dependencies",
-      query: `SELECT ?concept ?requires WHERE {
+      query: `SELECT ?concept ?requires ?article WHERE {
   ?c mo:requires ?r .
   ?c rdfs:label ?concept .
   ?r rdfs:label ?requires .
+  OPTIONAL { ?c mo:definedIn ?article }
 }
 ORDER BY ?concept`
     },
     {
       name: "Definitions",
       query: `SELECT ?concept ?article WHERE {
-  ?c mo:definedIn ?a .
+  ?c mo:definedIn ?article .
   ?c rdfs:label ?concept .
-  ?a rdfs:label ?article .
 }
-ORDER BY ?article`
+ORDER BY ?concept`
     },
     {
       name: "Verification Paradox",
-      query: `SELECT ?relation ?concept WHERE {
+      query: `SELECT ?relation ?concept ?article WHERE {
   {
     ?c mo:creates mo:VerificationParadox .
     BIND("creates" AS ?relation)
@@ -90,12 +94,13 @@ ORDER BY ?article`
     BIND("doesn't solve" AS ?relation)
   }
   ?c rdfs:label ?concept .
+  OPTIONAL { ?c mo:definedIn ?article }
 }
 ORDER BY ?relation`
     },
     {
       name: "EKA",
-      query: `SELECT ?relation ?concept WHERE {
+      query: `SELECT ?relation ?concept ?article WHERE {
   {
     mo:ExecutableKnowledgeArchitecture mo:requires ?t .
     BIND("requires" AS ?relation)
@@ -110,6 +115,7 @@ ORDER BY ?relation`
     BIND("solves" AS ?relation)
   }
   ?t rdfs:label ?concept .
+  OPTIONAL { ?t mo:definedIn ?article }
 }
 ORDER BY ?relation`
     }
