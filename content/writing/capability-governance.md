@@ -26,6 +26,18 @@ This framework governs artifacts. It applies regardless of how the model landsca
 
 ---
 
+## Normative Stance
+
+This framework is prescriptive, not merely descriptive. It states how artifact governance should work, not just how it does work.
+
+Current practice often substitutes risk transfer for risk reduction: credentials, brand, liability caps, and insurance create the appearance of governance while leaving residual risk with parties who never consented to bear it. This is not adequate governance. It is cost externalization dressed as accountability.
+
+Risk transfer is legitimate when complete and disclosed. But transfer is never complete. Liability caps exist precisely because full transfer is unaffordable—which means the residual must land somewhere. That somewhere is typically communities, workers, and environments with no seat at the table when terms were set.
+
+Where risk reduction is available—through methodology exposure that permits inspection, or through empirical validation that demonstrates reliability—choosing incomplete transfer instead is ethically indefensible. The framework provides the standard against which current practice can be measured.
+
+---
+
 ## Scope
 
 **The framework applies to all generated artifacts.** Governance intensity scales with risk class; the principles do not.
@@ -68,6 +80,16 @@ The distinction isn't about importance. Conclusions can be routine; method-beari
 
 **Note on embedded judgment:** Most method-bearing work contains judgment calls within the method. An engineer following code still selects load assumptions. A lawyer checking compliance still interprets requirements. These judgment points are where residual risk lives. Method-bearing status means the methodology is exposed and judgment points are identifiable—not that no judgment occurred.
 
+### On Opacity
+
+Some argue method opacity is structurally necessary—trade secrets, competitive advantage, inherent complexity. This conflates business justification with governance adequacy.
+
+As argued in [Agent-Relative Tacitness](/writing/agent-relative-tacitness/), most "tacit knowledge" is representationally blocked (could be expressed, hasn't been), not structurally inexpressible. The domain of genuinely irreducible tacit knowledge is small and shrinking. Claims of structural inexpressibility should be viewed with extreme skepticism.
+
+"I know this but cannot explain how" is not a defense when material economic or safety consequences attach. If you cannot articulate your method, you do not understand it well enough to stake others' welfare on it. Opacity as producer choice is indefensible. Opacity as consumer acceptance is reckless.
+
+The framework does not forbid opacity. It prices it correctly: unexposed method with no track record means unknown risk borne by the consumer. Sophisticated consumers should refuse these terms.
+
 ---
 
 ## Routes to Defensibility
@@ -94,11 +116,25 @@ This is actuarial standing: systematic reconciliation of predictions against out
 
 Which route is acceptable depends on stakes. Reliability requirements for a scoping study differ from bankable feasibility differ from dam stability sign-off. The framework scales; the threshold varies.
 
+### Why Two Routes, Not Three
+
+Some argue authority—credentials, certification, brand—constitutes a third route. It does not. Authority transfers risk; it does not reduce risk. The professional stamp says "I accept responsibility"—not "this is correct." When the artifact fails, consequences still occur.
+
+Risk transfer is legitimate governance when complete and disclosed—that's what underwriting is for. The problem is incomplete transfer with undisclosed exposure. Liability caps are often trivial compared to actual losses. The residual falls on non-consenting parties whose only recourse is litigation. When consequences are fatal, victims have no recourse at all—only their survivors can litigate for harms that cannot be undone.
+
+Where risk reduction is available through methodology exposure or empirical validation, substituting incomplete transfer externalizes costs onto others. The framework excludes authority as a defensibility route not because transfer is illegitimate, but because authority-as-defensibility typically masks incomplete transfer as adequate governance.
+
+Procedural compliance ("we followed standard practice") and precedent ("materially similar to X") are the same problem in different dress. Both shift responsibility away from the specific artifact without reducing the risk that this artifact, in this context, is wrong.
+
 ---
 
 ## Stakeholder Obligations
 
 The framework treats all stakeholders as responsible adults with governance duties—not as passive beneficiaries of regulation. This is counter-cultural. The prevailing view treats consumers as rights-holders to be protected. This framework treats them as participants with obligations.
+
+### Note on "Consumer"
+
+Consumers in this framework are sophisticated institutional actors—firms, repeat purchasers, organizations with capacity to evaluate and track outcomes. End-user consumer protection (patients, homeowners, retail buyers) is a related but distinct problem, closer to product liability than professional governance. The obligations below assume consumers who can classify, evaluate, and maintain records as part of normal business practice.
 
 ### Consumers
 
