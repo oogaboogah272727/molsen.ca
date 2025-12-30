@@ -21,6 +21,7 @@ Or explore the components:
 | [Capability Governance](/writing/capability-governance/) | The governance framework: stakeholder obligations for generated artifacts |
 | [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/) | How the pattern scales: AI removes barriers to direct system access |
 | [Automating Expertise Gets Easier and Easier](/writing/automating-expertise-gets-easier/) | What faces pressure and what remains as more expertise becomes software |
+| [Ontology Generation](/writing/ontology-generation/) | How organizational knowledge accumulates from universal interface logs |
 | [AI-First Software](/writing/ai-first-software/) | The design philosophy: AI as foundation, not feature |
 
 ---
