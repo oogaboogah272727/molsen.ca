@@ -85,7 +85,7 @@ This means the application layer dissolves. Software exists to translate human i
 What remains: data, infrastructure, access permissions, intent specification, verification. What disappears: most of what we called "software development."
 
 → [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/)
-→ [The Dissolution of Software](/writing/dissolution-of-software/)
+→ [Automating Expertise Gets Easier and Easier](/writing/automating-expertise-gets-easier/)
 
 ---
 

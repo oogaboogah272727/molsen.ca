@@ -118,4 +118,4 @@ The artifact — the generated code — is inspectable. You can read it. You can
 
 **Patterns accumulate.** Generated artifacts aren't disposable. Useful patterns get identified, vetted, and made available for reuse. The [Ontology Generation](/writing/ontology-generation/) process describes how: logs are mined for recurring patterns, successful approaches are extracted and validated, reusable artifacts are distributed across the organization. What starts as ephemeral generation becomes curated organizational knowledge. The one-off becomes the template.
 
-→ See [The Dissolution of Software](/writing/dissolution-of-software/) for the implications of universal interface at scale.
+→ See [Automating Expertise Gets Easier and Easier](/writing/automating-expertise-gets-easier/) for what this means as capabilities improve.

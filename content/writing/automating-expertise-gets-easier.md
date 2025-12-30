@@ -1,7 +1,7 @@
 ---
-title: "The Dissolution of Software"
+title: "Automating Expertise Gets Easier and Easier"
 date: 2025-06-30
-description: "When agentic AI becomes the universal interface, much of the value software provides becomes directly accessible. What remains and what dissolves."
+description: "As agentic AI lowers the barriers, more expertise becomes software. What faces pressure, what remains, and where value moves."
 type: core
 tags: ["AI Governance", "Professional Practice"]
 ---
