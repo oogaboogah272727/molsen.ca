@@ -13,9 +13,8 @@
 
   const STARTER_QUERIES = [
     {
-      name: "All Concepts",
-      description: "List all concepts in the ontology",
-      query: `SELECT ?concept ?label ?comment WHERE {
+      name: "Concepts",
+      query: `SELECT ?label ?comment WHERE {
   ?concept rdfs:label ?label .
   OPTIONAL { ?concept rdfs:comment ?comment }
   FILTER(STRSTARTS(STR(?concept), "http://molsen.ca/ontology#"))
@@ -23,9 +22,8 @@
 ORDER BY ?label`
     },
     {
-      name: "All Articles",
-      description: "List all articles with their types",
-      query: `SELECT ?article ?label ?type ?comment WHERE {
+      name: "Articles",
+      query: `SELECT ?label ?type ?comment WHERE {
   ?article a mo:Article ;
            rdfs:label ?label .
   OPTIONAL { ?article mo:hasType ?typeUri . ?typeUri rdfs:label ?type }
@@ -34,231 +32,167 @@ ORDER BY ?label`
 ORDER BY ?label`
     },
     {
-      name: "What solves problems?",
-      description: "Find concepts that solve problems",
-      query: `SELECT ?solver ?solverLabel ?problem ?problemLabel WHERE {
-  ?solver mo:solves ?problem .
-  ?solver rdfs:label ?solverLabel .
-  ?problem rdfs:label ?problemLabel .
+      name: "Solves",
+      query: `SELECT ?solver ?problem WHERE {
+  ?s mo:solves ?p .
+  ?s rdfs:label ?solver .
+  ?p rdfs:label ?problem .
 }
-ORDER BY ?problemLabel`
+ORDER BY ?problem`
     },
     {
-      name: "What creates problems?",
-      description: "Find concepts that create problems",
-      query: `SELECT ?creator ?creatorLabel ?problem ?problemLabel WHERE {
-  ?creator mo:creates ?problem .
-  ?creator rdfs:label ?creatorLabel .
-  ?problem rdfs:label ?problemLabel .
+      name: "Creates",
+      query: `SELECT ?creator ?problem WHERE {
+  ?c mo:creates ?p .
+  ?c rdfs:label ?creator .
+  ?p rdfs:label ?problem .
 }
-ORDER BY ?problemLabel`
+ORDER BY ?problem`
     },
     {
-      name: "Foundation chain",
-      description: "What is foundational to what?",
-      query: `SELECT ?foundation ?foundationLabel ?target ?targetLabel WHERE {
-  ?foundation mo:foundationalTo ?target .
-  ?foundation rdfs:label ?foundationLabel .
-  ?target rdfs:label ?targetLabel .
+      name: "Foundations",
+      query: `SELECT ?foundation ?enables WHERE {
+  ?f mo:foundationalTo ?t .
+  ?f rdfs:label ?foundation .
+  ?t rdfs:label ?enables .
 }
-ORDER BY ?foundationLabel`
+ORDER BY ?foundation`
     },
     {
-      name: "Concept dependencies",
-      description: "What requires what?",
-      query: `SELECT ?concept ?conceptLabel ?requires ?requiresLabel WHERE {
-  ?concept mo:requires ?requires .
-  ?concept rdfs:label ?conceptLabel .
-  ?requires rdfs:label ?requiresLabel .
+      name: "Dependencies",
+      query: `SELECT ?concept ?requires WHERE {
+  ?c mo:requires ?r .
+  ?c rdfs:label ?concept .
+  ?r rdfs:label ?requires .
 }
-ORDER BY ?conceptLabel`
+ORDER BY ?concept`
     },
     {
-      name: "Where is X defined?",
-      description: "Find where concepts are authoritatively defined",
-      query: `SELECT ?concept ?conceptLabel ?article ?articleLabel WHERE {
-  ?concept mo:definedIn ?article .
-  ?concept rdfs:label ?conceptLabel .
-  ?article rdfs:label ?articleLabel .
+      name: "Definitions",
+      query: `SELECT ?concept ?article WHERE {
+  ?c mo:definedIn ?a .
+  ?c rdfs:label ?concept .
+  ?a rdfs:label ?article .
 }
-ORDER BY ?articleLabel`
+ORDER BY ?article`
     },
     {
       name: "Verification Paradox",
-      description: "Everything related to the Verification Paradox",
-      query: `SELECT ?relation ?concept ?conceptLabel WHERE {
+      query: `SELECT ?relation ?concept WHERE {
   {
-    ?concept mo:creates mo:VerificationParadox .
+    ?c mo:creates mo:VerificationParadox .
     BIND("creates" AS ?relation)
   } UNION {
-    ?concept mo:solves mo:VerificationParadox .
+    ?c mo:solves mo:VerificationParadox .
     BIND("solves" AS ?relation)
   } UNION {
-    ?concept mo:doesNotSolve mo:VerificationParadox .
-    BIND("does not solve" AS ?relation)
+    ?c mo:doesNotSolve mo:VerificationParadox .
+    BIND("doesn't solve" AS ?relation)
   }
-  ?concept rdfs:label ?conceptLabel .
+  ?c rdfs:label ?concept .
 }
 ORDER BY ?relation`
     },
     {
-      name: "EKA dependencies",
-      description: "What does Executable Knowledge Architecture require and produce?",
-      query: `SELECT ?relation ?thing ?thingLabel WHERE {
+      name: "EKA",
+      query: `SELECT ?relation ?concept WHERE {
   {
-    mo:ExecutableKnowledgeArchitecture mo:requires ?thing .
+    mo:ExecutableKnowledgeArchitecture mo:requires ?t .
     BIND("requires" AS ?relation)
   } UNION {
-    mo:ExecutableKnowledgeArchitecture mo:implements ?thing .
+    mo:ExecutableKnowledgeArchitecture mo:implements ?t .
     BIND("implements" AS ?relation)
   } UNION {
-    mo:ExecutableKnowledgeArchitecture mo:produces ?thing .
+    mo:ExecutableKnowledgeArchitecture mo:produces ?t .
     BIND("produces" AS ?relation)
   } UNION {
-    mo:ExecutableKnowledgeArchitecture mo:solves ?thing .
+    mo:ExecutableKnowledgeArchitecture mo:solves ?t .
     BIND("solves" AS ?relation)
   }
-  ?thing rdfs:label ?thingLabel .
+  ?t rdfs:label ?concept .
 }
 ORDER BY ?relation`
-    },
-    {
-      name: "Article → Concepts map",
-      description: "Which concepts are defined in which articles?",
-      query: `SELECT ?articleLabel (GROUP_CONCAT(?conceptLabel; separator=", ") AS ?concepts) WHERE {
-  ?concept mo:definedIn ?article .
-  ?concept rdfs:label ?conceptLabel .
-  ?article rdfs:label ?articleLabel .
-}
-GROUP BY ?articleLabel
-ORDER BY ?articleLabel`
     }
   ];
 
   let engine = null;
   let store = null;
+  let activeQuery = 0;
 
   async function init() {
     const container = document.getElementById('explorer-container');
     if (!container) return;
 
-    // Show loading state
-    container.innerHTML = '<p class="loading">Loading ontology...</p>';
+    container.innerHTML = '<p class="explorer-loading">Loading ontology...</p>';
 
     try {
-      // Initialize Comunica
       engine = new Comunica.QueryEngine();
 
-      // Fetch and parse the TTL file
       const response = await fetch('/ontology/knowledge-graph.ttl');
       const ttlContent = await response.text();
 
-      // Create an N3 store and parse the TTL
       store = new N3.Store();
       const parser = new N3.Parser();
       const quads = parser.parse(ttlContent);
       store.addQuads(quads);
 
-      // Render the UI
       renderUI(container);
-
-      // Run initial query
       runQuery(STARTER_QUERIES[0].query);
 
     } catch (err) {
       console.error('Init error:', err);
-      container.innerHTML = '<p class="error">Error loading ontology: ' + err.message + '</p>';
+      container.innerHTML = '<p class="explorer-error">Error loading ontology: ' + err.message + '</p>';
     }
   }
 
   function renderUI(container) {
     container.innerHTML = `
-      <div class="explorer-layout">
-        <div class="query-panel">
-          <h3>Query Builder</h3>
+      <div class="query-buttons">
+        ${STARTER_QUERIES.map((q, i) =>
+          `<button class="query-btn${i === 0 ? ' active' : ''}" data-idx="${i}">${q.name}</button>`
+        ).join('')}
+        <button class="query-btn query-btn-custom" data-idx="-1">Custom</button>
+      </div>
 
-          <div class="starter-queries">
-            <label>Starter Queries:</label>
-            <select id="starter-select">
-              ${STARTER_QUERIES.map((q, i) =>
-                `<option value="${i}">${q.name}</option>`
-              ).join('')}
-            </select>
-            <p id="query-description" class="query-desc">${STARTER_QUERIES[0].description}</p>
-          </div>
-
-          <div class="query-editor">
-            <label>SPARQL Query:</label>
-            <textarea id="query-input" rows="12">${STARTER_QUERIES[0].query}</textarea>
-          </div>
-
-          <div class="query-actions">
-            <button id="run-query" class="btn-primary">Run Query</button>
-            <button id="clear-query" class="btn-secondary">Clear</button>
-          </div>
-
-          <div class="prefixes-info">
-            <details>
-              <summary>Available Prefixes</summary>
-              <pre>mo: = http://molsen.ca/ontology#
-article: = http://molsen.ca/writing/
-rdf: = standard RDF
-rdfs: = standard RDFS</pre>
-            </details>
-          </div>
-
-          <div class="predicates-info">
-            <details>
-              <summary>Available Predicates</summary>
-              <ul>
-                <li><code>mo:solves</code> - concept solves problem</li>
-                <li><code>mo:creates</code> - concept creates problem</li>
-                <li><code>mo:doesNotSolve</code> - explicitly doesn't solve</li>
-                <li><code>mo:requires</code> - depends on</li>
-                <li><code>mo:extends</code> - builds on</li>
-                <li><code>mo:foundationalTo</code> - provides foundation for</li>
-                <li><code>mo:enables</code> - makes possible</li>
-                <li><code>mo:implements</code> - realizes pattern</li>
-                <li><code>mo:produces</code> - outputs</li>
-                <li><code>mo:governs</code> - constrains</li>
-                <li><code>mo:scales</code> - applies at larger scope</li>
-                <li><code>mo:definedIn</code> - authoritative source</li>
-                <li><code>mo:discussedIn</code> - mentioned in article</li>
-                <li><code>mo:threatens</code> - poses risk to</li>
-                <li><code>mo:mitigates</code> - reduces</li>
-              </ul>
-            </details>
-          </div>
+      <div id="custom-query" class="custom-query hidden">
+        <textarea id="query-input" rows="8" placeholder="Write your SPARQL query here...">${STARTER_QUERIES[0].query}</textarea>
+        <div class="custom-query-actions">
+          <button id="run-custom" class="btn-run">Run Query</button>
+          <span class="query-hint">Prefixes: mo:, article:, rdf:, rdfs: | Predicates: solves, creates, requires, foundationalTo, definedIn</span>
         </div>
+      </div>
 
-        <div class="results-panel">
-          <h3>Results</h3>
-          <div id="results-container">
-            <p class="hint">Select a query and click "Run Query"</p>
-          </div>
-        </div>
+      <div id="results-container" class="results-container">
+        <p class="explorer-hint">Select a query above</p>
       </div>
     `;
 
-    // Attach event listeners
-    document.getElementById('starter-select').addEventListener('change', (e) => {
-      const idx = parseInt(e.target.value);
-      const q = STARTER_QUERIES[idx];
-      document.getElementById('query-input').value = q.query;
-      document.getElementById('query-description').textContent = q.description;
+    // Query button clicks
+    container.querySelectorAll('.query-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        container.querySelectorAll('.query-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const idx = parseInt(btn.dataset.idx);
+        const customPanel = document.getElementById('custom-query');
+
+        if (idx === -1) {
+          customPanel.classList.remove('hidden');
+        } else {
+          customPanel.classList.add('hidden');
+          activeQuery = idx;
+          document.getElementById('query-input').value = STARTER_QUERIES[idx].query;
+          runQuery(STARTER_QUERIES[idx].query);
+        }
+      });
     });
 
-    document.getElementById('run-query').addEventListener('click', () => {
-      const query = document.getElementById('query-input').value;
-      runQuery(query);
+    // Custom query run
+    document.getElementById('run-custom').addEventListener('click', () => {
+      runQuery(document.getElementById('query-input').value);
     });
 
-    document.getElementById('clear-query').addEventListener('click', () => {
-      document.getElementById('query-input').value = '';
-      document.getElementById('results-container').innerHTML = '<p class="hint">Enter a query and click "Run Query"</p>';
-    });
-
-    // Allow Ctrl+Enter to run query
+    // Ctrl+Enter to run
     document.getElementById('query-input').addEventListener('keydown', (e) => {
       if (e.ctrlKey && e.key === 'Enter') {
         runQuery(document.getElementById('query-input').value);
@@ -268,7 +202,7 @@ rdfs: = standard RDFS</pre>
 
   async function runQuery(queryBody) {
     const resultsContainer = document.getElementById('results-container');
-    resultsContainer.innerHTML = '<p class="loading">Running query...</p>';
+    resultsContainer.innerHTML = '<p class="explorer-loading">Running...</p>';
 
     const fullQuery = PREFIXES + '\n' + queryBody;
 
@@ -280,16 +214,14 @@ rdfs: = standard RDFS</pre>
       const bindings = await bindingsStream.toArray();
 
       if (bindings.length === 0) {
-        resultsContainer.innerHTML = '<p class="no-results">No results found</p>';
+        resultsContainer.innerHTML = '<p class="explorer-empty">No results</p>';
         return;
       }
 
-      // Get variable names from first result
       const vars = [...bindings[0].keys()].map(k => k.value);
 
-      // Build results table
-      let html = `<p class="result-count">${bindings.length} result${bindings.length === 1 ? '' : 's'}</p>`;
-      html += '<div class="results-table-wrapper"><table class="results-table"><thead><tr>';
+      let html = `<div class="results-header">${bindings.length} result${bindings.length === 1 ? '' : 's'}</div>`;
+      html += '<table class="results-table"><thead><tr>';
       vars.forEach(v => {
         html += `<th>${v}</th>`;
       });
@@ -301,12 +233,11 @@ rdfs: = standard RDFS</pre>
           const term = binding.get(v);
           let value = term ? term.value : '';
 
-          // Make URIs clickable if they're articles
           if (value.startsWith('http://molsen.ca/writing/')) {
             const slug = value.replace('http://molsen.ca/writing/', '');
-            value = `<a href="/writing/${slug}" target="_blank">${slug}</a>`;
+            value = `<a href="/writing/${slug}">${slug.replace(/-/g, ' ')}</a>`;
           } else if (value.startsWith('http://molsen.ca/ontology#')) {
-            value = value.replace('http://molsen.ca/ontology#', 'mo:');
+            value = value.replace('http://molsen.ca/ontology#', '');
           }
 
           html += `<td>${value}</td>`;
@@ -314,16 +245,15 @@ rdfs: = standard RDFS</pre>
         html += '</tr>';
       });
 
-      html += '</tbody></table></div>';
+      html += '</tbody></table>';
       resultsContainer.innerHTML = html;
 
     } catch (err) {
       console.error('Query error:', err);
-      resultsContainer.innerHTML = `<p class="error">Query error: ${err.message}</p>`;
+      resultsContainer.innerHTML = `<p class="explorer-error">Error: ${err.message}</p>`;
     }
   }
 
-  // Initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
