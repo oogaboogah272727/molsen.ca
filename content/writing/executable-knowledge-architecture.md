@@ -101,13 +101,13 @@ These invariants distinguish AI-augmented professional work from AI-generated co
 
 ## Practical Implementation
 
-Adopting EKA doesn't require rebuilding your organization. Start with analyses that already have a computational component: financial modeling, data analysis, engineering calculations, research methodology, diagnostic protocols, legal document analysis, risk assessment. These are natural fits for the pattern.
+Adopting EKA doesn't require rebuilding your organization. Start with work that already has a computational component: financial modeling, data analysis, engineering calculations, research methodology, diagnostic protocols, legal document analysis, risk assessment. These are natural fits for the pattern.
 
-Train your team to think of AI as a translator, not an oracle. The prompt isn't "what is the answer?" The prompt is "write code that computes the answer given this methodology." This reframing matters more than any tooling change.
+Train your team to think of AI as a translator, not an oracle. The prompt isn't "what is the answer?" The prompt is "produce an executable artifact that computes the answer given this methodology." Code is the most common form, but the principle extends to any artifact where the methodology is exposed and the output is reproducible.
 
-Establish code review as a core competency. Your experts need to read and validate the code AI produces. They don't need to be software engineers. But they need to understand what the code is doing at a conceptual level.
+The goal is [method-bearing artifacts](/writing/capability-governance/)—outputs where the methodology is inspectable, not hidden. When methodology is exposed, verification becomes possible. When verification is possible, defensibility follows. Your experts need to validate that the artifact implements their intent. They don't need to be software engineers. They need to understand what the artifact does at a conceptual level.
 
-Build your artifact repository. Every piece of code that produces a deliverable should be version-controlled, documented, and retrievable. This is your audit trail and your methodology library.
+Build your artifact repository. Every executable artifact that produces a deliverable should be version-controlled, documented, and retrievable. This is your audit trail and your methodology library. It's also how you build the empirical track record that [capability governance](/writing/capability-governance/) requires for high-stakes work.
 
 ---
 
