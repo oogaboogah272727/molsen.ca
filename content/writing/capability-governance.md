@@ -113,7 +113,7 @@ For conclusion artifacts, this route requires converting the conclusion into met
 
 Outcomes consistently meet a risk-adjusted threshold. Black box is acceptable if track record is sufficient.
 
-This is actuarial standing: systematic reconciliation of predictions against outcomes across sufficient volume. A method demonstrating tighter error distributions, lower variance, better calibration earns reliability status over time.
+This is actuarial standing: systematic reconciliation of predictions against outcomes across sufficient volume. A method demonstrating tighter error distributions, lower variance, better calibration earns reliability status over time. Paul Meehl's research on clinical versus statistical prediction demonstrated decades ago that actuarial methods consistently match or outperform expert clinical judgment across domains—a finding that has replicated extensively and that this framework takes seriously.
 
 **Track record requires measurement.** "This person has been doing it for 30 years" is not measurement. It's reputation as proxy. The distinction matters: track record is empirical—documented comparison of projections to outcomes. Authority is social permission—credentials, tenure, brand recognition. Empirical evidence can be wrong, but it can also be corrected through further measurement. Social permission can persist indefinitely without ever confronting outcomes. Actuarial standing is earned through documented reconciliation, not accumulated reputation.
 
@@ -185,7 +185,7 @@ The foundational forcing function is novel generation mechanisms that deliver eq
 
 ## What the Framework Reveals
 
-**Credentials are regulatory compliance, not reliability signals.** The professional stamp on a regulatory filing is a disclosure gate, not a trust decision. Actual reliability assessment happens elsewhere: firm reputation, individual track record, methodology review. Credentials are a parallel layer, not a verification shortcut.
+**Credentials are regulatory compliance, not reliability signals.** The professional stamp on a regulatory filing is a disclosure gate, not a trust decision. As Michael Spence's signaling theory explains, credentials function as market signals—proxies that reduce information asymmetry between parties who cannot directly observe capability. But signals are not the thing signaled. Actual reliability assessment happens elsewhere: firm reputation, individual track record, methodology review. Credentials are a parallel layer, not a verification shortcut.
 
 **Standard of care is not the same as correctness.** Legal liability typically requires demonstrating breach of standard of care—deviation from what a competent practitioner would do. This standard serves important legal functions: it provides a defensible benchmark and prevents hindsight bias from making every error actionable. But meeting standard of care says nothing about whether this artifact is correct. The dam can still fail. The diagnosis can still be wrong. Standard of care addresses legal liability; it does not address the governance question of whether the artifact is defensible. The two problems require different frameworks.
 
