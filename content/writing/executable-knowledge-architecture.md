@@ -65,7 +65,7 @@ Ask an LLM to write code that calculates a weighted average, and it might struct
 
 But the *function* is deterministic. A weighted average is a weighted average, regardless of whether the variable is called `result` or `weighted_sum`.
 
-The strawberry test illustrates this clearly. Ask an LLM "how many r's are in strawberry?" and it often answers incorrectly—two instead of three. The direct answer is unreliable. But ask it to write code that counts the r's, and the code will output 3 every time. The code might use a list comprehension or a for loop or the `count()` method. The form varies. The output doesn't.
+The [strawberry test](/writing/llm-stochasticity-determinism/) illustrates this clearly. Ask an LLM "how many r's are in strawberry?" and it often answers incorrectly—two instead of three. The direct answer is unreliable. But ask it to write code that counts the r's, and the code will output 3 every time. The code might use a list comprehension or a for loop or the `count()` method. The form varies. The output doesn't.
 
 This is the core insight EKA exploits. We route around the LLM's unreliable direct answers by asking for code instead. The code's form may vary, but its function is deterministic. The expert's review ensures the function matches intent. The code's execution ensures reproducible results.
 
