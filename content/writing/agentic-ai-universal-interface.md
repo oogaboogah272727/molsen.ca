@@ -26,7 +26,7 @@ Historically, two barriers have prevented most expertise from becoming software.
 
 **Barrier 2: System access knowledge required.** Even if you could code, you had to know *how* to access systems. Where's the data? What format is it in? What sequence of operations retrieves it? How do you connect to this service? What authentication does it require? Each system demanded specific technical knowledge to use programmatically.
 
-These barriers meant that expertise distillation was rare and expensive. Most knowledge surfaced only through manual work that couldn't scale.
+These barriers meant that expertise distillation was rare and expensive. Most knowledge emerged only through manual work that couldn't scale.
 
 ---
 

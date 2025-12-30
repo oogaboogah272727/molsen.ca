@@ -95,6 +95,6 @@ Scale this and the implications become clear:
 
 **The AI becomes the primary interface.** Between data, APIs, and executable systems on one side, and human intent on the other. The artifact is the intermediate representation. Humans specify; AI translates; artifacts execute.
 
-This is the trajectory. The framework describes the responsible path to get there: verification and accountability intact at each step, while the domain of what requires human execution steadily shrinks.
+This is the direction. The framework describes the responsible path to get there: verification and accountability intact at each step, while the domain of what requires human execution steadily shrinks.
 
 The question isn't whether this happens. It's whether you're encoding or being encoded.

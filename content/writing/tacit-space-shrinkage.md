@@ -15,7 +15,7 @@ That assumption is becoming obsolete.
 
 As AI capabilities expand, the domain of practically ineffable knowledge is shrinking. Not because tacit knowledge was never real. Much of what we labeled "tacit" was actually something else: knowledge blocked by representational limits rather than knowledge that actually resists representation.
 
-This distinction matters for how organizations think about expertise, training, and governance. It matters a lot.
+This distinction matters significantly for how organizations think about expertise, training, and governance.
 
 This argument builds on two foundational claims. First, [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). That's an operational definition that sidesteps epistemological questions about belief and justification. Second, [tacitness is agent-relative](/writing/agent-relative-tacitness/). It's a property of transfer relationships between agents, not an intrinsic feature of knowledge itself. Together, these foundations make "tacit domain shrinkage" coherent: as AI capabilities expand, transfer paths open that didn't exist before.
 
@@ -31,7 +31,7 @@ But look closer at organizational "tacit knowledge" and you'll find two distinct
 
 **Representationally tacit knowledge** could be expressed in some representational system without destroying its usefulness. It just hasn't been, because the knower lacks the vocabulary or conceptual repertoire to articulate it. The process engineer who "just knows" when a system is drifting may lack the control theory vocabulary to explain what she's detecting. Her knowledge feels ineffable to her, but it's not ineffable in principle. Give her the right concepts, or the right interlocutor, and she can articulate it.
 
-The real insight: much organizational "tacit knowledge" is representationally tacit, not structurally tacit. It's unexpressed because the knower lacks the words. Not because the knowledge resists words.
+The real insight: much organizational "tacit knowledge" is representationally tacit, not structurally tacit. It's unexpressed because the knower lacks the words, not because the knowledge resists words.
 
 ---
 

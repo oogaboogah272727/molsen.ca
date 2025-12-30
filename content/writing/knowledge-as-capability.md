@@ -11,7 +11,7 @@ tags: ["Epistemic Rigor"]
 
 All of my writing rests on a foundational equivalence: for organizations, **knowledge is the capability to reliably produce outcomes**. I use "knowledge" and "capability to produce outcomes" interchangeably. This essay is in support of that equivalency.
 
-This isn't a theory about what knowledge "really is" in some metaphysical sense. It's a practical foundation for governing human-AI cooperation. Organizations need to work with AI systems. The philosophical question of whether those systems have mental states is, for most practical purposes, unanswerable and operationally secondary.
+This is a practical foundation for governing human-AI cooperation, not a theory about what knowledge "really is" in some metaphysical sense. Organizations need to work with AI systems. The philosophical question of whether those systems have mental states is, for most practical purposes, unanswerable and operationally secondary.
 
 For nearly a century, machines have been producing outcomes we'd call "knowledge work" if produced by humans. The Enigma machine embodied cryptographic knowledge in its rotor wiring. A TI-30 calculator embeds trigonometric knowledge you don't need to possess to use. Expert systems of the 1980s were explicitly called "knowledge-based systems." None of this was controversial.
 

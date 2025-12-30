@@ -13,7 +13,7 @@ There are three types of CIOs: those who are convinced that AI is an urgent prio
 
 For those in the latter two categories, the world changed in June 2017 with the publication of an article entitled "Attention Is All You Need," which revolutionized natural language processing model training. Then, on November 30, 2022, ChatGPT immediately became the fastest-growing platform in the history of the Internet. Its success is not due to enormous technological advancement but because the latest in natural language processing tools became something anyone could use.
 
-There are thousands of articles describing ChatGPT, so I'll focus on impact rather than technology. By "impact," let me be clear: generative AI will introduce greater change, faster, than did the Internet itself.
+There are thousands of articles describing ChatGPT, so I'll focus on impact rather than technology. By "impact," I mean this: generative AI will introduce greater change, faster, than did the Internet itself.
 
 ---
 
@@ -33,7 +33,7 @@ ChatGPT has been criticized as a dangerous "stochastic parrot" that simply regur
 
 The criticism is valid. These models don't truly comprehend what they're saying. They pattern-match and recombine. They hallucinate confidently. They lack the contextual judgment that humans bring to complex decisions.
 
-And yet, the impact remains disruptively potent due to one simple fact: most business activity is deliberately not novel.
+Yet the impact remains disruptively potent due to one simple fact: most business activity is deliberately not novel.
 
 ---
 
@@ -43,7 +43,7 @@ Most of us don't want to admit this: most of what every knowledge worker does in
 
 Think about your own work for a moment. How much of your day involves truly novel thinking? How much involves applying established frameworks, following documented procedures, synthesizing existing research, or reformulating ideas that others have already developed?
 
-The honest answer, for most of us, is that the majority of knowledge work is intended to produce the least risky result—which means using the most explicit solution. We write reports that follow standard formats. We create presentations using proven structures. We draft communications using established templates. We solve problems by adapting solutions that worked elsewhere.
+For most of us, the majority of knowledge work is intended to produce the least risky result—which means using the most explicit solution. We write reports that follow standard formats. We create presentations using proven structures. We draft communications using established templates. We solve problems by adapting solutions that worked elsewhere.
 
 I'm not criticizing this. It's good practice. Organizations value consistency and predictability. Clients expect proven approaches. The preference for established solutions over novel ones is rational and appropriate for most business contexts.
 

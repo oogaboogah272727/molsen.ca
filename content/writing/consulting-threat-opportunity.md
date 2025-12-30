@@ -1,7 +1,7 @@
 ---
 title: "Existential Threat to Consulting = Huge Opportunity"
 date: 2024-03-12
-description: "How AI-encoded expertise disrupts the consulting industry's traditional value proposition, and what firms need to do about it."
+description: "How AI-encoded expertise disrupts consulting's traditional basis for premium fees, and what firms need to do about it."
 originalPublication: "Originally published March 2024"
 type: applied
 tags: ["Organizational Change", "Professional Practice"]
@@ -13,7 +13,7 @@ Consulting is expert advice for hire. The entire business model rests on asymmet
 
 AI is encoded expertise. As that encoded expertise expands in depth and accessibility, the asymmetry that sustains consulting starts to collapse. Clients can increasingly access expertise as a commodity. On demand. At marginal cost. Without the overhead of relationship management or the hassle of procurement.
 
-This isn't a future scenario. It's happening now.
+This is happening now.
 
 ---
 
@@ -49,7 +49,7 @@ But this acceleration carries a dangerous assumption: that clients won't demand 
 
 ## The Existential Math
 
-The honest answer is uncomfortable. A senior expert plus AI represents the most dangerous competitor to any consulting firm. This competitor has deep domain knowledge, established relationships, professional credibility, and now access to the same encoded expertise that large firms are racing to deploy. The overhead is minimal. The margins are attractive. The client relationships are personal rather than institutional.
+A senior expert plus AI represents the most dangerous competitor to any consulting firm. This competitor has deep domain knowledge, established relationships, professional credibility, and now access to the same encoded expertise that large firms are racing to deploy. The overhead is minimal. The margins are attractive. The client relationships are personal rather than institutional.
 
 Scale this slightly: a small group of senior experts, each augmented by AI, operating as a lean firm or informal network. This combination might eliminate the need for traditional consulting in entire industry verticals. The pyramid model depends on junior consultants generating leverage for senior partners. It becomes untenable when senior expertise plus AI can accomplish the same work without the pyramid.
 

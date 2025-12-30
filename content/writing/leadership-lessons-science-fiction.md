@@ -16,7 +16,7 @@ Let me share some of the principles that form the backbone of how I lead:
 - Loyalty from the team is earned by loyalty given to the team
 - Be willing to change my mind: I rarely end up wrong, but I often start out wrong
 
-There are more, but those are foundational. Having written them down, they seem obvious. That might indicate how thoroughly I've internalized them. Or they're just obvious. I could be wrong about which.
+There are more, but those are foundational. Having written them down, they seem obvious. That might indicate how thoroughly I've internalized them—or they're just obvious.
 
 In my leadership reading, these principles appear repeatedly. But they've always felt familiar, as though I encountered them somewhere before the business books confirmed them. When I traced back to where I first absorbed these ideas, the answer wasn't Harvard Business Review or a management seminar.
 

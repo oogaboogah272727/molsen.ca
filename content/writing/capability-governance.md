@@ -37,7 +37,7 @@ All require defensible artifacts with known verification routes.
 
 This framework is prescriptive, not merely descriptive. It states how artifact governance should work, not just how it does work.
 
-Current practice often substitutes risk transfer for risk reduction: credentials, brand, liability caps, and insurance create the appearance of governance while leaving residual risk with parties who never consented to bear it. This is not adequate governance. It is cost externalization dressed as accountability.
+Current practice often substitutes risk transfer for risk reduction: credentials, brand, liability caps, and insurance create the appearance of governance while leaving residual risk with parties who never consented to bear it. This is cost externalization dressed as accountability.
 
 Risk transfer is legitimate when disclosed. Complete transfer is rare—liability caps exist precisely because full transfer is unaffordable—but disclosed incomplete transfer is still legitimate governance. Parties who knowingly accept residual risk have consented. The problem is undisclosed incomplete transfer: when residual risk lands on parties who never agreed to bear it. That somewhere is typically communities, workers, and environments with no seat at the table when terms were set.
 

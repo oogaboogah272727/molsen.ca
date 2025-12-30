@@ -35,9 +35,7 @@ No. You can't. The verification paradox applies regardless of how thorough the c
 
 ## Why Strong Oracle Feels Different
 
-Strong oracle feels like it solves the problem because it engages your expertise throughout the conversation. You're not passive. You're contributing. The dialogue reveals assumptions you might not have articulated. The AI's questions sometimes point to considerations you'd overlooked.
-
-This is real value.
+Strong oracle feels like it solves the problem because it engages your expertise throughout the conversation. You're not passive. You're contributing. The dialogue reveals assumptions you might not have articulated. The AI's questions sometimes point to considerations you'd overlooked. That engagement has real value.
 
 But notice what's happening. Your expertise is being used to improve the *question*. It's not being used to verify the *answer*. At the end of the dialogue, you still receive a verdict—a conclusion that you cannot check without reproducing the analysis yourself.
 
@@ -71,7 +69,7 @@ But for work that matters—professional deliverables, conclusions you'll be acc
 
 ## The Asymmetry That Matters
 
-Put differently: strong oracle with the best available tools represents the best possible version of asking AI for answers. Maximum dialogue. Maximum grounding. Maximum citation.
+Put differently: strong oracle with the best available tools represents the best possible version of asking AI for answers—maximum dialogue, grounding, and citation.
 
 And even at that maximum, you still face this: ask the same question tomorrow, get a different answer. Run the same conversation with slightly different phrasing, get a different synthesis. The stochastic nature of the system means reproducibility isn't guaranteed.
 
