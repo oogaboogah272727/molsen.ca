@@ -99,10 +99,6 @@ Scale this and the implications become clear:
 
 **The AI becomes the primary interface.** Between data, APIs, and executable systems on one side, and human intent on the other. The artifact is the intermediate representation. Humans specify; AI translates; artifacts execute.
 
-**Business logic becomes executable.** Processes, decisions, rules, exceptions: all encodable, all reproducible. Business-as-code, like infrastructure-as-code, but for the operational layer.
-
-**Labor costs approach zero for anything computationally representable.** That which can be done on a computer, done by a computer. Human contribution contracts to: specification of intent, handling of genuine exceptions, judgment in novel situations.
-
 This is the trajectory. The framework describes the responsible path to get there: verification and accountability intact at each step, while the domain of what requires human execution steadily shrinks.
 
 The question isn't whether this happens. It's whether you're encoding or being encoded.
