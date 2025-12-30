@@ -105,7 +105,9 @@ Adopting EKA doesn't require rebuilding your organization. Start with work that 
 
 Train your team to think of AI as a translator, not an oracle. The prompt isn't "what is the answer?" The prompt is "produce an executable artifact that computes the answer given this methodology." Code is the most common form, but the principle extends to any artifact where the methodology is exposed and the output is reproducible.
 
-The goal is [method-bearing artifacts](/writing/capability-governance/)—outputs where the methodology is inspectable, not hidden. When methodology is exposed, verification becomes possible. When verification is possible, defensibility follows. Your experts need to validate that the artifact implements their intent. They don't need to be software engineers. They need to understand what the artifact does at a conceptual level.
+The goal is [method-bearing artifacts](/writing/capability-governance/)—outputs where the methodology is inspectable, not hidden. When methodology is exposed, verification becomes possible. When verification is possible, defensibility follows.
+
+Your experts need to validate that the artifact implements their intent. They don't need to be software engineers. They don't even need to read code. [Adversarial review](/writing/agentic-ai-universal-interface/) uses the same AI that generated the artifact to explain what it does: "What exactly does this code do?" "What could go wrong?" "What assumptions does this make?" The AI has no memory of having written it and no ego invested in defending it. The expert confirms the description matches their intent—a judgment they're equipped to make.
 
 Build your artifact repository. Every executable artifact that produces a deliverable should be version-controlled, documented, and retrievable. This is your audit trail and your methodology library. It's also how you build the empirical track record that [capability governance](/writing/capability-governance/) requires for high-stakes work.
 
