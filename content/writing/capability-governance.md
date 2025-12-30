@@ -22,7 +22,7 @@ The EU AI Act governs AI *systems*. NIST AI RMF governs *risk management process
 
 None answers the question practitioners face: "Can I use this generated output, and if so, under what conditions?"
 
-This framework governs artifacts. It applies regardless of how the model landscape evolves or what regulators decide systems should look like. The question is always the same: can you defend what you delivered?
+This framework governs artifacts. It applies regardless of how the model landscape evolves or what regulators decide systems should look like. The question depends on where you sit: producers ask "can I defend what I delivered?" Consumers ask "did I get what I paid for?" Both need the same answer: defensible artifacts with known verification routes.
 
 ---
 
