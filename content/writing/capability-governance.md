@@ -6,23 +6,21 @@ type: core
 tags: ["AI Governance", "Professional Practice"]
 ---
 
-A client asks: "How did you arrive at this recommendation?"
+An **artifact** is an output that enters a decision chain. A report, a calculation, a recommendation, a design, an analysis. Something someone else will act on.
 
-The consultant pauses. The honest answer is: an AI drafted the analysis, a junior reviewed the formatting, and a senior signed off after a ten-minute skim. The methodology is a black box. The deliverable looks authoritative. But if it's wrong, no one in the chain can explain why it was right.
+**Generation** is how that artifact came into existence. A human wrote it. An AI drafted it. Some combination reviewed, refined, or rubber-stamped it. The generation method determines whether the artifact can be defended.
 
-This is happening everywhere. Not just in consulting. Every profession that produces artifacts others rely on faces the same question: can anyone defend what was delivered?
-
-This framework addresses that question.
+This framework governs that relationship: artifact, generation method, and defensibility.
 
 ---
 
-## Why Another Framework?
+## Why This Framework?
 
 The EU AI Act governs AI *systems*. NIST AI RMF governs *risk management processes*. ISO 42001 governs *management systems*.
 
-None of them answers the question a professional actually faces: "Can I use this generated output in my deliverable, and if so, under what conditions?"
+None answers the question practitioners face: "Can I use this generated output, and if so, under what conditions?"
 
-This framework governs *artifacts*—the outputs that enter decision chains. It applies regardless of how the model landscape evolves or what regulators decide systems should look like. The question is always: can you defend this artifact?
+This framework governs artifacts. It applies regardless of how the model landscape evolves or what regulators decide systems should look like. The question is always the same: can you defend what you delivered?
 
 ---
 
