@@ -8,9 +8,11 @@ tags: ["AI Governance", "Professional Practice"]
 
 Software is distilled expertise in its most executable form.
 
-When an engineer encodes a structural calculation into a spreadsheet, that spreadsheet embeds what the engineer knows. When a business analyst creates formulas to process financial data, those formulas distill how the business works. The calculation runs without the engineer present. The formula executes without the analyst's involvement.
+When an engineer encodes a structural calculation into a spreadsheet, that spreadsheet embeds what the engineer knows. When a business analyst creates formulas to process financial data, those formulas distill how the business works. When a software engineer encodes a business process into an ERP system, that system inscribes the process designer's expertise into reusable automation.
 
-This is what software is: expertise made runnable. Human knowledge, encoded so precisely that a machine can execute it.
+The calculation runs without the engineer present. The formula executes without the analyst's involvement. The ERP system processes transactions without the process designer's intervention.
+
+This is what software is: expertise made runnable. Human knowledge, encoded so precisely that a machine can execute it. The entire software industry exists to distill what people know into instructions machines can follow.
 
 The hard part has never been making computers do things. Computers follow instructions well. The hard part is distilling what you know into instructions a computer can follow.
 
