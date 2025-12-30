@@ -42,6 +42,8 @@ What remains: Domain expertise. Access permissions. The ability to specify what 
 
 What disappears: The intermediary layers. The developers translating between expert and machine. The integration specialists connecting systems. The technical knowledge barriers that prevented direct encoding.
 
+**The agent is persistent.** This matters. Agentic code generation isn't a single-shot translation. The agent retries when something fails. It adapts when the first approach doesn't work. It explores documentation, examines error messages, adjusts its method. Given time and tokens, it will figure out how to accomplish what you asked. The barrier to accessing any system becomes patience, and agents have infinite patience.
+
 ---
 
 ## The Universal Interface
@@ -54,7 +56,7 @@ Any service you have credentials for becomes directly usable. The agent reads do
 
 The barrier shifts from "has someone built the software I need?" to "do I have the access credentials?"
 
-Every system with documented interfaces becomes accessible to anyone with permission and an agent. Computer instructions can express any computation. Natural language can express any intent. The agent bridges the gap. Access permission is the only remaining constraint.
+Every system with discoverable interfaces becomes accessible to anyone with permission and an agent. The interface doesn't need to be documented — it needs to be explorable. Given time, the agent can figure out how any system works. Computer instructions can express any computation. Natural language can express any intent. The agent bridges the gap. Access permission is the only remaining constraint.
 
 ---
 
@@ -94,6 +96,8 @@ Code generation as universal interface explains the reach. The executable artifa
 
 The artifact — the generated code — is inspectable. You can read it. You can verify it does what you intended. You can run it again and get the same results. The methodology is exposed. Defensibility is achievable.
 
+**Patterns accumulate.** Generated artifacts aren't disposable. Useful patterns get identified, vetted, and made available for reuse. The [Ontology Generation](/writing/ontology-generation/) process describes how: logs are mined for recurring patterns, successful approaches are extracted and validated, reusable artifacts are distributed across the organization. What starts as ephemeral generation becomes curated organizational knowledge. The one-off becomes the template.
+
 ---
 
 ## Implications
@@ -112,11 +116,13 @@ The artifact — the generated code — is inspectable. You can read it. You can
 
 For code generation to function as universal interface, systems must be accessible:
 
-- Interfaces must be documented or discoverable
+- Interfaces must be discoverable (documentation helps but isn't required)
 - Connections must be permitted
 - Access credentials must grant real capability
 
-The trend toward well-documented interfaces accelerates this. Systems designed for developers are also accessible to agents. Systems designed for automated access are more accessible still.
+The trend toward machine-readable interfaces accelerates this. Systems designed for developers are also accessible to agents. Systems designed for automated access are more accessible still.
+
+Authentication will evolve. Current authentication complexity exists largely because human users are security vulnerabilities — they reuse passwords, fall for phishing, lose credentials. When access is programmatic rather than human-mediated, authentication can be simpler and more secure: rotating keys, certificate-based auth, machine-to-machine protocols. Removing the human from the access path removes the largest security threat. Authentication systems built for human users will give way to authentication systems built for agent access.
 
 The infrastructure decisions made today determine how accessible systems will be to this mode of interaction tomorrow.
 
@@ -130,11 +136,29 @@ Code generation as universal interface concentrates rather than eliminates human
 
 **Specification of intent.** The clearer the specification, the better the generated approach. Articulating what you want with precision is a skill. Domain expertise becomes specification expertise.
 
-**Verification of method.** Does the generated approach do what you intended? Understanding implications, catching errors before execution. This is the oversight that makes the pattern safe.
+**Verification of method.** Does the generated approach do what you intended? This doesn't require reading code. Translation is bidirectional: the same agent that generated the code can describe what it does. "Explain exactly what this code does." "What could go wrong?" "What assumptions does this make?" The agent has no memory of having written it and no ego invested in defending it. Adversarial review by the same tool that generated the artifact is effective verification. The domain expert confirms the description matches their intent — a judgment they're equipped to make.
 
 **Judgment in novel situations.** When the agent doesn't know how to proceed, when the situation is ambiguous, when competing considerations require tradeoffs. Judgment remains human.
 
 The human contribution contracts to: knowing what should happen, specifying it clearly, confirming the approach is right, handling what the agent cannot. Everything else is generated.
+
+---
+
+## Objections
+
+**"Generated code can't handle production reliability — retry logic, error recovery, guaranteed delivery."** The agent handles this. Agentic code generation isn't fire-and-forget. The agent retries failed operations, adapts to errors, maintains state across attempts. The reliability guarantees that integration platforms provide are exactly what persistent agents do. The difference: the agent generates the approach for your specific need rather than forcing your need into a pre-built pattern.
+
+**"If users can't code, they can't verify generated code."** They don't need to read code. They need to confirm that the agent's description of what the code does matches their intent. Reverse translation — asking the agent to explain the artifact — is verification the domain expert can perform. This is risk mitigation, not risk elimination. But all code requires review, and agentic review tools are already standard practice at the highest levels of software development. The same approach works for simpler artifacts.
+
+**"Specification is as hard as implementation — you still need to handle edge cases."** Specification is a skill, but a mental skill rather than a technical one. Domain experts already specify precisely when instructing subordinates. The same skill applies to instructing an agent. The agent can be configured to demand specificity — to ask clarifying questions rather than assume. Ambiguous specifications get caught before generation, not after.
+
+**"Business logic is tribal knowledge, undocumented and contradictory."** This is real. But the interface is the code generation tool itself. Describe the logic once to the agent; the agent executes it. No user training, no communication cascade, no documentation that drifts from reality. The distribution problem disappears because there's nothing to distribute — the specification and the execution are the same conversation.
+
+**"Network effects protect incumbents — everyone uses Salesforce because everyone uses Salesforce."** Network effects are communication effects. The code generation tool streamlines communication across systems. You can write a Slack integration in minutes. You can connect to any system your organization uses. The network effect of being the common platform weakens when any platform becomes accessible through the same interface.
+
+**"Switching costs protect installed software — trained staff, documented processes, compliance certifications."** The largest switching cost is organizational. Installed software means installed personnel, institutional knowledge, career dependencies. This is real, and the transition will be uneven. But the economic pressure is directional: generated interfaces cost less to create and maintain than permanent software and the staff to operate it. Organizations that move first gain cost advantages that compound.
+
+**"Rate limits and API quotas constrain what agents can do."** These are implementation details. The cost of tokens and bandwidth is negligible against the value of direct system access. Rate limits are speed bumps, not roadblocks. Agents are patient.
 
 ---
 
