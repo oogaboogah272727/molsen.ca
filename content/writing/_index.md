@@ -19,7 +19,8 @@ Or explore the components:
 | [The Strong Oracle Trap](/writing/strong-oracle-trap/) | Why sophisticated dialogue doesn't solve the verification problem |
 | [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) | The pattern for AI-augmented professional work |
 | [Capability Governance](/writing/capability-governance/) | The governance framework: stakeholder obligations for generated artifacts |
-| [Code Generation as Universal Interface](/writing/code-generation-universal-interface/) | How the pattern scales: the application layer dissolves |
+| [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/) | How the pattern scales: AI removes barriers to direct system access |
+| [The Dissolution of Software](/writing/dissolution-of-software/) | What dissolves and what remains when translation becomes ephemeral |
 | [AI-First Software](/writing/ai-first-software/) | The design philosophy: AI as foundation, not feature |
 
 ---

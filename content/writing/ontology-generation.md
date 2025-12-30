@@ -11,5 +11,5 @@ draft: true
 
 The pattern: ephemeral generation produces logs. Logs contain successful approaches. Successful approaches get extracted, validated, and made available for reuse. What starts as one-off generation becomes curated organizational knowledge.
 
-→ Return to [Code Generation as Universal Interface](/writing/code-generation-universal-interface/)
+→ Return to [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/)
 → Return to [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/)
