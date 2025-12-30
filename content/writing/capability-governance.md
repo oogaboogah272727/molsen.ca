@@ -39,7 +39,7 @@ This framework is prescriptive, not merely descriptive. It states how artifact g
 
 Current practice often substitutes risk transfer for risk reduction: credentials, brand, liability caps, and insurance create the appearance of governance while leaving residual risk with parties who never consented to bear it. This is not adequate governance. It is cost externalization dressed as accountability.
 
-Risk transfer is legitimate when complete and disclosed. But transfer is never complete. Liability caps exist precisely because full transfer is unaffordable—which means the residual must land somewhere. That somewhere is typically communities, workers, and environments with no seat at the table when terms were set.
+Risk transfer is legitimate when disclosed. Complete transfer is rare—liability caps exist precisely because full transfer is unaffordable—but disclosed incomplete transfer is still legitimate governance. Parties who knowingly accept residual risk have consented. The problem is undisclosed incomplete transfer: when residual risk lands on parties who never agreed to bear it. That somewhere is typically communities, workers, and environments with no seat at the table when terms were set.
 
 Where risk reduction is available—through methodology exposure that permits inspection, or through empirical validation that demonstrates reliability—choosing incomplete transfer instead is ethically indefensible. The framework provides the standard against which current practice can be measured.
 
@@ -93,9 +93,9 @@ Some argue method opacity is structurally necessary—trade secrets, competitive
 
 As argued in [Agent-Relative Tacitness](/writing/agent-relative-tacitness/), most "tacit knowledge" is representationally blocked (could be expressed, hasn't been), not structurally inexpressible. The domain of genuinely irreducible tacit knowledge is small and shrinking. Claims of structural inexpressibility should be viewed with extreme skepticism.
 
-"I know this but cannot explain how" is not a defense when material economic or safety consequences attach. If you cannot articulate your method, you do not understand it well enough to stake others' welfare on it. Opacity as producer choice is indefensible. Opacity as consumer acceptance is reckless.
+"I know this but cannot explain how" is not a defense when material economic or safety consequences attach. Inability to articulate method creates governance problems that scale with stakes—the higher the consequences, the less acceptable the opacity.
 
-The framework does not forbid opacity. It prices it correctly: unexposed method with no track record means unknown risk borne by the consumer. Sophisticated consumers should refuse these terms.
+The framework does not forbid opacity. It classifies it correctly: unexposed method with no track record means unknown risk. Where risk reduction through methodology exposure is available, choosing opacity instead externalizes risk onto consumers and downstream parties. Sophisticated consumers should demand better terms or price the residual risk explicitly.
 
 ---
 
@@ -115,19 +115,21 @@ Outcomes consistently meet a risk-adjusted threshold. Black box is acceptable if
 
 This is actuarial standing: systematic reconciliation of predictions against outcomes across sufficient volume. A method demonstrating tighter error distributions, lower variance, better calibration earns reliability status over time.
 
-**Track record requires measurement.** "This person has been doing it for 30 years" is not measurement. It's reputation as proxy. Actuarial standing is earned through documented comparison of projections to outcomes—not tenure, not brand, not credentials.
+**Track record requires measurement.** "This person has been doing it for 30 years" is not measurement. It's reputation as proxy. The distinction matters: track record is empirical—documented comparison of projections to outcomes. Authority is social permission—credentials, tenure, brand recognition. Empirical evidence can be wrong, but it can also be corrected through further measurement. Social permission can persist indefinitely without ever confronting outcomes. Actuarial standing is earned through documented reconciliation, not accumulated reputation.
 
 **Residual risk remains.** Post facto reconciliation validates after exposure has occurred. Induction limits apply. n successful reconciliations do not guarantee n+1. Reliance on this route is acceptable only when the cost of being wrong is within tolerance.
 
 ### The Risk-Adjusted Threshold
 
-Which route is acceptable depends on stakes. Reliability requirements for a scoping study differ from bankable feasibility differ from dam stability sign-off. The framework scales; the threshold varies.
+Which route is acceptable depends on stakes. Reliability requirements for a scoping study differ from bankable feasibility differ from dam stability sign-off. The framework scales; the threshold varies with consequence of failure: how severe, how reversible, how attributable.
+
+This is not ambiguity—it's appropriate scaling. A framework that prescribed identical verification for all artifacts would be either impossibly burdensome for low-stakes work or dangerously lax for high-stakes work. Risk-adjusted means the governance intensity matches the stakes.
 
 ### Why Two Routes, Not Three
 
 Some argue authority—credentials, certification, brand—constitutes a third route. It does not. Authority transfers risk; it does not reduce risk. The professional stamp says "I accept responsibility"—not "this is correct." When the artifact fails, consequences still occur.
 
-Risk transfer is legitimate governance when complete and disclosed—that's what underwriting is for. The problem is incomplete transfer with undisclosed exposure. Liability caps are often trivial compared to actual losses. The residual falls on non-consenting parties whose only recourse is litigation. When consequences are fatal, victims have no recourse at all—only their survivors can litigate for harms that cannot be undone.
+Risk transfer is legitimate governance when disclosed—that's what underwriting is for. Disclosed incomplete transfer is acceptable: parties who knowingly accept residual risk have consented to the terms. The problem is undisclosed incomplete transfer: liability caps that look adequate on paper while the real exposure falls on non-consenting parties. Their only recourse is litigation after the fact. When consequences are fatal, victims have no recourse at all—only their survivors can litigate for harms that cannot be undone.
 
 Where risk reduction is available through methodology exposure or empirical validation, substituting incomplete transfer externalizes costs onto others. The framework excludes authority as a defensibility route not because transfer is illegitimate, but because authority-as-defensibility typically masks incomplete transfer as adequate governance.
 
@@ -153,7 +155,7 @@ Consumers of generated artifacts have four obligations:
 
 3. **Maintain local records.** When provider predictions meet reality, document the comparison. This is your evidence, independent of their claims. Actuarial standing must be earned, and you're the one with visibility into outcomes.
 
-4. **Refresh comparisons.** The actuarial case for method A today may be superseded by method B tomorrow. Continuous evaluation is the obligation. Novel generation mechanisms that offer equivalent quality at vastly reduced cost are the forcing function that makes this non-trivial.
+4. **Refresh comparisons.** The actuarial case for method A today may be superseded by method B tomorrow. Continuous evaluation is the obligation. When novel generation mechanisms offer equivalent quality at vastly lower cost—when "expensive and sometimes wrong" faces competition from "cheap and wrong less often"—continuous evaluation becomes economically non-optional.
 
 ### Producers
 
@@ -175,15 +177,17 @@ Producers have symmetric obligations:
 
 3. **Share data.** Both need the same evidence; sharing accelerates actuarial accumulation industry-wide.
 
-Different motivations, same outcome. Regulators act for public good; underwriters act to correctly price risk. If underwriters bear full risk—not hiding behind governmental liability shields—their economic incentive aligns with the public interest.
+Different motivations, same outcome. Regulators act for public good; underwriters act to correctly price risk. To the extent underwriters bear actual consequences—rather than capping exposure or relying on governmental backstops—their economic incentive aligns with the public interest.
 
-The foundational forcing function is novel generation mechanisms that deliver equivalent quality at lower cost.
+The foundational forcing function is novel generation mechanisms that deliver equivalent or better quality at vastly lower cost. When "expensive and sometimes wrong" competes with "cheap and wrong less often," the actuarial case eventually becomes undeniable. The question is not whether this transition happens, but whether governance frameworks are ready for it.
 
 ---
 
 ## What the Framework Reveals
 
 **Credentials are regulatory compliance, not reliability signals.** The professional stamp on a regulatory filing is a disclosure gate, not a trust decision. Actual reliability assessment happens elsewhere: firm reputation, individual track record, methodology review. Credentials are a parallel layer, not a verification shortcut.
+
+**Standard of care is not the same as correctness.** Legal liability typically requires demonstrating breach of standard of care—deviation from what a competent practitioner would do. This standard serves important legal functions: it provides a defensible benchmark and prevents hindsight bias from making every error actionable. But meeting standard of care says nothing about whether this artifact is correct. The dam can still fail. The diagnosis can still be wrong. Standard of care addresses legal liability; it does not address the governance question of whether the artifact is defensible. The two problems require different frameworks.
 
 **Brand is not validation.** "Our brand is our validation" is risk acceptance plus limited transfer—not risk management. The firm's liability cap may be a rounding error compared to actual losses if the structure fails and people die. Brand-based trust makes risk invisible until failure; it doesn't make risk disappear.
 
