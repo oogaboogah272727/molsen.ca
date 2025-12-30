@@ -18,11 +18,11 @@ Applications sit between users and data because users couldn't directly express 
 
 As the barriers fall, much of this software becomes generatable on demand. Why maintain permanent translation layers when translation is increasingly available?
 
-**What dissolves:**
+**What faces pressure:**
 
-- Most application software (generated per task)
-- Most integration software (generated per task)
-- Most of what we call "software development"
+- Application software that exists primarily as interface to data
+- Integration software that exists primarily to connect systems
+- Software development work focused on building intermediary layers
 
 ---
 
