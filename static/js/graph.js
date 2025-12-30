@@ -139,12 +139,13 @@
           Graph.nodeThreeObject(function(node) {
             var sprite = new SpriteText(node.label);
             sprite.color = '#333';
-            sprite.textHeight = node.type === 'hub' ? 5 : 3.5;
-            sprite.backgroundColor = 'rgba(255,255,255,0.8)';
-            sprite.padding = 1;
+            sprite.textHeight = node.type === 'hub' ? 6 : 4;
+            sprite.backgroundColor = 'rgba(255,255,255,0.85)';
+            sprite.padding = [1, 2];
             sprite.borderRadius = 2;
             return sprite;
-          });
+          })
+          .nodeThreeObjectExtend(true);  // Keep the sphere, add text on top
         } else {
           // Fallback to built-in labels
           Graph.nodeLabel(function(n) { return n.label; });
