@@ -16,7 +16,7 @@ Most software exists because those barriers existed.
 
 Applications sit between users and data because users couldn't directly express what they wanted from the data. Integration software connects systems because connecting systems required specialized knowledge. Business software encodes business logic because encoding required coding skill.
 
-As the barriers fall, much of this software becomes generatable on demand. Why maintain permanent translation layers when translation is increasingly available?
+As the barriers fall, much of this software becomes generatable on demand.
 
 **What faces pressure:**
 
