@@ -73,7 +73,7 @@ This distinction is the heart of the framework.
 
 **Conclusion artifacts** are outputs where the generation method proposes rather than executes. This includes any novel output requiring independent verification—including AI-proposed methodologies, expert intuitions, and recommendations that can't be traced to inspectable steps.
 
-The distinction isn't about importance. Conclusions can be routine; method-bearing work can be critical. It's about verification: can the process be inspected, or must you trust the producer?
+The distinction is about verification, not importance. Conclusions can be routine; method-bearing work can be critical. The question: can the process be inspected, or must you trust the producer?
 
 ### Examples Across Domains
 
@@ -115,7 +115,7 @@ Outcomes consistently meet a risk-adjusted threshold. Black box is acceptable if
 
 This is actuarial standing: systematic reconciliation of predictions against outcomes across sufficient volume. A method demonstrating tighter error distributions, lower variance, better calibration earns reliability status over time. Paul Meehl's research on clinical versus statistical prediction demonstrated decades ago that actuarial methods consistently match or outperform expert clinical judgment across domains—a finding that has replicated extensively and that this framework takes seriously.
 
-**Track record requires measurement.** "This person has been doing it for 30 years" is not measurement. It's reputation as proxy. The distinction matters: track record is empirical—documented comparison of projections to outcomes. Authority is social permission—credentials, tenure, brand recognition. Empirical evidence can be wrong, but it can also be corrected through further measurement. Social permission can persist indefinitely without ever confronting outcomes. Actuarial standing is earned through documented reconciliation, not accumulated reputation.
+**Track record requires measurement.** "This person has been doing it for 30 years" is reputation as proxy, not measurement. The distinction matters: track record is empirical—documented comparison of projections to outcomes. Authority is social permission—credentials, tenure, brand recognition. Empirical evidence can be wrong, but it can also be corrected through further measurement. Social permission can persist indefinitely without ever confronting outcomes. Actuarial standing is earned through documented reconciliation, not accumulated reputation.
 
 **Residual risk remains.** Post facto reconciliation validates after exposure has occurred. Induction limits apply. n successful reconciliations do not guarantee n+1. Reliance on this route is acceptable only when the cost of being wrong is within tolerance.
 
@@ -123,7 +123,7 @@ This is actuarial standing: systematic reconciliation of predictions against out
 
 Which route is acceptable depends on stakes. Reliability requirements for a scoping study differ from bankable feasibility differ from dam stability sign-off. The framework scales; the threshold varies with consequence of failure: how severe, how reversible, how attributable.
 
-This is not ambiguity—it's appropriate scaling. A framework that prescribed identical verification for all artifacts would be either impossibly burdensome for low-stakes work or dangerously lax for high-stakes work. Risk-adjusted means the governance intensity matches the stakes.
+This is appropriate scaling, not ambiguity. A framework that prescribed identical verification for all artifacts would be either impossibly burdensome for low-stakes work or dangerously lax for high-stakes work. Risk-adjusted means the governance intensity matches the stakes.
 
 ### Why Two Routes, Not Three
 
