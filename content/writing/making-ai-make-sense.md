@@ -76,6 +76,18 @@ You don't need theory to use the pattern. But if you want to understand the mech
 
 ---
 
+## How This Scales
+
+The pattern applies beyond individual artifacts. Code generation agents can access any system with documented interfaces and valid credentials. The executable artifact — the generated code — can query databases, call APIs, parse websites, orchestrate services.
+
+This means the application layer dissolves. CRUD layers, client libraries, integration code — all translation layers between human intent and system capability — become generated on demand rather than pre-built and maintained.
+
+What remains: data, infrastructure, credentials, intent specification, verification. What disappears: most of what we called "software development."
+
+→ [Code Generation as Universal Interface](/writing/code-generation-universal-interface/)
+
+---
+
 ## Where This Leads
 
 Follow the pattern and something accumulates: verified, executable encodings of what previously required human expertise.

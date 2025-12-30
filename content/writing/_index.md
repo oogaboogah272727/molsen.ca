@@ -19,6 +19,8 @@ Or explore the components:
 | [The Strong Oracle Trap](/writing/strong-oracle-trap/) | Why sophisticated dialogue doesn't solve the verification problem |
 | [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) | The pattern for AI-augmented professional work |
 | [Capability Governance](/writing/capability-governance/) | The governance framework: stakeholder obligations for generated artifacts |
+| [Code Generation as Universal Interface](/writing/code-generation-universal-interface/) | How the pattern scales: the application layer dissolves |
+| [AI-First Software](/writing/ai-first-software/) | The design philosophy: AI as foundation, not feature |
 
 ---
 
@@ -31,7 +33,6 @@ Other writing, not part of the framework above.
 | [Parrots Are All You Need](/writing/parrots-are-all-you-need/) | Why "stochastic parrot" isn't the insult people think it is |
 | [LLM Stochasticity and Determinism](/writing/llm-stochasticity-determinism/) | Understanding the randomness in language models |
 | [The Consulting Threat and Opportunity](/writing/consulting-threat-opportunity/) | What AI means for professional services |
-| [AI-First Software](/writing/ai-first-software/) | How software development is changing |
 | [Critical Thinking Rules](/writing/critical-thinking-rules/) | Principles for clear reasoning |
 | [The Support Team's Real Job](/writing/support-team-real-job/) | What support work is actually about |
 | [Leadership Lessons from Science Fiction](/writing/leadership-lessons-science-fiction/) | What SF teaches about leading |
