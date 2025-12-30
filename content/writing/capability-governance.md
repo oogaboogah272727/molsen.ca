@@ -153,7 +153,7 @@ Consumers of generated artifacts have four obligations:
 
 3. **Maintain local records.** When provider predictions meet reality, document the comparison. This is your evidence, independent of their claims. Actuarial standing must be earned, and you're the one with visibility into outcomes.
 
-4. **Refresh comparisons.** The actuarial case for method A today may be superseded by method B tomorrow. Continuous evaluation is the obligation. Novel generation mechanisms are the forcing function that makes this non-trivial.
+4. **Refresh comparisons.** The actuarial case for method A today may be superseded by method B tomorrow. Continuous evaluation is the obligation. Novel generation mechanisms that offer equivalent quality at vastly reduced cost are the forcing function that makes this non-trivial.
 
 ### Producers
 
@@ -171,7 +171,7 @@ Producers have symmetric obligations:
 
 Underwriters and regulators are stakeholders with obligations and leverage. When reconciliation data demonstrates that method A produces quantifiably better outcomes—lower risk, tighter distributions, lower implementation cost—they exert pressure to shift to that mode. This is the forcing function.
 
-The foundational forcing function is the introduction of novel generation mechanisms. Without novelty, the obligation to continuously evaluate would be empty formalism.
+The foundational forcing function is novel generation mechanisms that deliver equivalent quality at lower cost. Without that economic pressure, the obligation to continuously evaluate would be empty formalism.
 
 ---
 
