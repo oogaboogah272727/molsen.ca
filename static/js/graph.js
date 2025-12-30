@@ -5,19 +5,14 @@
 
   function init() {
     var container = document.getElementById('graph-container');
-    if (!container) {
-      console.log('No graph container found');
-      return;
-    }
+    var panel = document.getElementById('panel-content');
+    if (!container) return;
 
-    // Check if library loaded
+    // Check libraries
     if (typeof ForceGraph3D === 'undefined') {
-      console.error('ForceGraph3D not loaded');
-      container.innerHTML = '<p style="padding:2rem;text-align:center;color:#888;">Loading 3D graph library failed. <a href="javascript:location.reload()">Reload</a></p>';
+      container.innerHTML = '<p style="padding:2rem;text-align:center;color:#888;">Loading graph library...</p>';
       return;
     }
-
-    console.log('ForceGraph3D available, initializing...');
 
     // Colors
     var colors = {
@@ -28,6 +23,17 @@
       empirical: '#f59e0b',
       applied: '#4a90a4',
       practice: '#64748b'
+    };
+
+    // Type labels
+    var typeLabels = {
+      hub: 'Hub',
+      foundational: 'Foundational',
+      core: 'Core',
+      theoretical: 'Theoretical',
+      empirical: 'Empirical',
+      applied: 'Applied',
+      practice: 'Practice'
     };
 
     // Sizes
@@ -41,17 +47,49 @@
       practice: 3
     };
 
-    // Tooltip
-    var tooltip = document.createElement('div');
-    tooltip.style.cssText = 'position:fixed;display:none;background:#fff;border:1px solid #ccc;padding:8px 12px;border-radius:4px;font-size:12px;max-width:250px;z-index:9999;pointer-events:none;box-shadow:0 2px 8px rgba(0,0,0,0.15)';
-    document.body.appendChild(tooltip);
+    // Update panel with node info
+    function updatePanel(node) {
+      if (!panel) return;
+
+      if (!node) {
+        panel.innerHTML = '<p class="panel-hint">Click a node to see details</p>';
+        return;
+      }
+
+      var html = '<h3 class="panel-title">' + node.label + '</h3>';
+      html += '<span class="panel-type" style="background:' + (colors[node.type] || '#666') + '">' + (typeLabels[node.type] || node.type) + '</span>';
+
+      if (node.defines && node.defines.length) {
+        html += '<div class="panel-section">';
+        html += '<div class="panel-section-title">Defines</div>';
+        html += '<ul class="panel-list">';
+        node.defines.forEach(function(d) {
+          html += '<li>' + d + '</li>';
+        });
+        html += '</ul></div>';
+      }
+
+      if (node.themes && node.themes.length) {
+        html += '<div class="panel-section">';
+        html += '<div class="panel-section-title">Themes</div>';
+        html += '<ul class="panel-list">';
+        node.themes.forEach(function(t) {
+          html += '<li>' + t + '</li>';
+        });
+        html += '</ul></div>';
+      }
+
+      if (node.url) {
+        html += '<a href="' + node.url + '" class="panel-link" target="_blank">Read Article →</a>';
+      }
+
+      panel.innerHTML = html;
+    }
 
     // Fetch data
     fetch('/js/knowledge-graph.json')
       .then(function(r) { return r.json(); })
       .then(function(data) {
-        console.log('Loaded', data.nodes.length, 'nodes and', data.links.length, 'links');
-
         // Build filter UI
         var filterDiv = document.getElementById('concept-filter');
         if (filterDiv) {
@@ -70,14 +108,13 @@
           });
         }
 
-        // Store original data
         var originalData = JSON.parse(JSON.stringify(data));
+        var selectedNode = null;
 
-        // Get actual dimensions
+        // Get dimensions
         var rect = container.getBoundingClientRect();
-        var width = rect.width || 800;
+        var width = rect.width || 700;
         var height = rect.height || 500;
-        console.log('Container dimensions:', width, 'x', height);
 
         // Create graph
         var Graph = ForceGraph3D()(container)
@@ -85,10 +122,9 @@
           .height(height)
           .graphData(data)
           .nodeId('id')
-          .nodeLabel(function(n) { return n.label; })
           .nodeColor(function(n) { return colors[n.type] || '#999'; })
           .nodeVal(function(n) { return sizes[n.type] || 4; })
-          .nodeOpacity(0.85)
+          .nodeOpacity(0.9)
           .linkColor(function(l) { return l.type === 'core' ? '#666' : '#bbb'; })
           .linkWidth(function(l) { return l.type === 'core' ? 1.2 : 0.4; })
           .linkOpacity(0.5)
@@ -98,35 +134,47 @@
           .enableNavigationControls(true)
           .showNavInfo(false);
 
-        // Click handler
+        // Add text labels using SpriteText
+        if (typeof SpriteText !== 'undefined') {
+          Graph.nodeThreeObject(function(node) {
+            var sprite = new SpriteText(node.label);
+            sprite.color = '#333';
+            sprite.textHeight = node.type === 'hub' ? 5 : 3.5;
+            sprite.backgroundColor = 'rgba(255,255,255,0.8)';
+            sprite.padding = 1;
+            sprite.borderRadius = 2;
+            return sprite;
+          });
+        } else {
+          // Fallback to built-in labels
+          Graph.nodeLabel(function(n) { return n.label; });
+        }
+
+        // Click handler - select node and show in panel
         Graph.onNodeClick(function(node) {
-          if (node && node.url) {
-            window.open(node.url, '_blank');
-          }
+          selectedNode = node;
+          updatePanel(node);
+
+          // Highlight selected node
+          Graph.nodeColor(function(n) {
+            if (n.id === node.id) return colors[n.type] || '#999';
+            return colors[n.type] ? colors[n.type] + '99' : '#99999999';
+          });
         });
 
         // Hover handler
-        var hovered = null;
         Graph.onNodeHover(function(node) {
-          hovered = node;
           container.style.cursor = node ? 'pointer' : 'grab';
-          if (node && node.defines && node.defines.length) {
-            tooltip.innerHTML = '<strong>' + node.label + '</strong><br><span style="color:#666;font-size:11px">Defines: ' + node.defines.join(', ') + '</span>';
-            tooltip.style.display = 'block';
-          } else {
-            tooltip.style.display = 'none';
-          }
         });
 
-        // Move tooltip with mouse
-        document.addEventListener('mousemove', function(e) {
-          if (hovered) {
-            tooltip.style.left = (e.clientX + 15) + 'px';
-            tooltip.style.top = (e.clientY + 10) + 'px';
-          }
+        // Background click - deselect
+        Graph.onBackgroundClick(function() {
+          selectedNode = null;
+          updatePanel(null);
+          Graph.nodeColor(function(n) { return colors[n.type] || '#999'; });
         });
 
-        // Initial camera - position to see the whole graph
+        // Initial camera
         setTimeout(function() {
           Graph.cameraPosition({ x: 0, y: 0, z: 400 }, { x: 0, y: 0, z: 0 }, 1000);
         }, 500);
@@ -154,24 +202,27 @@
             } else {
               Graph.graphData(JSON.parse(JSON.stringify(originalData)));
             }
+
+            // Reset panel
+            selectedNode = null;
+            updatePanel(null);
           });
         }
 
         // Resize handler
         window.addEventListener('resize', function() {
-          Graph.width(container.clientWidth);
-          Graph.height(container.clientHeight);
+          var r = container.getBoundingClientRect();
+          Graph.width(r.width || 700);
+          Graph.height(r.height || 500);
         });
 
-        console.log('Graph initialized successfully');
       })
       .catch(function(err) {
         console.error('Graph error:', err);
-        container.innerHTML = '<p style="padding:2rem;text-align:center;color:#c00;">Error loading graph data: ' + err.message + '</p>';
+        container.innerHTML = '<p style="padding:2rem;text-align:center;color:#c00;">Error: ' + err.message + '</p>';
       });
   }
 
-  // Run when DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
