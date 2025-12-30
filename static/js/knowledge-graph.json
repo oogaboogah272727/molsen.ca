@@ -1,44 +1,20 @@
 {
   "nodes": [
     {
+      "id": "making-ai-make-sense",
+      "label": "Making AI Make Sense",
+      "url": "/writing/making-ai-make-sense/",
+      "defines": ["Framework Hub", "Core Move: Execute Instructions Not Answers"],
+      "type": "hub",
+      "themes": ["AI Governance"]
+    },
+    {
       "id": "oracle-assistant",
       "label": "Oracle vs. Assistant",
       "url": "/writing/ai-oracle-vs-assistant/",
       "defines": ["Oracle Mode", "Assistant Mode", "Verification Paradox", "Method vs. Verdict"],
       "type": "foundational",
       "themes": ["Epistemic Rigor", "AI Governance"]
-    },
-    {
-      "id": "parrots",
-      "label": "Parrots Are All You Need",
-      "url": "/writing/parrots-are-all-you-need/",
-      "defines": ["Stochastic Parrot", "Knowledge Work Vulnerability"],
-      "type": "foundational",
-      "themes": ["AI Governance", "Organizational Change"]
-    },
-    {
-      "id": "strong-oracle-trap",
-      "label": "The Strong Oracle Trap",
-      "url": "/writing/strong-oracle-trap/",
-      "defines": ["Oracle Spectrum", "Strong Oracle", "Tool Mitigation"],
-      "type": "core",
-      "themes": ["Epistemic Rigor", "AI Governance"]
-    },
-    {
-      "id": "eka",
-      "label": "Executable Knowledge Architecture",
-      "url": "/writing/executable-knowledge-architecture/",
-      "defines": ["EKA", "Verification Boundary", "Front-Door Invariants"],
-      "type": "core",
-      "themes": ["AI Governance", "Organizational Change"]
-    },
-    {
-      "id": "capability-governance",
-      "label": "Capability Governance Framework",
-      "url": "/writing/capability-governance/",
-      "defines": ["Method-Bearing vs Conclusion", "Reliability Verification", "Method Exposure"],
-      "type": "core",
-      "themes": ["AI Governance", "Professional Practice"]
     },
     {
       "id": "knowledge-capability",
@@ -60,9 +36,73 @@
       "id": "tacit-shrinkage",
       "label": "Tacit Space Shrinkage",
       "url": "/writing/tacit-space-shrinkage/",
-      "defines": ["Tacit Space Shrinkage", "Structurally Tacit Core"],
+      "defines": ["Tacit Space Shrinkage", "Structurally Tacit Core", "Representationally Tacit"],
       "type": "theoretical",
       "themes": ["Epistemic Rigor", "Organizational Change"]
+    },
+    {
+      "id": "strong-oracle-trap",
+      "label": "The Strong Oracle Trap",
+      "url": "/writing/strong-oracle-trap/",
+      "defines": ["Oracle Spectrum", "Strong Oracle", "Tool Mitigation"],
+      "type": "core",
+      "themes": ["Epistemic Rigor", "AI Governance"]
+    },
+    {
+      "id": "eka",
+      "label": "Executable Knowledge Architecture",
+      "url": "/writing/executable-knowledge-architecture/",
+      "defines": ["EKA", "Verification Boundary", "Front-Door Invariants"],
+      "type": "core",
+      "themes": ["AI Governance", "Organizational Change"]
+    },
+    {
+      "id": "capability-governance",
+      "label": "Capability Governance",
+      "url": "/writing/capability-governance/",
+      "defines": ["Method-Bearing vs Conclusion", "Defensibility Routes", "Method Exposure"],
+      "type": "core",
+      "themes": ["AI Governance", "Professional Practice"]
+    },
+    {
+      "id": "universal-interface",
+      "label": "Agentic AI as Universal Interface",
+      "url": "/writing/agentic-ai-universal-interface/",
+      "defines": ["Universal Interface", "Barrier Removal", "Software as Distilled Expertise"],
+      "type": "core",
+      "themes": ["AI Governance", "Organizational Change"]
+    },
+    {
+      "id": "automating-expertise",
+      "label": "Automating Expertise Gets Easier",
+      "url": "/writing/automating-expertise-gets-easier/",
+      "defines": ["Application Layer Pressure", "Data as System", "Specification vs Implementation"],
+      "type": "core",
+      "themes": ["AI Governance", "Organizational Change"]
+    },
+    {
+      "id": "ontology-generation",
+      "label": "Ontology Generation",
+      "url": "/writing/ontology-generation/",
+      "defines": ["Structural Ontology", "Procedural Patterns", "Bottom-Up Generation"],
+      "type": "core",
+      "themes": ["AI Governance", "Organizational Change"]
+    },
+    {
+      "id": "ai-first",
+      "label": "AI-First Software",
+      "url": "/writing/ai-first-software/",
+      "defines": ["AI-First Software", "Formal Competence", "Dynamic Functionality"],
+      "type": "applied",
+      "themes": ["AI Governance"]
+    },
+    {
+      "id": "parrots",
+      "label": "Parrots Are All You Need",
+      "url": "/writing/parrots-are-all-you-need/",
+      "defines": ["Stochastic Parrot", "Knowledge Work Vulnerability"],
+      "type": "foundational",
+      "themes": ["AI Governance", "Organizational Change"]
     },
     {
       "id": "stochasticity",
@@ -87,14 +127,6 @@
       "defines": ["Consulting Disruption", "Senior + AI Threat"],
       "type": "applied",
       "themes": ["Organizational Change", "Professional Practice"]
-    },
-    {
-      "id": "ai-first",
-      "label": "AI-First Software",
-      "url": "/writing/ai-first-software/",
-      "defines": ["AI-First Software", "Formal Competence"],
-      "type": "applied",
-      "themes": ["AI Governance"]
     },
     {
       "id": "critical-thinking",
@@ -130,20 +162,36 @@
     }
   ],
   "links": [
+    {"source": "making-ai-make-sense", "target": "oracle-assistant", "type": "core", "label": "foundation"},
+    {"source": "making-ai-make-sense", "target": "knowledge-capability", "type": "core", "label": "foundation"},
+    {"source": "making-ai-make-sense", "target": "eka", "type": "core", "label": "pattern"},
+    {"source": "making-ai-make-sense", "target": "universal-interface", "type": "core", "label": "scaling"},
+    {"source": "making-ai-make-sense", "target": "automating-expertise", "type": "core", "label": "implications"},
+
+    {"source": "agent-tacitness", "target": "knowledge-capability", "type": "core", "label": "extends"},
+    {"source": "tacit-shrinkage", "target": "agent-tacitness", "type": "core", "label": "extends"},
+
     {"source": "strong-oracle-trap", "target": "oracle-assistant", "type": "core", "label": "extends"},
     {"source": "eka", "target": "oracle-assistant", "type": "core", "label": "implements"},
     {"source": "eka", "target": "knowledge-capability", "type": "core", "label": "requires"},
     {"source": "eka", "target": "stochasticity", "type": "core", "label": "exploits"},
     {"source": "eka", "target": "strong-oracle-trap", "type": "core", "label": "addresses"},
+    {"source": "capability-governance", "target": "eka", "type": "core", "label": "governs"},
+    {"source": "capability-governance", "target": "agent-tacitness", "type": "core", "label": "uses"},
+
+    {"source": "universal-interface", "target": "eka", "type": "core", "label": "scales"},
+    {"source": "universal-interface", "target": "tacit-shrinkage", "type": "core", "label": "applies"},
+    {"source": "automating-expertise", "target": "universal-interface", "type": "core", "label": "extends"},
+    {"source": "ontology-generation", "target": "universal-interface", "type": "core", "label": "requires"},
+    {"source": "ontology-generation", "target": "eka", "type": "core", "label": "accumulates"},
+    {"source": "ontology-generation", "target": "tacit-shrinkage", "type": "core", "label": "captures"},
+    {"source": "ontology-generation", "target": "capability-governance", "type": "core", "label": "validates"},
+
+    {"source": "ai-first", "target": "universal-interface", "type": "core", "label": "parallel"},
+    {"source": "ai-first", "target": "automating-expertise", "type": "core", "label": "converges"},
+
     {"source": "stochasticity", "target": "oracle-assistant", "type": "core", "label": "evidence for"},
     {"source": "consulting-threat", "target": "eka", "type": "core", "label": "motivates"},
-    {"source": "capability-governance", "target": "oracle-assistant", "type": "core", "label": "extends"},
-    {"source": "capability-governance", "target": "knowledge-capability", "type": "core", "label": "uses"},
-    {"source": "eka", "target": "capability-governance", "type": "core", "label": "implements"},
-    {"source": "ai-first", "target": "oracle-assistant", "type": "soft", "label": "relates to"},
-
-    {"source": "agent-tacitness", "target": "knowledge-capability", "type": "core", "label": "extends"},
-    {"source": "tacit-shrinkage", "target": "agent-tacitness", "type": "core", "label": "extends"},
     {"source": "parrots", "target": "knowledge-capability", "type": "soft", "label": "references"},
     {"source": "parrots", "target": "agent-tacitness", "type": "soft", "label": "references"},
     {"source": "parrots", "target": "consulting-threat", "type": "soft", "label": "same domain"},

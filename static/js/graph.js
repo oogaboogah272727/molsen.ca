@@ -1,16 +1,13 @@
-// Knowledge Graph Visualization
-// Articles with core and thematic connections
+// 3D Knowledge Graph Visualization
+// Using 3d-force-graph library
 
 document.addEventListener('DOMContentLoaded', function() {
   const container = document.getElementById('graph-container');
   if (!container) return;
 
-  // Use fixed dimensions for viewBox, CSS handles responsive sizing
-  const width = 1000;
-  const height = 600;
-
   // Color scheme
   const colors = {
+    hub: '#dc2626',
     foundational: '#8b5cf6',
     core: '#1e293b',
     theoretical: '#6b8e23',
@@ -19,307 +16,173 @@ document.addEventListener('DOMContentLoaded', function() {
     practice: '#64748b'
   };
 
-  // Link colors by type
-  const linkColors = {
-    core: '#666',
-    soft: '#9ca3af'
+  // Node sizes by type
+  const nodeSizes = {
+    hub: 12,
+    foundational: 8,
+    core: 7,
+    theoretical: 6,
+    empirical: 5,
+    applied: 5,
+    practice: 4
   };
 
-  const svg = d3.select('#graph-container')
-    .append('svg')
-    .attr('viewBox', [0, 0, width, height])
-    .attr('preserveAspectRatio', 'xMidYMid meet');
-
-  const g = svg.append('g');
-
-  svg.call(d3.zoom()
-    .extent([[0, 0], [width, height]])
-    .scaleExtent([0.4, 3])
-    .on('zoom', (event) => {
-      g.attr('transform', event.transform);
-    }));
-
-  // Arrow markers
-  const markerTypes = ['core', 'soft'];
-  svg.append('defs').selectAll('marker')
-    .data(markerTypes)
-    .join('marker')
-    .attr('id', d => `arrow-${d}`)
-    .attr('viewBox', '0 -5 10 10')
-    .attr('refX', 22)
-    .attr('refY', 0)
-    .attr('markerWidth', 5)
-    .attr('markerHeight', 5)
-    .attr('orient', 'auto')
-    .append('path')
-    .attr('fill', d => d === 'soft' ? '#9ca3af' : '#666')
-    .attr('d', 'M0,-4L8,0L0,4');
-
   // Tooltip
-  const tooltip = d3.select('body').append('div')
-    .attr('class', 'graph-tooltip')
-    .style('position', 'absolute')
-    .style('visibility', 'hidden')
-    .style('background', 'white')
-    .style('border', '1px solid #e2e8f0')
-    .style('border-radius', '6px')
-    .style('padding', '10px 14px')
-    .style('font-size', '12px')
-    .style('font-family', 'system-ui, -apple-system, sans-serif')
-    .style('box-shadow', '0 4px 12px rgba(0,0,0,0.1)')
-    .style('max-width', '280px')
-    .style('z-index', '1000')
-    .style('line-height', '1.5');
+  const tooltip = document.createElement('div');
+  tooltip.className = 'graph-tooltip';
+  tooltip.style.cssText = 'position:absolute;visibility:hidden;background:white;border:1px solid #e2e8f0;border-radius:6px;padding:10px 14px;font-size:12px;font-family:system-ui,-apple-system,sans-serif;box-shadow:0 4px 12px rgba(0,0,0,0.1);max-width:280px;z-index:1000;line-height:1.5;pointer-events:none';
+  document.body.appendChild(tooltip);
 
-  function showTooltip(event, d) {
-    var html = '';
-    if (d.defines && d.defines.length > 0) {
-      html = '<strong style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:0.5px">Defines</strong><br>' + d.defines.join('<br>');
-    } else if (d.description) {
-      html = d.description;
-    }
-    tooltip
-      .html(html)
-      .style('visibility', 'visible')
-      .style('left', (event.pageX + 15) + 'px')
-      .style('top', (event.pageY - 10) + 'px');
-  }
+  fetch('/js/knowledge-graph.json')
+    .then(response => response.json())
+    .then(data => {
+      // Create type filter UI
+      const articleTypes = [
+        { id: 'hub', label: 'Hub', color: colors.hub },
+        { id: 'foundational', label: 'Foundational', color: colors.foundational },
+        { id: 'core', label: 'Core', color: colors.core },
+        { id: 'theoretical', label: 'Theoretical', color: colors.theoretical },
+        { id: 'empirical', label: 'Empirical', color: colors.empirical },
+        { id: 'applied', label: 'Applied', color: colors.applied },
+        { id: 'practice', label: 'Practice', color: colors.practice }
+      ];
 
-  function hideTooltip() {
-    tooltip.style('visibility', 'hidden');
-  }
+      const filterContainer = document.getElementById('concept-filter');
+      if (filterContainer) {
+        const allBtn = document.createElement('button');
+        allBtn.className = 'concept-btn active';
+        allBtn.textContent = 'All';
+        allBtn.setAttribute('data-type', '');
+        filterContainer.appendChild(allBtn);
 
-  d3.json('/js/knowledge-graph.json').then(function(originalData) {
-    // Article types matching the legend
-    var articleTypes = [
-      { id: 'foundational', label: 'Foundational', color: '#8b5cf6' },
-      { id: 'core', label: 'Core', color: '#1e293b' },
-      { id: 'theoretical', label: 'Theoretical', color: '#6b8e23' },
-      { id: 'empirical', label: 'Empirical', color: '#f59e0b' },
-      { id: 'applied', label: 'Applied', color: '#4a90a4' },
-      { id: 'practice', label: 'Practice', color: '#64748b' }
-    ];
-
-    // Create type filter UI
-    var filterContainer = document.getElementById('concept-filter');
-    if (filterContainer) {
-      var allBtn = document.createElement('button');
-      allBtn.className = 'concept-btn active';
-      allBtn.textContent = 'All';
-      allBtn.setAttribute('data-type', '');
-      filterContainer.appendChild(allBtn);
-
-      articleTypes.forEach(function(type) {
-        var btn = document.createElement('button');
-        btn.className = 'concept-btn';
-        btn.innerHTML = '<span class="filter-dot" style="background:' + type.color + '"></span>' + type.label;
-        btn.setAttribute('data-type', type.id);
-        filterContainer.appendChild(btn);
-      });
-    }
-
-    var simulation = null;
-    var currentLinks = null;
-
-    function renderGraph(filterType) {
-      // Clear existing graph
-      g.selectAll('.links').remove();
-      g.selectAll('.nodes').remove();
-
-      // Filter nodes
-      var filteredNodes;
-      if (filterType) {
-        filteredNodes = originalData.nodes.filter(function(n) {
-          return n.type === filterType;
+        articleTypes.forEach(function(type) {
+          const btn = document.createElement('button');
+          btn.className = 'concept-btn';
+          btn.innerHTML = '<span class="filter-dot" style="background:' + type.color + '"></span>' + type.label;
+          btn.setAttribute('data-type', type.id);
+          filterContainer.appendChild(btn);
         });
-      } else {
-        filteredNodes = originalData.nodes.slice();
       }
 
-      // Get node IDs for link filtering
-      var nodeIds = {};
-      filteredNodes.forEach(function(n) {
-        nodeIds[n.id] = true;
-      });
+      // Track hovered node
+      let hoveredNode = null;
 
-      // Filter links to only include those between visible nodes
-      var filteredLinks = originalData.links.filter(function(l) {
-        var sourceId = typeof l.source === 'object' ? l.source.id : l.source;
-        var targetId = typeof l.target === 'object' ? l.target.id : l.target;
-        return nodeIds[sourceId] && nodeIds[targetId];
-      }).map(function(l) {
-        // Create fresh link objects with string IDs
-        return {
-          source: typeof l.source === 'object' ? l.source.id : l.source,
-          target: typeof l.target === 'object' ? l.target.id : l.target,
-          type: l.type,
-          label: l.label
-        };
-      });
-
-      currentLinks = filteredLinks;
-
-      // Stop old simulation
-      if (simulation) {
-        simulation.stop();
-      }
-
-      // Create new simulation
-      simulation = d3.forceSimulation(filteredNodes)
-        .force('link', d3.forceLink(filteredLinks).id(function(d) { return d.id; }).distance(100))
-        .force('charge', d3.forceManyBody().strength(-350))
-        .force('center', d3.forceCenter(width / 2, height / 2))
-        .force('collision', d3.forceCollide().radius(45));
-
-      // Draw links
-      var link = g.append('g')
-        .attr('class', 'links')
-        .selectAll('g')
-        .data(filteredLinks)
-        .join('g')
-        .attr('class', function(d) { return 'link-' + d.type; });
-
-      link.append('line')
-        .attr('stroke', function(d) { return linkColors[d.type] || '#999'; })
-        .attr('stroke-opacity', 0.7)
-        .attr('stroke-width', function(d) { return d.type === 'core' ? 1.5 : 1; })
-        .attr('stroke-dasharray', function(d) { return d.type === 'soft' ? '5,3' : 'none'; })
-        .attr('marker-end', function(d) { return 'url(#arrow-' + d.type + ')'; });
-
-      // Link labels
-      link.filter(function(d) { return d.label; })
-        .append('text')
-        .text(function(d) { return d.label; })
-        .attr('font-size', '8px')
-        .attr('fill', '#888')
-        .attr('text-anchor', 'middle')
-        .attr('dy', -4);
-
-      // Draw nodes
-      var node = g.append('g')
-        .attr('class', 'nodes')
-        .selectAll('g')
-        .data(filteredNodes)
-        .join('g')
-        .attr('class', function(d) { return 'node node-' + d.type; })
-        .style('cursor', function(d) { return d.url ? 'pointer' : 'default'; })
-        .call(drag(simulation));
-
-      // Circle nodes for articles
-      node.append('circle')
-        .attr('r', function(d) { return d.type === 'core' || d.type === 'foundational' ? 12 : 9; })
-        .attr('fill', function(d) { return colors[d.type] || '#666'; })
-        .attr('stroke', '#fff')
-        .attr('stroke-width', 2);
-
-      // Node labels
-      node.append('text')
-        .text(function(d) { return d.label; })
-        .attr('x', 15)
-        .attr('y', 4)
-        .attr('font-size', '11px')
-        .attr('fill', '#333')
-        .attr('font-family', 'system-ui, -apple-system, sans-serif');
-
-      // Click to navigate (articles only) - opens in new tab
-      node.filter(function(d) { return d.url; }).on('click', function(event, d) {
-        window.open(d.url, '_blank');
-      });
-
-      // Hover effects
-      node.on('mouseover', function(event, d) {
-        d3.select(this).select('circle')
-          .transition()
-          .duration(200)
-          .attr('r', d.type === 'core' || d.type === 'foundational' ? 16 : 13);
-
-        // Show tooltip
-        if ((d.defines && d.defines.length > 0) || d.description) {
-          showTooltip(event, d);
-        }
-
-        // Highlight connected links
-        link.select('line').attr('stroke-opacity', function(l) {
-          return (l.source.id === d.id || l.target.id === d.id) ? 1 : 0.15;
-        });
-        link.select('text').attr('fill-opacity', function(l) {
-          return (l.source.id === d.id || l.target.id === d.id) ? 1 : 0.15;
-        });
-
-        // Dim unconnected nodes
-        var connectedIds = {};
-        connectedIds[d.id] = true;
-        currentLinks.forEach(function(l) {
-          if (l.source.id === d.id) connectedIds[l.target.id] = true;
-          if (l.target.id === d.id) connectedIds[l.source.id] = true;
-        });
-        node.attr('opacity', function(n) { return connectedIds[n.id] ? 1 : 0.3; });
-      });
-
-      node.on('mouseout', function(event, d) {
-        d3.select(this).select('circle')
-          .transition()
-          .duration(200)
-          .attr('r', d.type === 'core' || d.type === 'foundational' ? 12 : 9);
-
-        hideTooltip();
-
-        link.select('line').attr('stroke-opacity', 0.7);
-        link.select('text').attr('fill-opacity', 1);
-        node.attr('opacity', 1);
-      });
-
-      simulation.on('tick', function() {
-        link.select('line')
-          .attr('x1', function(d) { return d.source.x; })
-          .attr('y1', function(d) { return d.source.y; })
-          .attr('x2', function(d) { return d.target.x; })
-          .attr('y2', function(d) { return d.target.y; });
-
-        link.select('text')
-          .attr('x', function(d) { return (d.source.x + d.target.x) / 2; })
-          .attr('y', function(d) { return (d.source.y + d.target.y) / 2; });
-
-        node.attr('transform', function(d) { return 'translate(' + d.x + ',' + d.y + ')'; });
-      });
-    }
-
-    function drag(sim) {
-      return d3.drag()
-        .on('start', function(event) {
-          if (!event.active) sim.alphaTarget(0.3).restart();
-          event.subject.fx = event.subject.x;
-          event.subject.fy = event.subject.y;
+      // Initialize 3D Force Graph
+      const Graph = ForceGraph3D()(container)
+        .graphData(data)
+        .nodeId('id')
+        .nodeLabel(node => '')  // We'll use custom tooltip instead
+        .nodeColor(node => colors[node.type] || '#666')
+        .nodeVal(node => nodeSizes[node.type] || 5)
+        .nodeOpacity(0.95)
+        .linkSource('source')
+        .linkTarget('target')
+        .linkColor(link => link.type === 'core' ? 'rgba(100,100,100,0.6)' : 'rgba(156,163,175,0.4)')
+        .linkWidth(link => link.type === 'core' ? 1.5 : 0.8)
+        .linkOpacity(0.7)
+        .linkDirectionalArrowLength(4)
+        .linkDirectionalArrowRelPos(1)
+        .linkCurvature(0.1)
+        .backgroundColor('rgba(0,0,0,0)')
+        .showNavInfo(false)
+        .enableNodeDrag(true)
+        .onNodeClick(node => {
+          if (node.url) {
+            window.open(node.url, '_blank');
+          }
         })
-        .on('drag', function(event) {
-          event.subject.fx = event.x;
-          event.subject.fy = event.y;
-        })
-        .on('end', function(event) {
-          if (!event.active) sim.alphaTarget(0);
-          event.subject.fx = null;
-          event.subject.fy = null;
-        });
-    }
+        .onNodeHover(node => {
+          container.style.cursor = node ? 'pointer' : 'default';
+          hoveredNode = node;
 
-    // Type filter click handlers
-    if (filterContainer) {
-      filterContainer.addEventListener('click', function(e) {
-        var btn = e.target.closest('.concept-btn');
-        if (btn) {
-          // Update active state
-          filterContainer.querySelectorAll('.concept-btn').forEach(function(b) {
-            b.classList.remove('active');
+          if (node && node.defines && node.defines.length > 0) {
+            tooltip.innerHTML = '<strong style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:0.5px">Defines</strong><br>' + node.defines.join('<br>');
+            tooltip.style.visibility = 'visible';
+          } else {
+            tooltip.style.visibility = 'hidden';
+          }
+
+          // Highlight connected nodes
+          Graph.nodeColor(n => {
+            if (!node) return colors[n.type] || '#666';
+            if (n.id === node.id) return colors[n.type] || '#666';
+            const isConnected = data.links.some(l =>
+              (l.source.id === node.id && l.target.id === n.id) ||
+              (l.target.id === node.id && l.source.id === n.id) ||
+              (l.source === node.id && l.target === n.id) ||
+              (l.target === node.id && l.source === n.id)
+            );
+            return isConnected ? colors[n.type] || '#666' : 'rgba(100,100,100,0.2)';
           });
-          btn.classList.add('active');
+        });
 
-          var type = btn.getAttribute('data-type');
-          renderGraph(type || null);
+      // Track mouse for tooltip positioning
+      container.addEventListener('mousemove', (e) => {
+        if (hoveredNode) {
+          tooltip.style.left = (e.pageX + 15) + 'px';
+          tooltip.style.top = (e.pageY - 10) + 'px';
         }
       });
-    }
 
-    // Initial render with all nodes
-    renderGraph(null);
-  });
+      // Add node labels using CSS2D
+      Graph.nodeThreeObject(node => {
+        const sprite = new SpriteText(node.label);
+        sprite.color = '#333';
+        sprite.textHeight = node.type === 'hub' ? 4 : 3;
+        sprite.position.y = nodeSizes[node.type] + 3;
+        return sprite;
+      })
+      .nodeThreeObjectExtend(true);
+
+      // Camera positioning
+      Graph.cameraPosition({ x: 0, y: 0, z: 400 });
+
+      // Auto-rotate slowly
+      let angle = 0;
+      function rotate() {
+        if (!hoveredNode) {
+          angle += 0.001;
+          Graph.cameraPosition({
+            x: 400 * Math.sin(angle),
+            z: 400 * Math.cos(angle)
+          });
+        }
+        requestAnimationFrame(rotate);
+      }
+      rotate();
+
+      // Filter functionality
+      if (filterContainer) {
+        filterContainer.addEventListener('click', function(e) {
+          const btn = e.target.closest('.concept-btn');
+          if (btn) {
+            filterContainer.querySelectorAll('.concept-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const type = btn.getAttribute('data-type');
+
+            if (type) {
+              const filteredNodes = data.nodes.filter(n => n.type === type);
+              const nodeIds = new Set(filteredNodes.map(n => n.id));
+              const filteredLinks = data.links.filter(l => {
+                const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+                const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+                return nodeIds.has(sourceId) && nodeIds.has(targetId);
+              });
+              Graph.graphData({ nodes: filteredNodes, links: filteredLinks });
+            } else {
+              Graph.graphData(data);
+            }
+          }
+        });
+      }
+
+      // Handle resize
+      function handleResize() {
+        Graph.width(container.clientWidth);
+        Graph.height(container.clientHeight);
+      }
+      window.addEventListener('resize', handleResize);
+      handleResize();
+    });
 });

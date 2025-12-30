@@ -2,6 +2,7 @@
 <p class="intro">{{ .Site.Params.description }}</p>
 
 <div class="graph-legend">
+  <div class="legend-item"><span class="legend-dot hub"></span> Hub</div>
   <div class="legend-item"><span class="legend-dot foundational"></span> Foundational</div>
   <div class="legend-item"><span class="legend-dot core"></span> Core</div>
   <div class="legend-item"><span class="legend-dot theoretical"></span> Theoretical</div>
@@ -10,12 +11,14 @@
   <div class="legend-item"><span class="legend-dot practice"></span> Practice</div>
 </div>
 
-<p class="graph-instructions">Click articles to read. Hover for concepts defined. Solid lines show core relationships; dashed lines show thematic connections.</p>
+<p class="graph-instructions">Click articles to read. Hover for concepts defined. Drag to rotate. Scroll to zoom.</p>
 
 <div id="concept-filter"></div>
 
 <div id="graph-container"></div>
 
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+<script src="https://unpkg.com/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
+<script src="https://unpkg.com/3d-force-graph@1.73.3/dist/3d-force-graph.min.js"></script>
 <script src="/js/graph.js"></script>
 {{ end }}

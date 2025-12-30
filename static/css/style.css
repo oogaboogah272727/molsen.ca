@@ -317,7 +317,7 @@ footer .container {
 #graph-container {
   width: calc(100vw - 3rem);
   max-width: 1200px;
-  min-height: 600px;
+  height: 550px;
   position: relative;
   background: var(--background);
   border: 1px solid var(--border);
@@ -325,6 +325,11 @@ footer .container {
   margin: 1rem 0 2rem 0;
   margin-left: 50%;
   transform: translateX(-50%);
+  overflow: hidden;
+}
+
+#graph-container canvas {
+  display: block;
 }
 
 #graph-container svg {
@@ -363,6 +368,7 @@ footer .container {
   border-radius: 50%;
 }
 
+.legend-dot.hub { background: #dc2626; }
 .legend-dot.foundational { background: #8b5cf6; }
 .legend-dot.core { background: #1e293b; }
 .legend-dot.theoretical { background: #6b8e23; }
@@ -478,6 +484,7 @@ footer .container {
   display: inline-block;
 }
 
+.type-dot.hub { background: #dc2626; }
 .type-dot.foundational { background: #8b5cf6; }
 .type-dot.core { background: #1e293b; }
 .type-dot.theoretical { background: #6b8e23; }
@@ -598,7 +605,7 @@ footer .container {
 
   #graph-container {
     width: calc(100vw - 1rem);
-    min-height: 400px;
+    height: 400px;
     margin: 0.5rem 0 1rem 0;
     margin-left: 50%;
     transform: translateX(-50%);
