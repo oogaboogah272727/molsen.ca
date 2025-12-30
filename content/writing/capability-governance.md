@@ -180,24 +180,36 @@ The framework forces honesty:
 
 ## Practical Next Steps
 
-**For practitioners:**
+**Producers:**
 
 1. **Classify your recent work.** Look at your last ten deliverables. For each: could a qualified peer inspect your method and verify the output, or must they trust your judgment? Be honest about which are method-bearing and which are conclusions.
 
-2. **Identify your verification route.** For conclusion artifacts, how would you defend them if challenged? Exposed methodology? Track record? Neither? If neither, you're asking clients to accept unknown risk.
+2. **Identify your verification route.** For conclusion artifacts, how would you defend them if challenged? Exposed methodology? Track record? Neither? If neither, you're asking consumers to accept unknown risk.
 
-3. **Treat AI-generated content as conclusion artifacts** until you've verified the method or built track record. The burden of verification doesn't transfer to the tool.
+3. **Audit your deliverable mix.** What percentage of your work is conclusion artifacts with no verification route beyond reputation? This is your exposure.
 
-**For firms:**
+4. **Track outcomes.** When your predictions meet reality, document the comparison. Actuarial standing is earned through systematic reconciliation, not accumulated reputation.
 
-1. **Audit your deliverable mix.** What percentage of your work is conclusion artifacts with no verification route beyond reputation? This is your exposure.
+5. **Identify method exposure opportunities.** Where could you expose methodology but don't? The barrier is often inertia, not impossibility.
 
-2. **Track outcomes.** When your predictions meet reality, document the comparison. Actuarial standing is earned through systematic reconciliation, not accumulated reputation.
+6. **Treat AI-generated content as conclusion artifacts** until you've verified the method or built track record. The burden of verification doesn't transfer to the tool.
 
-3. **Identify method exposure opportunities.** Where could you expose methodology but don't? The barrier is often inertia, not impossibility.
-
-**For clients:**
+**Consumers:**
 
 1. **Ask one question:** "How would I verify this if I needed to?" The answer tells you whether you're receiving method-bearing work or paying for conclusions you can't inspect.
 
 2. **Maintain your own records.** When provider predictions meet reality, document the comparison. This is your evidence, independent of their claims.
+
+3. **Classify by risk before accepting.** High-stakes artifacts require exposed methodology or actuarial evidence. Know what you're accepting.
+
+**Underwriters:**
+
+1. **Request method exposure status.** Before pricing, ask whether methodology is exposed or unexposed.
+
+2. **Request reconciliation data.** Track record claims should come with outcome comparisons, not tenure statements.
+
+**Regulators:**
+
+1. **Consider artifact classification requirements.** Disclosure of whether methodology is exposed and what verification route applies.
+
+2. **Consider enabling industry-wide outcome tracking.** Actuarial evidence accumulates faster with shared infrastructure.
