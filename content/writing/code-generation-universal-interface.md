@@ -54,9 +54,9 @@ Any data storage you have permission to access becomes directly usable. You don'
 
 Any service you have credentials for becomes directly usable. The agent reads documentation, figures out the connection, executes the operations. No pre-built integration required.
 
-The barrier shifts from "has someone built the software I need?" to "do I have the access credentials?"
+The barrier shifts from technical (coding, system knowledge) to cognitive (specification, verification) and administrative (data access permissions).
 
-Every system with discoverable interfaces becomes accessible to anyone with permission and an agent. The interface doesn't need to be documented — it needs to be explorable. Given time, the agent can figure out how any system works. Computer instructions can express any computation. Natural language can express any intent. The agent bridges the gap. Access permission is the only remaining constraint.
+Every system with discoverable interfaces becomes accessible to anyone with permission and an agent. The interface doesn't need to be documented — it needs to be explorable. Given time, the agent can figure out how any system works. Computer instructions can express any computation. Natural language can express any intent. The agent bridges the gap.
 
 ---
 
