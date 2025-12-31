@@ -5,8 +5,8 @@ title = 'Mike Olsen'
 [params]
   description = "Thinking about AI, professional accountability, and the future of technical work."
   author = "Mike Olsen"
-  # Kit (formerly ConvertKit) form ID
-  convertkit_form_id = "8922490"
+  # Kit (formerly ConvertKit) form UID
+  convertkit_form_id = "a766e65bf1"
   linkedin_url = "https://www.linkedin.com/in/mikealolsen/"
 
 [menu]

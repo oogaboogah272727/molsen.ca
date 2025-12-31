@@ -58,7 +58,7 @@
   <script>
   document.querySelectorAll('.newsletter-form').forEach(form => {
     const formId = form.dataset.kitForm;
-    form.action = `https://app.kit.com/forms/${formId}/subscriptions`;
+    form.action = `https://app.convertkit.com/forms/${formId}/subscriptions`;
     form.method = 'POST';
     form.target = 'kit-frame';
 
