@@ -8,7 +8,7 @@ tags: ["AI Governance", "Professional Practice", "Measurement"]
 
 How much valuable professional work can AI do competently right now?
 
-The honest answer: we don't know. And the benchmarks that exist won't tell us.
+We don't know. And the benchmarks that exist won't tell us.
 
 ---
 
@@ -70,7 +70,7 @@ The infrastructure to generate this evidence mostly doesn't exist. What exists i
 
 ---
 
-## The Wrong Paradigm
+## The Wrong Frame
 
 There's a deeper issue: current benchmarks evaluate AI as oracle—measuring answer quality against human answers. "Is this output as good as what a professional would produce?"
 
@@ -78,7 +78,7 @@ But [the oracle framing is itself problematic](/writing/ai-oracle-vs-assistant/)
 
 If professional work should be structured around [inspectable execution rather than trusted answers](/writing/executable-knowledge-architecture/)—expert intent translated into artifacts that expose their methodology—then benchmarks measuring answer quality are testing the wrong thing. No benchmark asks: "Is this approach defensible? Can the reasoning be inspected? Does the methodology hold up to scrutiny?"
 
-The measurement gap isn't just tame versus wicked. It's answer versus process. The infrastructure is built around a paradigm that may not be the right one for consequential work.
+The measurement gap isn't just tame versus wicked. It's answer versus process. The infrastructure is built around an approach that may not be the right one for consequential work.
 
 ---
 
