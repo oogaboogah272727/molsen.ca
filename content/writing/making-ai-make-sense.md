@@ -43,7 +43,7 @@ This changes what's required. Instead of expertise to produce the answer, you ne
 
 ## The Pattern for Professional Work
 
-For consequential work (where you're accountable, where reproducibility matters, where someone might ask "how did you arrive at this?") the framework becomes concrete:
+For consequential work—anything someone pays for and expects to be reliable, accurate, and defensible—the framework becomes concrete:
 
 **Executable Knowledge Architecture**: Expert intent → AI translation → executable artifact → human verification → reproducible results.
 
@@ -56,7 +56,7 @@ What is an executable artifact? It's knowledge made runnable: instructions that 
 → [Executable Knowledge Architecture: the pattern](/writing/executable-knowledge-architecture/)
 → [Capability Governance: stakeholder obligations for generated artifacts](/writing/capability-governance/)
 
-**Why benchmarks won't tell you if this works.** Current AI benchmarks measure answer quality—oracle mode performance. They test well-specified problems with verifiable answers. They don't measure method quality, defensibility, or reproducibility. The measurement infrastructure is built around the approach this framework argues against.
+**Why benchmarks won't tell you if this works.** Current AI benchmarks measure answer quality—how good are the answers AI produces? They test well-specified problems with verifiable answers. They don't measure method quality, defensibility, or reproducibility. The measurement infrastructure is built around asking AI for answers, which is the approach this framework argues against.
 
 → [What Benchmarks Aren't Measuring](/writing/what-benchmarks-arent-measuring/)
 
