@@ -26,28 +26,13 @@
   <footer>
     <div class="container">
       <div class="newsletter-signup">
-        <div class="newsletter-form-container">
-          <h3>Get notified of new essays</h3>
-          <p>Weekly insights on AI governance, professional accountability, and the future of knowledge work.</p>
-          <form class="newsletter-form" action="https://molsen.kit.com/forms/{{ .Site.Params.convertkit_form_id }}/subscriptions" method="post" target="kit_target_footer">
-            <input type="email" name="email_address" placeholder="Your email address" required>
-            <button type="submit">Subscribe</button>
-          </form>
-          <iframe name="kit_target_footer" style="display:none"></iframe>
-          <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
-        </div>
-        <div class="newsletter-success" style="display: none;">
-          <h3>You're in.</h3>
-          <p>I'll email you when I publish new work. In the meantime, here's where to start:</p>
-          <ul>
-            <li><a href="/writing/executable-knowledge-architecture/">Executable Knowledge Architecture</a> — the core pattern</li>
-            <li><a href="/writing/ai-oracle-vs-assistant/">Oracle vs Assistant</a> — the verification paradox</li>
-            <li><a href="/writing/knowledge-as-capability/">Knowledge as Capability</a> — the foundation</li>
-          </ul>
-        </div>
+        <h3>Get notified of new essays</h3>
+        <p>Weekly insights on AI governance, professional accountability, and the future of knowledge work.</p>
+        <script async data-uid="{{ .Site.Params.convertkit_form_id }}" src="https://molsen.kit.com/{{ .Site.Params.convertkit_form_id }}/index.js"></script>
+        <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
       </div>
       <div class="footer-bottom">
-        <span class="footer-copyright">&copy; {{ now.Year }} Mike Olsen <small style="opacity:0.5">v4</small></span>
+        <span class="footer-copyright">&copy; {{ now.Year }} Mike Olsen <small style="opacity:0.5">v5</small></span>
         <div class="footer-links">
           <a href="{{ .Site.Params.linkedin_url }}" target="_blank">LinkedIn</a>
         </div>
@@ -55,29 +40,5 @@
     </div>
   </footer>
 
-  <script>
-  document.querySelectorAll('.newsletter-form').forEach(form => {
-    form.addEventListener('submit', function() {
-      const button = form.querySelector('button');
-      const container = form.closest('.newsletter-signup') || form.closest('.article-newsletter');
-
-      button.disabled = true;
-      button.textContent = 'Subscribing...';
-
-      // Show success after brief delay (form submits to hidden iframe)
-      setTimeout(() => {
-        const formContainer = container.querySelector('.newsletter-form-container') || form.parentElement;
-        const successEl = container.querySelector('.newsletter-success');
-
-        if (successEl) {
-          formContainer.style.display = 'none';
-          successEl.style.display = 'block';
-        } else {
-          form.innerHTML = '<p><strong>You\'re in.</strong> Check out <a href="/writing/executable-knowledge-architecture/">Executable Knowledge Architecture</a> to get started.</p>';
-        }
-      }, 1500);
-    });
-  });
-  </script>
 </body>
 </html>

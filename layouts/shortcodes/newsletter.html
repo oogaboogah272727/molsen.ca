@@ -1,18 +1,3 @@
 <div class="newsletter-signup" style="margin: 2rem 0; border: none; padding: 0;">
-  <div class="newsletter-form-container">
-    <form class="newsletter-form" action="https://molsen.kit.com/forms/{{ .Site.Params.convertkit_form_id }}/subscriptions" method="post" target="kit_target_{{ .Ordinal }}">
-      <input type="email" name="email_address" placeholder="Your email address" required>
-      <button type="submit">Subscribe</button>
-    </form>
-    <iframe name="kit_target_{{ .Ordinal }}" style="display:none"></iframe>
-  </div>
-  <div class="newsletter-success" style="display: none;">
-    <h3>You're in.</h3>
-    <p>Here's where to start:</p>
-    <ul>
-      <li><a href="/writing/executable-knowledge-architecture/">Executable Knowledge Architecture</a></li>
-      <li><a href="/writing/ai-oracle-vs-assistant/">Oracle vs Assistant</a></li>
-      <li><a href="/writing/knowledge-as-capability/">Knowledge as Capability</a></li>
-    </ul>
-  </div>
+  <script async data-uid="{{ .Site.Params.convertkit_form_id }}" src="https://molsen.kit.com/{{ .Site.Params.convertkit_form_id }}/index.js"></script>
 </div>
