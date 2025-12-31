@@ -37,7 +37,7 @@ When you ask for answers, you inherit the consistency and reliability problems d
 
 When you ask for execution, you get something inspectable. You see the steps it takes and ensure they match your expectations. You trace outcomes back to inputs you control: your instructions, your data.
 
-This changes what's required. Instead of expertise to produce the answer, you need expertise to specify intent and verify the method. Specifying and verifying are easier than producing. That asymmetry is what makes this work.
+This changes what's required. Instead of expertise to produce the answer, you need expertise to specify intent and verify the method. Specifying and verifying take less time than producing—if you have the expertise to do all three.
 
 ---
 
