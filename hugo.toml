@@ -23,6 +23,9 @@ title = 'Mike Olsen'
     url = "/contact/"
     weight = 4
 
+[outputs]
+  home = ["HTML", "JSON"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

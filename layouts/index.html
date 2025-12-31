@@ -1,20 +1,132 @@
 {{ define "main" }}
 <p class="intro">{{ .Site.Params.description }}</p>
 
-<div class="start-here">
-  <a href="/writing/making-ai-make-sense/" class="start-link">
-    <span class="start-label">Start here</span>
-    <span class="start-title">Making AI Make Sense →</span>
-    <span class="start-desc">The complete framework in one page</span>
-  </a>
+<div class="essay-browser">
+  <div class="browser-controls">
+    <input type="text" id="essay-search" placeholder="Search essays..." class="search-input">
+    <div class="tag-filters" id="tag-filters"></div>
+  </div>
+
+  <div class="category-sections" id="category-sections">
+    <p class="loading">Loading essays...</p>
+  </div>
 </div>
 
-<h2>Explore the Ontology</h2>
-<p class="section-desc">This site's content is managed as a knowledge graph. Query it directly with SPARQL.</p>
+<script>
+const TYPE_LABELS = {
+  'hub': 'Start Here',
+  'foundational': 'Foundations',
+  'core': 'Core Framework',
+  'theoretical': 'Theory',
+  'applied': 'Applied',
+  'practice': 'Practice',
+  'empirical': 'Empirical'
+};
 
-<div id="explorer-container"></div>
+const TYPE_ORDER = ['hub', 'foundational', 'core', 'theoretical', 'applied', 'practice', 'empirical'];
 
-<script src="https://unpkg.com/n3@1.17.2/browser/n3.min.js"></script>
-<script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
-<script src="/js/ontology-explorer.js"></script>
+let essays = [];
+let activeTags = new Set();
+
+async function init() {
+  const response = await fetch('/index.json');
+  essays = await response.json();
+
+  // Filter out _index pages
+  essays = essays.filter(e => e.title && !e.url.endsWith('/writing/'));
+
+  renderTagFilters();
+  renderEssays();
+  setupSearch();
+}
+
+function renderTagFilters() {
+  const allTags = new Set();
+  essays.forEach(e => (e.tags || []).forEach(t => allTags.add(t)));
+
+  const container = document.getElementById('tag-filters');
+  container.innerHTML = Array.from(allTags).sort().map(tag =>
+    `<button class="tag-btn" data-tag="${tag}">${tag}</button>`
+  ).join('');
+
+  container.querySelectorAll('.tag-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tag = btn.dataset.tag;
+      if (activeTags.has(tag)) {
+        activeTags.delete(tag);
+        btn.classList.remove('active');
+      } else {
+        activeTags.add(tag);
+        btn.classList.add('active');
+      }
+      renderEssays();
+    });
+  });
+}
+
+function renderEssays() {
+  const searchTerm = document.getElementById('essay-search')?.value.toLowerCase() || '';
+
+  const filtered = essays.filter(e => {
+    // Tag filter
+    if (activeTags.size > 0) {
+      const hasTag = (e.tags || []).some(t => activeTags.has(t));
+      if (!hasTag) return false;
+    }
+    // Search filter
+    if (searchTerm) {
+      const searchable = `${e.title} ${e.description} ${e.content}`.toLowerCase();
+      if (!searchable.includes(searchTerm)) return false;
+    }
+    return true;
+  });
+
+  // Group by type
+  const grouped = {};
+  filtered.forEach(e => {
+    const type = e.type || 'essay';
+    if (!grouped[type]) grouped[type] = [];
+    grouped[type].push(e);
+  });
+
+  // Render
+  const container = document.getElementById('category-sections');
+
+  if (filtered.length === 0) {
+    container.innerHTML = '<p class="no-results">No essays match your filters.</p>';
+    return;
+  }
+
+  let html = '';
+  TYPE_ORDER.forEach(type => {
+    if (!grouped[type]) return;
+    const label = TYPE_LABELS[type] || type;
+    html += `<div class="category-section">
+      <h2>${label}</h2>
+      <div class="essay-grid">
+        ${grouped[type].map(e => `
+          <a href="${e.url}" class="essay-card">
+            <h3>${e.title}</h3>
+            <p>${e.description || ''}</p>
+            <div class="essay-tags">${(e.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}</div>
+          </a>
+        `).join('')}
+      </div>
+    </div>`;
+  });
+
+  container.innerHTML = html;
+}
+
+function setupSearch() {
+  const input = document.getElementById('essay-search');
+  let timeout;
+  input.addEventListener('input', () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(renderEssays, 200);
+  });
+}
+
+init();
+</script>
 {{ end }}
