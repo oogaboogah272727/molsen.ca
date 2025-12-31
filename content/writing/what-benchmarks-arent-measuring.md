@@ -70,6 +70,18 @@ The infrastructure to generate this evidence mostly doesn't exist. What exists i
 
 ---
 
+## The Wrong Paradigm
+
+There's a deeper issue: current benchmarks evaluate AI as oracle—measuring answer quality against human answers. "Is this output as good as what a professional would produce?"
+
+But [the oracle framing is itself problematic](/writing/ai-oracle-vs-assistant/). When you ask AI for answers, you inherit the verification problem: you can't confirm the answer is right without the expertise to produce it yourself. Benchmark evaluators have that expertise. End users often don't. The benchmark measures something real for the evaluators; it tells users almost nothing about whether they can safely rely on the output.
+
+If professional work should be structured around [inspectable execution rather than trusted answers](/writing/executable-knowledge-architecture/)—expert intent translated into artifacts that expose their methodology—then benchmarks measuring answer quality are testing the wrong thing. No benchmark asks: "Is this approach defensible? Can the reasoning be inspected? Does the methodology hold up to scrutiny?"
+
+The measurement gap isn't just tame versus wicked. It's answer versus process. The infrastructure is built around a paradigm that may not be the right one for consequential work.
+
+---
+
 ## Who Builds Measurement
 
 Here's the structural problem: the parties with resources to build measurement infrastructure have conflicting incentives about what to measure.

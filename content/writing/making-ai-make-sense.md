@@ -56,6 +56,10 @@ What is an executable artifact? It's knowledge made runnable: instructions that 
 → [Executable Knowledge Architecture: the pattern](/writing/executable-knowledge-architecture/)
 → [Capability Governance: stakeholder obligations for generated artifacts](/writing/capability-governance/)
 
+**Why benchmarks won't tell you if this works.** Current AI benchmarks measure answer quality—oracle mode performance. They test well-specified problems with verifiable answers. They don't measure method quality, defensibility, or reproducibility. The measurement infrastructure is built around the paradigm this framework argues against.
+
+→ [What Benchmarks Aren't Measuring](/writing/what-benchmarks-arent-measuring/)
+
 ---
 
 ## Why This Works
