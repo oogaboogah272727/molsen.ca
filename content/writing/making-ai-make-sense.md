@@ -45,11 +45,14 @@ This changes what's required. Instead of expertise to produce the answer, you ne
 
 For consequential work—anything someone pays for and expects to be reliable, accurate, and defensible—the framework becomes concrete:
 
-**Executable Knowledge Architecture**: Expert intent → AI translation → executable artifact → human verification → reproducible results.
+**Executable Knowledge Architecture:**
 
-The AI translates. The human judges. The artifact persists.
+1. Expert specifies intent
+2. AI translates intent into executable artifact
+3. Human verifies the artifact
+4. Artifact produces reproducible results
 
-What is an executable artifact? It's knowledge made runnable: instructions that a machine can follow to produce outcomes. The expert's judgment, encoded in a form that can be inspected, tested, and reproduced. The same inputs produce the same outputs. The methodology is on record.
+An executable artifact is knowledge made runnable: instructions that a machine can follow to produce outcomes. The expert's judgment, encoded in a form that can be inspected, tested, and reproduced. The same inputs produce the same outputs. The methodology is on record.
 
 → [The fundamental choice: answers vs execution](/writing/ai-oracle-vs-assistant/)
 → [Why sophisticated dialogue doesn't fix the answer problem](/writing/strong-oracle-trap/)
