@@ -22,6 +22,7 @@ Or explore the components:
 | [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/) | How the pattern scales: AI removes barriers to direct system access |
 | [Automating Expertise Gets Easier and Easier](/writing/automating-expertise-gets-easier/) | What faces pressure and what remains as more expertise becomes software |
 | [Ontology Generation](/writing/ontology-generation/) | How organizational knowledge accumulates from universal interface logs |
+| [What Benchmarks Aren't Measuring](/writing/what-benchmarks-arent-measuring/) | Why current AI benchmarks test the wrong things for professional work |
 | [AI-First Software](/writing/ai-first-software/) | The design philosophy: AI as foundation, not feature |
 
 ---
