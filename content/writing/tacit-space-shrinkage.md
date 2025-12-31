@@ -19,6 +19,8 @@ This distinction matters significantly for how organizations think about experti
 
 This argument builds on two foundational claims. First, [knowledge is capability to produce outcomes](/writing/knowledge-as-capability/). That's an operational definition that sidesteps epistemological questions about belief and justification. Second, [tacitness is agent-relative](/writing/agent-relative-tacitness/). It's a property of transfer relationships between agents, not an intrinsic feature of knowledge itself. Together, these foundations make "tacit domain shrinkage" coherent: as AI capabilities expand, transfer paths open that didn't exist before.
 
+This framing differs from Nonaka's influential SECI model, which treats externalization as converting tacit knowledge to explicit form—a change in the knowledge itself. But if tacitness is agent-relative, there's nothing to convert. What changes isn't the knowledge; it's which agents can access it. "Tacit space shrinkage" describes this boundary shift: knowledge that was tacit-to-humans becomes accessible to AI systems without ever becoming "explicit" in the SECI sense. The spiral model assumed human-to-human knowledge transfer. AI breaks that assumption by introducing agents with different representational and perceptual capabilities. The knowledge doesn't change state; the population of agents who can work with it expands.
+
 ---
 
 ## Two Kinds of Tacitness
