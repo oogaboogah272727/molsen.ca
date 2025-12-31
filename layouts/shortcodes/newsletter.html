@@ -1,9 +1,10 @@
 <div class="newsletter-signup" style="margin: 2rem 0; border: none; padding: 0;">
   <div class="newsletter-form-container">
-    <form class="newsletter-form" data-kit-form="{{ .Site.Params.convertkit_form_id }}">
+    <form class="newsletter-form" action="https://app.kit.com/forms/{{ .Site.Params.convertkit_form_id }}/subscriptions" method="post" target="kit_target_{{ .Ordinal }}">
       <input type="email" name="email_address" placeholder="Your email address" required>
       <button type="submit">Subscribe</button>
     </form>
+    <iframe name="kit_target_{{ .Ordinal }}" style="display:none"></iframe>
   </div>
   <div class="newsletter-success" style="display: none;">
     <h3>You're in.</h3>
