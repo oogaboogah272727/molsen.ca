@@ -15,26 +15,5 @@
 
   {{ .Content }}
 
-  {{ if eq .Section "writing" }}
-  <div class="article-newsletter">
-    <div class="newsletter-form-container">
-      <h3>Enjoyed this essay?</h3>
-      <p>Get notified when I publish new work on AI governance and professional practice.</p>
-      <form class="newsletter-form" data-kit-form="{{ .Site.Params.convertkit_form_id }}">
-        <input type="email" name="email_address" placeholder="Your email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-    <div class="newsletter-success" style="display: none;">
-      <h3>You're in.</h3>
-      <p>I'll email you when I publish new work. Here's what to read next:</p>
-      <ul>
-        <li><a href="/writing/executable-knowledge-architecture/">Executable Knowledge Architecture</a></li>
-        <li><a href="/writing/ai-oracle-vs-assistant/">Oracle vs Assistant</a></li>
-        <li><a href="/writing/knowledge-as-capability/">Knowledge as Capability</a></li>
-      </ul>
-    </div>
-  </div>
-  {{ end }}
 </article>
 {{ end }}
