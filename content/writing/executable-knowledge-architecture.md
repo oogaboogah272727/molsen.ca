@@ -11,7 +11,7 @@ tags: ["AI Governance", "Organizational Change"]
 
 Knowledge workers face an uncomfortable truth: anyone can now ask ChatGPT the same questions they once needed experts to answer. This creates immediate pressure on the value of expertise. But it also reveals something about how we've been thinking about AI in professional practice. We've been thinking about it wrong.
 
-The instinct is to treat AI as an oracle—ask it questions, get answers. But you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That's the [verification paradox](/writing/ai-oracle-vs-assistant/), and it makes professional accountability impossible when AI operates in this mode.
+The instinct is to treat AI as an oracle—ask it questions, get answers. But you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That's the [verification paradox](/writing/ai-oracle-vs-assistant/#oracle-mode-and-the-verification-paradox), and it makes professional accountability impossible when AI operates in this mode.
 
 The alternative is assistant mode: AI that does work *for* experts rather than *instead of* them. Instead of asking AI for answers, we ask it to translate expert intent into executable code. The code is the artifact we verify. The results are what we deliver.
 
@@ -33,7 +33,7 @@ First, there's no audit trail. The AI's reasoning is opaque. Its sources are unv
 
 Second, there's no reproducibility. Ask the same question twice and you may get different answers. Run the same analysis next quarter and you cannot guarantee consistency. This makes ongoing work problematic and periodic reporting unreliable.
 
-Third, you face the [verification paradox](/writing/ai-oracle-vs-assistant/)—the structural problem that makes oracle mode ungovernable for professional work. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself.
+Third, you face the [verification paradox](/writing/ai-oracle-vs-assistant/#oracle-mode-and-the-verification-paradox)—the structural problem that makes oracle mode ungovernable for professional work. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself.
 
 This paradox sits at the heart of AI governance in any professional context. And it explains why organizations still need experts even as information becomes commoditized.
 
@@ -49,7 +49,7 @@ The workflow has five steps:
 
 2. **AI translates to executable code.** The AI's job is translation, not revelation. It produces code that can compute the answer.
 
-3. **Expert reviews and approves the code.** The crucial insight: reviewing code that produces testable outputs is a fundamentally different task than verifying a direct answer. You can inspect the methodology. You can test edge cases. You can verify the logic without having to reproduce the entire analysis.
+3. **Expert reviews and approves the code.** The crucial insight: reviewing code that produces testable outputs is a fundamentally different task than verifying a direct answer. This is the [understanding asymmetry](/writing/ai-oracle-vs-assistant/#assistant-mode-a-different-request) that makes assistant mode work—you can understand a method without being able to invent it. You can inspect the methodology. You can test edge cases. You can verify the logic without having to reproduce the entire analysis.
 
 4. **Code executes deterministically.** Once approved, the code runs. It produces the same output every time given the same input. The stochastic element has been removed from the execution path.
 
@@ -105,9 +105,9 @@ Adopting EKA doesn't require rebuilding your organization. Start with work that 
 
 Train your team to think of AI as a translator, not an oracle. The prompt isn't "what is the answer?" The prompt is "produce an executable artifact that computes the answer given this methodology." Code is the most common form, but the principle extends to any artifact where the methodology is exposed and the output is reproducible.
 
-The goal is [method-bearing artifacts](/writing/capability-governance/)—outputs where the methodology is inspectable, not hidden. When methodology is exposed, verification becomes possible. When verification is possible, defensibility follows.
+The goal is [method-bearing artifacts](/writing/capability-governance/#the-core-distinction-method-bearing-vs-conclusion)—outputs where the methodology is inspectable, not hidden. When methodology is exposed, verification becomes possible. When verification is possible, defensibility follows.
 
-Your experts need to validate that the artifact implements their intent. They don't need to be software engineers. They don't even need to read code. [Adversarial review](/writing/agentic-ai-universal-interface/) uses the same AI that generated the artifact to explain what it does: "What exactly does this code do?" "What could go wrong?" "What assumptions does this make?" The AI has no memory of having written it and no ego invested in defending it. The expert confirms the description matches their intent—a judgment they're equipped to make.
+Your experts need to validate that the artifact implements their intent. They don't need to be software engineers. They don't even need to read code. [Adversarial review](/writing/agentic-ai-universal-interface/#the-remaining-human-contribution) uses the same AI that generated the artifact to explain what it does: "What exactly does this code do?" "What could go wrong?" "What assumptions does this make?" The AI has no memory of having written it and no ego invested in defending it. The expert confirms the description matches their intent—a judgment they're equipped to make.
 
 Build your artifact repository. Every executable artifact that produces a deliverable should be version-controlled, documented, and retrievable. This is your audit trail and your methodology library. It's also how you build the empirical track record that [capability governance](/writing/capability-governance/) requires for high-stakes work.
 
