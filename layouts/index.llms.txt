@@ -24,7 +24,7 @@ Key concepts:
 ## Essays
 
 ### Framework Essays (read in order)
-{{ $framework := slice "making-ai-make-sense" "knowledge-as-capability" "agent-relative-tacitness" "tacit-space-shrinkage" "ai-oracle-vs-assistant" "strong-oracle-trap" "executable-knowledge-architecture" "capability-governance" "agentic-ai-universal-interface" "automating-expertise-gets-easier" "ontology-generation" "what-benchmarks-arent-measuring" "ai-first-software" }}
+{{ $framework := slice "making-ai-make-sense" "knowledge-as-capability" "agent-relative-tacitness" "tacit-space-shrinkage" "ai-oracle-vs-assistant" "strong-oracle-trap" "executable-knowledge-architecture" "capability-governance" "agentic-ai-universal-interface" "automating-expertise-gets-easier" "ontology-generation" "what-benchmarks-arent-measuring" "ai-first-software" "return-of-the-secretary" }}
 {{- range $framework }}
 {{- $slug := . }}
 {{- range where $.Site.RegularPages "Section" "writing" }}

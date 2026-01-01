@@ -24,6 +24,7 @@ Or explore the components:
 | [Ontology Generation](/writing/ontology-generation/) | How organizational knowledge accumulates from universal interface logs |
 | [What Benchmarks Aren't Measuring](/writing/what-benchmarks-arent-measuring/) | Why current AI benchmarks test the wrong things for professional work |
 | [AI-First Software](/writing/ai-first-software/) | The design philosophy: AI as foundation, not feature |
+| [The Return of the Secretary](/writing/return-of-the-secretary/) | The DIY knowledge worker was a historical accident. AI returns us to division of labor. |
 
 ---
 
