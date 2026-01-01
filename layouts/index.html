@@ -3,7 +3,6 @@
 
 <div class="essay-browser">
   <div class="browser-controls">
-    <input type="text" id="essay-search" placeholder="Search essays..." class="search-input">
     <div class="tag-filters" id="tag-filters"></div>
   </div>
 
@@ -37,7 +36,6 @@ async function init() {
 
   renderTagFilters();
   renderEssays();
-  setupSearch();
 }
 
 function renderTagFilters() {
@@ -65,18 +63,11 @@ function renderTagFilters() {
 }
 
 function renderEssays() {
-  const searchTerm = document.getElementById('essay-search')?.value.toLowerCase() || '';
-
   const filtered = essays.filter(e => {
     // Tag filter
     if (activeTags.size > 0) {
       const hasTag = (e.tags || []).some(t => activeTags.has(t));
       if (!hasTag) return false;
-    }
-    // Search filter
-    if (searchTerm) {
-      const searchable = `${e.title} ${e.description} ${e.content}`.toLowerCase();
-      if (!searchable.includes(searchTerm)) return false;
     }
     return true;
   });
@@ -116,15 +107,6 @@ function renderEssays() {
   });
 
   container.innerHTML = html;
-}
-
-function setupSearch() {
-  const input = document.getElementById('essay-search');
-  let timeout;
-  input.addEventListener('input', () => {
-    clearTimeout(timeout);
-    timeout = setTimeout(renderEssays, 200);
-  });
 }
 
 init();
