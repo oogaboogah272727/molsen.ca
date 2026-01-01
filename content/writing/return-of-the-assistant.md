@@ -24,7 +24,7 @@ The cultural resistance was real. Male executives were [wary of keyboards](https
 
 But the benefits were genuine. A skilled secretary in 1960 earned roughly $200 per week—about $108,000 annually in today's dollars. A PC cost a fraction of that. And beyond the economics, the PC removed real friction.
 
-Two people working in the same office on the same nominal schedule—9 to 5—are only actually available to each other about 80% of the time, once you account for sick days, vacation, lunch, meetings, and other interruptions. The secretary had their own priorities, their own workflow, their own queue. Your urgent task waited behind someone else's urgent task—and behind your own other urgent tasks competing for the same limited resource. And if you were in a meeting or getting coffee, you couldn't even hand off the work. The coordination overhead was multiplicative.
+Two people working in the same office on the same nominal schedule—9 to 5—are only actually available to each other [about 80% of the time](/writing/office-availability-math/), once you account for sick days, vacation, lunch, meetings, and other interruptions. The secretary had their own priorities, their own workflow, their own queue. Your urgent task waited behind someone else's urgent task—and behind your own other urgent tasks competing for the same limited resource. And if you were in a meeting or getting coffee, you couldn't even hand off the work. The coordination overhead was multiplicative.
 
 With DIY productivity tools, the knowledge worker could work without an intermediary. Any time of day. Any day of the week. On their own schedule, with their own priorities. No waiting. No coordination overhead. No dependency on another person's availability.
 

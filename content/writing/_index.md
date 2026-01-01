@@ -42,3 +42,4 @@ Other writing, not part of the framework above.
 | [Leadership Lessons from Science Fiction](/writing/leadership-lessons-science-fiction/) | What SF teaches about leading |
 | [The Remote Work Formula](/writing/remote-work-formula/) | Making distributed work work |
 | [AI Table Extraction Comparison](/writing/ai-table-extraction-comparison/) | Testing AI on a specific task |
+| [The Office Availability Math](/writing/office-availability-math/) | Why 80% in the office means 40% available |
