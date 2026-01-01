@@ -1,7 +1,7 @@
 ---
-title: "The Return of the Secretary"
+title: "The Return of the Assistant"
 date: 2026-01-01
-description: "The DIY knowledge worker was a historical accident. AI assistants return us to a division of labor that worked—but better."
+description: "The DIY knowledge worker made sense for forty years. AI assistants offer something better: the freedom of DIY with the leverage of delegation."
 type: core
 tags: ["AI Governance", "Professional Practice", "Organizational Change"]
 ---
@@ -10,19 +10,27 @@ In the 1950s and 1960s, every executive had a secretary. Typing pools handled do
 
 This wasn't inefficiency. It was division of labor. The executive's time was too valuable to spend on formatting, typing, and filing. The secretary's specialized skills—shorthand, typing speed, knowledge of office systems—meant execution was faster and more reliable than if the executive did it themselves.
 
-Then technology arrived, and we made a strange choice.
+Then technology arrived, and we made a rational choice.
 
 ---
 
-## The Democratization of Drudgery
+## The Liberation of DIY
 
-The personal computer was sold as liberation. Word processing eliminated the typing pool. Spreadsheets replaced the accounting department's adding machines. Email displaced the mail room. The knowledge worker could now do everything themselves.
+The personal computer was sold as liberation—and it delivered.
+
+Word processing eliminated the typing pool. Spreadsheets replaced the accounting department's adding machines. Email displaced the mail room. The knowledge worker could now do everything themselves.
 
 The cultural resistance was real. Male executives were [wary of keyboards](https://www.cambridge.org/core/journals/bjhs-themes/article/machinery-for-managers-secretaries-psychologists-and-humancomputer-interaction-19731983/BD57034285CC966B0AF678BC8CD21F74), which they regarded as feminine instruments. Computer manufacturers had to reconceptualize the keyboard—which had been a feminine device for most of its history—into part of the new masculine computer. Typing Tutor became a bestseller because executives literally couldn't type.
 
-But economics won. A skilled secretary in 1960 earned roughly $200 per week—about $108,000 annually in today's dollars. A PC cost a fraction of that. The math was simple, even if the cultural adjustment wasn't.
+But the benefits were genuine. A skilled secretary in 1960 earned roughly $200 per week—about $108,000 annually in today's dollars. A PC cost a fraction of that. And beyond the economics, the PC removed real friction.
 
-What we didn't account for: the execution burden shifted to the professional. The secretary's job didn't disappear. It was absorbed. Every knowledge worker became their own secretary—and most of us are bad at it.
+Two people working in the same office on the same nominal schedule—9 to 5—are only actually available to each other about 80% of the time, once you account for sick days, vacation, lunch, meetings, and other interruptions. The secretary had their own priorities, their own workflow, their own queue. Your urgent task waited behind someone else's urgent task.
+
+With DIY productivity tools, the knowledge worker could work without an intermediary. Any time of day. Any day of the week. On their own schedule, with their own priorities. No waiting. No coordination overhead. No dependency on another person's availability.
+
+This was genuinely freeing. The transition made sense.
+
+But it came with a cost we absorbed and normalized: the execution burden shifted to the professional. The secretary's job didn't disappear. It was absorbed. Every knowledge worker became their own secretary—and most of us are bad at it.
 
 ---
 
@@ -60,7 +68,7 @@ Document formats remain deliberately complex. Programmatic access to Office docu
 
 ---
 
-## The Return of the Secretary
+## The Return of the Assistant
 
 AI assistants return us to the division of labor that worked.
 
@@ -120,6 +128,6 @@ The AI assistant offers a different path. Not back to the 1950s—the social dyn
 
 The question from [Making AI Make Sense](/writing/making-ai-make-sense/) applies: the direction is clear; the question is whether you're encoding or being encoded.
 
-The secretary is returning. This time, the secretary is better than any of us at execution, available on demand, and costs less than the software it replaces.
+The assistant is returning. This time, the assistant is better than any of us at execution, available on demand, and costs less than the software it replaces.
 
 The professionals who recognize this will reclaim their time. Those who don't will keep fighting with PowerPoint while their competitors focus on the work that matters.
