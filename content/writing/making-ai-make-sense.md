@@ -1,11 +1,11 @@
 ---
 title: "Making AI Make Sense"
-description: "AI is powerful and unreliable. The question isn't whether to use it—it's how to use it without getting burned."
+description: "AI is like fire: powerful, dangerous, essential. Here's how to cook with it."
 type: hub
 weight: 1
 ---
 
-AI is powerful and unreliable. The question isn't whether to use it—it's how to use it without getting burned.
+AI is like fire: powerful, dangerous, essential. Here's how to cook with it.
 
 Most people get this wrong. They either trust AI outputs directly and eventually pay for it, or they avoid AI entirely and watch others pull ahead. Neither works.
 
