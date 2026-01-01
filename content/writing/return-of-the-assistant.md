@@ -86,8 +86,6 @@ The AI assistant is:
 
 - **Faster.** No scheduling, no back-and-forth, no waiting for the typing pool.
 
-- **Cheaper.** Claude Pro or ChatGPT Plus costs $20/month. Microsoft 365 E3 costs $36/user/month—before accounting for SharePoint, OneDrive, IT administration, training, and the professional's time spent fighting with the tools.
-
 The economics that killed the secretary now favor the AI assistant. The execution burden can shift back off the professional's shoulders.
 
 ---
