@@ -5,7 +5,7 @@ type: hub
 weight: 1
 ---
 
-Most approaches fall into one of two traps. Some people trust AI completely, until the confident-sounding answer turns out to be fabricated. Others avoid it entirely, unwilling to accept the risk. Neither works. There's a third path.
+Most approaches to using generative AI fall into one of two traps. Some people trust AI completely, until the confident-sounding answer turns out to be fabricated. Others avoid it entirely, unwilling to accept the risk. Neither works. There's a third path.
 
 **Stop asking AI for answers. Start asking it to follow instructions.**
 
