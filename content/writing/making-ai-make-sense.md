@@ -31,7 +31,7 @@ When you ask AI for an answer, you inherit these problems directly. And there's 
 
 This is the [fundamental problem with asking AI for answers](/writing/ai-oracle-vs-assistant/).
 
-But you might say, "I don't just ask naive questions. I have real conversations. I probe assumptions. I make the AI challenge me back." That makes the answers better, for sure. But better doesn't mean verifiable. The AI can't show you its work. To prove it's right, you'd have to reproduce the answer yourself. That takes expertise and time: the very things you were hoping AI would save. The answer might be correct. You just can't know. And if you ask the same question tomorrow, [you might get a different answer](/writing/strong-oracle-trap/).
+But you might say, "I don't just ask naive questions. I have real conversations. I probe assumptions. I make the AI challenge me back." That makes the answers better, for sure. But better doesn't mean verifiable. The AI still can't show you its work. The answer might be correct. You just can't know. And if you ask the same question tomorrow, [you might get a different answer](/writing/strong-oracle-trap/).
 
 ---
 
