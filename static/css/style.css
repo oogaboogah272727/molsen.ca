@@ -838,24 +838,24 @@ footer .container {
 
 .chat-link {
   display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
+  padding: 1rem 1.25rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 500;
-  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #fff;
-  background: var(--accent);
-  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
   border-radius: 6px;
-  margin-bottom: 1rem;
-  transition: background 0.15s ease;
+  margin-bottom: 1.5rem;
+  transition: all 0.15s ease;
 }
 
 .chat-link:hover {
-  background: var(--accent-hover);
-  color: #fff;
+  background: var(--background-alt);
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .tag-filters {
