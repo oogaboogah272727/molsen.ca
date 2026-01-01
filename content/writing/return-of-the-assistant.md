@@ -22,7 +22,7 @@ Word processing eliminated the typing pool. Spreadsheets replaced the accounting
 
 The cultural resistance was real. Male executives were [wary of keyboards](https://www.cambridge.org/core/journals/bjhs-themes/article/machinery-for-managers-secretaries-psychologists-and-humancomputer-interaction-19731983/BD57034285CC966B0AF678BC8CD21F74), which they regarded as feminine instruments. Computer manufacturers had to reconceptualize the keyboard—which had been a feminine device for most of its history—into part of the new masculine computer. Typing Tutor became a bestseller because executives literally couldn't type.
 
-But the benefits were genuine. A skilled secretary in 1960 earned roughly $200 per week—about $108,000 annually in today's dollars. A PC cost a fraction of that. And beyond the economics, the PC removed real friction.
+But the benefits were genuine. A skilled secretary in 1960 earned roughly $200 per week—about $108,000 annually in today's dollars. A PC cost a fraction of that. And beyond the economics, the PC removed real coordination overhead.
 
 Two people working in the same office on the same nominal schedule—9 to 5—are only actually available to each other [about 80% of the time](/writing/office-availability-math/), once you account for sick days, vacation, lunch, meetings, and other interruptions. The secretary had their own priorities, their own workflow, their own queue. Your urgent task waited behind someone else's urgent task—and behind your own other urgent tasks competing for the same limited resource. And if you were in a meeting or getting coffee, you couldn't even hand off the work. The coordination overhead was multiplicative.
 
@@ -36,7 +36,7 @@ But it came with a cost we absorbed and normalized: the execution burden shifted
 
 ## The Hidden Tax
 
-The productivity loss is staggering.
+The productivity loss adds up.
 
 [APQC research](https://www.apqc.org/about-apqc/news-press-release/apqc-survey-finds-one-quarter-knowledge-workers-time-lost-due) finds that knowledge workers spend only 30 productive hours in a 40-hour week. The rest disappears into overhead: 3.6 hours weekly managing internal communication, 2.8 hours searching for information, 2.2 hours in unnecessary meetings.
 
@@ -50,7 +50,7 @@ The insight from [The Real Job of Support Teams](/writing/support-team-real-job/
 
 ---
 
-## The Intermediary's Moat
+## The Intermediary's Defense
 
 The DIY era didn't just shift burden—it created an industry. Microsoft, Adobe, MindManager, and the entire "productivity software" ecosystem exist because professionals needed tools to do their own secretarial work.
 
@@ -62,7 +62,7 @@ This is deliberate. If you could describe a document in natural language and hav
 
 The productivity software industry's response to AI is to embed it within their intermediary layer, not to let it bypass that layer entirely. Copilot in Word preserves the subscription. Copilot instead of Word threatens it.
 
-[Automating Expertise Gets Easier](/writing/automating-expertise-gets-easier/) identifies this dynamic: "Software as product faces pressure... If the interface is generated on demand and business logic is expressed in plain language specifications, what exactly is the product?" The productivity software industry knows the answer. They're defending the moat.
+[Automating Expertise Gets Easier](/writing/automating-expertise-gets-easier/) identifies this dynamic: "Software as product faces pressure... If the interface is generated on demand and business logic is expressed in plain language specifications, what exactly is the product?" The productivity software industry knows the answer. They're protecting the intermediary layer.
 
 Document formats remain deliberately complex. Programmatic access to Office documents requires specialized libraries and arcane knowledge. The complexity that once justified secretarial expertise now justifies software subscriptions. The intermediary has changed form, not function.
 
@@ -110,7 +110,7 @@ The cultural resistance will echo the 1980s.
 
 The transition costs are significant but not unprecedented. Organizations that moved from secretarial pools to PCs faced training costs, infrastructure investments, and cultural adjustment. Organizations moving from DIY tools to AI assistants will face similar challenges: new workflows, new skills (specification and verification rather than execution), new infrastructure.
 
-The professionals who thrive will be those who recognize the shift: from execution to specification, from production to verification, from doing to directing. The expertise that commands premium isn't formatting documents or building spreadsheets. It's knowing what should be said and confirming that it's said correctly.
+The professionals who thrive will be those who recognize the shift: from execution to specification, from production to verification, from doing to directing. The expertise that commands a premium isn't formatting documents or building spreadsheets. It's knowing what should be said and confirming that it's said correctly.
 
 ---
 
