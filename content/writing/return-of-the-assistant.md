@@ -28,9 +28,7 @@ Two people working in the same office on the same nominal schedule—9 to 5—ar
 
 With DIY productivity tools, the knowledge worker could work without an intermediary. Any time of day. Any day of the week. On their own schedule, with their own priorities. No waiting. No coordination overhead. No dependency on another person's availability.
 
-This was genuinely freeing. The transition made sense.
-
-But it came with a cost we absorbed and normalized: the execution burden shifted to the professional. The secretary's job didn't disappear. It was absorbed. Every knowledge worker became their own secretary—and most of us are bad at it.
+But the freedom came with a cost we absorbed and normalized: the execution burden shifted to the professional. The secretary's job didn't disappear. It was absorbed. Every knowledge worker became their own secretary—and most of us are bad at it.
 
 ---
 
@@ -122,6 +120,6 @@ The AI assistant offers a different path. Not back to the 1950s—the social dyn
 
 The question from [Making AI Make Sense](/writing/making-ai-make-sense/) applies: the direction is clear; the question is whether you're encoding or being encoded.
 
-The assistant is returning. This time, the assistant is better than any of us at execution, available on demand, and costs less than the software it replaces.
+This time, the assistant is better than any of us at execution, available on demand, and costs less than the software it replaces.
 
 The professionals who recognize this will reclaim their time. Those who don't will keep fighting with PowerPoint while their competitors focus on the work that matters.

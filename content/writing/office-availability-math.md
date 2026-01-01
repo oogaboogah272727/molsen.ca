@@ -70,6 +70,6 @@ This explains why the coordination overhead described in [The Return of the Assi
 
 Each factor compounds. If you're available 45% of the time and the secretary is available 45% of the time, the overlap where you can actually hand off work is roughly 20% of the workday.
 
-This is why the DIY productivity revolution was genuinely liberating. Word processing, spreadsheets, and email didn't just save money on secretarial salaries. They eliminated the coordination tax entirely. You could work on your schedule, at your pace, without waiting for availability windows to align.
+The DIY productivity revolution was liberating because it eliminated this coordination tax entirely. Word processing, spreadsheets, and email didn't just save money on secretarial salaries. You could work on your schedule, at your pace, without waiting for availability windows to align.
 
 The AI assistant preserves this freedom—you can delegate to it any time, with no coordination overhead—while restoring the division of labor that made the secretary model efficient in the first place.
