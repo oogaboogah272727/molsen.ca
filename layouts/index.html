@@ -1,14 +1,61 @@
 {{ define "main" }}
 <p class="intro">{{ .Site.Params.description }}</p>
 
-<div class="essay-browser">
-  <div class="browser-controls">
-    <a href="https://chatgpt.com/g/g-6955c39bc1ac81919d433f0b950561b6-explore-mike-olsen-s-writing-on-molsen-ca" class="chat-link" target="_blank" rel="noopener">Chat with site contents on ChatGPT</a>
-    <div class="tag-filters" id="tag-filters"></div>
+<div class="hero-cards">
+  <a href="/writing/making-ai-make-sense/" class="hero-card hero-card-primary">
+    <span class="hero-label">Start Here</span>
+    <span class="hero-title">Making AI Make Sense</span>
+    <span class="hero-desc">The complete framework in one page</span>
+  </a>
+  <a href="https://chatgpt.com/g/g-6955c39bc1ac81919d433f0b950561b6-explore-mike-olsen-s-writing-on-molsen-ca" class="hero-card" target="_blank" rel="noopener">
+    <span class="hero-label">Interactive</span>
+    <span class="hero-title">Chat on ChatGPT</span>
+    <span class="hero-desc">Explore these essays conversationally</span>
+  </a>
+  <a href="https://github.com/oogaboogah272727/molsen.ca-mcp" class="hero-card" target="_blank" rel="noopener">
+    <span class="hero-label">For Developers</span>
+    <span class="hero-title">MCP Server</span>
+    <span class="hero-desc">Connect Claude Desktop or Claude Code</span>
+  </a>
+</div>
+
+<div class="tabs-container">
+  <div class="tab-nav">
+    <button class="tab-btn active" data-tab="framework">Framework</button>
+    <button class="tab-btn" data-tab="all">All Essays</button>
+    <button class="tab-btn" data-tab="llm">For LLMs</button>
   </div>
 
-  <div class="category-sections" id="category-sections">
-    <p class="loading">Loading essays...</p>
+  <div class="tab-content active" id="tab-framework">
+    <p class="tab-intro">Essays in recommended reading order. Each builds on the previous.</p>
+    <div class="framework-essays" id="framework-essays">
+      <p class="loading">Loading essays...</p>
+    </div>
+  </div>
+
+  <div class="tab-content" id="tab-all">
+    <div class="tag-filters" id="tag-filters"></div>
+    <div class="category-sections" id="category-sections">
+      <p class="loading">Loading essays...</p>
+    </div>
+  </div>
+
+  <div class="tab-content" id="tab-llm">
+    <p class="tab-intro">Access this site's content in machine-readable formats.</p>
+    <div class="llm-options">
+      <a href="/llms.txt" class="llm-option">
+        <strong>llms.txt</strong>
+        <span>Framework overview and essay summaries (~9 KB)</span>
+      </a>
+      <a href="/llms-full.txt" class="llm-option">
+        <strong>llms-full.txt</strong>
+        <span>Complete text of all essays (~210 KB)</span>
+      </a>
+      <a href="https://github.com/oogaboogah272727/molsen.ca-mcp" class="llm-option" target="_blank" rel="noopener">
+        <strong>MCP Server</strong>
+        <span>Model Context Protocol server for Claude Desktop and Claude Code</span>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -25,18 +72,68 @@ const TYPE_LABELS = {
 
 const TYPE_ORDER = ['hub', 'foundational', 'core', 'theoretical', 'applied', 'practice', 'empirical'];
 
+const FRAMEWORK_ORDER = [
+  'making-ai-make-sense',
+  'knowledge-as-capability',
+  'agent-relative-tacitness',
+  'tacit-space-shrinkage',
+  'ai-oracle-vs-assistant',
+  'strong-oracle-trap',
+  'executable-knowledge-architecture',
+  'capability-governance',
+  'agentic-ai-universal-interface',
+  'automating-expertise-gets-easier',
+  'ontology-generation',
+  'what-benchmarks-arent-measuring',
+  'ai-first-software',
+  'return-of-the-assistant'
+];
+
 let essays = [];
 let activeTags = new Set();
 
 async function init() {
   const response = await fetch('/index.json');
   essays = await response.json();
-
-  // Filter out _index pages
   essays = essays.filter(e => e.title && !e.url.endsWith('/writing/'));
 
+  renderFrameworkEssays();
   renderTagFilters();
-  renderEssays();
+  renderAllEssays();
+  setupTabs();
+}
+
+function setupTabs() {
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+}
+
+function renderFrameworkEssays() {
+  const container = document.getElementById('framework-essays');
+  const frameworkEssays = FRAMEWORK_ORDER
+    .map(slug => essays.find(e => e.url.includes(slug)))
+    .filter(Boolean);
+
+  if (frameworkEssays.length === 0) {
+    container.innerHTML = '<p class="no-results">No framework essays found.</p>';
+    return;
+  }
+
+  container.innerHTML = frameworkEssays.map((e, i) => `
+    <a href="${e.url}" class="framework-essay">
+      <span class="framework-num">${i + 1}</span>
+      <div class="framework-content">
+        <span class="framework-title">${e.title}</span>
+        <span class="framework-desc">${e.description || ''}</span>
+      </div>
+    </a>
+  `).join('');
 }
 
 function renderTagFilters() {
@@ -58,14 +155,13 @@ function renderTagFilters() {
         activeTags.add(tag);
         btn.classList.add('active');
       }
-      renderEssays();
+      renderAllEssays();
     });
   });
 }
 
-function renderEssays() {
+function renderAllEssays() {
   const filtered = essays.filter(e => {
-    // Tag filter
     if (activeTags.size > 0) {
       const hasTag = (e.tags || []).some(t => activeTags.has(t));
       if (!hasTag) return false;
@@ -73,7 +169,6 @@ function renderEssays() {
     return true;
   });
 
-  // Group by type
   const grouped = {};
   filtered.forEach(e => {
     const type = e.type || 'essay';
@@ -81,7 +176,6 @@ function renderEssays() {
     grouped[type].push(e);
   });
 
-  // Render
   const container = document.getElementById('category-sections');
 
   if (filtered.length === 0) {
@@ -100,7 +194,6 @@ function renderEssays() {
           <a href="${e.url}" class="essay-card">
             <h3>${e.title}</h3>
             <p>${e.description || ''}</p>
-            <div class="essay-tags">${(e.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}</div>
           </a>
         `).join('')}
       </div>
@@ -112,23 +205,4 @@ function renderEssays() {
 
 init();
 </script>
-
-<div class="llm-access">
-  <h2>LLM Access</h2>
-  <p>This site's content is available in LLM-friendly formats:</p>
-  <div class="llm-links">
-    <a href="/llms.txt" class="llm-link">
-      <strong>llms.txt</strong>
-      <span>Framework overview and essay summaries (~9 KB)</span>
-    </a>
-    <a href="/llms-full.txt" class="llm-link">
-      <strong>llms-full.txt</strong>
-      <span>Complete text of all essays (~210 KB)</span>
-    </a>
-    <a href="https://github.com/oogaboogah272727/molsen.ca-mcp" class="llm-link" target="_blank" rel="noopener">
-      <strong>MCP Server</strong>
-      <span>Connect Claude Desktop or Claude Code directly to these essays</span>
-    </a>
-  </div>
-</div>
 {{ end }}
