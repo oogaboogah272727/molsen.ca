@@ -5,11 +5,9 @@ type: hub
 weight: 1
 ---
 
-AI is like fire: powerful, dangerous, essential. Here's how to cook with it.
+Most approaches fall into one of two traps. Some people trust AI completely, until the confident-sounding answer turns out to be fabricated. Others avoid it entirely, unwilling to accept the risk. Neither works. There's a third path.
 
-Most people get this wrong. They either trust AI outputs directly and eventually pay for it, or they avoid AI entirely and watch others pull ahead. Neither works.
-
-The answer is simpler than it looks: **stop asking AI for answers. Start asking it to follow instructions.**
+**Stop asking AI for answers. Start asking it to follow instructions.**
 
 ---
 
