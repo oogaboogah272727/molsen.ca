@@ -990,6 +990,15 @@ footer .container {
   border-color: var(--accent);
 }
 
+.llm-link.llm-chat {
+  border-left: 3px solid var(--accent);
+  background: var(--background-alt);
+}
+
+.llm-link.llm-chat:hover {
+  background: #f0f4f8;
+}
+
 .llm-link strong {
   font-family: 'SF Mono', 'Fira Code', monospace;
   font-size: 0.9rem;
