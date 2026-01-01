@@ -11,9 +11,9 @@ tags: ["AI Governance", "Organizational Change"]
 
 Knowledge workers face an uncomfortable truth: anyone can now ask ChatGPT the same questions they once needed experts to answer. This creates immediate pressure on the value of expertise. But it also reveals something about how we've been thinking about AI in professional practice. We've been thinking about it wrong.
 
-The instinct is to treat AI as an oracle—ask it questions, get answers. But you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That's the [verification paradox](/writing/ai-oracle-vs-assistant/#oracle-mode-and-the-verification-paradox), and it makes professional accountability impossible when AI operates in this mode.
+The instinct is to treat AI as an oracle—ask it questions, get answers. But you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That's the [verification paradox](/writing/ai-oracle-vs-assistant/#oracle-pattern-and-the-verification-paradox), and it makes professional accountability impossible when AI operates in this pattern.
 
-The alternative is assistant mode: AI that does work *for* experts rather than *instead of* them. Instead of asking AI for answers, we ask it to translate expert intent into executable code. The code is the artifact we verify. The results are what we deliver.
+The alternative is assistant pattern: AI that does work *for* experts rather than *instead of* them. Instead of asking AI for answers, we ask it to translate expert intent into executable code. The code is the artifact we verify. The results are what we deliver.
 
 I call this pattern Executable Knowledge Architecture (EKA). It rests on a simple foundation: [knowledge is the capability to reliably produce outcomes](/writing/knowledge-as-capability/). This makes human-AI collaboration coherent. The expert has one kind of capability (specifying intent, verifying alignment). The AI has another (producing executable implementations). Neither constitutes complete knowledge alone. Together, through a verification loop, they produce validated solutions.
 
@@ -21,7 +21,7 @@ I call this pattern Executable Knowledge Architecture (EKA). It rests on a simpl
 
 ## The Problem with AI as Oracle
 
-Oracle mode exists on a spectrum. At one end is weak oracle: ask a question, get a confident answer, no dialogue. At the other end is strong oracle: real conversation, clarifying questions, probed assumptions, structured synthesis at the end.
+Oracle pattern exists on a spectrum. At one end is weak oracle: ask a question, get a confident answer, no dialogue. At the other end is strong oracle: real conversation, clarifying questions, probed assumptions, structured synthesis at the end.
 
 Strong oracle is better. The dialogue reveals context. The assumptions become more explicit. The output is more relevant to your specific situation.
 
@@ -33,13 +33,13 @@ First, there's no audit trail. The AI's reasoning is opaque. Its sources are unv
 
 Second, there's no reproducibility. Ask the same question twice and you may get different answers. Run the same analysis next quarter and you cannot guarantee consistency. This makes ongoing work problematic and periodic reporting unreliable.
 
-Third, you face the [verification paradox](/writing/ai-oracle-vs-assistant/#oracle-mode-and-the-verification-paradox)—the structural problem that makes oracle mode ungovernable for professional work. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself.
+Third, you face the [verification paradox](/writing/ai-oracle-vs-assistant/#oracle-pattern-and-the-verification-paradox)—the structural problem that makes oracle pattern ungovernable for professional work. You cannot verify an AI's direct answer without possessing the expertise to produce that answer yourself.
 
 This paradox sits at the heart of AI governance in any professional context. And it explains why organizations still need experts even as information becomes commoditized.
 
 ---
 
-## The Shift to Assistant Mode
+## The Shift to Assistant Pattern
 
 EKA solves these problems by changing what we ask AI to do. Instead of asking AI to provide answers, we ask it to translate expert intent into executable code.
 
@@ -49,7 +49,7 @@ The workflow has five steps:
 
 2. **AI translates to executable code.** The AI's job is translation, not revelation. It produces code that can compute the answer.
 
-3. **Expert reviews and approves the code.** The crucial insight: reviewing code that produces testable outputs is a fundamentally different task than verifying a direct answer. This is the [understanding asymmetry](/writing/ai-oracle-vs-assistant/#assistant-mode-a-different-request) that makes assistant mode work—you can understand a method without being able to invent it. You can inspect the methodology. You can test edge cases. You can verify the logic without having to reproduce the entire analysis.
+3. **Expert reviews and approves the code.** The crucial insight: reviewing code that produces testable outputs is a fundamentally different task than verifying a direct answer. This is the [understanding asymmetry](/writing/ai-oracle-vs-assistant/#assistant-mode-a-different-request) that makes assistant pattern work—you can understand a method without being able to invent it. You can inspect the methodology. You can test edge cases. You can verify the logic without having to reproduce the entire analysis.
 
 4. **Code executes deterministically.** Once approved, the code runs. It produces the same output every time given the same input. The stochastic element has been removed from the execution path.
 

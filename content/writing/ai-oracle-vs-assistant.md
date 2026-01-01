@@ -1,7 +1,7 @@
 ---
-title: "AI as Oracle vs. Assistant: Two Modes of Deployment"
+title: "AI as Oracle vs. Assistant: Two Patterns of Deployment"
 date: 2024-11-05
-description: "The fundamental choice in how you use AI determines whether you can govern it. Oracle mode creates verification problems. Assistant mode solves them."
+description: "The fundamental choice in how you use AI determines whether you can govern it. Oracle pattern creates verification problems. Assistant pattern solves them."
 originalPublication: "Originally published November 2024"
 type: foundational
 tags: ["Epistemic Rigor", "AI Governance"]
@@ -11,17 +11,17 @@ tags: ["Epistemic Rigor", "AI Governance"]
 
 There are two fundamentally different ways to deploy AI in professional work. The choice between them determines whether you can govern what you're doing.
 
-**Oracle mode:** You ask the AI a question. It gives you an answer. You use that answer.
+**Oracle pattern:** You ask the AI a question. It gives you an answer. You use that answer.
 
-**Assistant mode:** You tell the AI what you want to accomplish. It produces artifacts that help you accomplish it. You verify those artifacts before using them.
+**Assistant pattern:** You tell the AI what you want to accomplish. It produces artifacts that help you accomplish it. You verify those artifacts before using them.
 
-Most people default to Oracle mode. It feels natural. It mirrors how we interact with experts, with search engines, with consultants. Ask a question, get an answer.
+Most people default to Oracle pattern. It feels natural. It mirrors how we interact with experts, with search engines, with consultants. Ask a question, get an answer.
 
-But Oracle mode has a structural problem that makes it ungovernable for professional work. Assistant mode solves that problem. Understanding why is the key to deploying AI responsibly.
+But Oracle pattern has a structural problem that makes it ungovernable for professional work. Assistant pattern solves that problem. Understanding why is the key to deploying AI responsibly.
 
 ---
 
-## Oracle Mode and the Verification Paradox
+## Oracle Pattern and the Verification Paradox
 
 When you use AI as an oracle, you're asking it to provide answers directly. "What's the optimal configuration?" "What does this data mean?" "What should I recommend?"
 
@@ -29,7 +29,7 @@ The AI responds. Now you have an answer. But you face a problem: how do you know
 
 This creates what I call the verification paradox. To verify an AI's direct answer, you need the expertise to produce that answer yourself. But if you have that expertise, why did you need the AI? And if you don't have that expertise, how can you verify the answer?
 
-A note on sophistication: oracle mode exists on a spectrum. At one end is the naive case—ask a question, get an answer, no dialogue. At the other end is what I call strong oracle—real conversation, clarifying questions, probed assumptions, structured synthesis. Strong oracle is better. But as I discuss in [The Strong Oracle Trap](/writing/strong-oracle-trap/), it doesn't solve the verification paradox. It just makes the problem less obvious.
+A note on sophistication: oracle pattern exists on a spectrum. At one end is the naive case—ask a question, get an answer, no dialogue. At the other end is what I call strong oracle—real conversation, clarifying questions, probed assumptions, structured synthesis. Strong oracle is better. But as I discuss in [The Strong Oracle Trap](/writing/strong-oracle-trap/), it doesn't solve the verification paradox. It just makes the problem less obvious.
 
 The paradox has three horns:
 
@@ -43,27 +43,27 @@ None of these options is satisfactory for professional work. The first limits AI
 
 ---
 
-## Why Oracle Mode Feels Right
+## Why Oracle Pattern Feels Right
 
-Despite these problems, Oracle mode is the default because it matches our mental model of expertise.
+Despite these problems, Oracle pattern is the default because it matches our mental model of expertise.
 
 When you consult an expert, you ask questions and they give you answers. You trust their expertise. That's the service model.
 
 When you use a search engine, you ask questions and it returns results. You trust the ranking algorithm. That's the information model.
 
-AI slots neatly into both mental models. It answers questions like an expert. It retrieves information like a search engine. The interface invites Oracle mode usage.
+AI slots neatly into both mental models. It answers questions like an expert. It retrieves information like a search engine. The interface invites Oracle pattern usage.
 
 But AI is neither an expert nor a search engine. It's a statistical model that generates plausible-sounding outputs. The outputs may be correct. They may be subtly wrong. They may be confidently fabricated. You can't tell from the output itself.
 
-This is the category error that makes Oracle mode dangerous. We treat AI as if it were an authoritative source because it presents like one. But authority requires accountability, and AI has none.
+This is the category error that makes Oracle pattern dangerous. We treat AI as if it were an authoritative source because it presents like one. But authority requires accountability, and AI has none.
 
-The benchmarking infrastructure reinforces this error. [Current AI benchmarks test oracle mode performance](/writing/what-benchmarks-arent-measuring/)—measuring answer quality against human answers. They don't ask whether the methodology is inspectable or the reasoning defensible. The measurement approach is built around the mode that creates verification problems.
+The benchmarking infrastructure reinforces this error. [Current AI benchmarks test oracle pattern performance](/writing/what-benchmarks-arent-measuring/)—measuring answer quality against human answers. They don't ask whether the methodology is inspectable or the reasoning defensible. The measurement approach is built around the pattern that creates verification problems.
 
 ---
 
-## Assistant Mode: A Different Request
+## Assistant Pattern: A Different Request
 
-Assistant mode changes what we ask AI to do. Instead of asking for answers, we ask for artifacts that help us produce answers.
+Assistant pattern changes what we ask AI to do. Instead of asking for answers, we ask for artifacts that help us produce answers.
 
 Producing an answer is one task. Producing a method that produces an answer is a different task.
 
@@ -75,13 +75,13 @@ This shifts the verification problem. Instead of verifying an answer (which requ
 
 Understanding is easier than producing. I can understand a proof without being able to discover it. I can understand an algorithm without being able to invent it. I can understand code without being able to write it from scratch.
 
-Assistant mode exploits this asymmetry.
+Assistant pattern exploits this asymmetry.
 
 ---
 
 ## The Verification Boundary
 
-In Assistant mode, AI produces artifacts. Humans verify artifacts. The boundary between AI generation and human verification is explicit.
+In Assistant pattern, AI produces artifacts. Humans verify artifacts. The boundary between AI generation and human verification is explicit.
 
 This creates what I call the verification boundary. It's the line between what the AI contributed and what the human validated.
 
@@ -91,7 +91,7 @@ On the human side: specification, review, approval. The human defines what's wan
 
 The artifacts sit on the boundary. They're inspectable by both sides. The AI can generate them. The human can verify them.
 
-This is why code is such an effective medium for Assistant mode. Code is:
+This is why code is such an effective medium for Assistant pattern. Code is:
 - **Readable:** You can see what it does
 - **Testable:** You can run it on cases you understand
 - **Deterministic:** Same input, same output
@@ -101,29 +101,29 @@ Code makes the verification boundary concrete. The AI produces code. The human r
 
 ---
 
-## What Changes in Assistant Mode
+## What Changes in Assistant Pattern
 
-The practical differences between Oracle and Assistant mode are significant:
+The practical differences between Oracle and Assistant pattern are significant:
 
-**In Oracle mode:**
+**In Oracle pattern:**
 - You ask: "What's the answer?"
 - AI responds: "The answer is X."
 - You use X (trusting the AI) or verify X (requiring the expertise to produce it)
 
-**In Assistant mode:**
+**In Assistant pattern:**
 - You ask: "Write code that computes the answer using this method."
 - AI responds: [code]
 - You review the code (requiring only the expertise to understand it)
 - You run the code yourself
 - You use the output (which you produced, via code you verified)
 
-The difference in accountability is profound. In Oracle mode, if someone asks "how did you get this answer?" you say "the AI told me." In Assistant mode, you say "I ran this code, which I reviewed, on this data." The first is indefensible. The second is professional practice.
+The difference in accountability is profound. In Oracle pattern, if someone asks "how did you get this answer?" you say "the AI told me." In Assistant pattern, you say "I ran this code, which I reviewed, on this data." The first is indefensible. The second is professional practice.
 
 ---
 
-## When Oracle Mode Is Acceptable
+## When Oracle Pattern Is Acceptable
 
-Oracle mode isn't always wrong. It's fine for:
+Oracle pattern isn't always wrong. It's fine for:
 
 **Low-stakes queries:** If you're asking for a recipe or a definition, the cost of error is low. Trust the AI.
 
@@ -133,24 +133,24 @@ Oracle mode isn't always wrong. It's fine for:
 
 **Personal decisions:** If the consequences fall on you alone, your risk tolerance is your business.
 
-But for professional work, where others rely on your outputs, where you face liability, where someone might ask "how did you arrive at this?"—Oracle mode creates problems that Assistant mode solves.
+But for professional work, where others rely on your outputs, where you face liability, where someone might ask "how did you arrive at this?"—Oracle pattern creates problems that Assistant pattern solves.
 
 ---
 
 ## The Foundational Choice
 
-The choice between Oracle and Assistant mode is foundational because it determines:
+The choice between Oracle and Assistant pattern is foundational because it determines:
 
-**Governance posture:** Oracle mode is ungovernable. Assistant mode creates inspectable artifacts and clear accountability.
+**Governance posture:** Oracle pattern is ungovernable. Assistant pattern creates inspectable artifacts and clear accountability.
 
-**Skill requirements:** Oracle mode requires expertise to verify. Assistant mode requires expertise to specify and review.
+**Skill requirements:** Oracle pattern requires expertise to verify. Assistant pattern requires expertise to specify and review.
 
-**Liability exposure:** Oracle mode transfers risk to the AI (which can't bear it). Assistant mode keeps risk with the human (who can).
+**Liability exposure:** Oracle pattern transfers risk to the AI (which can't bear it). Assistant pattern keeps risk with the human (who can).
 
-**Reproducibility:** Oracle mode is stochastic. Assistant mode produces deterministic artifacts.
+**Reproducibility:** Oracle pattern is stochastic. Assistant pattern produces deterministic artifacts.
 
-Everything else follows from this choice. [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) is Assistant mode applied to professional consulting. The [governance frameworks](/writing/tacit-space-shrinkage/) I've developed assume Assistant mode. The [knowledge-as-capability foundation](/writing/knowledge-as-capability/) that grounds my work makes sense of how human and AI capabilities combine in Assistant mode.
+Everything else follows from this choice. [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) is Assistant pattern applied to professional consulting. The [governance frameworks](/writing/tacit-space-shrinkage/) I've developed assume Assistant pattern. The [knowledge-as-capability foundation](/writing/knowledge-as-capability/) that grounds my work makes sense of how human and AI capabilities combine in Assistant pattern.
 
-If you're going to use AI in professional work, this is the first choice you have to make. And the answer, for any work that matters, is Assistant mode.
+If you're going to use AI in professional work, this is the first choice you have to make. And the answer, for any work that matters, is Assistant pattern.
 
 That's the foundation everything else rests on.

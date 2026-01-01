@@ -1,7 +1,7 @@
 ---
 title: "The Strong Oracle Trap"
 date: 2024-11-26
-description: "Thorough AI dialogue feels like it solves the verification problem. It doesn't. Understanding why requires seeing oracle mode as a spectrum, and recognizing what tools can and cannot fix."
+description: "Thorough AI dialogue feels like it solves the verification problem. It doesn't. Understanding why requires seeing oracle pattern as a spectrum, and recognizing what tools can and cannot fix."
 originalPublication: "Originally published November 2024"
 type: core
 tags: ["Epistemic Rigor", "AI Governance"]
@@ -9,15 +9,15 @@ tags: ["Epistemic Rigor", "AI Governance"]
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*
 
-When I describe [oracle mode](/writing/ai-oracle-vs-assistant/) as ungovernable, people often push back. "That's not how I use it," they say. "I don't just ask a question and accept the answer. I have a conversation. I probe. I challenge. The AI asks me clarifying questions. We iterate."
+When I describe [oracle pattern](/writing/ai-oracle-vs-assistant/) as ungovernable, people often push back. "That's not how I use it," they say. "I don't just ask a question and accept the answer. I have a conversation. I probe. I challenge. The AI asks me clarifying questions. We iterate."
 
-They're describing what I call strong oracle mode. And they're right that it's better than the alternative. But it doesn't solve the problem they think it solves.
+They're describing what I call strong oracle pattern. And they're right that it's better than the alternative. But it doesn't solve the problem they think it solves.
 
 ---
 
 ## The Oracle Spectrum
 
-Oracle mode isn't binary. It's a spectrum, and understanding where you are on it matters.
+Oracle pattern isn't binary. It's a spectrum, and understanding where you are on it matters.
 
 **Weak oracle** is the naive case. You ask a question. The AI gives you a confident answer. You use it or you don't. No dialogue, no iteration, no clarification. The answer might be right. It might be subtly wrong. It might be fabricated entirely. You can't tell from the output.
 
@@ -47,7 +47,7 @@ There's a seductive quality to this. The dialogue mimics how you'd work with a c
 
 ## What Tools Can Fix
 
-Modern AI systems come with tools: web search, code execution, retrieval from documents, citation of sources. These tools actually mitigate some oracle-mode problems.
+Modern AI systems come with tools: web search, code execution, retrieval from documents, citation of sources. These tools actually mitigate some oracle-pattern problems.
 
 **Retrieval-augmented generation** grounds responses in source documents. The AI can cite where it got information. You can check the citations.
 
@@ -55,15 +55,15 @@ Modern AI systems come with tools: web search, code execution, retrieval from do
 
 **Code execution** makes certain outputs deterministic. If the AI runs a calculation and shows you the code, the calculation is reproducible.
 
-These mitigations are real. They shift oracle mode from "trust me" to "trust me, and here's some evidence." That's better.
+These mitigations are real. They shift oracle pattern from "trust me" to "trust me, and here's some evidence." That's better.
 
 But they don't solve the structural problem.
 
 The citations might be accurate but the synthesis might be wrong. The sources might be valid but the interpretation might be flawed. The code might execute correctly but implement the wrong method. Tools reduce hallucination. They don't eliminate the gap between what the AI produces and what you can verify.
 
-For low-stakes work—brainstorming, ideation, drafting, exploring options—this mitigation is often sufficient. The cost of error is low. The tools provide enough grounding. Oracle mode with good tooling is perfectly acceptable for many uses.
+For low-stakes work—brainstorming, ideation, drafting, exploring options—this mitigation is often sufficient. The cost of error is low. The tools provide enough grounding. Oracle pattern with good tooling is perfectly acceptable for many uses.
 
-But for work that matters—professional deliverables, conclusions you'll be accountable for, decisions with real consequences—the structural problem remains. Tools make oracle mode safer. They don't make it governable.
+But for work that matters—professional deliverables, conclusions you'll be accountable for, decisions with real consequences—the structural problem remains. Tools make oracle pattern safer. They don't make it governable.
 
 ---
 
@@ -81,13 +81,13 @@ The asymmetry is this: strong oracle improves *quality* but doesn't improve *ver
 
 ## The Escape
 
-The escape from oracle mode—weak or strong—isn't about improving the dialogue. It's about changing what you ask for.
+The escape from oracle pattern—weak or strong—isn't about improving the dialogue. It's about changing what you ask for.
 
 Instead of asking for a verdict, ask for a method. Instead of "what's the answer," ask for code that computes the answer. Instead of "what should I conclude," ask for a procedure that generates conclusions from your data.
 
 Now you have something you can inspect. The method is visible. The assumptions are explicit in the implementation. You can test it on cases you understand. You can compare it to how you'd do it yourself. You can run it again tomorrow and get the same result.
 
-This is what I call [assistant mode](/writing/ai-oracle-vs-assistant/). The AI produces artifacts—typically code—that encode a method. You verify the method. You run the method yourself. The output is yours, via a procedure you validated.
+This is what I call [assistant pattern](/writing/ai-oracle-vs-assistant/). The AI produces artifacts—typically code—that encode a method. You verify the method. You run the method yourself. The output is yours, via a procedure you validated.
 
 The conversation can be just as rigorous. You can still have dialogue, probe assumptions, iterate on requirements. But the endpoint is different. Instead of receiving a verdict you must trust, you receive a method you can inspect.
 
@@ -95,9 +95,9 @@ The conversation can be just as rigorous. You can still have dialogue, probe ass
 
 ## Where Strong Oracle Belongs
 
-I'm not arguing against strong oracle for everything. For ideation, exploration, brainstorming—oracle mode is fine. You're generating options, not conclusions. Errors are features, not bugs. They stimulate thinking.
+I'm not arguing against strong oracle for everything. For ideation, exploration, brainstorming—oracle pattern is fine. You're generating options, not conclusions. Errors are features, not bugs. They stimulate thinking.
 
-For anything you'll verify through other means anyway, oracle mode is fine. The AI is a starting point, not a final answer. You're going to check it regardless.
+For anything you'll verify through other means anyway, oracle pattern is fine. The AI is a starting point, not a final answer. You're going to check it regardless.
 
 For personal decisions where the consequences fall on you alone, your risk tolerance is your business.
 

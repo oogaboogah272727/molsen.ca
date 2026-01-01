@@ -94,13 +94,11 @@ The economics that killed the secretary now favor the AI assistant. The executio
 
 The secretary model worked because of a built-in verification step. You dictated a letter; the secretary typed it; you reviewed it before signing. The professional's judgment remained in the loop.
 
-This is exactly what [assistant mode](/writing/ai-oracle-vs-assistant/) provides. You specify intent; the AI produces an artifact; you review before deploying. The methodology is exposed. The output is inspectable.
+This is exactly what [assistant pattern](/writing/ai-oracle-vs-assistant/) provides. You specify intent; the AI produces an artifact; you review before deploying. The methodology is exposed. The output is inspectable.
 
 The DIY model lacks this verification layer. When you are both the specifier and the executor, there's no review step. You type the letter yourself. You build the spreadsheet yourself. You create the presentation yourself. If something's wrong, you catch it—or you don't.
 
 [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) describes the pattern: "The code is the boundary itself. Inspectable. Testable. Deterministic." The secretary's typed letter was that boundary. The AI's generated artifact is that boundary. The DIY professional working directly in Word has no boundary—just themselves.
-
-Most of what knowledge workers produce is, as [Parrots Are All You Need](/writing/parrots-are-all-you-need/) observes, "regurgitation of someone else's prior art... reports that follow standard formats, presentations using proven structures, communications using established templates." This is template work. This is exactly what secretaries handled. And it's exactly what AI assistants handle well—while providing the verification step that DIY tools eliminated.
 
 ---
 
@@ -111,8 +109,6 @@ The cultural resistance will echo the 1980s.
 "Real executives don't type" gave way to everyone typing. "Real professionals do their own work" will give way to professionals who specify, verify, and delegate execution.
 
 The transition costs are significant but not unprecedented. Organizations that moved from secretarial pools to PCs faced training costs, infrastructure investments, and cultural adjustment. Organizations moving from DIY tools to AI assistants will face similar challenges: new workflows, new skills (specification and verification rather than execution), new infrastructure.
-
-But the direction is clear. [The consulting industry](https://molsen.ca/writing/consulting-threat-opportunity/) faces the same pressure: "The senior expert plus AI represents the most dangerous competitor to any consulting firm." The pyramid model—juniors doing execution, seniors providing judgment—dissolves when AI handles execution. The secretarial pool dissolved for the same reason.
 
 The professionals who thrive will be those who recognize the shift: from execution to specification, from production to verification, from doing to directing. The expertise that commands premium isn't formatting documents or building spreadsheets. It's knowing what should be said and confirming that it's said correctly.
 
