@@ -56,20 +56,3 @@ Multiply the factors:
 - **Combined**: ~40% of nominal work time
 
 Two people with the same schedule, in the same office, working on the same projects, are actually available to each other less than half the time.
-
----
-
-## The Coordination Tax
-
-This explains why the coordination overhead described in [The Return of the Assistant](/writing/return-of-the-assistant/) was multiplicative:
-
-1. **The secretary's queue**: Other people's tasks competed with yours
-2. **Your own queue**: Your own tasks competed with each other for secretary time
-3. **Your availability**: You couldn't hand off work while in meetings or away
-4. **The secretary's availability**: They couldn't receive work while in meetings or away
-
-Each factor compounds. If you're available 45% of the time and the secretary is available 45% of the time, the overlap where you can actually hand off work is roughly 20% of the workday.
-
-The DIY productivity revolution was liberating because it eliminated this coordination tax entirely. Word processing, spreadsheets, and email didn't just save money on secretarial salaries. You could work on your schedule, at your pace, without waiting for availability windows to align.
-
-The AI assistant preserves this freedom—you can delegate to it any time, with no coordination overhead—while restoring the division of labor that made the secretary model efficient in the first place.
