@@ -15,9 +15,9 @@ This is a practical foundation for governing human-AI cooperation, not a theory 
 
 For nearly a century, machines have been producing outcomes we'd call "knowledge work" if produced by humans. The Enigma machine embodied cryptographic knowledge in its rotor wiring. A TI-30 calculator embeds trigonometric knowledge you don't need to possess to use. Expert systems of the 1980s were explicitly called "knowledge-based systems." None of this was controversial.
 
-What's changed is capability, not kind. Large language models produce working code, accurate summaries, and valid analyses across domains far broader than any previous system. The question of whether they "really know" things has become urgent precisely because their outputs are useful enough to matter.
+The change is in capability, not kind. Large language models produce working code, accurate summaries, and valid analyses across domains far broader than any previous system. The question of whether they "really know" things has become urgent precisely because their outputs are useful enough to matter.
 
-Everything else I've written about Executable Knowledge Architecture and agent-relative tacitness rests on this foundation. Without it, AI capabilities sit awkwardly outside existing frameworks. With it, human and AI contributions become commensurable.
+Everything else I've written about structuring human-AI knowledge work rests on this foundation. Without it, AI capabilities sit awkwardly outside existing frameworks. With it, human and AI contributions become commensurable.
 
 ---
 
@@ -113,7 +113,7 @@ Under belief-based frameworks, this insight is hard to express. Under capability
 
 ### Composite Knowledge Becomes Coherent
 
-[Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) implements [assistant mode](/writing/ai-oracle-vs-assistant/) for professional work: it asks AI to translate expert intent into executable code rather than to provide answers directly. This only makes sense under a capability definition.
+[Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) implements [assistant mode](/writing/ai-oracle-vs-assistant/)—asking AI to execute rather than answer—for professional work: it asks AI to translate expert intent into executable code rather than to provide answers directly. This only makes sense under a capability definition.
 
 The expert has knowledge: the capability to recognize correct outcomes, specify intent, and verify alignment. The AI has different knowledge: the capability to produce executable implementations from specifications.
 

@@ -23,8 +23,24 @@ title = 'Mike Olsen'
     url = "/contact/"
     weight = 4
 
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["txt"]
+
+[outputFormats]
+  [outputFormats.LLMS]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.LLMSFULL]
+    mediaType = "text/plain"
+    baseName = "llms-full"
+    isPlainText = true
+    notAlternative = true
+
 [outputs]
-  home = ["HTML", "JSON"]
+  home = ["HTML", "JSON", "LLMS", "LLMSFULL"]
 
 [markup]
   [markup.goldmark]

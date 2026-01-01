@@ -73,7 +73,7 @@ You don't need theory to use the pattern. But if you want to understand the mech
 
 → [Knowledge as Capability](/writing/knowledge-as-capability/)
 
-**Tacitness is relational, not intrinsic.** What's inexpressible for one agent may be articulable for another. The boundary of what can be encoded is softer than it appears.
+**Tacitness is relational, not intrinsic.** Tacit knowledge is knowledge we possess but cannot fully articulate. What's inexpressible for one agent may be articulable for another. The boundary of what can be encoded is softer than it appears.
 
 → [Agent-Relative Tacitness](/writing/agent-relative-tacitness/)
 

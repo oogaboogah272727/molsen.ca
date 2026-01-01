@@ -57,7 +57,7 @@ But AI is neither an expert nor a search engine. It's a statistical model that g
 
 This is the category error that makes Oracle mode dangerous. We treat AI as if it were an authoritative source because it presents like one. But authority requires accountability, and AI has none.
 
-The benchmarking infrastructure reinforces this error. [Current AI benchmarks test oracle mode performance](/writing/what-benchmarks-arent-measuring/)—measuring answer quality against human answers. They don't ask whether the methodology is inspectable or the reasoning defensible. The measurement paradigm is built around the mode that creates verification problems.
+The benchmarking infrastructure reinforces this error. [Current AI benchmarks test oracle mode performance](/writing/what-benchmarks-arent-measuring/)—measuring answer quality against human answers. They don't ask whether the methodology is inspectable or the reasoning defensible. The measurement approach is built around the mode that creates verification problems.
 
 ---
 

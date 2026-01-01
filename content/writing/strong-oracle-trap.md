@@ -29,7 +29,7 @@ This is actually better. The output is more relevant. The assumptions are more e
 
 But the question that matters: can you verify the final answer without doing the work yourself?
 
-No. You can't. The verification paradox applies regardless of how thorough the conversation was. Strong oracle produces better answers. It doesn't produce verifiable answers.
+No. You can't. The verification paradox—needing expertise to verify an answer you sought because you lacked that expertise—applies regardless of how thorough the conversation was. Strong oracle produces better answers. It doesn't produce verifiable answers.
 
 ---
 

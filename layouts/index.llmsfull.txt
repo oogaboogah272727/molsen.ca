@@ -1,0 +1,81 @@
+# {{ .Site.Title }} - Complete Essay Collection
+
+> {{ .Site.Params.description }}
+
+This file contains the complete text of all essays on the site. For a summary overview, see: {{ .Site.BaseURL }}llms.txt
+
+---
+
+## About This Collection
+
+Mike Olsen writes about AI governance, professional accountability, and the future of technical work. The core contribution is a framework for deploying AI in professional contexts: maximizing AI strengths while routing around its weaknesses.
+
+The framework's core move: ask AI to execute instructions, not provide answers.
+
+---
+
+## Framework Essays
+
+These essays build on each other. They are presented in conceptual order.
+{{ $framework_order := slice "making-ai-make-sense" "knowledge-as-capability" "agent-relative-tacitness" "tacit-space-shrinkage" "ai-oracle-vs-assistant" "strong-oracle-trap" "executable-knowledge-architecture" "capability-governance" "agentic-ai-universal-interface" "automating-expertise-gets-easier" "ontology-generation" "what-benchmarks-arent-measuring" "ai-first-software" }}
+{{- range $framework_order }}
+{{- $slug := . }}
+{{- range where $.Site.RegularPages "Section" "writing" }}
+{{- if eq .File.ContentBaseName $slug }}
+
+---
+
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+{{- with .Params.type }}
+Type: {{ . }}
+{{- end }}
+{{- with .Params.tags }}
+Tags: {{ delimit . ", " }}
+{{- end }}
+{{- with .Params.description }}
+
+> {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+---
+
+## Standalone Essays
+
+These essays are not part of the main framework but explore related topics.
+{{ $framework := slice "making-ai-make-sense" "knowledge-as-capability" "agent-relative-tacitness" "tacit-space-shrinkage" "ai-oracle-vs-assistant" "strong-oracle-trap" "executable-knowledge-architecture" "capability-governance" "agentic-ai-universal-interface" "automating-expertise-gets-easier" "ontology-generation" "what-benchmarks-arent-measuring" "ai-first-software" }}
+{{- range where .Site.RegularPages "Section" "writing" }}
+{{- if not (in $framework .File.ContentBaseName) }}
+{{- if ne .File.ContentBaseName "_index" }}
+
+---
+
+# {{ .Title }}
+
+URL: {{ .Permalink }}
+{{- with .Params.tags }}
+Tags: {{ delimit . ", " }}
+{{- end }}
+{{- with .Params.description }}
+
+> {{ . }}
+{{- end }}
+
+{{ .RawContent }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+---
+
+## End of Collection
+
+For more information:
+- Website: {{ .Site.BaseURL }}
+- LinkedIn: {{ .Site.Params.linkedin_url }}

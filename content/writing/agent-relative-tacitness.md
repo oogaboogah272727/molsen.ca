@@ -9,7 +9,7 @@ tags: ["Epistemic Rigor"]
 
 > *This essay has been revised to integrate later developments in my thinking, including the foundational work on knowledge-as-capability that it now references. The version here is authoritative.*
 
-Your dog knows things it cannot tell you. The boundaries of its territory, the reliable routes through the neighborhood, the spots where interesting smells accumulate. This knowledge lives in the dog's behavior. There is no statement the dog could make about it. Michael Polanyi, the philosopher who gave us tacit knowledge as a concept, used examples like this to illustrate a basic epistemological puzzle: we know more than we can say.
+Your dog knows things it cannot tell you. The boundaries of its territory, the reliable routes through the neighborhood, the spots where interesting smells accumulate. This knowledge lives in the dog's behavior. There is no statement the dog could make about it. Michael Polanyi, the philosopher who gave us tacit knowledge as a concept—knowledge we possess but cannot fully articulate—used examples like this to illustrate a basic epistemological puzzle: we know more than we can say.
 
 But here is the question that has gone underexplored: tacit relative to *whom*?
 
@@ -33,7 +33,7 @@ That assumption deserves scrutiny.
 
 ## Tacitness Is Agent-Relative
 
-The core insight is simple but has real consequences: whether knowledge is tacit or explicit depends on the capabilities of the agent or agents in question. Not on intrinsic properties of the knowledge itself.
+The core insight is simple but has real consequences: whether knowledge is tacit or explicit depends on the capabilities of the agent or agents in question, not on intrinsic properties of the knowledge itself.
 
 An expert radiologist examines a scan and announces, "Something is wrong here," before she can specify what. Her diagnostic knowledge is operating tacitly. She cannot, in that moment, articulate the features that triggered her judgment. But this tacitness is contingent, not absolute. With effort, she might introspect and identify the relevant patterns. A research team might study expert radiologists and codify the diagnostic heuristics. An AI system trained on thousands of scans might learn to highlight the specific anomalies that human experts detect but struggle to name.
 

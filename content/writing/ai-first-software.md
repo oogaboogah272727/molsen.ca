@@ -87,7 +87,7 @@ We don't reject automobiles because they can crash. We engineer safety systems. 
 
 There's a tendency in technology discourse to frame transformative capabilities as perpetually five years away. Artificial general intelligence might be. Practical AI-first software is not.
 
-The formal competence is here. The language understanding is here. The ability to reason about user intent and generate appropriate responses is here. What's missing is the willingness to redesign from first principles rather than simply augmenting existing approaches.
+The formal competence—the ability to interpret and act on natural language reliably—is here. The language understanding is here. The ability to reason about user intent and generate appropriate responses is here. What's missing is the willingness to redesign from first principles rather than simply augmenting existing approaches.
 
 Software as we've known it—rigid, predetermined, one-size-fits-all—is changing. What emerges will be more adaptive, more personal, more useful. The interface recedes. The data persists. The AI mediates.
 
