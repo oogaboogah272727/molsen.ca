@@ -1,0 +1,19 @@
+{
+  "site": {
+    "title": {{ .Site.Title | jsonify }},
+    "description": {{ .Site.Params.description | jsonify }},
+    "author": {{ .Site.Params.author | jsonify }},
+    "baseURL": {{ .Site.BaseURL | jsonify }}
+  },
+  "essays": {
+    "total": {{ len (where .Site.RegularPages "Section" "writing") }}
+  },
+  "endpoints": {
+    "essays": "/api/essays.json",
+    "metadata": "/api/metadata.json",
+    "llmsSummary": "/llms.txt",
+    "llmsFull": "/llms-full.txt",
+    "graph": "/js/knowledge-graph.json"
+  },
+  "lastUpdated": {{ now.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+}

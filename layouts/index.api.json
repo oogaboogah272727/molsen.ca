@@ -1,0 +1,23 @@
+[
+{{- $essays := where .Site.RegularPages "Section" "writing" -}}
+{{- $first := true -}}
+{{- range $essays -}}
+{{- if not .Params.hidden -}}
+{{- if not $first }},{{ end -}}
+{{- $first = false }}
+{
+  "slug": {{ .File.ContentBaseName | jsonify }},
+  "title": {{ .Title | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  "description": {{ .Params.description | jsonify }},
+  "type": {{ .Params.type | default "essay" | jsonify }},
+  "tags": {{ .Params.tags | default (slice) | jsonify }},
+  "date": {{ .Date.Format "2006-01-02" | jsonify }},
+  "wordCount": {{ .WordCount }},
+  "readingTime": {{ .ReadingTime }},
+  "content": {{ .Plain | jsonify }},
+  "contentMarkdown": {{ .RawContent | jsonify }}
+}
+{{- end -}}
+{{- end }}
+]
