@@ -48,6 +48,8 @@ paths:
     essays:
       - slug: agentic-ai-universal-interface
         rationale: "Why agentic AI removes the barriers to expertise-as-software"
+      - slug: universal-interface-thesis
+        rationale: "Extending the pattern beyond knowledge work to all control surfaces"
       - slug: automating-expertise-gets-easier
         rationale: "What faces pressure, what remains"
       - slug: ontology-generation
