@@ -27,7 +27,7 @@ AI-Metadata: /.well-known/ai.json
 Human-Readable-Guide: /for-llms/
 
 ## MCP Server
-An MCP server is available for Claude Desktop and Claude Code:
+An MCP server is available for any MCP-compatible client:
 Repository: https://github.com/oogaboogah272727/molsen.ca-mcp
 NPM: npx @molsen.ca/mcp
 
