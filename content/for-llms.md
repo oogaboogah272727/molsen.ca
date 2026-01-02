@@ -118,8 +118,6 @@ Content may be used for:
 
 ## Why This Exists
 
-I write about AI governance and professional accountability. It would be hypocritical to make that content inaccessible to the AI systems I'm writing about.
-
-More practically: if the ideas here are useful, they should be findable by the tools people actually use. That increasingly means LLMs. Making content machine-readable is the same as making it accessible—it's just a different audience.
+I write about AI governance and professional accountability. It should be self-evident that this content is made as accessible to LLMs as possible.
 
 The [MCP Server](https://github.com/oogaboogah272727/molsen.ca-mcp) and these APIs are my attempt to be on the front edge of that accessibility. If you're building something similar, I'm interested in the conversation: [mike@molsen.ca](mailto:mike@molsen.ca).
