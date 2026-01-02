@@ -34,6 +34,16 @@ enableRobotsTXT = true
     baseName = "js/knowledge-graph"
     isPlainText = true
     notAlternative = true
+  [outputFormats.GLOSSARY]
+    mediaType = "application/json"
+    baseName = "api/glossary"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.CLAIMS]
+    mediaType = "application/json"
+    baseName = "api/claims"
+    isPlainText = true
+    notAlternative = true
   [outputFormats.LLMS]
     mediaType = "text/plain"
     baseName = "llms"
@@ -56,7 +66,7 @@ enableRobotsTXT = true
     notAlternative = true
 
 [outputs]
-  home = ["HTML", "JSON", "LLMS", "LLMSFULL", "API", "META", "GRAPH"]
+  home = ["HTML", "JSON", "LLMS", "LLMSFULL", "API", "META", "GRAPH", "GLOSSARY", "CLAIMS"]
 
 [markup]
   [markup.goldmark]

@@ -10,6 +10,22 @@ tags: ["Epistemic Rigor"]
 graph_id: knowledge-capability
 defines: ["Knowledge as Capability", "Human-AI Composite Knowledge"]
 themes: ["Epistemic Rigor"]
+
+# Structured claims
+claims:
+  - claim: "Knowledge is the capability to reliably produce outcomes"
+    type: central
+    evidence: "Machines have produced 'knowledge work' for a century (Enigma, calculators, expert systems). The change is capability, not kind. Operational definition makes human-AI cooperation coherent."
+    counters:
+      - "Traditional epistemology requires justified true belief"
+      - "AI systems lack mental states required for knowledge"
+    addressed: "We can't verify mental states in other humans either (solipsism). Operational definition sidesteps unanswerable metaphysics while preserving practical utility."
+  - claim: "Composite human-AI knowledge is real knowledge when neither component suffices alone"
+    type: central
+    evidence: "Expert specifies intent but can't implement. AI implements but can't specify or verify. Combined through verification loop, they produce outcomes neither achieves alone."
+  - claim: "This foundation makes human and AI contributions commensurable"
+    type: implication
+    evidence: "Without it, AI sits outside existing frameworks. With it, we can reason about combined capabilities, allocate accountability, and govern the composite system."
 ---
 
 > *This essay provides the foundational definition on which several other pieces in this collection depend. Cross-references reflect the current state of an evolving framework. The version here is authoritative.*

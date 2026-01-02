@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-01-02",
+  "site": {
+    "name": "Mike Olsen",
+    "domain": "molsen.ca",
+    "description": "Essays on AI governance, professional accountability, and the future of technical work",
+    "author": {
+      "name": "Mike Olsen",
+      "email": "mike@molsen.ca",
+      "linkedin": "https://www.linkedin.com/in/mikealolsen/"
+    }
+  },
+  "framework": {
+    "name": "Making AI Make Sense",
+    "description": "A coherent intellectual framework for human-AI cooperation in professional contexts",
+    "entryPoint": "/writing/making-ai-make-sense/",
+    "readingOrder": [
+      "ai-oracle-vs-assistant",
+      "strong-oracle-trap",
+      "knowledge-as-capability",
+      "executable-knowledge-architecture",
+      "capability-governance"
+    ]
+  },
+  "permissions": {
+    "training": true,
+    "retrieval": true,
+    "summarization": true,
+    "citation": true,
+    "attribution": {
+      "required": true,
+      "format": "Mike Olsen, molsen.ca",
+      "linkPreferred": true
+    }
+  },
+  "endpoints": {
+    "essays": {
+      "url": "/api/essays.json",
+      "description": "All essays with full content and metadata"
+    },
+    "metadata": {
+      "url": "/api/metadata.json",
+      "description": "Site metadata and endpoint directory"
+    },
+    "glossary": {
+      "url": "/api/glossary.json",
+      "description": "Concept definitions extracted from essays"
+    },
+    "claims": {
+      "url": "/api/claims.json",
+      "description": "Structured claims and arguments from essays"
+    },
+    "knowledgeGraph": {
+      "url": "/js/knowledge-graph.json",
+      "description": "Essay relationships and concept mappings"
+    },
+    "llmsSummary": {
+      "url": "/llms.txt",
+      "description": "Condensed site overview for LLM context"
+    },
+    "llmsFull": {
+      "url": "/llms-full.txt",
+      "description": "Complete essay content in plain text"
+    }
+  },
+  "mcp": {
+    "available": true,
+    "repository": "https://github.com/oogaboogah272727/molsen.ca-mcp",
+    "npm": "@molsen.ca/mcp",
+    "tools": [
+      "list_essays",
+      "get_essay",
+      "search_essays",
+      "get_framework_overview",
+      "get_knowledge_graph"
+    ]
+  },
+  "contentTypes": {
+    "hub": "Overview and navigation essays",
+    "foundational": "Core concepts the framework builds on",
+    "core": "Central arguments and frameworks",
+    "theoretical": "Epistemological and conceptual explorations",
+    "applied": "Real-world applications and implications",
+    "empirical": "Data-driven investigations",
+    "practice": "Operational guidance and methods"
+  }
+}

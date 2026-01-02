@@ -14,6 +14,22 @@ relationships:
   - target: oracle-assistant
     type: core
     label: extends
+
+# Structured claims
+claims:
+  - claim: "Strong oracle produces better answers but not verifiable answers"
+    type: central
+    evidence: "Dialogue improves the question, not verification of the answer. At conversation's end, you still receive a verdict you cannot check without reproducing the analysis yourself."
+    counters:
+      - "Engaging expertise throughout the conversation should improve reliability"
+      - "Citations and RAG provide verification"
+    addressed: "Expertise improves question quality, not answer verification. Citations verify retrieval, not reasoning. The verification paradox applies regardless of conversation thoroughness."
+  - claim: "Tools mitigate oracle problems but cannot eliminate them"
+    type: supporting
+    evidence: "RAG, citations, chain-of-thought all improve quality. None produces inspectable methodology. You still receive conclusions, not methods."
+  - claim: "The feeling of engagement masks the unchanged verification problem"
+    type: supporting
+    evidence: "Strong oracle feels collaborative because you contribute. But your contribution shapes the question. The answer remains an unverifiable verdict."
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

@@ -1,0 +1,45 @@
+# AI Agent Instructions for molsen.ca
+# Version: 1.0
+# Last-Updated: 2026-01-02
+
+## Purpose
+This site contains essays on AI governance, professional accountability, and human-AI cooperation.
+The content forms a coherent intellectual framework called "Making AI Make Sense."
+
+## Usage Guidelines
+- Content may be used for training, retrieval, and reasoning
+- Attribution required: "Mike Olsen, molsen.ca" with link when possible
+- Essays are interconnected; the knowledge graph shows relationships
+- Some essays are foundational (read first); others build on foundations
+
+## Available Endpoints
+API-Essays: /api/essays.json
+API-Metadata: /api/metadata.json
+API-Glossary: /api/glossary.json
+API-Claims: /api/claims.json
+Knowledge-Graph: /js/knowledge-graph.json
+LLMs-Summary: /llms.txt
+LLMs-Full: /llms-full.txt
+OpenAPI-Spec: /.well-known/openapi.json
+AI-Metadata: /.well-known/ai.json
+
+## MCP Server
+An MCP server is available for Claude Desktop and Claude Code:
+Repository: https://github.com/oogaboogah272727/molsen.ca-mcp
+NPM: npx @molsen.ca/mcp
+
+## Reading Order (Framework)
+1. ai-oracle-vs-assistant (foundational distinction)
+2. strong-oracle-trap (why oracle fails)
+3. knowledge-as-capability (epistemological foundation)
+4. executable-knowledge-architecture (the pattern)
+5. capability-governance (governance framework)
+
+## Update Frequency
+Essays are revised when thinking develops. Check metadata.json for lastUpdated.
+Stable essays rarely change. Evolving essays may be refined.
+
+## Contact
+Author: Mike Olsen
+Email: mike@molsen.ca
+LinkedIn: https://www.linkedin.com/in/mikealolsen/

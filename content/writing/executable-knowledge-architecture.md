@@ -26,6 +26,22 @@ relationships:
   - target: capability-governance
     type: core
     label: implements
+
+# Structured claims
+claims:
+  - claim: "Code is the optimal verification boundary between human intent and AI execution"
+    type: central
+    evidence: "Code is inspectable, testable, deterministic, and versionable. Adversarial AI review can identify failure modes without requiring the user to read code directly."
+    counters:
+      - "Code adds complexity to workflows"
+      - "Many professionals can't code"
+    addressed: "The professional specifies intent and verifies description-against-intent. The AI handles code generation and explanation. The barrier is cognitive, not technical."
+  - claim: "Human-AI composite knowledge is real knowledge when it reliably produces outcomes"
+    type: central
+    evidence: "Neither human nor AI alone may have complete capability. Combined through verification loop, they produce validated results. Knowledge-as-capability makes this coherent."
+  - claim: "Professional expertise shifts from producing answers to specifying intent and verifying alignment"
+    type: implication
+    evidence: "The expert's value is knowing what should happen and confirming it did. Implementation becomes AI's contribution; judgment remains human."
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

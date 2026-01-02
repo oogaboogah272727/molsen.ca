@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "generated": "{{ now.Format "2006-01-02T15:04:05Z07:00" }}",
+  "description": "Concept definitions extracted from molsen.ca essays",
+  "terms": [
+{{- $essays := where .Site.RegularPages "Section" "writing" -}}
+{{- $terms := slice -}}
+{{- range $essays -}}
+{{- if and (not .Params.hidden) .Params.graph_id .Params.defines -}}
+{{- $source := .Params.graph_id -}}
+{{- $title := .Title -}}
+{{- $url := .RelPermalink -}}
+{{- $type := .Params.type | default "essay" -}}
+{{- range .Params.defines -}}
+{{- $term := dict "term" . "source" $source "sourceTitle" $title "sourceUrl" $url "sourceType" $type -}}
+{{- $terms = $terms | append $term -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+{{- $first := true -}}
+{{- range $terms -}}
+{{- if not $first }},{{ end -}}
+{{- $first = false }}
+    {
+      "term": {{ .term | jsonify }},
+      "definedIn": {
+        "id": {{ .source | jsonify }},
+        "title": {{ .sourceTitle | jsonify }},
+        "url": {{ .sourceUrl | jsonify }},
+        "type": {{ .sourceType | jsonify }}
+      }
+    }
+{{- end }}
+  ],
+  "totalTerms": {{ len $terms }}
+}

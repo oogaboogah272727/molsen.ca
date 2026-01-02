@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "generated": "{{ now.Format "2006-01-02T15:04:05Z07:00" }}",
+  "description": "Structured claims and arguments from molsen.ca essays",
+  "schema": {
+    "claim": "The assertion being made",
+    "type": "central (main thesis) | supporting (builds toward central) | implication (follows from central)",
+    "evidence": "What supports this claim",
+    "counters": "Potential counterarguments considered",
+    "addressed": "How counterarguments are addressed"
+  },
+  "essays": [
+{{- $essays := where .Site.RegularPages "Section" "writing" -}}
+{{- $first := true -}}
+{{- range $essays -}}
+{{- if and (not .Params.hidden) .Params.graph_id .Params.claims -}}
+{{- if not $first }},{{ end -}}
+{{- $first = false }}
+    {
+      "id": {{ .Params.graph_id | jsonify }},
+      "title": {{ .Title | jsonify }},
+      "url": {{ .RelPermalink | jsonify }},
+      "claims": {{ .Params.claims | jsonify }}
+    }
+{{- end -}}
+{{- end }}
+  ]
+}

@@ -10,6 +10,25 @@ tags: ["Epistemic Rigor", "AI Governance"]
 graph_id: oracle-assistant
 defines: ["Oracle Pattern", "Assistant Pattern", "Verification Paradox", "Method vs. Verdict"]
 themes: ["Epistemic Rigor", "AI Governance"]
+
+# Structured claims
+claims:
+  - claim: "Oracle pattern creates an unsolvable verification paradox for professional work"
+    type: central
+    evidence: "To verify an AI answer requires the expertise to produce it; if you have that expertise, AI added no capability; if you don't, you're trusting blindly"
+    counters:
+      - "Sophisticated dialogue (strong oracle) can improve answer quality"
+      - "Partial verification is better than none"
+    addressed: "Strong oracle doesn't solve verification—it makes the problem less obvious. Partial verification creates false security."
+  - claim: "Assistant pattern enables verification through adversarial AI review"
+    type: central
+    evidence: "Bi-directional translation is a solved problem: AI can explain what code does, identify failure modes, surface assumptions. Users verify the explanation matches their intent—a judgment they're equipped to make."
+    counters:
+      - "Non-technical users can't verify code directly"
+    addressed: "They don't need to. The same AI that generated the artifact can describe it without ego or memory of having written it. The user verifies description against intent."
+  - claim: "The choice between patterns determines governance, liability, and reproducibility"
+    type: implication
+    evidence: "Oracle produces stochastic answers with unclear accountability. Assistant produces deterministic artifacts with inspectable methodology."
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*
