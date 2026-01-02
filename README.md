@@ -277,6 +277,9 @@ The MCP server fetches from the live site endpoints. No deployment coordination 
 - [ ] Add `relationships` to connect to related essays
 - [ ] Consider adding `claims` for formal arguments
 - [ ] Set appropriate `stability` marker
+- [ ] Add to `content/writing/_index.md` (manually curated list)
+- [ ] Add to `data/paths.yaml` if it belongs in a reading path
+- [ ] Add `graph_id` to README reference table
 
 ### When adding a new endpoint:
 - [ ] Create template in `layouts/`
