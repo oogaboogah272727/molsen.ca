@@ -1,11 +1,11 @@
 ---
 title: "Making AI Make Sense"
-description: "AI is like fire: powerful, dangerous, essential. Here's how to cook with it."
+description: "Like fire, AI is powerful, dangerous, essential. Here's how to cook with it."
 type: hub
 weight: 1
 ---
 
-Most approaches to using generative AI fall into one of two traps. Some people trust AI completely, until the confident-sounding answer turns out to be fabricated. Others avoid it entirely, unwilling to accept the risk. Neither works. There's a third path.
+Most approaches to using generative AI fall into one of two traps: trusting it completely, until the confident-sounding answer turns out to be fabricated, or avoiding it entirely, unwilling to accept the risk. There is a way to use it which leverages its strengths and avoids risk from its weaknesses. 
 
 **Stop asking AI for answers. Start asking it to follow instructions.**
 
@@ -85,3 +85,4 @@ Follow this pattern over time and something accumulates: verified, executable en
 Scale this and the implications become clear. AI becomes the primary interface between human intent and executable systems. Humans specify. AI translates. Artifacts execute.
 
 This is the direction. The question isn't whether it happens. It's whether you're encoding or being encoded.
+
