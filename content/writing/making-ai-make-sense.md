@@ -1,6 +1,6 @@
 ---
 title: "Making AI Make Sense"
-description: "Like fire, AI is powerful, dangerous, essential. Here's how to cook with it."
+description: "Like fire, AI is powerful, dangerous, and essential. Here's how to cook with it."
 type: hub
 weight: 1
 ---
@@ -85,4 +85,5 @@ Follow this pattern over time and something accumulates: verified, executable en
 Scale this and the implications become clear. AI becomes the primary interface between human intent and executable systems. Humans specify. AI translates. Artifacts execute.
 
 This is the direction. The question isn't whether it happens. It's whether you're encoding or being encoded.
+
 
