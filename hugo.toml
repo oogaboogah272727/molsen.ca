@@ -16,6 +16,10 @@ enableRobotsTXT = true
     url = "/writing/"
     weight = 1
   [[menu.main]]
+    name = "For LLMs"
+    url = "/for-llms/"
+    weight = 2
+  [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 3
@@ -44,6 +48,16 @@ enableRobotsTXT = true
     baseName = "api/claims"
     isPlainText = true
     notAlternative = true
+  [outputFormats.PATHS]
+    mediaType = "application/json"
+    baseName = "api/paths"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.CHUNKS]
+    mediaType = "application/json"
+    baseName = "api/chunks"
+    isPlainText = true
+    notAlternative = true
   [outputFormats.LLMS]
     mediaType = "text/plain"
     baseName = "llms"
@@ -66,7 +80,7 @@ enableRobotsTXT = true
     notAlternative = true
 
 [outputs]
-  home = ["HTML", "JSON", "LLMS", "LLMSFULL", "API", "META", "GRAPH", "GLOSSARY", "CLAIMS"]
+  home = ["HTML", "JSON", "LLMS", "LLMSFULL", "API", "META", "GRAPH", "GLOSSARY", "CLAIMS", "PATHS", "CHUNKS"]
 
 [markup]
   [markup.goldmark]

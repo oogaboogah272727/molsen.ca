@@ -3,6 +3,7 @@ title: "EKA in Practice"
 description: "The framework is no longer theoretical. Here's what we learned when we deployed it."
 type: practice
 tags: ["AI Governance", "Professional Practice", "Organizational Change"]
+stability: evolving
 
 # Knowledge graph metadata
 graph_id: eka-practice

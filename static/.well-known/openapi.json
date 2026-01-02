@@ -1,0 +1,383 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "molsen.ca API",
+    "description": "API endpoints for accessing essays, knowledge graph, and structured content from molsen.ca",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Mike Olsen",
+      "email": "mike@molsen.ca",
+      "url": "https://molsen.ca"
+    },
+    "license": {
+      "name": "Content: All rights reserved. API: MIT",
+      "url": "https://molsen.ca/about/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://molsen.ca",
+      "description": "Production"
+    }
+  ],
+  "paths": {
+    "/api/essays.json": {
+      "get": {
+        "summary": "List all essays",
+        "description": "Returns all essays with full content, metadata, and reading time estimates",
+        "operationId": "getEssays",
+        "tags": ["Essays"],
+        "responses": {
+          "200": {
+            "description": "Array of essays",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Essay" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/metadata.json": {
+      "get": {
+        "summary": "Get site metadata",
+        "description": "Returns site information, endpoint directory, and last update time",
+        "operationId": "getMetadata",
+        "tags": ["Metadata"],
+        "responses": {
+          "200": {
+            "description": "Site metadata",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Metadata" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/glossary.json": {
+      "get": {
+        "summary": "Get concept glossary",
+        "description": "Returns all concepts defined across essays with source references",
+        "operationId": "getGlossary",
+        "tags": ["Knowledge"],
+        "responses": {
+          "200": {
+            "description": "Glossary of terms",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Glossary" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/claims.json": {
+      "get": {
+        "summary": "Get structured claims",
+        "description": "Returns claims, evidence, and counterarguments from essays that have them",
+        "operationId": "getClaims",
+        "tags": ["Knowledge"],
+        "responses": {
+          "200": {
+            "description": "Structured claims",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Claims" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/paths.json": {
+      "get": {
+        "summary": "Get reading paths",
+        "description": "Returns curated reading paths through the essays with rationales",
+        "operationId": "getPaths",
+        "tags": ["Navigation"],
+        "responses": {
+          "200": {
+            "description": "Reading paths",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Paths" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chunks.json": {
+      "get": {
+        "summary": "Get chunked content",
+        "description": "Returns essay content optimized for RAG applications",
+        "operationId": "getChunks",
+        "tags": ["RAG"],
+        "responses": {
+          "200": {
+            "description": "Chunked content",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Chunks" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/js/knowledge-graph.json": {
+      "get": {
+        "summary": "Get knowledge graph",
+        "description": "Returns essay relationships as nodes and links",
+        "operationId": "getKnowledgeGraph",
+        "tags": ["Knowledge"],
+        "responses": {
+          "200": {
+            "description": "Knowledge graph",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/KnowledgeGraph" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "summary": "Get LLM summary",
+        "description": "Condensed site overview optimized for LLM context windows",
+        "operationId": "getLlmsSummary",
+        "tags": ["LLM"],
+        "responses": {
+          "200": {
+            "description": "Plain text summary",
+            "content": {
+              "text/plain": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "summary": "Get full LLM content",
+        "description": "Complete essay content in plain text for LLM ingestion",
+        "operationId": "getLlmsFull",
+        "tags": ["LLM"],
+        "responses": {
+          "200": {
+            "description": "Full plain text content",
+            "content": {
+              "text/plain": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ai.txt": {
+      "get": {
+        "summary": "Get AI agent instructions",
+        "description": "Instructions for AI agents on how to use site content",
+        "operationId": "getAiTxt",
+        "tags": ["LLM"],
+        "responses": {
+          "200": {
+            "description": "AI instructions",
+            "content": {
+              "text/plain": {
+                "schema": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/.well-known/ai.json": {
+      "get": {
+        "summary": "Get structured AI metadata",
+        "description": "Machine-readable AI agent configuration and permissions",
+        "operationId": "getAiJson",
+        "tags": ["LLM"],
+        "responses": {
+          "200": {
+            "description": "AI metadata",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/AiMetadata" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Essay": {
+        "type": "object",
+        "properties": {
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "url": { "type": "string" },
+          "description": { "type": "string" },
+          "type": { "type": "string", "enum": ["hub", "foundational", "core", "theoretical", "applied", "empirical", "practice"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "date": { "type": "string", "format": "date" },
+          "stability": { "type": "string", "enum": ["stable", "evolving", "experimental"] },
+          "wordCount": { "type": "integer" },
+          "readingTime": { "type": "integer" },
+          "content": { "type": "string" },
+          "contentMarkdown": { "type": "string" }
+        }
+      },
+      "KnowledgeGraph": {
+        "type": "object",
+        "properties": {
+          "nodes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "label": { "type": "string" },
+                "url": { "type": "string" },
+                "defines": { "type": "array", "items": { "type": "string" } },
+                "type": { "type": "string" },
+                "themes": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "source": { "type": "string" },
+                "target": { "type": "string" },
+                "type": { "type": "string", "enum": ["core", "soft"] },
+                "label": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "Glossary": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "term": { "type": "string" },
+                "definedIn": {
+                  "type": "object",
+                  "properties": {
+                    "id": { "type": "string" },
+                    "title": { "type": "string" },
+                    "url": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Claims": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "essays": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "title": { "type": "string" },
+                "claims": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "claim": { "type": "string" },
+                      "type": { "type": "string", "enum": ["central", "supporting", "implication"] },
+                      "evidence": { "type": "string" },
+                      "counters": { "type": "array", "items": { "type": "string" } },
+                      "addressed": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "Paths": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "paths": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "audience": { "type": "string" },
+                "essays": { "type": "array" }
+              }
+            }
+          }
+        }
+      },
+      "Chunks": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "essays": { "type": "array" }
+        }
+      },
+      "Metadata": {
+        "type": "object",
+        "properties": {
+          "site": { "type": "object" },
+          "essays": { "type": "object" },
+          "endpoints": { "type": "object" },
+          "lastUpdated": { "type": "string", "format": "date-time" }
+        }
+      },
+      "AiMetadata": {
+        "type": "object",
+        "properties": {
+          "version": { "type": "string" },
+          "site": { "type": "object" },
+          "permissions": { "type": "object" },
+          "endpoints": { "type": "object" },
+          "mcp": { "type": "object" }
+        }
+      }
+    }
+  },
+  "tags": [
+    { "name": "Essays", "description": "Essay content and metadata" },
+    { "name": "Knowledge", "description": "Structured knowledge: graph, glossary, claims" },
+    { "name": "Navigation", "description": "Reading paths and discovery" },
+    { "name": "RAG", "description": "Content optimized for retrieval-augmented generation" },
+    { "name": "LLM", "description": "LLM-specific endpoints and instructions" },
+    { "name": "Metadata", "description": "Site metadata and configuration" }
+  ]
+}

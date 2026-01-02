@@ -5,6 +5,7 @@ description: "Thorough AI dialogue feels like it solves the verification problem
 originalPublication: "Originally published November 2024"
 type: core
 tags: ["Epistemic Rigor", "AI Governance"]
+stability: stable
 
 # Knowledge graph metadata
 graph_id: strong-oracle-trap

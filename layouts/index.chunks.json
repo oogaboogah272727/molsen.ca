@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "generated": "{{ now.Format "2006-01-02T15:04:05Z07:00" }}",
+  "description": "Essay content chunked at section boundaries for RAG applications",
+  "chunkStrategy": "Split at ## headings, include essay context in each chunk",
+  "essays": [
+{{- $essays := where .Site.RegularPages "Section" "writing" -}}
+{{- $first := true -}}
+{{- range $essays -}}
+{{- if not .Params.hidden -}}
+{{- if not $first }},{{ end -}}
+{{- $first = false -}}
+{{- $content := .RawContent -}}
+{{- $title := .Title -}}
+{{- $url := .RelPermalink -}}
+{{- $slug := .File.BaseFileName -}}
+{{- $graphId := .Params.graph_id | default $slug -}}
+    {
+      "id": {{ $graphId | jsonify }},
+      "slug": {{ $slug | jsonify }},
+      "title": {{ $title | jsonify }},
+      "url": {{ $url | jsonify }},
+      "description": {{ .Description | jsonify }},
+      "fullContent": {{ .Plain | jsonify }},
+      "wordCount": {{ .WordCount }},
+      "readingTime": {{ .ReadingTime }}
+    }
+{{- end -}}
+{{- end }}
+  ]
+}

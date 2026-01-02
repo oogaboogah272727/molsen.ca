@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "generated": "{{ now.Format "2006-01-02T15:04:05Z07:00" }}",
+  "description": "Curated reading paths through molsen.ca essays",
+  "paths": [
+{{- $paths := .Site.Data.paths.paths -}}
+{{- $essays := where .Site.RegularPages "Section" "writing" -}}
+{{- $first := true -}}
+{{- range $paths -}}
+{{- if not $first }},{{ end -}}
+{{- $first = false }}
+    {
+      "id": {{ .id | jsonify }},
+      "name": {{ .name | jsonify }},
+      "description": {{ .description | jsonify }},
+      "audience": {{ .audience | jsonify }},
+      "essayCount": {{ len .essays }},
+      "essays": [
+{{- $innerFirst := true -}}
+{{- range .essays -}}
+{{- $slug := .slug -}}
+{{- $rationale := .rationale -}}
+{{- range $essays -}}
+{{- $pageSlug := path.Base .File.Dir | default (replace .File.BaseFileName "-" "-") -}}
+{{- $urlSlug := .File.BaseFileName -}}
+{{- if eq $urlSlug $slug -}}
+{{- if not $innerFirst }},{{ end -}}
+{{- $innerFirst = false }}
+        {
+          "slug": {{ $slug | jsonify }},
+          "title": {{ .Title | jsonify }},
+          "url": {{ .RelPermalink | jsonify }},
+          "description": {{ .Description | jsonify }},
+          "rationale": {{ $rationale | jsonify }},
+          "readingTime": {{ .ReadingTime }}
+        }
+{{- end -}}
+{{- end -}}
+{{- end }}
+      ]
+    }
+{{- end }}
+  ]
+}

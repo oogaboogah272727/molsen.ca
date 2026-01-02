@@ -51,6 +51,14 @@
       "url": "/api/claims.json",
       "description": "Structured claims and arguments from essays"
     },
+    "paths": {
+      "url": "/api/paths.json",
+      "description": "Curated reading paths with rationales"
+    },
+    "chunks": {
+      "url": "/api/chunks.json",
+      "description": "Content optimized for RAG applications"
+    },
     "knowledgeGraph": {
       "url": "/js/knowledge-graph.json",
       "description": "Essay relationships and concept mappings"
@@ -62,6 +70,14 @@
     "llmsFull": {
       "url": "/llms-full.txt",
       "description": "Complete essay content in plain text"
+    },
+    "openapi": {
+      "url": "/.well-known/openapi.json",
+      "description": "OpenAPI 3.0 specification for all endpoints"
+    },
+    "humanGuide": {
+      "url": "/for-llms/",
+      "description": "Human-readable guide to LLM accessibility features"
     }
   },
   "mcp": {

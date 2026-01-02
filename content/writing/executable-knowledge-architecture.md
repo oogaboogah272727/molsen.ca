@@ -5,6 +5,7 @@ description: "A framework for integrating AI into professional practice that pre
 originalPublication: "Originally published January 2025"
 type: core
 tags: ["AI Governance", "Organizational Change"]
+stability: stable
 
 # Knowledge graph metadata
 graph_id: eka

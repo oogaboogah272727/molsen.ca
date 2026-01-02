@@ -1,0 +1,68 @@
+# Curated reading paths through molsen.ca essays
+# Each path is a guided journey through interconnected ideas
+# Note: 'slug' must match the essay's URL slug (filename without .md)
+
+paths:
+  - id: framework-core
+    name: "The Core Framework"
+    description: "The essential argument: why oracle pattern fails and how assistant pattern solves it"
+    audience: "Anyone wanting to understand the central thesis"
+    essays:
+      - slug: ai-oracle-vs-assistant
+        rationale: "The foundational distinction everything else builds on"
+      - slug: strong-oracle-trap
+        rationale: "Why sophisticated dialogue doesn't solve the verification problem"
+      - slug: executable-knowledge-architecture
+        rationale: "The pattern that makes AI governable in professional work"
+
+  - id: epistemological-foundations
+    name: "Epistemological Foundations"
+    description: "The philosophical groundwork that makes human-AI cooperation coherent"
+    audience: "Those interested in the deeper 'why' behind the framework"
+    essays:
+      - slug: knowledge-as-capability
+        rationale: "Operational definition that sidesteps metaphysical debates"
+      - slug: agent-relative-tacitness
+        rationale: "Why tacitness is relational, not intrinsic"
+      - slug: tacit-space-shrinkage
+        rationale: "How AI is opening transfer paths that didn't exist"
+
+  - id: professional-practice
+    name: "Professional Practice"
+    description: "Applying the framework to real professional services work"
+    audience: "Consultants, engineers, and professionals deploying AI"
+    essays:
+      - slug: consulting-threat-opportunity
+        rationale: "The competitive dynamics facing professional services"
+      - slug: capability-governance
+        rationale: "Framework for governing generated artifacts"
+      - slug: what-benchmarks-arent-measuring
+        rationale: "Why current AI evaluation misses what matters"
+      - slug: eka-in-practice
+        rationale: "What we learned deploying the framework"
+
+  - id: future-direction
+    name: "Where This Goes"
+    description: "The trajectory: agentic AI, software dissolution, organizational transformation"
+    audience: "Strategists and leaders thinking about longer-term implications"
+    essays:
+      - slug: agentic-ai-universal-interface
+        rationale: "Why agentic AI removes the barriers to expertise-as-software"
+      - slug: automating-expertise-gets-easier
+        rationale: "What faces pressure, what remains"
+      - slug: ontology-generation
+        rationale: "How organizational knowledge accumulates through use"
+      - slug: return-of-the-assistant
+        rationale: "The end of DIY knowledge work"
+
+  - id: quick-start
+    name: "Quick Start"
+    description: "Minimum viable understanding in three essays"
+    audience: "Time-constrained readers wanting the essentials"
+    essays:
+      - slug: making-ai-make-sense
+        rationale: "The hub essay—overview of everything"
+      - slug: ai-oracle-vs-assistant
+        rationale: "The core distinction"
+      - slug: executable-knowledge-architecture
+        rationale: "The solution pattern"

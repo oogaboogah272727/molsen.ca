@@ -17,11 +17,14 @@ API-Essays: /api/essays.json
 API-Metadata: /api/metadata.json
 API-Glossary: /api/glossary.json
 API-Claims: /api/claims.json
+API-Paths: /api/paths.json
+API-Chunks: /api/chunks.json
 Knowledge-Graph: /js/knowledge-graph.json
 LLMs-Summary: /llms.txt
 LLMs-Full: /llms-full.txt
 OpenAPI-Spec: /.well-known/openapi.json
 AI-Metadata: /.well-known/ai.json
+Human-Readable-Guide: /for-llms/
 
 ## MCP Server
 An MCP server is available for Claude Desktop and Claude Code:

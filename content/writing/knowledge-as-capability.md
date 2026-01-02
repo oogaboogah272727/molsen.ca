@@ -5,6 +5,7 @@ description: "Defining knowledge as capability to produce outcomes, the foundati
 originalPublication: "Originally published November 2024"
 type: foundational
 tags: ["Epistemic Rigor"]
+stability: stable
 
 # Knowledge graph metadata
 graph_id: knowledge-capability

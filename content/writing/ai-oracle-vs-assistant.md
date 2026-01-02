@@ -5,6 +5,7 @@ description: "The fundamental choice in how you use AI determines whether you ca
 originalPublication: "Originally published November 2024"
 type: foundational
 tags: ["Epistemic Rigor", "AI Governance"]
+stability: stable
 
 # Knowledge graph metadata
 graph_id: oracle-assistant
