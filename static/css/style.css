@@ -563,6 +563,19 @@ footer .container {
   color: var(--text-secondary);
 }
 
+.llm-section-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.llm-section-title:first-of-type {
+  margin-top: 0.5rem;
+}
+
 /* Ontology Explorer */
 #explorer-container {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
