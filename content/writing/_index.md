@@ -20,6 +20,7 @@ Or explore the components:
 | [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/) | The pattern for AI-augmented professional work |
 | [Capability Governance](/writing/capability-governance/) | The governance framework: stakeholder obligations for generated artifacts |
 | [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/) | How the pattern scales: AI removes barriers to direct system access |
+| [The Universal Interface Thesis](/writing/universal-interface-thesis/) | Beyond knowledge work: the pattern applies to any control surface |
 | [Automating Expertise Gets Easier and Easier](/writing/automating-expertise-gets-easier/) | What faces pressure and what remains as more expertise becomes software |
 | [Ontology Generation](/writing/ontology-generation/) | How organizational knowledge accumulates from universal interface logs |
 | [What Benchmarks Aren't Measuring](/writing/what-benchmarks-arent-measuring/) | Why current AI benchmarks test the wrong things for professional work |
