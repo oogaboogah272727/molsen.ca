@@ -280,6 +280,7 @@ The MCP server fetches from the live site endpoints. No deployment coordination 
 - [ ] Add to `content/writing/_index.md` (manually curated list)
 - [ ] Add to `data/paths.yaml` if it belongs in a reading path
 - [ ] Add `graph_id` to README reference table
+- [ ] Add to `layouts/index.llms.txt` `$framework` list if it's a framework essay
 
 ### When adding a new endpoint:
 - [ ] Create template in `layouts/`
