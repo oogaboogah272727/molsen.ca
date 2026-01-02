@@ -9,7 +9,7 @@ This site is designed to be accessible to AI agents—not just readable, but str
 
 ## Quick Start
 
-**For Claude Desktop or Claude Code:** Install the [MCP Server](https://github.com/oogaboogah272727/molsen.ca-mcp)
+**MCP Client:** Install the [MCP Server](https://github.com/oogaboogah272727/molsen.ca-mcp)
 
 **For any LLM:** Start with [/llms.txt](/llms.txt) (summary) or [/llms-full.txt](/llms-full.txt) (complete content)
 
