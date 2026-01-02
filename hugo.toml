@@ -1,6 +1,7 @@
 baseURL = 'https://molsen.ca/'
 languageCode = 'en-ca'
 title = 'Mike Olsen'
+enableRobotsTXT = true
 
 [params]
   description = "Thinking about AI, professional accountability, and the future of technical work."
