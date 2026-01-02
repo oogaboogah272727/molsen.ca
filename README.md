@@ -324,6 +324,7 @@ Current `graph_id` values for use in `relationships.target`:
 | `return-assistant` | The Return of the Assistant |
 | `office-availability` | The Office Availability Math |
 | `eka-practice` | EKA in Practice |
+| `universal-interface` | The Universal Interface Thesis |
 
 ---
 
