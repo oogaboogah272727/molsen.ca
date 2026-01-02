@@ -5,6 +5,12 @@ description: "Support teams exist to protect the scarcest resource in profession
 originalPublication: "Originally published November 2021"
 type: practice
 tags: ["Organizational Change", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: support-team
+defines: ["Overhead Minimization"]
+themes: ["Organizational Change", "Professional Practice"]
+relationships: []
 ---
 
 In 2020, a number of professionals at our firm billed more than 100 hours in a single week. Another large group hit 90 hours at least once. Factor in eating, hygiene, sleep, and overhead time, and 100 billable hours requires about 95% of a week's 168 hours devoted to work and survival.

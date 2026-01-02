@@ -5,6 +5,21 @@ description: "Why generative AI will introduce greater change, faster, than the 
 originalPublication: "Originally published January 2023"
 type: foundational
 tags: ["AI Governance", "Organizational Change"]
+
+# Knowledge graph metadata
+graph_id: parrots
+defines: ["Stochastic Parrot", "Knowledge Work Vulnerability"]
+themes: ["AI Governance", "Organizational Change"]
+relationships:
+  - target: knowledge-capability
+    type: soft
+    label: references
+  - target: agent-tacitness
+    type: soft
+    label: references
+  - target: consulting-threat
+    type: soft
+    label: same domain
 ---
 
 > *This essay has been revised to reflect how my thinking has developed since its original publication. Cross-references to later work represent the current state of an evolving framework. The version here is authoritative; <a href="https://digital-experience-latam.cioreview.com/cxoinsight/parrots-are-all-you-need-nid-38213-cid-351.html" target="_blank">the original</a> captured where I was in January 2023. Note also that this was written before "[blank] is all you need" became a very tired cliche. Yes, I would do it differently now.*

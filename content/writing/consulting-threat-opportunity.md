@@ -5,6 +5,15 @@ description: "How AI-encoded expertise disrupts consulting's traditional basis f
 originalPublication: "Originally published March 2024"
 type: applied
 tags: ["Organizational Change", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: consulting-threat
+defines: ["Consulting Disruption", "Senior + AI Threat"]
+themes: ["Organizational Change", "Professional Practice"]
+relationships:
+  - target: eka
+    type: core
+    label: motivates
 ---
 
 > *This essay has been revised to integrate later developments in my thinking, including the frameworks it now references. The version here is authoritative.*

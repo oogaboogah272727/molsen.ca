@@ -5,6 +5,11 @@ description: "Defining knowledge as capability to produce outcomes, the foundati
 originalPublication: "Originally published November 2024"
 type: foundational
 tags: ["Epistemic Rigor"]
+
+# Knowledge graph metadata
+graph_id: knowledge-capability
+defines: ["Knowledge as Capability", "Human-AI Composite Knowledge"]
+themes: ["Epistemic Rigor"]
 ---
 
 > *This essay provides the foundational definition on which several other pieces in this collection depend. Cross-references reflect the current state of an evolving framework. The version here is authoritative.*

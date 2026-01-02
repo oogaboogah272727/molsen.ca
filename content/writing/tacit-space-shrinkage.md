@@ -5,6 +5,15 @@ description: "As AI capabilities expand, the domain of knowledge that organizati
 originalPublication: "Originally published December 2024"
 type: theoretical
 tags: ["Epistemic Rigor", "Organizational Change"]
+
+# Knowledge graph metadata
+graph_id: tacit-shrinkage
+defines: ["Tacit Space Shrinkage", "Structurally Tacit Core"]
+themes: ["Epistemic Rigor", "Organizational Change"]
+relationships:
+  - target: agent-tacitness
+    type: core
+    label: extends
 ---
 
 > *This essay has been revised to integrate later developments in my thinking, including the foundational claims it now references. The version here is authoritative.*

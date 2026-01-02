@@ -29,6 +29,11 @@ enableRobotsTXT = true
     suffixes = ["txt"]
 
 [outputFormats]
+  [outputFormats.GRAPH]
+    mediaType = "application/json"
+    baseName = "js/knowledge-graph"
+    isPlainText = true
+    notAlternative = true
   [outputFormats.LLMS]
     mediaType = "text/plain"
     baseName = "llms"
@@ -51,7 +56,7 @@ enableRobotsTXT = true
     notAlternative = true
 
 [outputs]
-  home = ["HTML", "JSON", "LLMS", "LLMSFULL", "API", "META"]
+  home = ["HTML", "JSON", "LLMS", "LLMSFULL", "API", "META", "GRAPH"]
 
 [markup]
   [markup.goldmark]

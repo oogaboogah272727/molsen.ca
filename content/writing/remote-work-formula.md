@@ -5,6 +5,12 @@ description: "Individual flexibility and autonomy matter. But so does group cons
 originalPublication: "Originally published November 2021"
 type: practice
 tags: ["Organizational Change", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: remote-work
+defines: ["Remote Work Formula"]
+themes: ["Organizational Change", "Professional Practice"]
+relationships: []
 ---
 
 > *This essay may be revised as my thinking develops. The version here is authoritative.*

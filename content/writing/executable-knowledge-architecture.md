@@ -5,6 +5,27 @@ description: "A framework for integrating AI into professional practice that pre
 originalPublication: "Originally published January 2025"
 type: core
 tags: ["AI Governance", "Organizational Change"]
+
+# Knowledge graph metadata
+graph_id: eka
+defines: ["EKA", "Verification Boundary", "Front-Door Invariants"]
+themes: ["AI Governance", "Organizational Change"]
+relationships:
+  - target: oracle-assistant
+    type: core
+    label: implements
+  - target: knowledge-capability
+    type: core
+    label: requires
+  - target: stochasticity
+    type: core
+    label: exploits
+  - target: strong-oracle-trap
+    type: core
+    label: addresses
+  - target: capability-governance
+    type: core
+    label: implements
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

@@ -4,6 +4,15 @@ date: 2026-01-01
 description: "Two people in the same office are available to each other far less than you'd think. The math explains why DIY tools were liberating."
 type: empirical
 tags: ["Professional Practice", "Organizational Change"]
+
+# Knowledge graph metadata
+graph_id: office-availability
+defines: ["Availability Math", "Coordination Overhead"]
+themes: ["Professional Practice", "Organizational Change"]
+relationships:
+  - target: return-assistant
+    type: core
+    label: supports
 ---
 
 The claim in [The Return of the Assistant](/writing/return-of-the-assistant/) is that two people working the same 9-5 schedule in the same office are only available to each other about 80% of the time. That's the generous number. The real availability for synchronous handoff is much lower.

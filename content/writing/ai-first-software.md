@@ -5,6 +5,15 @@ description: "Generative AI has solved language. That's enough to change softwar
 originalPublication: "Originally published April 2024"
 type: applied
 tags: ["AI Governance"]
+
+# Knowledge graph metadata
+graph_id: ai-first
+defines: ["AI-First Design", "Post-Interface Era"]
+themes: ["AI Governance", "Organizational Change"]
+relationships:
+  - target: parrots
+    type: soft
+    label: extends
 ---
 
 > *This essay has been revised to reflect how my thinking has developed since its original publication. The version here is authoritative.*

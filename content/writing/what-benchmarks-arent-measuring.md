@@ -4,6 +4,18 @@ date: 2024-12-31
 description: "GDPval and similar benchmarks test well-specified problems with verifiable answers. They don't—can't—test the ambiguous, contested, judgment-intensive work where professional expertise commands premiums. The measurement gap is structural, not temporary."
 type: core
 tags: ["AI Governance", "Professional Practice", "Measurement"]
+
+# Knowledge graph metadata
+graph_id: benchmarks
+defines: ["Tame vs Wicked Problems", "Measurement Gap", "Ground-Truth Problem"]
+themes: ["AI Governance", "Professional Practice"]
+relationships:
+  - target: oracle-assistant
+    type: soft
+    label: references
+  - target: eka
+    type: soft
+    label: references
 ---
 
 How much valuable professional work can AI do competently right now?

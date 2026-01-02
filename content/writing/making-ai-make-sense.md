@@ -3,6 +3,27 @@ title: "Making AI Make Sense"
 description: "Like fire, AI is powerful, dangerous, and essential. Here's how to cook with it."
 type: hub
 weight: 1
+
+# Knowledge graph metadata
+graph_id: making-sense
+defines: ["Encoding vs Being Encoded"]
+themes: ["AI Governance", "Professional Practice"]
+relationships:
+  - target: oracle-assistant
+    type: core
+    label: introduces
+  - target: eka
+    type: core
+    label: introduces
+  - target: knowledge-capability
+    type: soft
+    label: references
+  - target: agent-tacitness
+    type: soft
+    label: references
+  - target: agentic-universal
+    type: soft
+    label: references
 ---
 
 Most approaches to using generative AI fall into one of two traps: trusting it completely, until the confident-sounding answer turns out to be fabricated, or avoiding it entirely, unwilling to accept the risk. There is a way to use it which leverages its strengths and avoids risk from its weaknesses. 

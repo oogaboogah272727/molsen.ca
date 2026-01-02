@@ -5,6 +5,15 @@ description: "Rethinking what makes knowledge tacit or explicit, and why the ans
 originalPublication: "Originally published December 2024"
 type: theoretical
 tags: ["Epistemic Rigor"]
+
+# Knowledge graph metadata
+graph_id: agent-tacitness
+defines: ["Agent-Relative Tacitness", "Encoding-Decoding Asymmetry", "Representational Path"]
+themes: ["Epistemic Rigor"]
+relationships:
+  - target: knowledge-capability
+    type: core
+    label: extends
 ---
 
 > *This essay has been revised to integrate later developments in my thinking, including the foundational work on knowledge-as-capability that it now references. The version here is authoritative.*

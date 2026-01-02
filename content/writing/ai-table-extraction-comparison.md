@@ -5,6 +5,12 @@ description: "A practical comparison of three table extraction approaches reveal
 originalPublication: "Originally published February 2024"
 type: empirical
 tags: ["AI Governance"]
+
+# Knowledge graph metadata
+graph_id: table-extraction
+defines: ["Semantic Extraction", "Document Understanding"]
+themes: ["AI Governance"]
+relationships: []
 ---
 
 > *This essay may be revised as my thinking develops. The version here is authoritative.*

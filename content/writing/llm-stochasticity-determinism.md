@@ -5,6 +5,15 @@ description: "700 iterations across seven models. 25% accuracy asking directly. 
 originalPublication: "Originally published November 2024"
 type: empirical
 tags: ["Epistemic Rigor", "AI Governance"]
+
+# Knowledge graph metadata
+graph_id: stochasticity
+defines: ["Stochastic Form", "Deterministic Function", "Translation Layer"]
+themes: ["Epistemic Rigor", "AI Governance"]
+relationships:
+  - target: oracle-assistant
+    type: core
+    label: evidence for
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

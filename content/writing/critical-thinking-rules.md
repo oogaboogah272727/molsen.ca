@@ -4,6 +4,12 @@ date: 2024-10-29
 description: "A working set of rules for critical thinking organized into three domains: foundation, analysis, and engagement. Written for non-academics who want a down-to-earth framework."
 type: practice
 tags: ["Epistemic Rigor", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: critical-thinking
+defines: ["Foundation Rules", "Analytical Rules", "Engagement Rules"]
+themes: ["Epistemic Rigor", "Professional Practice"]
+relationships: []
 ---
 
 I'm seeing a lot of references to "critical thinking" in my social media feeds, but often those most excited about critical thought also hold ideas that are strong evidence of its absence. "Think critically! Examine everything! The world is flat!" Those people define "critical thinking" differently than I do.

@@ -5,6 +5,15 @@ description: "Thorough AI dialogue feels like it solves the verification problem
 originalPublication: "Originally published November 2024"
 type: core
 tags: ["Epistemic Rigor", "AI Governance"]
+
+# Knowledge graph metadata
+graph_id: strong-oracle-trap
+defines: ["Oracle Spectrum", "Strong Oracle", "Tool Mitigation"]
+themes: ["Epistemic Rigor", "AI Governance"]
+relationships:
+  - target: oracle-assistant
+    type: core
+    label: extends
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

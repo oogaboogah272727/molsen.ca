@@ -4,6 +4,24 @@ date: 2025-06-30
 description: "When the AI tool is the universal interface, comprehensive logs reveal both what the organization does and what concepts it uses. Structure and procedure emerge together."
 type: core
 tags: ["AI Governance", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: ontology-generation
+defines: ["Ontology Generation", "Structural Ontology", "Procedural Patterns"]
+themes: ["AI Governance", "Professional Practice"]
+relationships:
+  - target: agentic-universal
+    type: core
+    label: extends
+  - target: eka
+    type: core
+    label: extends
+  - target: tacit-shrinkage
+    type: soft
+    label: references
+  - target: capability-governance
+    type: soft
+    label: references
 ---
 
 An ontology, in the practical sense, is a structured representation of what an organization knows: its concepts, their properties, and the relationships between them. Palantir built a business around this idea. Their Foundry platform centers on creating an "ontology layer" that models an organization's entities and operations in a unified structure. Objects, properties, relationships, actions — all made explicit and queryable.

@@ -3,6 +3,18 @@ title: "EKA in Practice"
 description: "The framework is no longer theoretical. Here's what we learned when we deployed it."
 type: practice
 tags: ["AI Governance", "Professional Practice", "Organizational Change"]
+
+# Knowledge graph metadata
+graph_id: eka-practice
+defines: ["EKA Deployment", "Methodology Capture"]
+themes: ["AI Governance", "Professional Practice", "Organizational Change"]
+relationships:
+  - target: eka
+    type: core
+    label: implements
+  - target: oracle-assistant
+    type: soft
+    label: references
 ---
 
 The essays on this site describe a framework. This essay describes what happened when we built it.

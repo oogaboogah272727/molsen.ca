@@ -4,6 +4,27 @@ date: 2026-01-01
 description: "The DIY knowledge worker made sense for forty years. AI assistants offer something better: the freedom of DIY with the leverage of delegation."
 type: core
 tags: ["AI Governance", "Professional Practice", "Organizational Change"]
+
+# Knowledge graph metadata
+graph_id: return-assistant
+defines: ["DIY Tax", "Secretary Model", "Intermediary Defense"]
+themes: ["AI Governance", "Professional Practice", "Organizational Change"]
+relationships:
+  - target: oracle-assistant
+    type: core
+    label: extends
+  - target: agentic-universal
+    type: soft
+    label: references
+  - target: eka
+    type: soft
+    label: references
+  - target: support-team
+    type: soft
+    label: references
+  - target: office-availability
+    type: soft
+    label: references
 ---
 
 In the 1950s and 1960s, every executive had a secretary. Typing pools handled document production. Stenographers transcribed dictation. The professional focused on content; the secretary handled execution.

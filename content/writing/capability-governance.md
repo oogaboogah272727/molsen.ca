@@ -4,6 +4,18 @@ date: 2024-12-27
 description: "A framework for governing generated artifacts through defensibility. Two routes: exposed methodology or empirical track record. Obligations for producers, consumers, underwriters, and regulators."
 type: core
 tags: ["AI Governance", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: capability-governance
+defines: ["Method-Bearing vs Conclusion", "Reliability Verification", "Method Exposure"]
+themes: ["AI Governance", "Professional Practice"]
+relationships:
+  - target: oracle-assistant
+    type: core
+    label: extends
+  - target: knowledge-capability
+    type: core
+    label: uses
 ---
 
 An **artifact** is an output that enters a decision chain. A report, a calculation, a recommendation, a design, an analysis. Something someone else will act on.

@@ -4,6 +4,21 @@ date: 2025-06-30
 description: "As agentic AI lowers the barriers, more expertise becomes software. What faces pressure, what remains, and where value moves."
 type: core
 tags: ["AI Governance", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: automating-expertise
+defines: ["Software Dissolution", "Intermediary Pressure"]
+themes: ["AI Governance", "Professional Practice"]
+relationships:
+  - target: agentic-universal
+    type: core
+    label: extends
+  - target: ai-first
+    type: soft
+    label: references
+  - target: making-sense
+    type: soft
+    label: references
 ---
 
 [Agentic AI as Universal Interface](/writing/agentic-ai-universal-interface/) removes the barriers between domain expertise and system access. This has consequences for what we call "software."

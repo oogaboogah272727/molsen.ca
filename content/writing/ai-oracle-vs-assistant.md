@@ -5,6 +5,11 @@ description: "The fundamental choice in how you use AI determines whether you ca
 originalPublication: "Originally published November 2024"
 type: foundational
 tags: ["Epistemic Rigor", "AI Governance"]
+
+# Knowledge graph metadata
+graph_id: oracle-assistant
+defines: ["Oracle Pattern", "Assistant Pattern", "Verification Paradox", "Method vs. Verdict"]
+themes: ["Epistemic Rigor", "AI Governance"]
 ---
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*

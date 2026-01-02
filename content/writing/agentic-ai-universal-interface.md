@@ -4,6 +4,21 @@ date: 2025-06-30
 description: "Software is distilled expertise. Two barriers have prevented most expertise from becoming software: coding skill and system access knowledge. Agentic AI removes both."
 type: core
 tags: ["AI Governance", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: agentic-universal
+defines: ["Universal Interface", "Barrier Removal", "Expertise Distillation"]
+themes: ["AI Governance", "Professional Practice"]
+relationships:
+  - target: tacit-shrinkage
+    type: soft
+    label: references
+  - target: eka
+    type: core
+    label: enables
+  - target: ontology-generation
+    type: core
+    label: enables
 ---
 
 Software is distilled expertise in its most executable form.

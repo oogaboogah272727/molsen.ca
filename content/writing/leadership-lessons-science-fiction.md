@@ -4,6 +4,12 @@ date: 2021-11-30
 description: "The books that most shaped how I lead weren't management classics—they were science fiction novels I read in my youth."
 type: practice
 tags: ["Organizational Change", "Professional Practice"]
+
+# Knowledge graph metadata
+graph_id: leadership-scifi
+defines: []
+themes: ["Organizational Change", "Professional Practice"]
+relationships: []
 ---
 
 I've read the standard leadership literature. Stephen Covey, Malcolm Gladwell, David Maister, and many others. But when a former team member, newly promoted at his new company, asked me which books had most influenced my leadership style, my honest answer surprised even me.
