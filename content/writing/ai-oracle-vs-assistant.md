@@ -106,15 +106,15 @@ Assistant pattern exploits this asymmetry.
 
 ## The Verification Boundary
 
-In Assistant pattern, AI produces artifacts. Humans verify artifacts. The boundary between AI generation and human verification is explicit.
+In Assistant pattern, AI produces method-bearing artifacts. Humans verify methods and execute them. The boundary between AI generation and human verification is explicit.
 
 This creates what I call the verification boundary. It's the line between what the AI contributed and what the human validated.
 
-On the AI side: translation, generation, implementation. The AI turns intent into artifacts.
+On the AI side: translation, generation, implementation. The AI turns intent into artifacts which enact the intent of the expert into executable methods.
 
 On the human side: specification, review, approval. The human defines what's wanted and confirms that's what was produced.
 
-The artifacts sit on the boundary. They're inspectable by both sides. The AI can generate them. The human can verify them.
+The method-bearing artifacts sit on the boundary. They're inspectable by both sides. The AI can generate them. The human can verify them.
 
 This is why code is such an effective medium for Assistant pattern. Code is:
 - **Readable:** You can see what it does
@@ -122,7 +122,7 @@ This is why code is such an effective medium for Assistant pattern. Code is:
 - **Deterministic:** Same input, same output
 - **Versionable:** You can track changes
 
-Code makes the verification boundary concrete. The AI produces code. The human reviews code. The code runs and produces results. Every step is inspectable.
+Code as method-bearing artifact makes the verification boundary concrete. The AI produces code. The human reviews code. The code runs and produces results. Every step is inspectable.
 
 ---
 
@@ -179,4 +179,5 @@ Everything else follows from this choice. [Executable Knowledge Architecture](/w
 If you're going to use AI in professional work, this is the first choice you have to make. And the answer, for any work that matters, is Assistant pattern.
 
 That's the foundation everything else rests on.
+
 
