@@ -64,7 +64,7 @@ The paradox has three horns:
 
 3. **You partially verify the answer** by checking what you can check. In that case, you've created a false sense of security. The parts you can't check are exactly the parts where errors hide.
 
-None of these options is satisfactory for professional work. The first limits AI to acceleration. The second is indefensible. The third is dangerous.
+None of these options is satisfactory for professional work. The first provides no value and saves no time. The second is indefensible. The third is dangerous.
 
 ---
 
@@ -179,3 +179,4 @@ Everything else follows from this choice. [Executable Knowledge Architecture](/w
 If you're going to use AI in professional work, this is the first choice you have to make. And the answer, for any work that matters, is Assistant pattern.
 
 That's the foundation everything else rests on.
+
