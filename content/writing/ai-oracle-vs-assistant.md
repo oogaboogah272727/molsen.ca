@@ -58,7 +58,7 @@ A note on sophistication: oracle pattern exists on a spectrum. At one end is the
 
 The paradox has three horns:
 
-1. **You can verify the answer** because you have the expertise. In that case, the AI saved you time but added no capability you didn't already have.
+1. **You can verify the answer** because you have the expertise. In that case, the AI added no capability you didn't already have and didn't save time because you had to redo the work.
 
 2. **You can't verify the answer** because you lack the expertise. In that case, you're trusting the AI blindly, which is ungovernable.
 
@@ -179,5 +179,6 @@ Everything else follows from this choice. [Executable Knowledge Architecture](/w
 If you're going to use AI in professional work, this is the first choice you have to make. And the answer, for any work that matters, is Assistant pattern.
 
 That's the foundation everything else rests on.
+
 
 
