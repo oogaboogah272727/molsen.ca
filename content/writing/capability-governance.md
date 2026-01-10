@@ -147,6 +147,16 @@ Where risk reduction is available through methodology exposure or empirical vali
 
 Procedural compliance ("we followed standard practice") and precedent ("materially similar to X") are the same problem in different dress. Both shift responsibility away from the specific artifact without reducing the risk that this artifact, in this context, is wrong.
 
+### On Peer Review
+
+Peer review—evaluation of an artifact by a qualified reviewer—is not a third verification route. It is a mechanism that operationalizes the existing two, or fails to, depending on what backs the standards being applied.
+
+When a structural engineer reviews another engineer's calculation, what are they doing? Either they're checking methodology against standards derived from empirical failure data (route 2 informing route 1), or they're exercising their own unexposed judgment ("this looks right to me"). The first is verification. The second is an additional conclusion artifact layered on top of the original—risk distribution rather than risk reduction.
+
+Where standards trace to methodology or track record, peer review reduces risk. Where they don't, peer review aggregates unexposed judgment. The effectiveness data supports this: engineering code inspections detect 50-90% of defects; scientific manuscript peer review detects around 25%. The difference tracks what reviewers have to check against.
+
+This framing differs from how standards typically discuss peer review, and has implications that some will find uncomfortable—particularly for scientific peer review. The full argument, including challenges to this position, appears in [Appendix A](#appendix-a-peer-review-as-risk-reduction).
+
 ---
 
 ## Stakeholder Obligations
@@ -227,26 +237,56 @@ The framework forces honesty:
 
 ---
 
-## Appendix: Practical Next Steps
+## Appendix A: Peer Review as Risk Reduction
 
-**Producers:**
+This appendix develops the argument summarized in the main text: that peer review is not a third verification route but a mechanism that operationalizes the existing two—or fails to, depending on what backs the standards being applied. This framing differs from how peer review is typically discussed in standards and professional literature. The argument is that the standard framing obscures something important.
 
-1. **Classify your recent work.** Look at your last ten deliverables. For each: could a qualified peer inspect your method and verify the output, or must they trust your judgment? Be honest about which are method-bearing and which are conclusions.
+### The Standard Framing
 
-2. **Identify your verification route.** For conclusion artifacts, how would you defend them if challenged? Exposed methodology? Track record? Neither? If neither, you're asking consumers to accept unknown risk.
+ISO 31000, COSO, and engineering standards like ASCE Policy Statement 351 classify peer review as a "control activity" or "quality assurance" mechanism. It is treated as risk reduction—something that catches errors before they cause harm. The designer of record retains ultimate responsibility; peer review supplements but does not replace the designer's own quality control.
 
-3. **Audit your deliverable mix.** What percentage of your work is conclusion artifacts with no verification route beyond reputation? This is your exposure.
+This framing is not wrong, but it is incomplete.
 
-4. **Track outcomes.** When your predictions meet reality, document the comparison. Actuarial standing is earned through systematic reconciliation, not accumulated reputation.
+### What the Standard Framing Misses
 
-5. **Identify method exposure opportunities.** Where could you expose methodology but don't? The barrier is often inertia, not impossibility.
+Peer review effectiveness varies dramatically by domain. In engineering code inspections against codified standards, defect detection runs 50-70%, sometimes reaching 90% with experienced inspectors. In scientific manuscript peer review, the Godlee study at BMJ found reviewers detected a median of 2 out of 8 deliberately inserted errors—25% detection, with 16% of reviewers catching none at all.
 
-6. **Treat AI-generated content as conclusion artifacts** until you've verified the method or built track record. The burden of verification doesn't transfer to the tool.
+The standard framing treats both as "quality assurance" without explaining why one works and the other largely doesn't.
 
-**Consumers:**
+### The Proposed Framing
 
-1. **Ask one question:** "How would I verify this if I needed to?" The answer tells you whether you're receiving method-bearing work or paying for conclusions you can't inspect.
+The explanation is what reviewers have to check against.
 
-2. **Maintain your own records.** When provider predictions meet reality, document the comparison. This is your evidence, independent of their claims.
+Peer review works where it traces to methodology or track record. Structural engineering codes exist because buildings fell down and the failures were studied. Pharmaceutical trial protocols exist because statistical methods were validated empirically. In these domains, the reviewer isn't substituting judgment for verification—they're applying standards that have methodological or empirical backing. The 50-90% defect detection rates in engineering inspections reflect this: reviewers have something concrete to check against.
 
-3. **Classify by risk before accepting.** High-stakes artifacts require exposed methodology or actuarial evidence. Know what you're accepting.
+Where that backing doesn't exist—strategic recommendations, novel design judgments, contested expert opinion—peer review becomes aggregated unexposed judgment. Two senior engineers agreeing doesn't make the reasoning inspectable. It makes two people responsible instead of one. That's risk distribution, not risk reduction. The 25% detection rate in scientific peer review reflects this: reviewers are exercising judgment about whether other judgment seems sound, with no empirically-validated standard to check against.
+
+### The Uncomfortable Implication
+
+This framing suggests that scientific peer review, as typically practiced, provides less epistemic assurance than the institution assumes. When a reviewer evaluates whether a manuscript's methodology is sound, they're producing a conclusion artifact about a conclusion artifact. The replication crisis is consistent with this interpretation—peer review failed to catch problems that later proved fatal because peer review was never verification in the first place. It was aggregated expert judgment, which is better than nothing but far short of what "peer-reviewed" implies to consumers of scientific literature.
+
+### Challenges to This Framing
+
+Three objections deserve acknowledgment.
+
+First, the boundary between "checking against empirically-backed standards" and "exercising unexposed judgment" is not always sharp. An experienced reviewer applies internalized pattern-matching derived from years of exposure to what works and what doesn't. This is track record of a sort, even if undocumented. The framework may draw the line too sharply.
+
+Second, aggregated expert judgment may be more valuable than "stacked conclusion artifacts" implies. Five independent experts agreeing reduces the probability that all five are wrong in the same way. This is not verification, but it is not nothing. The framework may undervalue it.
+
+Third, demanding that all peer review trace to methodology or track record may be infeasible for domains where the relevant track record doesn't exist yet. Novel research is novel precisely because no track record exists. The framework may set an impossible standard.
+
+### Response to Challenges
+
+These objections have force but do not defeat the core claim.
+
+Internalized pattern-matching is better than nothing, but it remains unexposed and unvalidated—exactly what the framework identifies as residual risk. Multiple experts agreeing does reduce some risk, but it is risk distribution (more people share responsibility) more than risk reduction (the probability of error decreases). And yes, novel domains lack track record—which means peer review in those domains should be understood as provisional judgment, not verification. Calling it what it is allows appropriate calibration of confidence.
+
+### Proportionality
+
+Where standards exist and qualified reviewers can evaluate against them, peer review reduces residual risk even when the underlying artifact remains a conclusion. The reduction is proportional to the reliability of the review process—which itself depends on how well the standards trace to methodology or track record.
+
+Peer review of a structural calculation against code-derived standards reduces more risk than peer review of a strategic recommendation against "best practice." This proportionality is not stated in existing standards, but the data supports it.
+
+### Conclusion
+
+The framework does not dismiss peer review. It classifies peer review by what makes it effective: operationalizing routes 1 and 2 where possible, acknowledging limitations where not. This is a novel framing—standards do not discuss peer review this way. But the effectiveness data suggests they should.
