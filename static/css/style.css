@@ -1307,3 +1307,13 @@ footer .container {
     text-align: center;
   }
 }
+
+/* Colophon */
+.colophon {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  text-align: center;
+}
