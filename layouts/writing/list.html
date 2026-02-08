@@ -5,9 +5,9 @@
   <div class="section-intro">{{ . }}</div>
 {{ end }}
 
-{{ $types := slice "foundational" "core" "theoretical" "empirical" "applied" "practice" }}
-{{ $typeLabels := dict "foundational" "Foundational" "core" "Core" "theoretical" "Theoretical" "empirical" "Empirical" "applied" "Applied" "practice" "Practice" }}
-{{ $typeDescriptions := dict "foundational" "Defining concepts and core distinctions" "core" "The central frameworks" "theoretical" "Extending the foundations" "empirical" "Evidence and experiments" "applied" "Applying the framework" "practice" "Lessons from experience" }}
+{{ $types := slice "foundational" "core" "theoretical" "empirical" "applied" "practice" "update" "response" }}
+{{ $typeLabels := dict "foundational" "Foundational" "core" "Core" "theoretical" "Theoretical" "empirical" "Empirical" "applied" "Applied" "practice" "Practice" "update" "Update" "response" "Response" }}
+{{ $typeDescriptions := dict "foundational" "Defining concepts and core distinctions" "core" "The central frameworks" "theoretical" "Extending the foundations" "empirical" "Evidence and experiments" "applied" "Applying the framework" "practice" "Lessons from experience" "update" "Framework validation and evolution" "response" "Engaging critique and refining claims" }}
 
 <div class="article-tabs">
   {{ range $i, $type := $types }}
