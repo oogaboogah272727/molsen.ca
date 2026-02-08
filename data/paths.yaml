@@ -14,6 +14,10 @@ paths:
         rationale: "Why sophisticated dialogue doesn't solve the verification problem"
       - slug: executable-knowledge-architecture
         rationale: "The pattern that makes AI governable in professional work"
+      - slug: update-february-2026
+        rationale: "Validation against 2024-2026 advances; the agentic erosion threat"
+      - slug: answers-to-critics
+        rationale: "Direct responses to objections; framework refinements"
 
   - id: epistemological-foundations
     name: "Epistemological Foundations"
@@ -68,3 +72,13 @@ paths:
         rationale: "The core distinction"
       - slug: executable-knowledge-architecture
         rationale: "The solution pattern"
+
+  - id: critique-response
+    name: "Responding to Critique"
+    description: "The framework stress-tested: what changed, what held, what's refined"
+    audience: "Readers interested in how the framework has evolved under scrutiny"
+    essays:
+      - slug: update-february-2026
+        rationale: "Research findings on 2024-2026 technological advances; agentic erosion"
+      - slug: answers-to-critics
+        rationale: "Direct engagement with adversarial review; refinements and defenses"

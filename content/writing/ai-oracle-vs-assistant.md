@@ -42,7 +42,9 @@ There are two fundamentally different ways to deploy AI in professional work. Th
 
 Most people default to Oracle pattern. It feels natural. It mirrors how we interact with experts, with search engines, with consultants. Ask a question, get an answer.
 
-But Oracle pattern has a structural problem that makes it ungovernable for professional work. Assistant pattern solves that problem. Understanding why is the key to deploying AI responsibly.
+But Oracle pattern has a structural problem that prevents it from meeting a defensibility standard for accountable professional work. Assistant pattern creates a viable path to that defensibility. Understanding why is the key to deploying AI responsibly.[^ungovernable]
+
+[^ungovernable]: "Ungovernable" and similar language throughout this essay means specifically: cannot satisfy the requirements of reproducibility, verifiability, and accountability that professional work under risk demands. See [Answers to Critics](/writing/answers-to-critics/#absolute-language) for discussion of this scoping.
 
 ---
 
@@ -166,7 +168,7 @@ But for professional work, where others rely on your outputs, where you face lia
 
 The choice between Oracle and Assistant pattern is foundational because it determines:
 
-**Governance posture:** Oracle pattern is ungovernable. Assistant pattern creates inspectable artifacts and clear accountability.
+**Governance posture:** Oracle pattern doesn't meet defensibility requirements for accountable professional work. Assistant pattern creates inspectable artifacts and clear accountability.
 
 **Skill requirements:** Oracle pattern requires expertise to verify. Assistant pattern requires expertise to specify and review.
 

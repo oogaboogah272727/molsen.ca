@@ -59,6 +59,8 @@ Yet AI demonstrably does useful work that, in humans, we'd call knowledge work. 
 
 ## What We Don't Know About Knowing
 
+*[Aside: The following section addresses a philosophical objection that some readers raise. The operational definition does not depend on resolving these metaphysical questions—skip to "The Operational Definition" if you're primarily interested in practical application.]*
+
 Before claiming that humans "have" knowledge while AI systems "cannot," we should acknowledge what we don't know.
 
 Philosophy hasn't solved the solipsism problem. I cannot verify that you have experiences, only that you behave as if you do. Neuroscience hasn't solved the hard problem of consciousness. Psychology doesn't have a settled account of what cognition is or how it produces understanding. The confident claim that humans possess knowledge in some robust sense while AI systems categorically cannot assumes we know what knowledge-constituting mental states are and how to detect them. We don't. That knowledge is not established in any discipline.

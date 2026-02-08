@@ -26,6 +26,19 @@ Or explore the components:
 | [What Benchmarks Aren't Measuring](/writing/what-benchmarks-arent-measuring/) | Why current AI benchmarks test the wrong things for professional work |
 | [AI-First Software](/writing/ai-first-software/) | The design philosophy: AI as foundation, not feature |
 | [The Return of the Assistant](/writing/return-of-the-assistant/) | The DIY knowledge worker made sense. AI offers something better. |
+| [Update for February 2026](/writing/update-february-2026/) | Two years of advances tested the framework. The distinction holds—but agentic AI creates new gaps. |
+| [Answers to Critics](/writing/answers-to-critics/) | Direct responses to adversarial critique: what's refined, what's defended, what's unchanged. |
+
+---
+
+## Updates and Responses
+
+The framework has been tested against critique and technological change. These essays document the evolution.
+
+| Essay | What it covers |
+|-------|----------------|
+| [Update for February 2026](/writing/update-february-2026/) | Research validating the oracle/assistant distinction against 2024-2026 advances; the agentic erosion problem |
+| [Answers to Critics](/writing/answers-to-critics/) | Direct engagement with adversarial review: refinements, precision improvements, and defended positions |
 
 ---
 

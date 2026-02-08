@@ -20,6 +20,8 @@ relationships:
 
 The criticism that LLMs are "too stochastic for production use" misunderstands their nature. I ran a systematic experiment to demonstrate this.
 
+*Note: The experiment below is a didactic demonstration—it illustrates the mechanism that makes assistant pattern work, not a general benchmark. For systematic evidence across reasoning models, RAG systems, and production deployments, see [Update for February 2026](/writing/update-february-2026/).*
+
 ---
 
 ## The Experiment
@@ -60,7 +62,7 @@ We can't inspect closed models to confirm the exact mechanism. But the key point
 
 **Aggregate accuracy: 100%. Aggregate precision: 100%.**
 
-Every model, every iteration. When the code ran, it returned the integer 3. Not "three", not "There are 3 r's"—the integer 3, every time. Accurate and precise. Deterministic.
+Every model, every iteration. When the code ran, it returned the integer 3. Not "three", not "There are 3 r's"—the integer 3, every time. Accurate and precise. Deterministic given the same code and input. (Production reproducibility requires capturing the execution environment—versioned dependencies, fixed inputs. The point here is that the code artifact creates a *path* to reproducibility that direct answers do not. See [Answers to Critics](/writing/answers-to-critics/#determinism) for the full qualification.)
 
 ---
 

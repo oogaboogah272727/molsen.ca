@@ -97,6 +97,6 @@ The practically ineffable region for organizations is shrinking. Knowledge that 
 
 But a structurally tacit human core remains. Lived experience. Deep value commitments. The felt sense of what matters. The integration of perception, emotion, and action that constitutes skilled human judgment in its fullest form. These are not representational problems waiting for better tools.
 
-Most of what organizations have called "tacit" was representationally blocked, not structurally inexpressible. Those blocks are dissolving. The boundaries of the articulable are moving faster than most leaders recognize, and the organizations that grasp this will capture knowledge their competitors still believe is uncapturable.
+More of what organizations have called "tacit" than they assume was representationally blocked, not structurally inexpressible. Those blocks are dissolving. The boundaries of the articulable are moving faster than most leaders recognize, and the organizations that grasp this will capture knowledge their competitors still believe is uncapturable.
 
-The machinist's feel for tolerance. The sales director's deal intuition. The nurse's pattern recognition. Some of this is genuinely human, genuinely irreducible. Most of it is just waiting for the right interlocutor.
+The machinist's feel for tolerance. The sales director's deal intuition. The nurse's pattern recognition. Some of this is genuinely human, genuinely irreducible. Much of it is just waiting for the right interlocutor. [See [Answers to Critics](/writing/answers-to-critics/#tacit) for why the original "most" was too strong a claim.]

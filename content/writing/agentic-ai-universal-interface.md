@@ -109,7 +109,7 @@ The human contribution contracts to: knowing what should happen, specifying it c
 
 ## Objections
 
-**"If users can't code, they can't verify generated code."** They don't need to read code. They need to confirm that the agent's description of what the code does matches their intent. Reverse translation — asking the agent to explain the artifact — is verification the domain expert can perform. This is risk mitigation, not risk elimination. But all code requires review, and agentic review tools are already standard practice at the highest levels of software development. The same approach works for simpler artifacts.
+**"If users can't code, they can't verify generated code."** They don't need to *author* code. But verification requires more than AI explanation alone. Research shows AI explanations, like reasoning traces, can be unfaithful — the agent's description of what the code does may not accurately reflect what it actually does. Verification needs some check independent of the generating model: human review, automated testing, secondary models, or domain-specific validation. Reverse translation is part of a verification protocol, not a substitute for one. [See [Answers to Critics](/writing/answers-to-critics/#verification-protocol) for why this matters.]
 
 **"Specification is as hard as implementation — you still need to handle edge cases."** Specification is a skill, but a mental skill rather than a technical one. Domain experts already specify precisely when instructing subordinates. The same skill applies to instructing an agent. The agent can be configured to demand specificity, to ask clarifying questions rather than assume. Ambiguous specifications get caught before generation, not after. And the premise that the agent needs the expert to specify every edge case understates what frontier models know. These models have broad domain knowledge across fields — not expert-level in every domain, but often sufficient to catch common gaps and ask clarifying questions. The agent helps because it knows something about the domain, and what it knows improves continuously.
 
@@ -117,7 +117,23 @@ The human contribution contracts to: knowing what should happen, specifying it c
 
 **"Rate limits and API quotas constrain what agents can do."** These are implementation details. The cost of tokens and bandwidth is negligible against the value of direct system access. Rate limits are speed bumps, not roadblocks. Agents are patient. Organizations with scale concerns can self-host models sized to their peak load.
 
-**"Some systems are deliberately obfuscated — proprietary formats, undocumented protocols, binary interfaces."** Deliberate obfuscation is currently a hard barrier — it blocks discoverability. But obfuscation as a durable strategy only works when there's not much value behind it. If there's real value, the effort to circumvent is worth it — and the cost to build alternatives is collapsing. Obfuscation buys time, not permanent protection. Legal barriers (anti-circumvention law, terms of service) can extend the window, but they don't close it. Organizations will remember who tried to extract rent through obstinate refusal to enable access. The pressure is toward openness: systems that remain obfuscated will be routed around, not accommodated.
+**"Some systems are deliberately obfuscated — proprietary formats, undocumented protocols, binary interfaces."** Deliberate obfuscation is currently a hard barrier — it blocks discoverability. But obfuscation as a durable strategy only works when there's not much value behind it. If there's real value, customers will choose more open alternatives, and competitors will build replacements. The cost to build alternatives is collapsing. Obfuscation buys time, not permanent protection. Legal barriers (anti-circumvention law, terms of service) can extend the window, but they don't close it. Organizations will remember who tried to extract rent through obstinate refusal to enable access. The pressure is toward openness: systems that remain obfuscated will be routed around, not accommodated.
+
+---
+
+## What Must Be True for This to Be Safe
+
+Agentic AI as universal interface creates new attack surfaces. For this pattern to be deployable in professional contexts, constraints must be architectural:
+
+- **Least-privilege permissions.** Grant only what the task requires. Read-only by default for exploratory work.
+- **Explicit approval gates.** Any write action requires human confirmation, not just initial permission scoping.
+- **Action logging.** Every tool invocation recorded with inputs, outputs, and the decision path that led to it.
+- **Context separation.** Strict boundaries between confidential contexts. One project, one agent context.
+- **Secure secrets handling.** Keys, tokens, and credentials managed through secure channels, not exposed in prompts or logs.
+
+The universal interface thesis depends on these controls being architectural, not advisory. The same persistence that makes agents valuable—they keep trying until they figure out how systems work—makes them dangerous without constraint.
+
+There's a deeper governance issue here. Agentic frameworks have automated the routing decision—whether to answer a query through code or provide a direct response. When the AI makes that choice autonomously, the human has lost control over the oracle/assistant distinction itself. [See [Update for February 2026](/writing/update-february-2026/) for how this "agentic erosion" creates new governance gaps.]
 
 ---
 

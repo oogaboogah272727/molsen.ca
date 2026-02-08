@@ -55,6 +55,8 @@ Risk transfer is legitimate when disclosed. Complete transfer is rare—liabilit
 
 Where risk reduction is available—through methodology exposure that permits inspection, or through empirical validation that demonstrates reliability—choosing incomplete transfer instead is ethically indefensible. The framework provides the standard against which current practice can be measured.
 
+*Disclaimer: This framework provides a governance framing for artifact defensibility. It is not legal advice. Professional liability, regulatory compliance, and insurance requirements vary by jurisdiction and domain. Consult qualified legal and regulatory advisors for specific situations.*
+
 ---
 
 ## Scope
@@ -103,7 +105,7 @@ The distinction is about verification, not importance. Conclusions can be routin
 
 Some argue method opacity is structurally necessary—trade secrets, competitive advantage, inherent complexity. This conflates business justification with governance adequacy.
 
-As argued in [Agent-Relative Tacitness](/writing/agent-relative-tacitness/), most "tacit knowledge" is representationally blocked (could be expressed, hasn't been), not structurally inexpressible. The domain of genuinely irreducible tacit knowledge is small and shrinking. Claims of structural inexpressibility should be viewed with extreme skepticism.
+As argued in [Agent-Relative Tacitness](/writing/agent-relative-tacitness/), more of what organizations call "tacit knowledge" than they assume is representationally blocked (could be expressed, hasn't been), not structurally inexpressible. [See [Answers to Critics](/writing/answers-to-critics/#tacit) for why the original "most" was too strong.] The domain of genuinely irreducible tacit knowledge is small and shrinking. Claims of structural inexpressibility should be viewed with extreme skepticism.
 
 "I know this but cannot explain how" is not a defense when material economic or safety consequences attach. Inability to articulate method creates governance problems that scale with stakes—the higher the consequences, the less acceptable the opacity.
 

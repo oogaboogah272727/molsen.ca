@@ -40,7 +40,7 @@ The deployment has several layers:
 
 ## What Surprised Us
 
-**Adoption is faster than we imagined possible.** We launched a month ago. In three weeks—over Christmas—we hit 33% penetration across North America. We expected resistance. We got demand. Professionals who'd been skeptical of AI tools engaged once they understood the distinction. The assistant pattern gave them something the oracle couldn't: confidence that their judgment remained central, that the tool extended their capability without replacing their accountability.
+**Adoption is faster than we imagined possible.** We launched a month ago. In three weeks—over Christmas—we hit 33% penetration across North America: 33% of eligible professional staff used the system to produce at least one client-facing artifact during the period. We expected resistance. We got demand. Professionals who'd been skeptical of AI tools engaged once they understood the distinction. The assistant pattern gave them something the oracle couldn't: confidence that their judgment remained central, that the tool extended their capability without replacing their accountability.
 
 **The compounding effect is already visible.** Workflows created by one professional become templates for others. Patterns crystallize into reusable tools. The value of the system increases with each user—not linearly, but faster. Network effects in methodology, and we're only a month in.
 

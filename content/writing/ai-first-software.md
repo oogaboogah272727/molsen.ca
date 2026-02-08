@@ -18,6 +18,8 @@ relationships:
 
 > *This essay has been revised to reflect how my thinking has developed since its original publication. The version here is authoritative.*
 
+> *Revision note (February 2026): This essay has been updated to clarify how AI-First interface design relates to EKA governance requirements. See [Update for February 2026](/writing/update-february-2026/) and [Answers to Critics](/writing/answers-to-critics/) for the full discussion.*
+
 > "These systems have unequivocally solved language. They possess what experts call formal competence." — Andrej Karpathy
 
 That statement deserves to sit with you for a moment. Not because it's hyperbole—it isn't—but because its implications are so easy to miss. We're so busy debating whether generative AI will lead to AGI that we're ignoring the revolution already underway.
@@ -56,7 +58,7 @@ Traditional software can only do what it's programmed to do. Every capability mu
 
 An AI-first system operates differently. It can dynamically select algorithms and approaches based on user-expressed requirements in natural language. Need statistical analysis? The system selects appropriate methods based on your data and your question, not based on what a product manager decided to include in version 2.3.
 
-The functionality becomes fluid. The system's capabilities expand beyond what was explicitly built into it. The user describes outcomes; the system determines approach.
+The functionality becomes fluid. The system's capabilities expand beyond what was explicitly built into it. The user describes outcomes; the system determines approach—within the scope the user has authorized. For consequential work, this means the user has already decided to route through executable, verifiable artifacts. The system selects implementation details, not whether to produce inspectable methodology. [See [Answers to Critics](/writing/answers-to-critics/#ai-first-eka-tension) for how this reconciles with EKA.]
 
 ---
 

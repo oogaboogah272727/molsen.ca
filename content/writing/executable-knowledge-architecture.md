@@ -47,6 +47,8 @@ claims:
 
 > *Cross-references to related essays reflect the current state of an evolving intellectual framework. The version here is authoritative.*
 
+> *Revision note (February 2026): The verification protocol discussion has been strengthened in response to research showing AI explanations can be unfaithful. See [Answers to Critics](/writing/answers-to-critics/#verification-protocol).*
+
 Knowledge workers face an uncomfortable truth: anyone can now ask ChatGPT the same questions they once needed experts to answer. This creates immediate pressure on the value of expertise. But it also reveals something about how we've been thinking about AI in professional practice. We've been thinking about it wrong.
 
 The instinct is to treat AI as an oracle—ask it questions, get answers. But you can't verify an oracle's answers without possessing the expertise to produce those answers yourself. That's the [verification paradox](/writing/ai-oracle-vs-assistant/#oracle-pattern-and-the-verification-paradox), and it makes professional accountability impossible when AI operates in this pattern.
@@ -145,7 +147,7 @@ Train your team to think of AI as a translator, not an oracle. The prompt isn't 
 
 The goal is [method-bearing artifacts](/writing/capability-governance/#the-core-distinction-method-bearing-vs-conclusion)—outputs where the methodology is inspectable, not hidden. When methodology is exposed, verification becomes possible. When verification is possible, defensibility follows.
 
-Your experts need to validate that the artifact implements their intent. They don't need to be software engineers. They don't even need to read code. [Adversarial review](/writing/agentic-ai-universal-interface/#the-remaining-human-contribution) uses the same AI that generated the artifact to explain what it does: "What exactly does this code do?" "What could go wrong?" "What assumptions does this make?" The AI has no memory of having written it and no ego invested in defending it. The expert confirms the description matches their intent—a judgment they're equipped to make.
+Your experts need to validate that the artifact implements their intent. They don't need to be software engineers. They don't need to *author* code. But verification requires more than AI explanation alone—research shows that AI explanations, like reasoning traces, can be unfaithful. Verification needs some check that doesn't depend on the generating model's account of what it produced. [Adversarial review](/writing/agentic-ai-universal-interface/#the-remaining-human-contribution) is part of a verification protocol, not a substitute for one: the AI can explain what the code does, but the expert must have an independent path to confirm the description matches their intent. How organizations implement that independence—through human review, automated testing, secondary models, or domain-specific validation—depends on context. That such independence is necessary is a framework requirement. [See [Answers to Critics](/writing/answers-to-critics/#verification-protocol) for why this matters.]
 
 Build your artifact repository. Every executable artifact that produces a deliverable should be version-controlled, documented, and retrievable. This is your audit trail and your methodology library. It's also how you build the empirical track record that [capability governance](/writing/capability-governance/) requires for high-stakes work.
 
