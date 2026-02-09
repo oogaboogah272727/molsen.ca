@@ -44,7 +44,7 @@ Most people default to Oracle pattern. It feels natural. It mirrors how we inter
 
 But Oracle pattern has a structural problem that prevents it from meeting a defensibility standard for accountable professional work. Assistant pattern creates a viable path to that defensibility. Understanding why is the key to deploying AI responsibly.[^ungovernable]
 
-[^ungovernable]: "Ungovernable" and similar language throughout this essay means specifically: cannot satisfy the requirements of reproducibility, verifiability, and accountability that professional work under risk demands. See [Answers to Critics](/writing/answers-to-critics/#absolute-language) for discussion of this scoping.
+[^ungovernable]: "Ungovernable" means specifically: cannot satisfy the requirements of reproducibility, verifiability, and accountability that professional work under risk demands. "Solves" means: creates a viable path to satisfying those requirements. See [Answers to Critics](/writing/answers-to-critics/#absolute-language) for discussion of this scoping.
 
 ---
 

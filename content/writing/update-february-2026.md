@@ -149,6 +149,34 @@ The framework was designed for a world where the human chose the pattern. Agenti
 
 ---
 
+## Sources
+
+Key research informing this update:
+
+**Reproducibility and Stochasticity**
+- Lu et al., ["Rethinking the Reproducibility of AI Artifacts in the LLM Era"](https://arxiv.org/abs/2510.25506) (2025). Documents the reproducibility crisis: 69 papers studied, 7.2% executable, zero fully reproducible. Source for Python code translation accuracy variance.
+- Anthropic documentation confirms non-determinism even at temperature 0.0 due to batching and caching infrastructure.
+
+**Reasoning Traces and Verification**
+- Anthropic, ["Reasoning Models Don't Always Say What They Think"](https://www.anthropic.com/research/reasoning-models-dont-say-think) (2025). Research on chain-of-thought unfaithfulness.
+- Yue et al., ["Evidence from Counterfactual Tasks Supports Emergent Analogical Reasoning in Large Language Models"](https://arxiv.org/abs/2404.13070) (2024). Source for 81-83% factual accuracy in intermediate reasoning steps.
+
+**Citation Unfaithfulness and RAG**
+- Liu et al., ["Context vs. Prior Knowledge: Disentangling Contributions of External Context and Model's Prior Knowledge in Retrieval Augmented Generation"](https://arxiv.org/abs/2412.18004) (2024). Documents up to 57% unfaithful citations due to post-rationalization.
+- Multiple legal AI studies document 17-33% hallucination rates despite citation mechanisms.
+
+**Agentic AI Governance**
+- Singapore IMDA, ["Model AI Governance Framework for Agentic AI"](https://www.imda.gov.sg/-/media/imda/files/about/emerging-tech-and-research/artificial-intelligence/mgf-for-agentic-ai.pdf) (January 2026).
+- World Economic Forum, ["Navigating the AI Frontier: A Primer on the Evolution and Impact of AI Agents"](https://www.weforum.org/publications/navigating-the-ai-frontier-a-primer-on-the-evolution-and-impact-of-ai-agents/) (November 2025).
+- Gartner reports 1,445% surge in multi-agent system inquiries Q1 2024 to Q2 2025.
+
+**Regulatory Requirements**
+- [EU AI Act](https://artificialintelligenceact.eu/) (2024). Articles 16, 26 for technical documentation, logging, and human oversight requirements.
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) (2024 update) and GenAI Profile.
+- [ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html) for AI management system controls.
+
+---
+
 → For detailed responses to specific objections, see [Answers to Critics](/writing/answers-to-critics/)
 → For the original framework, see [AI as Oracle vs. Assistant](/writing/ai-oracle-vs-assistant/)
 → For the implementation pattern, see [Executable Knowledge Architecture](/writing/executable-knowledge-architecture/)
